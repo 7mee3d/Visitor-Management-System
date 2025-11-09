@@ -16,5 +16,25 @@ namespace Visitor_Management_System
         {
             InitializeComponent();
         }
+
+        private async void showOverLayAfterClickLogIn()
+        {
+            siticoneOverlayButtonLogIn.Show = true;
+
+            await Task.Delay(5000);
+
+            siticoneOverlayButtonLogIn.Show = false;
+
+            //Test LogIn System
+            MessageBox.Show("Done Login VMS");
+        }
+
+        private void GButtonLogIn_Click(object sender, EventArgs e)
+        {
+            showOverLayAfterClickLogIn();
+
+        }
+
+    
     }
 }
