@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Visitor_Management_System
 {
-    public partial class Form1 : Form
+    public partial class VMS_Login : Form
     {
-        public Form1()
+        public VMS_Login()
         {
             InitializeComponent();
         }
