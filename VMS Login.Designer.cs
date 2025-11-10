@@ -44,6 +44,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.siticoneBorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticoneOverlayButtonLogIn = new SiticoneNetFrameworkUI.SiticoneOverlay(this.components);
+            this.LblShowMessageWrongPasswordOrLockAccount = new System.Windows.Forms.Label();
             this.siticoneShadowPanel1.SuspendLayout();
             this.GPanelPassword.SuspendLayout();
             this.GPnaelUsername.SuspendLayout();
@@ -53,6 +54,7 @@
             // siticoneShadowPanel1
             // 
             this.siticoneShadowPanel1.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneShadowPanel1.Controls.Add(this.LblShowMessageWrongPasswordOrLockAccount);
             this.siticoneShadowPanel1.Controls.Add(this.GButtonLogIn);
             this.siticoneShadowPanel1.Controls.Add(this.GPanelPassword);
             this.siticoneShadowPanel1.Controls.Add(this.GPnaelUsername);
@@ -63,10 +65,10 @@
             this.siticoneShadowPanel1.FillColor = System.Drawing.Color.White;
             this.siticoneShadowPanel1.Location = new System.Drawing.Point(496, 134);
             this.siticoneShadowPanel1.Name = "siticoneShadowPanel1";
-            this.siticoneShadowPanel1.Radius = 10;
+            this.siticoneShadowPanel1.Radius = 15;
             this.siticoneShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.siticoneShadowPanel1.ShadowDepth = 10;
-            this.siticoneShadowPanel1.ShadowShift = 20;
+            this.siticoneShadowPanel1.ShadowDepth = 9;
+            this.siticoneShadowPanel1.ShadowShift = 18;
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(448, 632);
             this.siticoneShadowPanel1.TabIndex = 0;
             // 
@@ -91,7 +93,7 @@
             this.GButtonLogIn.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonLogIn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonLogIn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.GButtonLogIn.Location = new System.Drawing.Point(58, 509);
+            this.GButtonLogIn.Location = new System.Drawing.Point(58, 524);
             this.GButtonLogIn.Name = "GButtonLogIn";
             this.GButtonLogIn.Size = new System.Drawing.Size(331, 45);
             this.GButtonLogIn.TabIndex = 4;
@@ -106,7 +108,7 @@
             this.GPanelPassword.Location = new System.Drawing.Point(58, 375);
             this.GPanelPassword.Name = "GPanelPassword";
             this.GPanelPassword.Size = new System.Drawing.Size(334, 86);
-            this.GPanelPassword.TabIndex = 4;
+            this.GPanelPassword.TabIndex = 1;
             // 
             // siticoneTextBoxPassword
             // 
@@ -132,7 +134,7 @@
             this.siticoneTextBoxPassword.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.siticoneTextBoxPassword.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.siticoneTextBoxPassword.Size = new System.Drawing.Size(328, 42);
-            this.siticoneTextBoxPassword.TabIndex = 2;
+            this.siticoneTextBoxPassword.TabIndex = 1;
             this.siticoneTextBoxPassword.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
             this.siticoneTextBoxPassword.TextContent = "";
             this.siticoneTextBoxPassword.TopLeftCornerRadius = 8;
@@ -142,11 +144,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label5.Location = new System.Drawing.Point(15, 5);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(86, 21);
+            this.label5.Size = new System.Drawing.Size(79, 21);
             this.label5.TabIndex = 2;
             this.label5.Text = "Password";
             // 
@@ -157,7 +159,7 @@
             this.GPnaelUsername.Location = new System.Drawing.Point(58, 288);
             this.GPnaelUsername.Name = "GPnaelUsername";
             this.GPnaelUsername.Size = new System.Drawing.Size(334, 81);
-            this.GPnaelUsername.TabIndex = 3;
+            this.GPnaelUsername.TabIndex = 0;
             // 
             // siticoneTextBoxUsername
             // 
@@ -193,11 +195,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI Black", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.label4.Location = new System.Drawing.Point(15, 5);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(89, 21);
+            this.label4.Size = new System.Drawing.Size(83, 21);
             this.label4.TabIndex = 2;
             this.label4.Text = "Username";
             // 
@@ -264,6 +266,16 @@
             this.siticoneOverlayButtonLogIn.OverlayColor = System.Drawing.Color.Black;
             this.siticoneOverlayButtonLogIn.OverlayTarget = this;
             // 
+            // LblShowMessageWrongPasswordOrLockAccount
+            // 
+            this.LblShowMessageWrongPasswordOrLockAccount.AutoSize = true;
+            this.LblShowMessageWrongPasswordOrLockAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblShowMessageWrongPasswordOrLockAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblShowMessageWrongPasswordOrLockAccount.Location = new System.Drawing.Point(58, 479);
+            this.LblShowMessageWrongPasswordOrLockAccount.Name = "LblShowMessageWrongPasswordOrLockAccount";
+            this.LblShowMessageWrongPasswordOrLockAccount.Size = new System.Drawing.Size(0, 15);
+            this.LblShowMessageWrongPasswordOrLockAccount.TabIndex = 5;
+            // 
             // VMS_Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -305,6 +317,7 @@
         private Guna.UI2.WinForms.Guna2Button GButtonLogIn;
         private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxPassword;
         private SiticoneNetFrameworkUI.SiticoneOverlay siticoneOverlayButtonLogIn;
+        private System.Windows.Forms.Label LblShowMessageWrongPasswordOrLockAccount;
     }
 }
 

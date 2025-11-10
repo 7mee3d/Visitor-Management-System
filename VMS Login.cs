@@ -48,9 +48,9 @@ namespace Visitor_Management_System
             InitializeComponent();
         }
 
-        private stcInformatonUser RetrurnEmptyStructureInformationUser()
+        private VMS_Login.stcInformatonUser RetrurnEmptyStructureInformationUser()
         {
-            return new stcInformatonUser();
+            return new VMS_Login.stcInformatonUser();
         }
 
         private List<string> LoadAllLinesInformationFromFile (string pathFile)
@@ -74,14 +74,14 @@ namespace Visitor_Management_System
 
         }     
 
-        private void SaveAllInformationAfterChangeData(string pathFile  , List<stcInformatonUser> newInformationChanged )
+        private void SaveAllInformationAfterChangeData(string pathFile  , List<VMS_Login.stcInformatonUser> newInformationChanged )
         {
             if (!System.IO.File.Exists(pathFile))
                 System.IO.File.Create(pathFile).Close();
 
             System.IO.StreamWriter WriteAllInformationInFile = new System.IO.StreamWriter(pathFile  ); 
 
-            foreach (stcInformatonUser infoOneUser in newInformationChanged )
+            foreach (VMS_Login.stcInformatonUser infoOneUser in newInformationChanged )
             {
                 WriteAllInformationInFile.WriteLine(ConvertDataInformationUserToLine(infoOneUser, _kSEPARATOR_FILE_USERS_INFORMATION));
             }
@@ -101,9 +101,9 @@ namespace Visitor_Management_System
 
         }
  
-        private stcInformatonUser ConvertLineInformationUserToData (List<string> informationUser)
+        private VMS_Login.stcInformatonUser ConvertLineInformationUserToData (List<string> informationUser)
         {
-            stcInformatonUser informationUserData = new stcInformatonUser();
+            VMS_Login.stcInformatonUser informationUserData = new VMS_Login.stcInformatonUser();
 
             informationUserData.stNameUser = informationUser[0];
             informationUserData.stEmailUser = informationUser[1];
@@ -116,7 +116,7 @@ namespace Visitor_Management_System
 
         }
      
-        private string ConvertDataInformationUserToLine (stcInformatonUser informationUser , string Separator )
+        private string ConvertDataInformationUserToLine (VMS_Login.stcInformatonUser informationUser , string Separator )
         {
             string lineInformationUser = "";
 
@@ -129,9 +129,9 @@ namespace Visitor_Management_System
             return lineInformationUser;
         }
        
-        private List<stcInformatonUser> LoadAllInformationDataUsersToListStructure(  )
+        private List<VMS_Login.stcInformatonUser> LoadAllInformationDataUsersToListStructure(  )
         {
-            List<stcInformatonUser> allInformationUsersData = new List<stcInformatonUser>();
+            List<VMS_Login.stcInformatonUser> allInformationUsersData = new List<VMS_Login.stcInformatonUser>();
 
             List<string> allLinesInformation = LoadAllLinesInformationFromFile(pathFile: _kFILE_PATH_USERS_INFORMATION);
 
@@ -143,11 +143,11 @@ namespace Visitor_Management_System
             return allInformationUsersData; 
         }
     
-        private stcInformatonUser SearchUserInFile (string Username )
+        private VMS_Login.stcInformatonUser SearchUserInFile (string Username )
         {
-            List<stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
+            List<VMS_Login.stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
 
-            foreach (stcInformatonUser infoOneUser in AllInformationUsersSt )
+            foreach (VMS_Login.stcInformatonUser infoOneUser in AllInformationUsersSt )
                 if (infoOneUser.stUsername == Username) return infoOneUser;
 
 
@@ -156,18 +156,18 @@ namespace Visitor_Management_System
 
         private bool isUserExitsInSystem(string Username)
         {
-            List<stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
+            List<VMS_Login.stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
 
-            foreach (stcInformatonUser infoOneUser in AllInformationUsersSt)
+            foreach (VMS_Login.stcInformatonUser infoOneUser in AllInformationUsersSt)
                 if (infoOneUser.stUsername == Username) return true ;
 
 
             return false;
         }
    
-        private void UpdateInformationListStructure (stcInformatonUser informationUser , string username )
+        private void UpdateInformationListStructure (VMS_Login.stcInformatonUser informationUser , string username )
         {
-            List<stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
+            List<VMS_Login.stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
 
           for(int counter = 0; counter < AllInformationUsersSt.Count; counter++)
             {
@@ -204,30 +204,42 @@ namespace Visitor_Management_System
                 {
                     if (allInformationThisUserAfterSearch.stAttempt > 0)
                     {
-                        allInformationThisUserAfterSearch.stAttempt = 3;
+                        LblShowMessageWrongPasswordOrLockAccount.Text = "";
                         showOverLayAfterClickLogIn();
-                        MessageBox.Show($"Welcom {username} ");
-                        UpdateInformationListStructure(allInformationThisUserAfterSearch, username);
+                        allInformationThisUserAfterSearch.stAttempt = 3;
+                        
                     }
                     else
                     {
-                        MessageBox.Show("Lock Acc");
+                        LblShowMessageWrongPasswordOrLockAccount.Text = "This account is Locked";
                     }
                 }
                 else
                 {
+                    LblShowMessageWrongPasswordOrLockAccount.Text = "Password is Wronge , Please Enter Correct Password";
+
                     if (allInformationThisUserAfterSearch.stAttempt > 0 )
                     {
                         allInformationThisUserAfterSearch.stAttempt--;
-                        UpdateInformationListStructure(allInformationThisUserAfterSearch, username);
+                       // UpdateInformationListStructure(allInformationThisUserAfterSearch, username);
                     }
                     else
                     {
-                        MessageBox.Show("Lock Acc");
+                        LblShowMessageWrongPasswordOrLockAccount.Text = "This account is Locked";
                     }
-                }
 
+                    siticoneTextBoxPassword.Clear();
+
+                }
+                UpdateInformationListStructure(allInformationThisUserAfterSearch, username);
             }
+            else
+            {
+                LblShowMessageWrongPasswordOrLockAccount.Text = "This account does not exist. Please Contact Admin\nto Create New Account in VMS";
+                siticoneTextBoxUsername.Clear();
+                siticoneTextBoxPassword.Clear();
+            }
+            
         }
      
         private async void showOverLayAfterClickLogIn()
@@ -239,7 +251,7 @@ namespace Visitor_Management_System
             siticoneOverlayButtonLogIn.Show = false;
 
             //Test LogIn System
-            MessageBox.Show("Done Login VMS");
+            //MessageBox.Show("Done Login VMS");
         }
 
         private void GButtonLogIn_Click(object sender, EventArgs e)
