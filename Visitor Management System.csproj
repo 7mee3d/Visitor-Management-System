@@ -152,6 +152,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Background_VMS_Login_Screen.png" />
+    <None Include="Resources\Logo_VMS.png" />
     <Content Include="Visitor-Management-System.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

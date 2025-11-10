@@ -31,6 +31,7 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VMS_Login));
             this.siticoneShadowPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowPanel();
+            this.LblShowMessageWrongPasswordOrLockAccount = new System.Windows.Forms.Label();
             this.GButtonLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.GPanelPassword = new Guna.UI2.WinForms.Guna2Panel();
             this.siticoneTextBoxPassword = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
@@ -44,7 +45,7 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.siticoneBorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticoneOverlayButtonLogIn = new SiticoneNetFrameworkUI.SiticoneOverlay(this.components);
-            this.LblShowMessageWrongPasswordOrLockAccount = new System.Windows.Forms.Label();
+            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneShadowPanel1.SuspendLayout();
             this.GPanelPassword.SuspendLayout();
             this.GPnaelUsername.SuspendLayout();
@@ -72,6 +73,16 @@
             this.siticoneShadowPanel1.Size = new System.Drawing.Size(448, 632);
             this.siticoneShadowPanel1.TabIndex = 0;
             // 
+            // LblShowMessageWrongPasswordOrLockAccount
+            // 
+            this.LblShowMessageWrongPasswordOrLockAccount.AutoSize = true;
+            this.LblShowMessageWrongPasswordOrLockAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LblShowMessageWrongPasswordOrLockAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.LblShowMessageWrongPasswordOrLockAccount.Location = new System.Drawing.Point(58, 479);
+            this.LblShowMessageWrongPasswordOrLockAccount.Name = "LblShowMessageWrongPasswordOrLockAccount";
+            this.LblShowMessageWrongPasswordOrLockAccount.Size = new System.Drawing.Size(0, 15);
+            this.LblShowMessageWrongPasswordOrLockAccount.TabIndex = 5;
+            // 
             // GButtonLogIn
             // 
             this.GButtonLogIn.Animated = true;
@@ -93,7 +104,7 @@
             this.GButtonLogIn.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonLogIn.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonLogIn.HoverState.ForeColor = System.Drawing.Color.White;
-            this.GButtonLogIn.Location = new System.Drawing.Point(58, 524);
+            this.GButtonLogIn.Location = new System.Drawing.Point(58, 530);
             this.GButtonLogIn.Name = "GButtonLogIn";
             this.GButtonLogIn.Size = new System.Drawing.Size(331, 45);
             this.GButtonLogIn.TabIndex = 4;
@@ -208,7 +219,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label3.Location = new System.Drawing.Point(158, 210);
+            this.label3.Location = new System.Drawing.Point(158, 198);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(133, 15);
             this.label3.TabIndex = 2;
@@ -219,7 +230,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Segoe UI Black", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(87, 168);
+            this.label2.Location = new System.Drawing.Point(87, 156);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(274, 37);
             this.label2.TabIndex = 1;
@@ -238,7 +249,7 @@
             // 
             // guna2PictureBox1
             // 
-            this.guna2PictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("guna2PictureBox1.Image")));
+            this.guna2PictureBox1.Image = global::Visitor_Management_System.Properties.Resources.Logo_VMS;
             this.guna2PictureBox1.ImageRotate = 0F;
             this.guna2PictureBox1.Location = new System.Drawing.Point(143, 86);
             this.guna2PictureBox1.Name = "guna2PictureBox1";
@@ -266,23 +277,32 @@
             this.siticoneOverlayButtonLogIn.OverlayColor = System.Drawing.Color.Black;
             this.siticoneOverlayButtonLogIn.OverlayTarget = this;
             // 
-            // LblShowMessageWrongPasswordOrLockAccount
+            // siticoneControlBox1
             // 
-            this.LblShowMessageWrongPasswordOrLockAccount.AutoSize = true;
-            this.LblShowMessageWrongPasswordOrLockAccount.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LblShowMessageWrongPasswordOrLockAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.LblShowMessageWrongPasswordOrLockAccount.Location = new System.Drawing.Point(58, 479);
-            this.LblShowMessageWrongPasswordOrLockAccount.Name = "LblShowMessageWrongPasswordOrLockAccount";
-            this.LblShowMessageWrongPasswordOrLockAccount.Size = new System.Drawing.Size(0, 15);
-            this.LblShowMessageWrongPasswordOrLockAccount.TabIndex = 5;
+            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneControlBox1.Animated = true;
+            this.siticoneControlBox1.BorderRadius = 4;
+            this.siticoneControlBox1.ControlBoxStyle = Siticone.Desktop.UI.WinForms.Enums.ControlBoxStyle.Custom;
+            this.siticoneControlBox1.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.siticoneControlBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.siticoneControlBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneControlBox1.ForeColor = System.Drawing.Color.White;
+            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1379, 13);
+            this.siticoneControlBox1.Name = "siticoneControlBox1";
+            this.siticoneControlBox1.Size = new System.Drawing.Size(34, 29);
+            this.siticoneControlBox1.TabIndex = 1;
             // 
             // VMS_Login
             // 
+            this.AcceptButton = this.GButtonLogIn;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::Visitor_Management_System.Properties.Resources.Background_VMS_Login_Screen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1428, 861);
+            this.Controls.Add(this.siticoneControlBox1);
             this.Controls.Add(this.siticoneShadowPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -318,6 +338,7 @@
         private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxPassword;
         private SiticoneNetFrameworkUI.SiticoneOverlay siticoneOverlayButtonLogIn;
         private System.Windows.Forms.Label LblShowMessageWrongPasswordOrLockAccount;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
     }
 }
 

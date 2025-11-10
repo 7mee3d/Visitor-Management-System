@@ -1,1 +1,2 @@
 Mr.GitTest$$||$$Mr.GitTest@gmail.com$$||$$Admin$$||$$123$$||$$3
+Mr.GitTest2$$||$$Mr.GitTest2@outlook.com$$||$$user1$$||$$12345$$||$$3

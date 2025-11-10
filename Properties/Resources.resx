@@ -121,4 +121,7 @@
   <data name="Background_VMS_Login_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background_VMS_Login_Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Logo_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
 </root>

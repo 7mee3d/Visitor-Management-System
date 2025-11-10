@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using SiticoneNetFrameworkUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -47,6 +49,37 @@ namespace Visitor_Management_System
         {
             InitializeComponent();
         }
+       
+        //General Methods 
+        private async void showOverLayAfterClickLogIn()
+        {
+            siticoneOverlayButtonLogIn.Show = true;
+
+            await Task.Delay(5000);
+
+            siticoneOverlayButtonLogIn.Show = false;
+
+            //Test LogIn System
+            //MessageBox.Show("Done Login VMS");
+        }
+
+       /* private void ClearAllTextBox()
+        {
+
+            foreach(Control outterControl in this.Controls)
+            {
+                if(outterControl is Guna2Panel G2P)
+                {
+                    foreach(Control innerControl in G2P.Controls)
+                    {
+                        if(innerControl is SiticoneTextBoxAdvanced STBA)
+                        {
+                            STBA.Text = "";
+                        }
+                    }
+                }
+            }
+        }*/
 
         private VMS_Login.stcInformatonUser RetrurnEmptyStructureInformationUser()
         {
@@ -190,70 +223,63 @@ namespace Visitor_Management_System
             return (PasswordOne == PasswordTwo);
         }
         
+        private void ChangeAttemptAndLabelShowMessageAfterClickLogIn(short numberAttempt , ref VMS_Login.stcInformatonUser CarruntUserInfo , string Message )
+        {
+            CarruntUserInfo.stAttempt = numberAttempt;
+            LblShowMessageWrongPasswordOrLockAccount.Text = Message; 
+        }
+
         private void LogInVMS()
         {
-            string username = siticoneTextBoxUsername.Text;
-            string password = siticoneTextBoxPassword.Text; 
+            string username = siticoneTextBoxUsername.Text.Trim();
+            string password = siticoneTextBoxPassword.Text.Trim(); 
 
 
             if(isUserExitsInSystem(username))
             {
-                stcInformatonUser allInformationThisUserAfterSearch = SearchUserInFile(username);
+                VMS_Login.stcInformatonUser allInformationThisUserAfterSearch = SearchUserInFile(username);
 
-                if (areEqualPassword(password , allInformationThisUserAfterSearch.stPasswordUser))
+                if (
+                    areEqualPassword(password , allInformationThisUserAfterSearch.stPasswordUser)
+                    )
                 {
                     if (allInformationThisUserAfterSearch.stAttempt > 0)
                     {
-                        LblShowMessageWrongPasswordOrLockAccount.Text = "";
+                        ChangeAttemptAndLabelShowMessageAfterClickLogIn(3 ,ref allInformationThisUserAfterSearch, "");
                         showOverLayAfterClickLogIn();
-                        allInformationThisUserAfterSearch.stAttempt = 3;
                         
                     }
                     else
-                    {
                         LblShowMessageWrongPasswordOrLockAccount.Text = "This account is Locked";
-                    }
                 }
                 else
                 {
                     LblShowMessageWrongPasswordOrLockAccount.Text = "Password is Wronge , Please Enter Correct Password";
 
-                    if (allInformationThisUserAfterSearch.stAttempt > 0 )
-                    {
+                    if (
+                        allInformationThisUserAfterSearch.stAttempt > 0
+                        )
                         allInformationThisUserAfterSearch.stAttempt--;
-                       // UpdateInformationListStructure(allInformationThisUserAfterSearch, username);
-                    }
                     else
-                    {
                         LblShowMessageWrongPasswordOrLockAccount.Text = "This account is Locked";
-                    }
+
 
                     siticoneTextBoxPassword.Clear();
-
                 }
+
                 UpdateInformationListStructure(allInformationThisUserAfterSearch, username);
             }
             else
             {
-                LblShowMessageWrongPasswordOrLockAccount.Text = "This account does not exist. Please Contact Admin\nto Create New Account in VMS";
+                //ClearAllTextBox();
                 siticoneTextBoxUsername.Clear();
                 siticoneTextBoxPassword.Clear();
+                LblShowMessageWrongPasswordOrLockAccount.Text = "This account does not exist. Please Contact Adminto Create\nNew Account in VMS";
+              
             }
             
         }
      
-        private async void showOverLayAfterClickLogIn()
-        {
-            siticoneOverlayButtonLogIn.Show = true;
-
-            await Task.Delay(5000);
-
-            siticoneOverlayButtonLogIn.Show = false;
-
-            //Test LogIn System
-            //MessageBox.Show("Done Login VMS");
-        }
-
         private void GButtonLogIn_Click(object sender, EventArgs e)
         {
             LogInVMS();
