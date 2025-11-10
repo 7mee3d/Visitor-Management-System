@@ -44,6 +44,24 @@ namespace Visitor_Management_System
 
         private const string _kFILE_PATH_USERS_INFORMATION = @"../../Data_Information_VMS/Information_Users.txt";
         private const string _kSEPARATOR_FILE_USERS_INFORMATION = "$$||$$";
+        private const ushort _kSTART_SAVE_AND_READ_FROM_FILE_USER_INFORMATION = 15; 
+        private const ushort _kCOUNT_PARTS_INFORMATION_USERS = 5; 
+        private const string _kBANNER_FILE_USERS_INFORMATION = @"
+ _____                                                                                                     _____ 
+( ___ )                                                                                                   ( ___ )
+ |   |~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|   | 
+ |   |                                                                                                     |   | 
+ |   |                                                                                                     |   | 
+ |   |         ___        __                            _   _                  _   _                       |   | 
+ |   |        |_ _|_ __  / _| ___  _ __ _ __ ___   __ _| |_(_) ___  _ __      | | | |___  ___ _ __         |   | 
+ |   |         | || '_ \| |_ / _ \| '__| '_ ` _ \ / _` | __| |/ _ \| '_ \     | | | / __|/ _ \ '__|        |   | 
+ |   |         | || | | |  _| (_) | |  | | | | | | (_| | |_| | (_) | | | |    | |_| \__ \  __/ |           |   | 
+ |   |        |___|_| |_|_|  \___/|_|  |_| |_| |_|\__,_|\__|_|\___/|_| |_|     \___/|___/\___|_|           |   | 
+ |   |                                                                                                     |   | 
+ |   |                                                                                                     |   | 
+ |___|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|___| 
+(_____)                                                                                                   (_____) 
+";
 
         public VMS_Login()
         {
@@ -112,10 +130,13 @@ namespace Visitor_Management_System
             if (!System.IO.File.Exists(pathFile))
                 System.IO.File.Create(pathFile).Close();
 
-            System.IO.StreamWriter WriteAllInformationInFile = new System.IO.StreamWriter(pathFile  ); 
+            System.IO.StreamWriter WriteAllInformationInFile = new System.IO.StreamWriter(pathFile  );
+
+            WriteAllInformationInFile.WriteLine(_kBANNER_FILE_USERS_INFORMATION);
 
             foreach (VMS_Login.stcInformatonUser infoOneUser in newInformationChanged )
             {
+                if(infoOneUser != null && !string.IsNullOrEmpty(infoOneUser.stUsername))
                 WriteAllInformationInFile.WriteLine(ConvertDataInformationUserToLine(infoOneUser, _kSEPARATOR_FILE_USERS_INFORMATION));
             }
 
@@ -138,13 +159,15 @@ namespace Visitor_Management_System
         {
             VMS_Login.stcInformatonUser informationUserData = new VMS_Login.stcInformatonUser();
 
-            informationUserData.stNameUser = informationUser[0];
-            informationUserData.stEmailUser = informationUser[1];
-            informationUserData.stUsername = informationUser[2];
-            informationUserData.stPasswordUser = informationUser[3];
-            informationUserData.stAttempt = Convert.ToInt16 (  informationUser[4]) ;
-            //informationUserData.stP = informationUser[3];
-
+            if (informationUser.Count >= _kCOUNT_PARTS_INFORMATION_USERS) 
+            {
+                informationUserData.stNameUser = informationUser[0];
+                informationUserData.stEmailUser = informationUser[1];
+                informationUserData.stUsername = informationUser[2];
+                informationUserData.stPasswordUser = informationUser[3];
+                informationUserData.stAttempt = Convert.ToInt16(informationUser[4]);
+                //informationUserData.stP = informationUser[3];
+            }
             return informationUserData; 
 
         }
@@ -168,9 +191,12 @@ namespace Visitor_Management_System
 
             List<string> allLinesInformation = LoadAllLinesInformationFromFile(pathFile: _kFILE_PATH_USERS_INFORMATION);
 
-            foreach (string lineInformationOneUser in allLinesInformation)
+            for (int counter = _kSTART_SAVE_AND_READ_FROM_FILE_USER_INFORMATION; counter < allLinesInformation.Count; counter++)
             {
-                allInformationUsersData.Add(ConvertLineInformationUserToData(SplitLineProducesSubInformation(lineInformationOneUser , _kSEPARATOR_FILE_USERS_INFORMATION)));
+                List<string> userAllInformationList = SplitLineProducesSubInformation(allLinesInformation[counter], _kSEPARATOR_FILE_USERS_INFORMATION);
+                if(userAllInformationList.Count >= _kCOUNT_PARTS_INFORMATION_USERS)
+                allInformationUsersData.Add(ConvertLineInformationUserToData(SplitLineProducesSubInformation(allLinesInformation[counter], _kSEPARATOR_FILE_USERS_INFORMATION)));
+            
             }
 
             return allInformationUsersData; 
@@ -212,8 +238,6 @@ namespace Visitor_Management_System
                 }
 
             }
-
-
 
 
         }
