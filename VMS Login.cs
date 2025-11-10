@@ -136,7 +136,7 @@ namespace Visitor_Management_System
 
             foreach (VMS_Login.stcInformatonUser infoOneUser in newInformationChanged )
             {
-                if(infoOneUser != null && !string.IsNullOrEmpty(infoOneUser.stUsername))
+                if(infoOneUser != null )
                 WriteAllInformationInFile.WriteLine(ConvertDataInformationUserToLine(infoOneUser, _kSEPARATOR_FILE_USERS_INFORMATION));
             }
 
@@ -194,8 +194,9 @@ namespace Visitor_Management_System
             for (int counter = _kSTART_SAVE_AND_READ_FROM_FILE_USER_INFORMATION; counter < allLinesInformation.Count; counter++)
             {
                 List<string> userAllInformationList = SplitLineProducesSubInformation(allLinesInformation[counter], _kSEPARATOR_FILE_USERS_INFORMATION);
+
                 if(userAllInformationList.Count >= _kCOUNT_PARTS_INFORMATION_USERS)
-                allInformationUsersData.Add(ConvertLineInformationUserToData(SplitLineProducesSubInformation(allLinesInformation[counter], _kSEPARATOR_FILE_USERS_INFORMATION)));
+                allInformationUsersData.Add(ConvertLineInformationUserToData(userAllInformationList));
             
             }
 

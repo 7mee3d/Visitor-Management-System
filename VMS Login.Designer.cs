@@ -46,6 +46,7 @@
             this.siticoneBorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticoneOverlayButtonLogIn = new SiticoneNetFrameworkUI.SiticoneOverlay(this.components);
             this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneShadowPanel1.SuspendLayout();
             this.GPanelPassword.SuspendLayout();
             this.GPnaelUsername.SuspendLayout();
@@ -289,10 +290,26 @@
             this.siticoneControlBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneControlBox1.ForeColor = System.Drawing.Color.White;
             this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1379, 13);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1345, 13);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.Size = new System.Drawing.Size(34, 29);
             this.siticoneControlBox1.TabIndex = 1;
+            // 
+            // siticoneControlBox2
+            // 
+            this.siticoneControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneControlBox2.Animated = true;
+            this.siticoneControlBox2.BorderRadius = 4;
+            this.siticoneControlBox2.ControlBoxStyle = Siticone.Desktop.UI.WinForms.Enums.ControlBoxStyle.Custom;
+            this.siticoneControlBox2.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.siticoneControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.siticoneControlBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneControlBox2.ForeColor = System.Drawing.Color.White;
+            this.siticoneControlBox2.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBox2.Location = new System.Drawing.Point(1383, 13);
+            this.siticoneControlBox2.Name = "siticoneControlBox2";
+            this.siticoneControlBox2.Size = new System.Drawing.Size(34, 29);
+            this.siticoneControlBox2.TabIndex = 1;
             // 
             // VMS_Login
             // 
@@ -302,6 +319,7 @@
             this.BackgroundImage = global::Visitor_Management_System.Properties.Resources.Background_VMS_Login_Screen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1428, 861);
+            this.Controls.Add(this.siticoneControlBox2);
             this.Controls.Add(this.siticoneControlBox1);
             this.Controls.Add(this.siticoneShadowPanel1);
             this.DoubleBuffered = true;
@@ -339,6 +357,7 @@
         private SiticoneNetFrameworkUI.SiticoneOverlay siticoneOverlayButtonLogIn;
         private System.Windows.Forms.Label LblShowMessageWrongPasswordOrLockAccount;
         private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox2;
     }
 }
 
