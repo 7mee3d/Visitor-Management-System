@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Visitor_Management_System.Main_Form_Screen_VMS_Dashboard;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Visitor_Management_System
@@ -66,10 +67,11 @@ namespace Visitor_Management_System
         public VMS_Login()
         {
             InitializeComponent();
+            
         }
        
         //General Methods 
-        private async void showOverLayAfterClickLogIn()
+        private async void showOverLayAfterClickLogInShowDashBoardVMS()
         {
             siticoneOverlayButtonLogIn.Show = true;
 
@@ -77,8 +79,10 @@ namespace Visitor_Management_System
 
             siticoneOverlayButtonLogIn.Show = false;
 
-            //Test LogIn System
-            //MessageBox.Show("Done Login VMS");
+            Visitor_Management_System.Main_Form_Screen_VMS_Dashboard.DashboardVMS frmDashboardScreenVMS = new Visitor_Management_System.Main_Form_Screen_VMS_Dashboard.DashboardVMS();
+            frmDashboardScreenVMS.Show();
+            //Form Login VMS Screen 
+            this.Hide();
         }
 
        /* private void ClearAllTextBox()
@@ -271,8 +275,9 @@ namespace Visitor_Management_System
                     if (allInformationThisUserAfterSearch.stAttempt > 0)
                     {
                         ChangeAttemptAndLabelShowMessageAfterClickLogIn(3 ,ref allInformationThisUserAfterSearch, "");
-                        showOverLayAfterClickLogIn();
-                        
+                        showOverLayAfterClickLogInShowDashBoardVMS();
+                      
+                      
                     }
                     else
                         LblShowMessageWrongPasswordOrLockAccount.Text = "This account is Locked";
@@ -311,6 +316,11 @@ namespace Visitor_Management_System
 
         }
 
-    
+        private void siticoneControlBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+       
     }
 }
