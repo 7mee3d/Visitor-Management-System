@@ -16,5 +16,15 @@ namespace Visitor_Management_System.User_Control_VMS
         {
             InitializeComponent();
         }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void siticoneCard1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

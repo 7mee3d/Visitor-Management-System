@@ -120,11 +120,14 @@
   <metadata name="siticoneBorderlessForm.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>25</value>
+  </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="GButtonSettingsSSection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKWSURBVEhLtVVL
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKWSURBVEhLtVVL
         axRBEF4foGcV3w8QxIP6IxTFX7DmGne7emp2jeJVEHunev0BIkTxKK5mEbxIPBhR0INHyUlPiSii4iNG
         UERxpXqqs53uUQIxhw9mvvqqvunq6eraYDCorSQSogqIZjMC3USgOUGPuVhXhYSoAgI9QqBBhIexrgoJ
         EaPdtHuk4Dutu9sYCPSeOa3N7lgfIyGaTbMhTMyUHRGD+55DZaeYy7Wte45zODeut/BgjFmbaXsVgX65
@@ -156,7 +159,7 @@
   <data name="GButtonCheckOutSection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD6SURBVEhLtZXN
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAD6SURBVEhLtZXN
         DYJAEEY92YFGa9E2KMDIrAOJPRDGv5I8a/SiJz3YgQ1YAGbVneAYYcMsh5d8YWfmLQTYTlEUnTb5uRAa
         DlGUdWdAGwS6I1BRJgHay0ZfOHyGfw0usZONvnDgnU/zkSzSwMHtVhZo4dBEgLDYYkxHxKwv1xyl4gYC
         O9z2Gbr+k6gE88mqh0CXd29+M2Y5lDUqgaVOohZYqiS1AgQ6uDVfEsgf3gL7FcsBHvgLfJCPKE2zgVtT
@@ -167,7 +170,7 @@
   <data name="GButtonAddNewVisitorSection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFjSURBVEhLtZRL
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFjSURBVEhLtZRL
         TsQwDIbnECx4HIlhuAPgPEYsEbCs6hRxqWEQaA7EY8MqyCGWKjuZBlQWXxa/X63jeBFjXPwnSpgbJTD2
         Kpw7wGcP+Ek4wK29DGfSbwolEBbw0QHGIqYfpP8+lJC/nJJ9ORNury+6Y8ID3iXtx7aUcTWUQG2hJJRQ
         2nKRaCE8SVsNJTjAD0pizHAkbet1d5j/4F3aaiiBC1BblM2Fk1zgTdkAdx7wVeqlAttai5wJ97nARtny
@@ -180,7 +183,7 @@
   <data name="GButtonDashboardSection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        vgAADr4B6kKxwAAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF9SURBVEhLtVQ9
+        vAAADrwBlbxySQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAF9SURBVEhLtVQ9
         SgNBFF5FRGwVvIIH0FRWgoUHSB/JvDez5hKTfWtipXgJIYWX0EI8RBAMsRIVO7VYeclsWN/sxMRsig+G
         7+d9M7PLRFmWRcuER5Sh0bAbBujCKHoxQK8ak0vmpK8MHiHRanW2DNCtAcoE7pU625F+CY8oArGzazDt
         jwemj6aZ1rRO90Zr5jDts0fmZiowig410Jvb7UNxt4h2Owa6c9pHDO1jmZ9aECs6MUCfPCBGukG0m9Lj

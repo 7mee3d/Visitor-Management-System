@@ -33,18 +33,21 @@
             this.siticoneBorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneGradientPanelLeftSideNavBar = new Siticone.Desktop.UI.WinForms.SiticoneGradientPanel();
-            this.GGPanelTop = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.GMainPanelVMS = new Guna.UI2.WinForms.Guna2Panel();
-            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.GButtonSettingsSSection = new Guna.UI2.WinForms.Guna2Button();
             this.GButtonCurrentVisitorSection = new Guna.UI2.WinForms.Guna2Button();
             this.GButtonCheckOutSection = new Guna.UI2.WinForms.Guna2Button();
             this.GButtonAddNewVisitorSection = new Guna.UI2.WinForms.Guna2Button();
             this.GButtonDashboardSection = new Guna.UI2.WinForms.Guna2Button();
+            this.GGPanelTop = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
+            this.GMainPanelVMS = new Guna.UI2.WinForms.Guna2Panel();
+            this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.label2 = new System.Windows.Forms.Label();
             this.siticoneGradientPanelLeftSideNavBar.SuspendLayout();
             this.GGPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
+            this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm
@@ -61,9 +64,9 @@
             this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
             this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(89, 740);
+            this.siticoneControlBox1.Location = new System.Drawing.Point(1288, 19);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(45, 29);
+            this.siticoneControlBox1.Size = new System.Drawing.Size(45, 40);
             this.siticoneControlBox1.TabIndex = 1;
             this.siticoneControlBox1.Click += new System.EventHandler(this.siticoneControlBox1_Click);
             // 
@@ -80,51 +83,8 @@
             this.siticoneGradientPanelLeftSideNavBar.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.siticoneGradientPanelLeftSideNavBar.Location = new System.Drawing.Point(0, 0);
             this.siticoneGradientPanelLeftSideNavBar.Name = "siticoneGradientPanelLeftSideNavBar";
-            this.siticoneGradientPanelLeftSideNavBar.Size = new System.Drawing.Size(241, 822);
+            this.siticoneGradientPanelLeftSideNavBar.Size = new System.Drawing.Size(241, 890);
             this.siticoneGradientPanelLeftSideNavBar.TabIndex = 2;
-            // 
-            // GGPanelTop
-            // 
-            this.GGPanelTop.BorderColor = System.Drawing.Color.White;
-            this.GGPanelTop.Controls.Add(this.label1);
-            this.GGPanelTop.Controls.Add(this.guna2PictureBox1);
-            this.GGPanelTop.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
-            this.GGPanelTop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 4);
-            this.GGPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
-            this.GGPanelTop.Location = new System.Drawing.Point(241, 0);
-            this.GGPanelTop.Name = "GGPanelTop";
-            this.GGPanelTop.Size = new System.Drawing.Size(1171, 78);
-            this.GGPanelTop.TabIndex = 3;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.label1.Location = new System.Drawing.Point(77, 19);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(83, 40);
-            this.label1.TabIndex = 4;
-            this.label1.Text = "VMS";
-            // 
-            // GMainPanelVMS
-            // 
-            this.GMainPanelVMS.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.GMainPanelVMS.Location = new System.Drawing.Point(241, 78);
-            this.GMainPanelVMS.Name = "GMainPanelVMS";
-            this.GMainPanelVMS.Size = new System.Drawing.Size(1171, 744);
-            this.GMainPanelVMS.TabIndex = 4;
-            // 
-            // guna2PictureBox1
-            // 
-            this.guna2PictureBox1.Image = global::Visitor_Management_System.Properties.Resources.Logo_VMS;
-            this.guna2PictureBox1.ImageRotate = 0F;
-            this.guna2PictureBox1.Location = new System.Drawing.Point(28, 7);
-            this.guna2PictureBox1.Name = "guna2PictureBox1";
-            this.guna2PictureBox1.Size = new System.Drawing.Size(48, 63);
-            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2PictureBox1.TabIndex = 0;
-            this.guna2PictureBox1.TabStop = false;
             // 
             // GButtonSettingsSSection
             // 
@@ -143,7 +103,7 @@
             this.GButtonSettingsSSection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GButtonSettingsSSection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.GButtonSettingsSSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GButtonSettingsSSection.ForeColor = System.Drawing.Color.Black;
+            this.GButtonSettingsSSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.GButtonSettingsSSection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonSettingsSSection.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonSettingsSSection.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -151,7 +111,7 @@
             this.GButtonSettingsSSection.Image = ((System.Drawing.Image)(resources.GetObject("GButtonSettingsSSection.Image")));
             this.GButtonSettingsSSection.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonSettingsSSection.ImageOffset = new System.Drawing.Point(5, 0);
-            this.GButtonSettingsSSection.Location = new System.Drawing.Point(10, 462);
+            this.GButtonSettingsSSection.Location = new System.Drawing.Point(10, 523);
             this.GButtonSettingsSSection.Name = "GButtonSettingsSSection";
             this.GButtonSettingsSSection.Size = new System.Drawing.Size(220, 46);
             this.GButtonSettingsSSection.TabIndex = 4;
@@ -175,7 +135,7 @@
             this.GButtonCurrentVisitorSection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GButtonCurrentVisitorSection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.GButtonCurrentVisitorSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GButtonCurrentVisitorSection.ForeColor = System.Drawing.Color.Black;
+            this.GButtonCurrentVisitorSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.GButtonCurrentVisitorSection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonCurrentVisitorSection.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonCurrentVisitorSection.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -183,7 +143,7 @@
             this.GButtonCurrentVisitorSection.Image = ((System.Drawing.Image)(resources.GetObject("GButtonCurrentVisitorSection.Image")));
             this.GButtonCurrentVisitorSection.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonCurrentVisitorSection.ImageOffset = new System.Drawing.Point(5, 0);
-            this.GButtonCurrentVisitorSection.Location = new System.Drawing.Point(10, 406);
+            this.GButtonCurrentVisitorSection.Location = new System.Drawing.Point(10, 458);
             this.GButtonCurrentVisitorSection.Name = "GButtonCurrentVisitorSection";
             this.GButtonCurrentVisitorSection.Size = new System.Drawing.Size(220, 46);
             this.GButtonCurrentVisitorSection.TabIndex = 4;
@@ -207,7 +167,7 @@
             this.GButtonCheckOutSection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GButtonCheckOutSection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.GButtonCheckOutSection.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.GButtonCheckOutSection.ForeColor = System.Drawing.Color.Black;
+            this.GButtonCheckOutSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.GButtonCheckOutSection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonCheckOutSection.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonCheckOutSection.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -215,7 +175,7 @@
             this.GButtonCheckOutSection.Image = ((System.Drawing.Image)(resources.GetObject("GButtonCheckOutSection.Image")));
             this.GButtonCheckOutSection.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonCheckOutSection.ImageOffset = new System.Drawing.Point(5, 0);
-            this.GButtonCheckOutSection.Location = new System.Drawing.Point(10, 350);
+            this.GButtonCheckOutSection.Location = new System.Drawing.Point(10, 393);
             this.GButtonCheckOutSection.Name = "GButtonCheckOutSection";
             this.GButtonCheckOutSection.Size = new System.Drawing.Size(220, 46);
             this.GButtonCheckOutSection.TabIndex = 4;
@@ -239,7 +199,7 @@
             this.GButtonAddNewVisitorSection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GButtonAddNewVisitorSection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.GButtonAddNewVisitorSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GButtonAddNewVisitorSection.ForeColor = System.Drawing.Color.Black;
+            this.GButtonAddNewVisitorSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.GButtonAddNewVisitorSection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonAddNewVisitorSection.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonAddNewVisitorSection.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -247,7 +207,7 @@
             this.GButtonAddNewVisitorSection.Image = ((System.Drawing.Image)(resources.GetObject("GButtonAddNewVisitorSection.Image")));
             this.GButtonAddNewVisitorSection.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonAddNewVisitorSection.ImageOffset = new System.Drawing.Point(5, 0);
-            this.GButtonAddNewVisitorSection.Location = new System.Drawing.Point(10, 294);
+            this.GButtonAddNewVisitorSection.Location = new System.Drawing.Point(10, 328);
             this.GButtonAddNewVisitorSection.Name = "GButtonAddNewVisitorSection";
             this.GButtonAddNewVisitorSection.Size = new System.Drawing.Size(220, 46);
             this.GButtonAddNewVisitorSection.TabIndex = 4;
@@ -271,7 +231,7 @@
             this.GButtonDashboardSection.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.GButtonDashboardSection.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.GButtonDashboardSection.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GButtonDashboardSection.ForeColor = System.Drawing.Color.Black;
+            this.GButtonDashboardSection.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.GButtonDashboardSection.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonDashboardSection.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonDashboardSection.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -279,21 +239,88 @@
             this.GButtonDashboardSection.Image = ((System.Drawing.Image)(resources.GetObject("GButtonDashboardSection.Image")));
             this.GButtonDashboardSection.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonDashboardSection.ImageOffset = new System.Drawing.Point(5, 0);
-            this.GButtonDashboardSection.Location = new System.Drawing.Point(10, 238);
+            this.GButtonDashboardSection.Location = new System.Drawing.Point(10, 263);
             this.GButtonDashboardSection.Name = "GButtonDashboardSection";
             this.GButtonDashboardSection.Size = new System.Drawing.Size(220, 46);
             this.GButtonDashboardSection.TabIndex = 4;
             this.GButtonDashboardSection.Text = "Dashboard";
             this.GButtonDashboardSection.Click += new System.EventHandler(this.GButtonDashboardSection_Click);
             // 
+            // GGPanelTop
+            // 
+            this.GGPanelTop.BorderColor = System.Drawing.Color.White;
+            this.GGPanelTop.Controls.Add(this.label1);
+            this.GGPanelTop.Controls.Add(this.guna2PictureBox1);
+            this.GGPanelTop.Controls.Add(this.siticoneControlBox1);
+            this.GGPanelTop.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.GGPanelTop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.GGPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
+            this.GGPanelTop.Location = new System.Drawing.Point(241, 0);
+            this.GGPanelTop.Name = "GGPanelTop";
+            this.GGPanelTop.Size = new System.Drawing.Size(1359, 78);
+            this.GGPanelTop.TabIndex = 3;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI Black", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label1.Location = new System.Drawing.Point(77, 19);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(83, 40);
+            this.label1.TabIndex = 4;
+            this.label1.Text = "VMS";
+            // 
+            // guna2PictureBox1
+            // 
+            this.guna2PictureBox1.Image = global::Visitor_Management_System.Properties.Resources.Logo_VMS;
+            this.guna2PictureBox1.ImageRotate = 0F;
+            this.guna2PictureBox1.Location = new System.Drawing.Point(28, 7);
+            this.guna2PictureBox1.Name = "guna2PictureBox1";
+            this.guna2PictureBox1.Size = new System.Drawing.Size(48, 63);
+            this.guna2PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.guna2PictureBox1.TabIndex = 0;
+            this.guna2PictureBox1.TabStop = false;
+            // 
+            // GMainPanelVMS
+            // 
+            this.GMainPanelVMS.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.GMainPanelVMS.Location = new System.Drawing.Point(241, 78);
+            this.GMainPanelVMS.Name = "GMainPanelVMS";
+            this.GMainPanelVMS.Size = new System.Drawing.Size(1359, 779);
+            this.GMainPanelVMS.TabIndex = 4;
+            // 
+            // guna2GradientPanel1
+            // 
+            this.guna2GradientPanel1.BorderColor = System.Drawing.Color.White;
+            this.guna2GradientPanel1.Controls.Add(this.label2);
+            this.guna2GradientPanel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.guna2GradientPanel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 0);
+            this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(241, 857);
+            this.guna2GradientPanel1.Name = "guna2GradientPanel1";
+            this.guna2GradientPanel1.Size = new System.Drawing.Size(1359, 33);
+            this.guna2GradientPanel1.TabIndex = 4;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            this.label2.Location = new System.Drawing.Point(584, 10);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(174, 13);
+            this.label2.TabIndex = 0;
+            this.label2.Text = "© 2025 VMS . All rights reserved.";
+            // 
             // DashboardVMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1412, 822);
+            this.ClientSize = new System.Drawing.Size(1600, 890);
             this.Controls.Add(this.GMainPanelVMS);
-            this.Controls.Add(this.siticoneControlBox1);
+            this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.GGPanelTop);
             this.Controls.Add(this.siticoneGradientPanelLeftSideNavBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -304,6 +331,8 @@
             this.GGPanelTop.ResumeLayout(false);
             this.GGPanelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
+            this.guna2GradientPanel1.ResumeLayout(false);
+            this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -322,5 +351,7 @@
         private Guna.UI2.WinForms.Guna2Button GButtonCurrentVisitorSection;
         private Guna.UI2.WinForms.Guna2Button GButtonCheckOutSection;
         private Guna.UI2.WinForms.Guna2Panel GMainPanelVMS;
+        private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
+        private System.Windows.Forms.Label label2;
     }
 }
