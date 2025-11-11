@@ -1,0 +1,1017 @@
+ .--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--. 
+/ .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \
+\ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ /
+ \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ / 
+ / /\                                                                                                                / /\ 
+/ /\ \        ___        __                            _   _              __     ___     _ _                        / /\ \
+\ \/ /       |_ _|_ __  / _| ___  _ __ _ __ ___   __ _| |_(_) ___  _ __   \ \   / (_)___(_) |_ ___  _ __ ___        \ \/ /
+ \/ /         | || '_ \| |_ / _ \| '__| '_ ` _ \ / _` | __| |/ _ \| '_ \   \ \ / /| / __| | __/ _ \| '__/ __|        \/ / 
+ / /\         | || | | |  _| (_) | |  | | | | | | (_| | |_| | (_) | | | |   \ V / | \__ \ | || (_) | |  \__ \        / /\ 
+/ /\ \       |___|_| |_|_|  \___/|_|  |_| |_| |_|\__,_|\__|_|\___/|_| |_|    \_/  |_|___/_|\__\___/|_|  |___/       / /\ \
+\ \/ /                                                                                                              \ \/ /
+ \/ /                                                                                                                \/ / 
+ / /\.--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--./ /\ 
+/ /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \
+\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' /
+ `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--' 
+
+1++||++Joseph Lewis++||++R&D++||++10:30 AM++||++Budget Review++||++0
+2++||++Paisley Hill++||++IT Support++||++09:45 AM++||++Contract Signing++||++1
+3++||++Joseph Jenkins++||++Finance++||++08:00 AM++||++Client Follow-up++||++1
+4++||++David Mitchell++||++Marketing++||++09:30 AM++||++Vendor Call++||++0
+5++||++Aria Bailey++||++Finance++||++02:00 PM++||++Inventory Check++||++1
+6++||++Sadie Murphy++||++Marketing++||++10:45 AM++||++Support Ticket++||++0
+7++||++Wyatt Green++||++HR++||++12:45 PM++||++Performance Check++||++0
+8++||++Grace Anderson++||++Sales++||++02:00 PM++||++Performance Check++||++1
+9++||++Olivia Nelson++||++IT Support++||++08:45 AM++||++Team Meeting++||++1
+10++||++Lucas Thompson++||++Sales++||++11:30 AM++||++Product Demo++||++1
+11++||++James Pham++||++HR++||++05:30 PM++||++On-site Visit++||++0
+12++||++Gabriel Lewis++||++Customer Success++||++05:00 PM++||++System Maintenance++||++0
+13++||++Chloe Baker++||++Customer Success++||++12:30 PM++||++Client Onboarding++||++1
+14++||++Ethan Sanders++||++IT Support++||++03:45 PM++||++System Maintenance++||++1
+15++||++Joseph Pham++||++R&D++||++11:15 AM++||++On-site Visit++||++0
+16++||++Aria Taylor++||++Sales++||++04:30 PM++||++Team Meeting++||++1
+17++||++Hudson Evans++||++Customer Success++||++01:30 PM++||++Vendor Call++||++0
+18++||++Julian Foster++||++HR++||++04:15 PM++||++Quarterly Report++||++1
+19++||++Michael Perry++||++R&D++||++05:00 PM++||++Team Meeting++||++0
+20++||++Harper Grant++||++Finance++||++05:45 PM++||++Support Ticket++||++1
+21++||++Gabriel Taylor++||++Marketing++||++10:45 AM++||++Training Session++||++1
+22++||++Nora Torres++||++Customer Success++||++11:30 AM++||++On-site Visit++||++1
+23++||++Hannah Anderson++||++Sales++||++05:00 PM++||++Inventory Check++||++0
+24++||++Levi Flores++||++IT Support++||++04:45 PM++||++Quarterly Report++||++1
+25++||++Levi Thompson++||++HR++||++02:00 PM++||++System Maintenance++||++1
+26++||++Gabriel Green++||++Sales++||++05:45 PM++||++Interview++||++1
+27++||++Daniel Morris++||++Customer Success++||++01:30 PM++||++Client Follow-up++||++1
+28++||++Mia Sanders++||++IT Support++||++04:30 PM++||++Budget Planning++||++1
+29++||++Aiden Cooper++||++Finance++||++12:30 PM++||++Interview++||++1
+30++||++Isaac Taylor++||++Operations++||++09:15 AM++||++Training Session++||++0
+31++||++Eleanor Thompson++||++Finance++||++10:45 AM++||++Client Onboarding++||++0
+32++||++Logan Johnson++||++Finance++||++12:15 PM++||++Product Demo++||++1
+33++||++Katherine Carter++||++Customer Success++||++10:15 AM++||++Client Follow-up++||++0
+34++||++Hannah Powell++||++HR++||++02:00 PM++||++Budget Review++||++1
+35++||++Benjamin Sanders++||++Finance++||++05:15 PM++||++Vendor Call++||++0
+36++||++Joseph Ward++||++HR++||++02:45 PM++||++Inventory Check++||++1
+37++||++Hudson Edwards++||++Operations++||++08:00 AM++||++Budget Planning++||++0
+38++||++Zoey Collins++||++Finance++||++12:30 PM++||++Vendor Call++||++1
+39++||++Emma King++||++Marketing++||++02:15 PM++||++Quarterly Report++||++1
+40++||++Hudson Ross++||++Marketing++||++08:00 AM++||++Client Onboarding++||++0
+41++||++Henry Mitchell++||++Customer Success++||++02:45 PM++||++Budget Review++||++0
+42++||++Violet Martin++||++Customer Success++||++04:30 PM++||++Performance Check++||++1
+43++||++Noah Scott++||++Finance++||++11:15 AM++||++Vendor Call++||++1
+44++||++Lily Murphy++||++Finance++||++05:00 PM++||++Budget Review++||++1
+45++||++Aiden Rivera++||++Operations++||++11:15 AM++||++System Upgrade++||++1
+46++||++Joseph Young++||++Sales++||++12:30 PM++||++Budget Review++||++1
+47++||++Daniel Webb++||++Finance++||++01:45 PM++||++Budget Review++||++1
+48++||++Henry White++||++Sales++||++11:30 AM++||++Product Demo++||++0
+49++||++Paisley Morgan++||++Sales++||++11:45 AM++||++Vendor Call++||++1
+50++||++Katherine Torres++||++IT Support++||++04:30 PM++||++Inventory Check++||++1
+51++||++Wyatt Carter++||++Sales++||++08:30 AM++||++Contract Signing++||++0
+52++||++Layla Green++||++HR++||++12:15 PM++||++Contract Signing++||++0
+53++||++Katherine Garcia++||++IT Support++||++05:15 PM++||++Quarterly Report++||++1
+54++||++David Morris++||++IT Support++||++10:00 AM++||++Project Discussion++||++1
+55++||++Ethan Thompson++||++HR++||++09:00 AM++||++Contract Signing++||++1
+56++||++James Collins++||++R&D++||++12:15 PM++||++System Maintenance++||++1
+57++||++Lucas Flores++||++R&D++||++04:15 PM++||++Quarterly Report++||++1
+58++||++Ava Taylor++||++IT Support++||++11:45 AM++||++Team Meeting++||++0
+59++||++Abigail Robinson++||++R&D++||++10:15 AM++||++Inventory Check++||++1
+60++||++Ethan Lewis++||++HR++||++10:15 AM++||++Quarterly Report++||++1
+61++||++James Stewart++||++Customer Success++||++01:45 PM++||++System Upgrade++||++1
+62++||++Henry Reed++||++Customer Success++||++09:45 AM++||++Client Onboarding++||++1
+63++||++Mia Parker++||++Marketing++||++04:15 PM++||++Training Session++||++0
+64++||++Abigail Morales++||++HR++||++08:30 AM++||++System Maintenance++||++0
+65++||++Henry Flores++||++HR++||++03:15 PM++||++System Upgrade++||++1
+66++||++Isabella Rodriguez++||++R&D++||++10:15 AM++||++Team Meeting++||++1
+67++||++Nora Cooper++||++Finance++||++02:30 PM++||++System Maintenance++||++0
+68++||++Hudson Ward++||++Operations++||++03:00 PM++||++Budget Planning++||++0
+69++||++Abigail Foster++||++Customer Success++||++04:00 PM++||++System Maintenance++||++0
+70++||++Levi Carter++||++Sales++||++11:45 AM++||++Budget Planning++||++0
+71++||++Connor Walker++||++Marketing++||++08:30 AM++||++Contract Signing++||++0
+72++||++Jayden Bailey++||++IT Support++||++09:00 AM++||++Support Ticket++||++0
+73++||++Samuel Baker++||++Operations++||++05:00 PM++||++Team Meeting++||++0
+74++||++Mia Ross++||++HR++||++10:00 AM++||++Quarterly Report++||++1
+75++||++Lucy Grant++||++Marketing++||++01:30 PM++||++UX Review++||++0
+76++||++Evelyn Lewis++||++HR++||++08:15 AM++||++Support Ticket++||++0
+77++||++Lucas Foster++||++R&D++||++04:15 PM++||++System Maintenance++||++0
+78++||++Lily Johnson++||++Marketing++||++12:15 PM++||++Contract Signing++||++0
+79++||++Owen Reed++||++Finance++||++04:00 PM++||++Client Onboarding++||++1
+80++||++David Edwards++||++Finance++||++09:00 AM++||++Client Follow-up++||++1
+81++||++Stella Martin++||++R&D++||++01:00 PM++||++Support Ticket++||++1
+82++||++Matthew Edwards++||++Customer Success++||++09:30 AM++||++Contract Signing++||++0
+83++||++Hazel Lewis++||++IT Support++||++05:00 PM++||++Performance Check++||++1
+84++||++Henry Howard++||++IT Support++||++02:00 PM++||++UX Review++||++1
+85++||++Katherine Foster++||++HR++||++03:00 PM++||++Support Ticket++||++1
+86++||++Riley Scott++||++HR++||++10:45 AM++||++Product Demo++||++1
+87++||++Lucy Lee++||++R&D++||++04:45 PM++||++Training Session++||++0
+88++||++Katherine Nelson++||++Finance++||++12:30 PM++||++On-site Visit++||++0
+89++||++Isaac Rivera++||++IT Support++||++09:15 AM++||++Quarterly Report++||++1
+90++||++Isabella Ward++||++Sales++||++12:15 PM++||++System Maintenance++||++0
+91++||++Nathan King++||++Operations++||++05:00 PM++||++Support Ticket++||++1
+92++||++Chloe Lee++||++R&D++||++02:30 PM++||++System Maintenance++||++1
+93++||++Sadie Reed++||++Finance++||++01:30 PM++||++Budget Review++||++1
+94++||++Harper Garcia++||++Finance++||++11:15 AM++||++Vendor Call++||++1
+95++||++Harper Allen++||++HR++||++03:30 PM++||++Inventory Check++||++0
+96++||++Mia Cox++||++Sales++||++02:15 PM++||++On-site Visit++||++1
+97++||++Violet Rodriguez++||++IT Support++||++08:30 AM++||++Vendor Call++||++1
+98++||++Maya Powell++||++IT Support++||++04:30 PM++||++Budget Planning++||++0
+99++||++Lily Bailey++||++Marketing++||++04:45 PM++||++UX Review++||++1
+100++||++Lily Thompson++||++Sales++||++01:30 PM++||++On-site Visit++||++1
+101++||++Michael Phillips++||++Customer Success++||++04:30 PM++||++Product Demo++||++0
+102++||++Alexander Phillips++||++R&D++||++05:00 PM++||++System Maintenance++||++1
+103++||++Katherine Cox++||++Finance++||++12:00 PM++||++Performance Check++||++1
+104++||++Natalie Baker++||++Operations++||++02:00 PM++||++System Upgrade++||++1
+105++||++Samuel Baker++||++R&D++||++03:00 PM++||++On-site Visit++||++0
+106++||++Layla Green++||++IT Support++||++05:15 PM++||++System Maintenance++||++1
+107++||++Noah Brown++||++HR++||++10:45 AM++||++Product Demo++||++0
+108++||++Charlotte Mitchell++||++R&D++||++04:00 PM++||++Interview++||++0
+109++||++Layla Grant++||++Customer Success++||++01:15 PM++||++Vendor Call++||++1
+110++||++Henry Reed++||++Marketing++||++09:15 AM++||++Quarterly Report++||++0
+111++||++Benjamin Long++||++Operations++||++10:45 AM++||++Team Briefing++||++0
+112++||++Isabella Ross++||++R&D++||++03:30 PM++||++Vendor Call++||++0
+113++||++Luna Pham++||++Customer Success++||++05:30 PM++||++Client Onboarding++||++1
+114++||++David Stewart++||++Marketing++||++11:00 AM++||++Client Onboarding++||++0
+115++||++Noah Green++||++Finance++||++05:00 PM++||++System Upgrade++||++0
+116++||++Grace Cooper++||++Operations++||++10:00 AM++||++System Maintenance++||++1
+117++||++Benjamin Bell++||++R&D++||++09:15 AM++||++Client Follow-up++||++1
+118++||++Elijah Anderson++||++Customer Success++||++08:15 AM++||++UX Review++||++0
+119++||++Ethan Parker++||++HR++||++12:45 PM++||++Product Demo++||++0
+120++||++Benjamin Garcia++||++Operations++||++11:00 AM++||++Project Discussion++||++0
+121++||++Isabella Allen++||++HR++||++01:45 PM++||++Team Meeting++||++1
+122++||++Logan Collins++||++Operations++||++09:45 AM++||++Training Session++||++1
+123++||++Logan Clark++||++IT Support++||++11:00 AM++||++Quarterly Report++||++1
+124++||++Gabriel Walker++||++Sales++||++01:30 PM++||++Project Discussion++||++1
+125++||++Evelyn Scott++||++Operations++||++04:15 PM++||++Client Follow-up++||++0
+126++||++Isabella Baker++||++Sales++||++10:45 AM++||++Contract Signing++||++1
+127++||++Lucas Collins++||++HR++||++08:45 AM++||++System Maintenance++||++0
+128++||++Grace Sanders++||++Operations++||++02:45 PM++||++Budget Review++||++0
+129++||++Isaac Lee++||++Marketing++||++04:45 PM++||++Training Session++||++1
+130++||++James Evans++||++Marketing++||++04:45 PM++||++Client Onboarding++||++1
+131++||++Jack Turner++||++HR++||++04:00 PM++||++Training Session++||++1
+132++||++Michael Reed++||++IT Support++||++12:30 PM++||++Budget Planning++||++0
+133++||++Jayden Parker++||++Operations++||++11:30 AM++||++Team Meeting++||++1
+134++||++Gabriel Young++||++R&D++||++02:00 PM++||++Quarterly Report++||++0
+135++||++Wyatt Rivera++||++HR++||++02:45 PM++||++Budget Review++||++1
+136++||++Paisley Nelson++||++Customer Success++||++11:45 AM++||++Client Follow-up++||++0
+137++||++Aurora Webb++||++Finance++||++05:30 PM++||++Team Meeting++||++0
+138++||++Carter Webb++||++Operations++||++01:15 PM++||++Contract Signing++||++0
+139++||++Daniel Turner++||++IT Support++||++08:45 AM++||++Vendor Call++||++0
+140++||++Ethan Olson++||++R&D++||++02:00 PM++||++Support Ticket++||++0
+141++||++Ava Martin++||++Marketing++||++04:00 PM++||++UX Review++||++1
+142++||++Lily Torres++||++Operations++||++08:45 AM++||++Inventory Check++||++0
+143++||++Hazel Nelson++||++R&D++||++10:15 AM++||++Team Meeting++||++0
+144++||++Samuel Webb++||++Sales++||++05:30 PM++||++Interview++||++1
+145++||++Olivia Rogers++||++Marketing++||++12:00 PM++||++On-site Visit++||++0
+146++||++Isabella Bishop++||++Marketing++||++01:45 PM++||++Performance Check++||++1
+147++||++David Hall++||++IT Support++||++10:15 AM++||++Budget Planning++||++1
+148++||++Aaron Martinez++||++Sales++||++05:30 PM++||++Inventory Check++||++1
+149++||++Benjamin Pham++||++Finance++||++09:45 AM++||++Team Briefing++||++1
+150++||++Samuel Ward++||++Sales++||++09:45 AM++||++System Maintenance++||++1
+151++||++James Roberts++||++R&D++||++10:00 AM++||++Contract Signing++||++1
+152++||++Penelope Olson++||++Sales++||++09:30 AM++||++Product Demo++||++1
+153++||++Julian Edwards++||++R&D++||++09:30 AM++||++Budget Planning++||++1
+154++||++Aaron Roberts++||++Finance++||++01:45 PM++||++Contract Signing++||++1
+155++||++Aurora Walker++||++Sales++||++05:30 PM++||++Quarterly Report++||++1
+156++||++Mia Baker++||++Operations++||++03:45 PM++||++Support Ticket++||++0
+157++||++Zoe Roberts++||++Finance++||++11:15 AM++||++Team Meeting++||++0
+158++||++Ella Olson++||++Operations++||++05:15 PM++||++Project Discussion++||++1
+159++||++Levi Murphy++||++Sales++||++11:15 AM++||++Team Meeting++||++0
+160++||++Hannah Murphy++||++Sales++||++02:00 PM++||++Quarterly Report++||++1
+161++||++Hazel Adams++||++Sales++||++12:45 PM++||++Quarterly Report++||++0
+162++||++Aiden Martin++||++Customer Success++||++04:15 PM++||++System Upgrade++||++0
+163++||++Levi Nelson++||++Finance++||++01:45 PM++||++Project Discussion++||++1
+164++||++Olivia Carter++||++IT Support++||++05:15 PM++||++Project Discussion++||++0
+165++||++Paisley Reed++||++HR++||++05:45 PM++||++System Upgrade++||++0
+166++||++Elijah Lee++||++Operations++||++08:30 AM++||++Interview++||++1
+167++||++Matthew Collins++||++HR++||++02:30 PM++||++Support Ticket++||++0
+168++||++Benjamin Smith++||++R&D++||++10:30 AM++||++Client Onboarding++||++1
+169++||++Maya Evans++||++R&D++||++03:45 PM++||++System Maintenance++||++0
+170++||++Emma Bell++||++R&D++||++12:45 PM++||++Vendor Call++||++0
+171++||++Isabella Evans++||++Customer Success++||++02:15 PM++||++Contract Signing++||++0
+172++||++Ryan Scott++||++IT Support++||++09:00 AM++||++Vendor Call++||++1
+173++||++Noah Flores++||++Marketing++||++01:30 PM++||++Budget Planning++||++1
+174++||++Emma Cooper++||++R&D++||++10:45 AM++||++Budget Review++||++0
+175++||++Noah Bishop++||++Marketing++||++11:45 AM++||++Support Ticket++||++1
+176++||++Connor Olson++||++Operations++||++11:00 AM++||++Support Ticket++||++1
+177++||++Elijah Baker++||++Customer Success++||++10:00 AM++||++UX Review++||++0
+178++||++Sadie Grant++||++Customer Success++||++03:45 PM++||++Project Discussion++||++1
+179++||++Daniel Bell++||++Marketing++||++10:00 AM++||++Project Discussion++||++1
+180++||++Stella Sanders++||++IT Support++||++05:15 PM++||++Vendor Call++||++1
+181++||++James Powell++||++Finance++||++08:00 AM++||++Quarterly Report++||++1
+182++||++Henry Parker++||++HR++||++11:15 AM++||++Performance Check++||++1
+183++||++Ryan Nelson++||++Marketing++||++03:15 PM++||++Contract Signing++||++0
+184++||++Charlotte Cox++||++R&D++||++09:30 AM++||++Product Demo++||++1
+185++||++Sebastian Pham++||++HR++||++10:30 AM++||++Vendor Call++||++1
+186++||++Connor Rogers++||++HR++||++09:15 AM++||++Client Follow-up++||++0
+187++||++Liam Taylor++||++Marketing++||++09:00 AM++||++Inventory Check++||++1
+188++||++Hudson Morris++||++Sales++||++01:00 PM++||++System Upgrade++||++1
+189++||++Sophia Adams++||++R&D++||++08:30 AM++||++Performance Check++||++0
+190++||++Luna Robinson++||++Finance++||++08:00 AM++||++Team Meeting++||++1
+191++||++Sophia Carter++||++Sales++||++02:30 PM++||++Vendor Call++||++0
+192++||++Sadie Perry++||++Finance++||++12:45 PM++||++Performance Check++||++1
+193++||++Liam Ross++||++Customer Success++||++04:30 PM++||++Contract Signing++||++0
+194++||++Abigail Brown++||++Finance++||++04:45 PM++||++Training Session++||++0
+195++||++Ava Morales++||++Marketing++||++09:15 AM++||++Team Briefing++||++0
+196++||++Chloe Hughes++||++Customer Success++||++12:15 PM++||++Support Ticket++||++1
+197++||++Connor Lewis++||++R&D++||++04:45 PM++||++Budget Review++||++0
+198++||++Ethan Richardson++||++Sales++||++11:30 AM++||++Contract Signing++||++0
+199++||++Aria Clark++||++Finance++||++01:15 PM++||++Inventory Check++||++1
+200++||++Ella Cox++||++Sales++||++04:30 PM++||++System Maintenance++||++0
+201++||++Owen Mitchell++||++IT Support++||++01:30 PM++||++UX Review++||++0
+202++||++Olivia Carter++||++Customer Success++||++01:45 PM++||++Interview++||++1
+203++||++Sadie Clark++||++Operations++||++03:00 PM++||++Client Follow-up++||++1
+204++||++Victoria Torres++||++HR++||++11:45 AM++||++Budget Planning++||++0
+205++||++Benjamin Morales++||++R&D++||++04:30 PM++||++Project Discussion++||++0
+206++||++Brooks Torres++||++Sales++||++01:45 PM++||++Client Onboarding++||++1
+207++||++Samuel Young++||++R&D++||++10:45 AM++||++Team Briefing++||++1
+208++||++Layla Ward++||++Operations++||++10:30 AM++||++System Maintenance++||++1
+209++||++Gabriel Martin++||++Operations++||++08:15 AM++||++Client Onboarding++||++1
+210++||++Ella Perry++||++HR++||++04:45 PM++||++Team Meeting++||++0
+211++||++Grace Jackson++||++Customer Success++||++10:30 AM++||++Vendor Call++||++1
+212++||++Jayden Webb++||++R&D++||++08:45 AM++||++System Upgrade++||++0
+213++||++Riley Cooper++||++Sales++||++04:15 PM++||++Budget Planning++||++1
+214++||++Brooks Martinez++||++HR++||++08:00 AM++||++Team Briefing++||++0
+215++||++Stella Anderson++||++R&D++||++03:45 PM++||++Training Session++||++0
+216++||++Natalie Nelson++||++Customer Success++||++12:00 PM++||++Product Demo++||++0
+217++||++Stella Harris++||++IT Support++||++12:45 PM++||++Team Briefing++||++0
+218++||++Evelyn Cox++||++R&D++||++03:00 PM++||++Client Follow-up++||++1
+219++||++Luna Martinez++||++HR++||++09:30 AM++||++Contract Signing++||++0
+220++||++Noah Flores++||++Sales++||++11:30 AM++||++Training Session++||++1
+221++||++Lucy Powell++||++HR++||++10:15 AM++||++Budget Planning++||++0
+222++||++Logan Stewart++||++Sales++||++02:30 PM++||++Vendor Call++||++1
+223++||++Mason Johnson++||++Operations++||++10:45 AM++||++Interview++||++1
+224++||++Penelope Clark++||++Customer Success++||++12:30 PM++||++On-site Visit++||++0
+225++||++Daniel Lee++||++Customer Success++||++01:30 PM++||++UX Review++||++0
+226++||++Luna Roberts++||++Customer Success++||++01:00 PM++||++Budget Review++||++1
+227++||++Nathan Long++||++Operations++||++08:15 AM++||++Quarterly Report++||++0
+228++||++Noah Bell++||++Finance++||++03:30 PM++||++Training Session++||++0
+229++||++Maya Long++||++IT Support++||++09:45 AM++||++On-site Visit++||++1
+230++||++James Mitchell++||++HR++||++11:30 AM++||++Client Onboarding++||++0
+231++||++Luna Robinson++||++Marketing++||++03:30 PM++||++Support Ticket++||++1
+232++||++Olivia Cook++||++Operations++||++09:00 AM++||++Support Ticket++||++0
+233++||++Gabriel Johnson++||++Operations++||++05:00 PM++||++Client Follow-up++||++0
+234++||++Carter Turner++||++HR++||++09:30 AM++||++Quarterly Report++||++1
+235++||++Jack Cox++||++Sales++||++08:30 AM++||++Project Discussion++||++0
+236++||++Sebastian Cook++||++HR++||++09:30 AM++||++Inventory Check++||++1
+237++||++Aria Walker++||++HR++||++01:45 PM++||++Vendor Call++||++1
+238++||++Lucy Collins++||++Customer Success++||++11:45 AM++||++Quarterly Report++||++1
+239++||++Carter Roberts++||++Finance++||++11:00 AM++||++System Upgrade++||++0
+240++||++Logan Morgan++||++Customer Success++||++03:00 PM++||++Budget Review++||++0
+241++||++Evelyn Adams++||++Operations++||++08:45 AM++||++Inventory Check++||++1
+242++||++Ava Cox++||++IT Support++||++10:30 AM++||++Budget Review++||++1
+243++||++Connor Allen++||++Customer Success++||++05:15 PM++||++Product Demo++||++0
+244++||++Levi Edwards++||++Customer Success++||++02:00 PM++||++System Maintenance++||++1
+245++||++Ava Campbell++||++Customer Success++||++08:00 AM++||++UX Review++||++1
+246++||++Hudson Morales++||++Operations++||++08:00 AM++||++Interview++||++0
+247++||++Matthew Webb++||++Operations++||++12:45 PM++||++Team Briefing++||++1
+248++||++Owen Thompson++||++Customer Success++||++12:00 PM++||++Inventory Check++||++0
+249++||++Daniel Martinez++||++Customer Success++||++11:00 AM++||++On-site Visit++||++1
+250++||++Olivia Long++||++Marketing++||++10:00 AM++||++Contract Signing++||++0
+251++||++Aurora Walker++||++IT Support++||++03:45 PM++||++Performance Check++||++0
+252++||++Maya Jackson++||++Marketing++||++08:45 AM++||++UX Review++||++1
+253++||++Riley Jenkins++||++Sales++||++08:30 AM++||++Team Meeting++||++0
+254++||++Layla Lee++||++Finance++||++02:15 PM++||++Client Follow-up++||++1
+255++||++Lily Carter++||++HR++||++10:45 AM++||++Performance Check++||++1
+256++||++Henry Olson++||++HR++||++12:00 PM++||++Project Discussion++||++0
+257++||++Noah Lee++||++Operations++||++09:45 AM++||++Performance Check++||++0
+258++||++Sophia Torres++||++Marketing++||++04:15 PM++||++Interview++||++1
+259++||++Wyatt Olson++||++Marketing++||++05:00 PM++||++Inventory Check++||++1
+260++||++Evelyn Morales++||++IT Support++||++05:15 PM++||++Performance Check++||++0
+261++||++Liam Bishop++||++Customer Success++||++01:45 PM++||++Interview++||++1
+262++||++Nora Cooper++||++Customer Success++||++08:30 AM++||++Support Ticket++||++0
+263++||++Nathan Walker++||++IT Support++||++10:00 AM++||++Project Discussion++||++1
+264++||++Wyatt Hill++||++IT Support++||++12:15 PM++||++Training Session++||++1
+265++||++Wyatt Morgan++||++R&D++||++09:00 AM++||++Project Discussion++||++1
+266++||++Lily Hughes++||++IT Support++||++09:30 AM++||++Vendor Call++||++1
+267++||++James Parker++||++HR++||++05:45 PM++||++Vendor Call++||++1
+268++||++Elijah Grant++||++Marketing++||++08:00 AM++||++Team Meeting++||++0
+269++||++Ryan Green++||++Marketing++||++09:15 AM++||++UX Review++||++1
+270++||++Brooks Edwards++||++Sales++||++02:30 PM++||++Budget Review++||++0
+271++||++Logan Jackson++||++R&D++||++12:45 PM++||++Contract Signing++||++0
+272++||++Chloe Hughes++||++Finance++||++10:45 AM++||++Budget Review++||++1
+273++||++Penelope Mitchell++||++Sales++||++05:00 PM++||++Vendor Call++||++0
+274++||++Evelyn Jenkins++||++HR++||++09:30 AM++||++Quarterly Report++||++0
+275++||++Harper Pham++||++Customer Success++||++08:00 AM++||++Interview++||++0
+276++||++Jayden Martinez++||++Sales++||++11:00 AM++||++UX Review++||++1
+277++||++David Mitchell++||++IT Support++||++08:30 AM++||++Client Onboarding++||++0
+278++||++Wyatt Nelson++||++Finance++||++04:30 PM++||++Quarterly Report++||++0
+279++||++Olivia Young++||++Sales++||++01:15 PM++||++System Maintenance++||++0
+280++||++Liam Smith++||++R&D++||++10:00 AM++||++On-site Visit++||++0
+281++||++Maya Phillips++||++Customer Success++||++03:45 PM++||++Client Onboarding++||++0
+282++||++Evelyn Webb++||++Customer Success++||++09:45 AM++||++Quarterly Report++||++1
+283++||++Chloe Brown++||++Customer Success++||++11:30 AM++||++Interview++||++0
+284++||++Grace Adams++||++Operations++||++11:15 AM++||++Inventory Check++||++1
+285++||++Amelia Carter++||++Marketing++||++03:15 PM++||++Performance Check++||++1
+286++||++Jayden Campbell++||++Finance++||++03:00 PM++||++UX Review++||++0
+287++||++Aiden Stewart++||++Marketing++||++08:15 AM++||++Performance Check++||++1
+288++||++Henry Young++||++Customer Success++||++03:45 PM++||++Budget Planning++||++1
+289++||++Mia Young++||++Operations++||++11:30 AM++||++Team Meeting++||++0
+290++||++James Rodriguez++||++IT Support++||++04:15 PM++||++UX Review++||++0
+291++||++Grace Roberts++||++Sales++||++08:45 AM++||++Contract Signing++||++0
+292++||++Julian King++||++HR++||++08:30 AM++||++Inventory Check++||++0
+293++||++Zoey Torres++||++Finance++||++03:00 PM++||++System Upgrade++||++0
+294++||++Liam Walker++||++Marketing++||++02:45 PM++||++Contract Signing++||++1
+295++||++Nora Grant++||++Sales++||++08:45 AM++||++Support Ticket++||++1
+296++||++Grace Roberts++||++Operations++||++11:45 AM++||++Vendor Call++||++0
+297++||++Mason Cox++||++Sales++||++10:45 AM++||++Team Briefing++||++1
+298++||++Joseph Olson++||++HR++||++04:45 PM++||++Vendor Call++||++1
+299++||++Eleanor Baker++||++Marketing++||++03:00 PM++||++Project Discussion++||++0
+300++||++Hudson Murphy++||++Customer Success++||++11:30 AM++||++Client Onboarding++||++0
+301++||++Daniel Hall++||++IT Support++||++03:45 PM++||++Interview++||++0
+302++||++Aiden Brown++||++HR++||++09:30 AM++||++Project Discussion++||++0
+303++||++Zoe Thomas++||++HR++||++09:00 AM++||++Product Demo++||++1
+304++||++Brooks Rogers++||++Sales++||++04:15 PM++||++Client Onboarding++||++1
+305++||++Levi Smith++||++HR++||++05:45 PM++||++On-site Visit++||++1
+306++||++Zoey Ward++||++Operations++||++11:15 AM++||++Team Briefing++||++0
+307++||++Ava Murphy++||++Marketing++||++05:15 PM++||++Vendor Call++||++1
+308++||++Levi Bell++||++Customer Success++||++03:45 PM++||++Contract Signing++||++1
+309++||++Abigail Smith++||++IT Support++||++05:15 PM++||++Budget Review++||++1
+310++||++Mason Clark++||++Finance++||++03:30 PM++||++Training Session++||++1
+311++||++Jayden Murphy++||++IT Support++||++05:00 PM++||++Inventory Check++||++0
+312++||++Nathan Harris++||++IT Support++||++09:00 AM++||++System Maintenance++||++0
+313++||++Sophia Bell++||++Marketing++||++05:30 PM++||++Support Ticket++||++0
+314++||++Emma Adams++||++R&D++||++03:45 PM++||++Product Demo++||++1
+315++||++Riley Allen++||++R&D++||++05:15 PM++||++Contract Signing++||++1
+316++||++Riley Lewis++||++Marketing++||++08:45 AM++||++Quarterly Report++||++1
+317++||++Michael Ross++||++Customer Success++||++03:00 PM++||++Performance Check++||++0
+318++||++Noah King++||++HR++||++01:45 PM++||++UX Review++||++0
+319++||++Benjamin Jenkins++||++R&D++||++09:45 AM++||++Performance Check++||++1
+320++||++Paisley Evans++||++Marketing++||++04:00 PM++||++Contract Signing++||++0
+321++||++Aaron Bailey++||++IT Support++||++11:30 AM++||++Product Demo++||++1
+322++||++Sebastian Baker++||++R&D++||++02:30 PM++||++Budget Planning++||++0
+323++||++Maya Grant++||++HR++||++05:00 PM++||++Inventory Check++||++0
+324++||++Mason Hall++||++Sales++||++05:30 PM++||++Client Follow-up++||++1
+325++||++Matthew Turner++||++Finance++||++08:00 AM++||++Budget Planning++||++0
+326++||++Henry Carter++||++IT Support++||++09:30 AM++||++Quarterly Report++||++1
+327++||++Samuel Harris++||++Finance++||++04:00 PM++||++Team Briefing++||++1
+328++||++Eleanor Bell++||++Marketing++||++11:15 AM++||++Quarterly Report++||++0
+329++||++Alexander Evans++||++Operations++||++05:15 PM++||++Performance Check++||++1
+330++||++Mia Foster++||++IT Support++||++12:00 PM++||++On-site Visit++||++0
+331++||++Stella Cooper++||++IT Support++||++02:15 PM++||++Budget Planning++||++0
+332++||++Noah Long++||++Marketing++||++10:30 AM++||++Interview++||++1
+333++||++Abigail Campbell++||++Marketing++||++08:30 AM++||++Contract Signing++||++0
+334++||++Zoe Scott++||++Operations++||++02:45 PM++||++Budget Planning++||++0
+335++||++Wyatt Cook++||++Marketing++||++11:15 AM++||++System Maintenance++||++0
+336++||++Elijah Ross++||++Finance++||++08:15 AM++||++Team Briefing++||++0
+337++||++Lucas Edwards++||++Marketing++||++10:30 AM++||++Interview++||++1
+338++||++Brooks Hughes++||++Sales++||++11:15 AM++||++Vendor Call++||++1
+339++||++Chloe Nelson++||++HR++||++10:15 AM++||++Team Briefing++||++0
+340++||++Matthew Allen++||++Customer Success++||++04:00 PM++||++Project Discussion++||++0
+341++||++Sebastian Grant++||++Operations++||++04:45 PM++||++Budget Review++||++0
+342++||++Victoria Grant++||++Marketing++||++08:15 AM++||++Quarterly Report++||++0
+343++||++Evelyn Edwards++||++Marketing++||++12:30 PM++||++Interview++||++1
+344++||++Ella Bailey++||++Operations++||++04:00 PM++||++Training Session++||++1
+345++||++Harper Thomas++||++R&D++||++04:15 PM++||++Support Ticket++||++0
+346++||++Samuel Thomas++||++Operations++||++02:30 PM++||++UX Review++||++1
+347++||++Daniel Murphy++||++Operations++||++05:00 PM++||++Performance Check++||++1
+348++||++Brooks Grant++||++R&D++||++09:30 AM++||++Product Demo++||++0
+349++||++Aaron Hughes++||++Sales++||++09:45 AM++||++Training Session++||++1
+350++||++Katherine Campbell++||++Sales++||++11:00 AM++||++Vendor Call++||++0
+351++||++Grace Scott++||++Sales++||++05:00 PM++||++Project Discussion++||++1
+352++||++Aurora Webb++||++IT Support++||++02:00 PM++||++UX Review++||++0
+353++||++Ava Flores++||++Marketing++||++04:15 PM++||++System Maintenance++||++1
+354++||++Hazel Flores++||++Customer Success++||++03:15 PM++||++Client Follow-up++||++1
+355++||++Joseph Bell++||++HR++||++08:30 AM++||++Support Ticket++||++0
+356++||++Evelyn Adams++||++Marketing++||++01:45 PM++||++On-site Visit++||++0
+357++||++Ethan Johnson++||++HR++||++01:45 PM++||++Team Briefing++||++1
+358++||++Aria Hill++||++Sales++||++02:15 PM++||++Budget Review++||++1
+359++||++Jack Turner++||++IT Support++||++05:30 PM++||++Performance Check++||++0
+360++||++Katherine Nelson++||++Marketing++||++04:45 PM++||++On-site Visit++||++0
+361++||++Owen Young++||++Marketing++||++04:00 PM++||++UX Review++||++1
+362++||++Michael Morris++||++R&D++||++10:30 AM++||++Interview++||++0
+363++||++Isaac Reed++||++HR++||++01:15 PM++||++Quarterly Report++||++1
+364++||++Samuel Campbell++||++HR++||++02:00 PM++||++Training Session++||++0
+365++||++Jack Rodriguez++||++Sales++||++08:15 AM++||++UX Review++||++1
+366++||++Noah Reed++||++Customer Success++||++04:30 PM++||++Quarterly Report++||++0
+367++||++Isabella Hughes++||++Sales++||++04:45 PM++||++Budget Planning++||++1
+368++||++Ella Evans++||++IT Support++||++08:15 AM++||++Client Onboarding++||++0
+369++||++Evelyn Carter++||++Customer Success++||++12:00 PM++||++Team Briefing++||++0
+370++||++Hudson Long++||++HR++||++09:45 AM++||++Client Follow-up++||++0
+371++||++Matthew Bishop++||++R&D++||++05:00 PM++||++Contract Signing++||++0
+372++||++Henry Long++||++Customer Success++||++11:00 AM++||++Budget Review++||++0
+373++||++Natalie Turner++||++IT Support++||++04:45 PM++||++Budget Planning++||++1
+374++||++Joseph Carter++||++Marketing++||++02:45 PM++||++Team Meeting++||++1
+375++||++Connor Bishop++||++HR++||++05:00 PM++||++Performance Check++||++1
+376++||++Jack Lewis++||++Customer Success++||++05:30 PM++||++Contract Signing++||++0
+377++||++Michael Baker++||++Marketing++||++10:45 AM++||++Quarterly Report++||++1
+378++||++Julian Garcia++||++Sales++||++12:45 PM++||++Performance Check++||++0
+379++||++Chloe Reed++||++Finance++||++12:00 PM++||++Team Briefing++||++1
+380++||++Lucy Hughes++||++Customer Success++||++01:15 PM++||++Client Onboarding++||++0
+381++||++Victoria Baker++||++Finance++||++10:15 AM++||++Budget Review++||++0
+382++||++Katherine Jackson++||++R&D++||++12:15 PM++||++Team Briefing++||++1
+383++||++Evelyn Harris++||++Customer Success++||++01:30 PM++||++Vendor Call++||++1
+384++||++Hudson Thompson++||++Operations++||++04:45 PM++||++Training Session++||++1
+385++||++Natalie Bell++||++HR++||++05:30 PM++||++Product Demo++||++1
+386++||++Elijah Morgan++||++Operations++||++01:45 PM++||++Client Onboarding++||++1
+387++||++Zoe Flores++||++IT Support++||++04:15 PM++||++Client Onboarding++||++0
+388++||++Katherine Taylor++||++Customer Success++||++09:30 AM++||++Interview++||++1
+389++||++Olivia Smith++||++Operations++||++09:00 AM++||++Training Session++||++1
+390++||++Nora Jenkins++||++Sales++||++01:30 PM++||++Team Briefing++||++1
+391++||++Harper Martinez++||++Operations++||++09:15 AM++||++Project Discussion++||++1
+392++||++Paisley Turner++||++IT Support++||++03:00 PM++||++Team Briefing++||++0
+393++||++Wyatt Perry++||++Finance++||++08:30 AM++||++Training Session++||++1
+394++||++Zoe Harris++||++IT Support++||++11:15 AM++||++On-site Visit++||++1
+395++||++Alexander Harris++||++Finance++||++04:30 PM++||++Team Meeting++||++0
+396++||++Joseph Lee++||++Sales++||++09:45 AM++||++Client Onboarding++||++1
+397++||++Katherine Lee++||++Operations++||++03:45 PM++||++Client Onboarding++||++1
+398++||++Ethan Scott++||++Marketing++||++02:15 PM++||++Team Briefing++||++0
+399++||++Joseph Howard++||++Finance++||++05:15 PM++||++System Maintenance++||++1
+400++||++Lily Long++||++Finance++||++02:30 PM++||++Contract Signing++||++1
+401++||++Alexander Hill++||++IT Support++||++11:00 AM++||++Inventory Check++||++0
+402++||++Paisley Torres++||++Customer Success++||++09:30 AM++||++Training Session++||++0
+403++||++Alexander Cooper++||++Operations++||++04:30 PM++||++Team Briefing++||++0
+404++||++Natalie Foster++||++Customer Success++||++09:00 AM++||++System Maintenance++||++1
+405++||++David Thompson++||++IT Support++||++08:45 AM++||++UX Review++||++1
+406++||++Sebastian Webb++||++IT Support++||++08:00 AM++||++Team Briefing++||++0
+407++||++Aurora Martin++||++R&D++||++11:00 AM++||++Product Demo++||++1
+408++||++Carter Smith++||++Marketing++||++03:30 PM++||++Budget Review++||++0
+409++||++Sophia King++||++HR++||++02:45 PM++||++Budget Planning++||++1
+410++||++David Bailey++||++Sales++||++09:00 AM++||++Team Briefing++||++1
+411++||++Victoria Thomas++||++Operations++||++05:15 PM++||++Budget Review++||++0
+412++||++Nora Taylor++||++HR++||++03:30 PM++||++UX Review++||++1
+413++||++Nathan Harris++||++Sales++||++08:00 AM++||++System Maintenance++||++1
+414++||++Olivia Perry++||++Marketing++||++01:15 PM++||++Team Meeting++||++0
+415++||++Grace Green++||++Finance++||++05:00 PM++||++System Upgrade++||++0
+416++||++Violet Long++||++HR++||++03:30 PM++||++UX Review++||++0
+417++||++Lily Turner++||++R&D++||++01:30 PM++||++Contract Signing++||++1
+418++||++Jayden Morales++||++Operations++||++08:30 AM++||++Support Ticket++||++0
+419++||++Ella Cox++||++IT Support++||++08:45 AM++||++Team Meeting++||++0
+420++||++Lily Bell++||++Marketing++||++05:45 PM++||++Team Briefing++||++0
+421++||++Ella Hughes++||++Marketing++||++12:45 PM++||++Support Ticket++||++1
+422++||++Isaac Olson++||++HR++||++11:45 AM++||++Interview++||++1
+423++||++Maya Robinson++||++Customer Success++||++01:15 PM++||++Team Meeting++||++1
+424++||++Aurora Cooper++||++Operations++||++03:00 PM++||++Client Onboarding++||++0
+425++||++Ava Harris++||++R&D++||++08:00 AM++||++Client Onboarding++||++0
+426++||++Chloe Bailey++||++R&D++||++10:45 AM++||++Budget Planning++||++0
+427++||++Julian Cook++||++Finance++||++05:00 PM++||++System Upgrade++||++1
+428++||++Sophia Morgan++||++R&D++||++01:15 PM++||++Client Follow-up++||++0
+429++||++Alexander Green++||++R&D++||++09:45 AM++||++Team Briefing++||++0
+430++||++Nathan Clark++||++R&D++||++10:00 AM++||++Quarterly Report++||++1
+431++||++Nathan Robinson++||++HR++||++09:30 AM++||++On-site Visit++||++1
+432++||++Katherine Jackson++||++IT Support++||++10:15 AM++||++Interview++||++1
+433++||++Jack Scott++||++Operations++||++10:00 AM++||++UX Review++||++1
+434++||++Abigail Young++||++Marketing++||++05:00 PM++||++Product Demo++||++0
+435++||++Hazel Scott++||++R&D++||++02:00 PM++||++Client Onboarding++||++1
+436++||++Nathan Morgan++||++Sales++||++09:00 AM++||++System Upgrade++||++1
+437++||++Wyatt Morgan++||++IT Support++||++05:45 PM++||++Project Discussion++||++0
+438++||++Liam Harris++||++R&D++||++08:15 AM++||++Contract Signing++||++1
+439++||++Liam Clark++||++R&D++||++11:00 AM++||++Budget Review++||++1
+440++||++Sadie King++||++R&D++||++12:30 PM++||++System Upgrade++||++1
+441++||++Charlotte Morris++||++Customer Success++||++11:30 AM++||++Inventory Check++||++1
+442++||++Layla Martin++||++Marketing++||++09:30 AM++||++Inventory Check++||++0
+443++||++Owen Lee++||++IT Support++||++04:45 PM++||++Vendor Call++||++0
+444++||++Henry Brown++||++Sales++||++08:15 AM++||++Contract Signing++||++1
+445++||++Jack Campbell++||++Sales++||++08:00 AM++||++Training Session++||++1
+446++||++Benjamin Evans++||++Marketing++||++01:00 PM++||++Quarterly Report++||++1
+447++||++Mia Rogers++||++HR++||++09:00 AM++||++On-site Visit++||++1
+448++||++Sadie Taylor++||++Sales++||++02:45 PM++||++Interview++||++1
+449++||++Abigail Phillips++||++HR++||++09:45 AM++||++On-site Visit++||++0
+450++||++Grace Bailey++||++HR++||++02:00 PM++||++Inventory Check++||++1
+451++||++Aria White++||++R&D++||++12:45 PM++||++System Maintenance++||++0
+452++||++Liam Perry++||++Sales++||++09:15 AM++||++UX Review++||++1
+453++||++Benjamin Jackson++||++Marketing++||++02:15 PM++||++Project Discussion++||++0
+454++||++Paisley King++||++Sales++||++05:00 PM++||++System Upgrade++||++0
+455++||++Jayden Stewart++||++R&D++||++11:45 AM++||++Budget Planning++||++0
+456++||++Maya Howard++||++IT Support++||++09:00 AM++||++Team Meeting++||++0
+457++||++Katherine Parker++||++Finance++||++12:45 PM++||++Performance Check++||++1
+458++||++Samuel Rogers++||++Operations++||++01:30 PM++||++Budget Review++||++0
+459++||++Nathan Martin++||++R&D++||++05:15 PM++||++Budget Review++||++1
+460++||++Noah Taylor++||++Finance++||++01:15 PM++||++Interview++||++1
+461++||++Mason Jenkins++||++HR++||++01:30 PM++||++Interview++||++0
+462++||++Zoey Rodriguez++||++IT Support++||++05:15 PM++||++Product Demo++||++1
+463++||++Benjamin Campbell++||++HR++||++10:45 AM++||++On-site Visit++||++1
+464++||++Katherine Brown++||++IT Support++||++05:30 PM++||++Budget Review++||++0
+465++||++Henry Roberts++||++Marketing++||++12:00 PM++||++Team Briefing++||++1
+466++||++Evelyn Edwards++||++Operations++||++01:45 PM++||++Budget Planning++||++1
+467++||++Victoria Thompson++||++Sales++||++01:00 PM++||++UX Review++||++1
+468++||++Nora Roberts++||++IT Support++||++08:30 AM++||++Team Meeting++||++0
+469++||++James Adams++||++Customer Success++||++04:15 PM++||++Quarterly Report++||++0
+470++||++Aria Hill++||++Finance++||++12:00 PM++||++Interview++||++0
+471++||++Maya Brown++||++R&D++||++05:00 PM++||++Interview++||++0
+472++||++Abigail Webb++||++Finance++||++03:00 PM++||++Budget Planning++||++0
+473++||++Nora Garcia++||++HR++||++03:45 PM++||++Team Meeting++||++0
+474++||++Connor Hughes++||++Customer Success++||++04:00 PM++||++Project Discussion++||++1
+475++||++Owen Jenkins++||++R&D++||++02:30 PM++||++Training Session++||++0
+476++||++Aiden Scott++||++R&D++||++01:30 PM++||++System Upgrade++||++1
+477++||++Nathan Martin++||++Marketing++||++12:15 PM++||++Team Briefing++||++0
+478++||++Hudson Walker++||++Finance++||++08:45 AM++||++System Upgrade++||++0
+479++||++Maya Allen++||++IT Support++||++02:45 PM++||++On-site Visit++||++0
+480++||++Zoe Lee++||++Customer Success++||++04:00 PM++||++Client Onboarding++||++1
+481++||++Mia Bell++||++Operations++||++11:45 AM++||++Product Demo++||++0
+482++||++Mia Thomas++||++HR++||++04:45 PM++||++Contract Signing++||++1
+483++||++James Grant++||++HR++||++08:45 AM++||++Interview++||++1
+484++||++Lily Hall++||++Marketing++||++05:45 PM++||++Budget Planning++||++1
+485++||++Zoe Robinson++||++Customer Success++||++01:15 PM++||++UX Review++||++0
+486++||++Victoria Smith++||++R&D++||++11:15 AM++||++Training Session++||++1
+487++||++Emma Carter++||++HR++||++02:45 PM++||++Inventory Check++||++1
+488++||++Alexander Turner++||++IT Support++||++10:30 AM++||++Interview++||++0
+489++||++Penelope Brown++||++Customer Success++||++03:45 PM++||++Team Meeting++||++1
+490++||++Samuel Nelson++||++Customer Success++||++09:15 AM++||++UX Review++||++1
+491++||++Lily Grant++||++IT Support++||++03:15 PM++||++Team Meeting++||++1
+492++||++Michael Walker++||++Operations++||++05:15 PM++||++Interview++||++1
+493++||++Daniel Cook++||++IT Support++||++10:00 AM++||++UX Review++||++0
+494++||++Henry Reed++||++Sales++||++01:15 PM++||++Budget Planning++||++0
+495++||++Sophia Jackson++||++R&D++||++09:30 AM++||++Product Demo++||++0
+496++||++Evelyn Torres++||++Sales++||++05:45 PM++||++Budget Review++||++1
+497++||++Connor Carter++||++Operations++||++05:00 PM++||++System Maintenance++||++0
+498++||++Matthew Carter++||++Operations++||++10:15 AM++||++Vendor Call++||++0
+499++||++Hazel Rivera++||++R&D++||++11:30 AM++||++Product Demo++||++1
+500++||++Connor Perry++||++Sales++||++08:00 AM++||++Performance Check++||++0
+501++||++Levi Long++||++Finance++||++04:15 PM++||++Training Session++||++1
+502++||++Riley Evans++||++Sales++||++12:30 PM++||++System Maintenance++||++1
+503++||++Owen Allen++||++HR++||++09:15 AM++||++System Maintenance++||++1
+504++||++Luna Murphy++||++R&D++||++09:30 AM++||++Team Meeting++||++1
+505++||++Nora Cook++||++Operations++||++03:00 PM++||++Training Session++||++0
+506++||++Benjamin Smith++||++R&D++||++09:30 AM++||++Vendor Call++||++0
+507++||++Grace Roberts++||++IT Support++||++05:00 PM++||++Client Follow-up++||++0
+508++||++Harper Young++||++Operations++||++03:15 PM++||++Product Demo++||++0
+509++||++Zoe Green++||++Customer Success++||++12:15 PM++||++Interview++||++0
+510++||++Ella Morgan++||++HR++||++05:00 PM++||++Quarterly Report++||++1
+511++||++Maya Taylor++||++Finance++||++08:00 AM++||++On-site Visit++||++1
+512++||++Ava Torres++||++R&D++||++05:45 PM++||++Support Ticket++||++0
+513++||++Nora Young++||++Customer Success++||++03:30 PM++||++Contract Signing++||++1
+514++||++Samuel White++||++Customer Success++||++09:45 AM++||++UX Review++||++1
+515++||++Connor Rogers++||++Sales++||++11:15 AM++||++Quarterly Report++||++1
+516++||++David Allen++||++Finance++||++05:00 PM++||++Interview++||++0
+517++||++Paisley Anderson++||++Marketing++||++02:15 PM++||++UX Review++||++1
+518++||++Nora Clark++||++Finance++||++01:45 PM++||++Budget Review++||++0
+519++||++Luna Hall++||++Sales++||++12:15 PM++||++On-site Visit++||++1
+520++||++Zoe Collins++||++Finance++||++08:30 AM++||++System Upgrade++||++0
+521++||++Mason Scott++||++Marketing++||++03:15 PM++||++Budget Planning++||++1
+522++||++Elijah Powell++||++Finance++||++09:30 AM++||++Performance Check++||++1
+523++||++Penelope Adams++||++Sales++||++05:45 PM++||++UX Review++||++1
+524++||++Zoe Stewart++||++HR++||++05:15 PM++||++Product Demo++||++0
+525++||++Ava Carter++||++Finance++||++01:15 PM++||++Inventory Check++||++1
+526++||++Hannah White++||++Customer Success++||++04:15 PM++||++Team Meeting++||++1
+527++||++Natalie Bailey++||++Sales++||++03:45 PM++||++UX Review++||++1
+528++||++Victoria Smith++||++Operations++||++11:45 AM++||++Client Follow-up++||++0
+529++||++Paisley White++||++R&D++||++01:15 PM++||++Product Demo++||++1
+530++||++Lily Bailey++||++Sales++||++04:45 PM++||++Performance Check++||++0
+531++||++Hudson Thomas++||++HR++||++01:15 PM++||++Contract Signing++||++0
+532++||++James Murphy++||++Marketing++||++05:45 PM++||++Interview++||++0
+533++||++Owen Bell++||++Finance++||++09:00 AM++||++Inventory Check++||++0
+534++||++Henry Powell++||++R&D++||++02:45 PM++||++Support Ticket++||++1
+535++||++Zoe Pham++||++IT Support++||++03:30 PM++||++Inventory Check++||++1
+536++||++Julian Cook++||++Operations++||++12:45 PM++||++System Maintenance++||++1
+537++||++Emma Baker++||++Sales++||++09:15 AM++||++Budget Review++||++1
+538++||++Sebastian Collins++||++Sales++||++05:30 PM++||++UX Review++||++1
+539++||++Ava Webb++||++Sales++||++04:15 PM++||++Support Ticket++||++1
+540++||++Elijah Bell++||++Customer Success++||++08:15 AM++||++Interview++||++1
+541++||++Benjamin Bailey++||++Operations++||++02:30 PM++||++Interview++||++0
+542++||++Samuel Long++||++HR++||++12:00 PM++||++On-site Visit++||++1
+543++||++Sophia Jackson++||++Sales++||++02:00 PM++||++Inventory Check++||++0
+544++||++Isabella King++||++Sales++||++03:30 PM++||++Project Discussion++||++0
+545++||++Daniel Powell++||++IT Support++||++09:00 AM++||++Budget Planning++||++0
+546++||++Liam Jenkins++||++Marketing++||++02:30 PM++||++Project Discussion++||++0
+547++||++Violet Garcia++||++Finance++||++02:30 PM++||++Client Onboarding++||++0
+548++||++Sophia Hughes++||++Operations++||++04:30 PM++||++Client Onboarding++||++0
+549++||++Lily Roberts++||++Customer Success++||++01:15 PM++||++Team Meeting++||++0
+550++||++Emma Foster++||++Customer Success++||++03:45 PM++||++Team Meeting++||++0
+551++||++Lucas Smith++||++Operations++||++03:45 PM++||++On-site Visit++||++1
+552++||++Natalie King++||++IT Support++||++10:45 AM++||++Team Briefing++||++0
+553++||++Maya Robinson++||++Customer Success++||++04:30 PM++||++Project Discussion++||++0
+554++||++Violet Foster++||++Sales++||++05:30 PM++||++Contract Signing++||++0
+555++||++Emma Allen++||++HR++||++01:00 PM++||++On-site Visit++||++1
+556++||++Joseph Rivera++||++R&D++||++08:30 AM++||++Client Follow-up++||++0
+557++||++Abigail Ward++||++Customer Success++||++01:00 PM++||++Vendor Call++||++0
+558++||++Henry Olson++||++HR++||++03:15 PM++||++Budget Planning++||++0
+559++||++Eleanor Baker++||++Operations++||++03:45 PM++||++Product Demo++||++0
+560++||++Layla Grant++||++Operations++||++11:45 AM++||++UX Review++||++1
+561++||++Zoe Collins++||++Operations++||++04:30 PM++||++System Maintenance++||++1
+562++||++Zoey Johnson++||++Marketing++||++03:45 PM++||++Client Onboarding++||++1
+563++||++Owen Allen++||++Customer Success++||++01:00 PM++||++Quarterly Report++||++0
+564++||++Wyatt Collins++||++Sales++||++11:00 AM++||++Team Briefing++||++0
+565++||++Ella Thompson++||++Sales++||++05:30 PM++||++Project Discussion++||++1
+566++||++Layla Stewart++||++HR++||++08:45 AM++||++On-site Visit++||++1
+567++||++James Johnson++||++Sales++||++01:30 PM++||++On-site Visit++||++1
+568++||++Aiden Powell++||++R&D++||++11:00 AM++||++System Upgrade++||++1
+569++||++Connor Hill++||++Customer Success++||++05:00 PM++||++Performance Check++||++0
+570++||++Logan Taylor++||++HR++||++12:30 PM++||++System Upgrade++||++1
+571++||++Ella Scott++||++Finance++||++10:00 AM++||++Team Meeting++||++0
+572++||++Riley Cooper++||++Customer Success++||++01:00 PM++||++Vendor Call++||++1
+573++||++Joseph Sanders++||++Customer Success++||++12:00 PM++||++Team Meeting++||++1
+574++||++Brooks Hall++||++Customer Success++||++09:15 AM++||++Training Session++||++1
+575++||++Connor Hall++||++R&D++||++09:45 AM++||++Budget Review++||++1
+576++||++Grace Brown++||++Finance++||++05:15 PM++||++Team Briefing++||++1
+577++||++Amelia Murphy++||++Operations++||++02:45 PM++||++Training Session++||++0
+578++||++James Carter++||++Marketing++||++04:00 PM++||++Product Demo++||++1
+579++||++Hannah King++||++HR++||++11:45 AM++||++Support Ticket++||++1
+580++||++James Powell++||++IT Support++||++12:45 PM++||++Quarterly Report++||++0
+581++||++Liam Nelson++||++Marketing++||++02:45 PM++||++Training Session++||++1
+582++||++Noah Smith++||++Marketing++||++12:15 PM++||++Budget Planning++||++0
+583++||++Elijah Cook++||++R&D++||++10:15 AM++||++System Maintenance++||++1
+584++||++Matthew Smith++||++Finance++||++04:30 PM++||++UX Review++||++1
+585++||++Stella Phillips++||++Customer Success++||++01:00 PM++||++Training Session++||++1
+586++||++Ryan Walker++||++IT Support++||++11:00 AM++||++Project Discussion++||++0
+587++||++Aria Johnson++||++Marketing++||++09:45 AM++||++Product Demo++||++0
+588++||++Henry White++||++HR++||++12:30 PM++||++Team Briefing++||++0
+589++||++Michael Adams++||++Customer Success++||++05:00 PM++||++Inventory Check++||++1
+590++||++Olivia Hughes++||++Sales++||++01:15 PM++||++On-site Visit++||++1
+591++||++Ethan Smith++||++Marketing++||++10:45 AM++||++Team Meeting++||++1
+592++||++Nora Walker++||++IT Support++||++10:45 AM++||++Client Onboarding++||++1
+593++||++Layla Bell++||++Sales++||++03:15 PM++||++Contract Signing++||++1
+594++||++Abigail Turner++||++Sales++||++12:00 PM++||++Client Onboarding++||++0
+595++||++Liam Lee++||++Customer Success++||++05:30 PM++||++Budget Review++||++1
+596++||++Ella Allen++||++Finance++||++02:00 PM++||++On-site Visit++||++0
+597++||++Amelia Edwards++||++Finance++||++09:45 AM++||++Support Ticket++||++0
+598++||++Ava Morgan++||++Finance++||++12:00 PM++||++System Maintenance++||++1
+599++||++James Morales++||++Customer Success++||++11:45 AM++||++Project Discussion++||++1
+600++||++Jayden Lee++||++Finance++||++03:45 PM++||++Vendor Call++||++1
+601++||++Levi Bell++||++Sales++||++08:15 AM++||++Training Session++||++1
+602++||++Emma Robinson++||++Customer Success++||++03:30 PM++||++Training Session++||++0
+603++||++Luna Rogers++||++HR++||++12:00 PM++||++Team Meeting++||++1
+604++||++Daniel Mitchell++||++Sales++||++01:45 PM++||++Team Briefing++||++1
+605++||++Carter Long++||++Finance++||++09:00 AM++||++Vendor Call++||++0
+606++||++Mason Martinez++||++Marketing++||++05:15 PM++||++Support Ticket++||++0
+607++||++Elijah Morgan++||++IT Support++||++05:00 PM++||++Team Briefing++||++1
+608++||++Matthew Ross++||++R&D++||++04:15 PM++||++Performance Check++||++0
+609++||++Brooks Morris++||++IT Support++||++01:30 PM++||++Inventory Check++||++1
+610++||++Wyatt Scott++||++IT Support++||++01:30 PM++||++Product Demo++||++0
+611++||++Samuel Ward++||++IT Support++||++12:45 PM++||++Client Onboarding++||++0
+612++||++Charlotte Bell++||++Sales++||++02:00 PM++||++Product Demo++||++1
+613++||++Charlotte Bailey++||++R&D++||++11:45 AM++||++Performance Check++||++1
+614++||++Ethan Smith++||++Marketing++||++04:30 PM++||++Performance Check++||++1
+615++||++Henry Sanders++||++Finance++||++03:45 PM++||++Product Demo++||++0
+616++||++Sophia Baker++||++R&D++||++08:30 AM++||++Budget Planning++||++1
+617++||++Isabella Olson++||++Operations++||++01:30 PM++||++Product Demo++||++1
+618++||++Mia Torres++||++Marketing++||++02:15 PM++||++Performance Check++||++0
+619++||++Amelia Perry++||++Customer Success++||++10:15 AM++||++Team Briefing++||++1
+620++||++Liam Roberts++||++R&D++||++03:00 PM++||++Product Demo++||++0
+621++||++Lily Bailey++||++Operations++||++12:15 PM++||++Interview++||++1
+622++||++Paisley Edwards++||++Marketing++||++11:00 AM++||++Product Demo++||++1
+623++||++Mia Adams++||++Marketing++||++03:30 PM++||++Vendor Call++||++1
+624++||++Aiden Hill++||++R&D++||++12:00 PM++||++Client Follow-up++||++1
+625++||++Maya Parker++||++Operations++||++01:45 PM++||++Training Session++||++1
+626++||++Brooks Carter++||++Customer Success++||++08:15 AM++||++Vendor Call++||++1
+627++||++Nora Grant++||++HR++||++01:00 PM++||++Quarterly Report++||++1
+628++||++Zoe Thomas++||++R&D++||++12:30 PM++||++Quarterly Report++||++1
+629++||++Olivia Garcia++||++Sales++||++10:15 AM++||++Support Ticket++||++0
+630++||++Aiden Rodriguez++||++Sales++||++03:00 PM++||++Contract Signing++||++1
+631++||++Aaron Flores++||++Operations++||++11:15 AM++||++UX Review++||++0
+632++||++Layla Rodriguez++||++IT Support++||++10:30 AM++||++On-site Visit++||++1
+633++||++Layla Thompson++||++Sales++||++02:15 PM++||++Client Onboarding++||++0
+634++||++Carter Campbell++||++Customer Success++||++09:15 AM++||++Interview++||++0
+635++||++Olivia Rivera++||++Marketing++||++05:15 PM++||++UX Review++||++1
+636++||++Nora Bell++||++Operations++||++05:00 PM++||++UX Review++||++0
+637++||++Penelope Rivera++||++HR++||++02:30 PM++||++Client Follow-up++||++1
+638++||++Hannah Bishop++||++Marketing++||++02:00 PM++||++Training Session++||++0
+639++||++Isabella Thompson++||++Operations++||++08:00 AM++||++On-site Visit++||++0
+640++||++Grace Reed++||++HR++||++10:45 AM++||++Budget Review++||++1
+641++||++David Reed++||++Customer Success++||++11:00 AM++||++System Maintenance++||++0
+642++||++Aaron Richardson++||++Sales++||++12:15 PM++||++Performance Check++||++1
+643++||++Lucy Turner++||++Sales++||++01:45 PM++||++UX Review++||++0
+644++||++David Webb++||++IT Support++||++05:15 PM++||++System Maintenance++||++1
+645++||++Ethan Campbell++||++HR++||++12:45 PM++||++Inventory Check++||++0
+646++||++Mason Adams++||++Sales++||++12:15 PM++||++Support Ticket++||++1
+647++||++Lucy Clark++||++R&D++||++04:45 PM++||++Quarterly Report++||++0
+648++||++Stella Allen++||++R&D++||++03:45 PM++||++Team Meeting++||++1
+649++||++David Turner++||++Marketing++||++03:45 PM++||++Project Discussion++||++1
+650++||++Isabella Baker++||++Finance++||++10:00 AM++||++Budget Review++||++0
+651++||++Mason Ward++||++Marketing++||++05:30 PM++||++System Maintenance++||++0
+652++||++Penelope Roberts++||++Marketing++||++04:15 PM++||++Support Ticket++||++0
+653++||++Chloe Torres++||++R&D++||++02:45 PM++||++Training Session++||++0
+654++||++Penelope Johnson++||++Customer Success++||++09:00 AM++||++Team Briefing++||++0
+655++||++Olivia Morales++||++Sales++||++08:45 AM++||++Performance Check++||++0
+656++||++Abigail Morgan++||++IT Support++||++11:15 AM++||++Budget Review++||++0
+657++||++Violet Baker++||++IT Support++||++11:00 AM++||++Training Session++||++1
+658++||++Mason Garcia++||++HR++||++02:30 PM++||++System Maintenance++||++1
+659++||++Michael Clark++||++Marketing++||++05:00 PM++||++Inventory Check++||++0
+660++||++Lucas Hall++||++HR++||++08:15 AM++||++Team Meeting++||++0
+661++||++Brooks Edwards++||++IT Support++||++04:45 PM++||++Budget Planning++||++0
+662++||++Paisley Scott++||++R&D++||++10:15 AM++||++UX Review++||++1
+663++||++Zoe Cook++||++R&D++||++04:00 PM++||++Budget Review++||++1
+664++||++Ava Allen++||++Operations++||++04:30 PM++||++Inventory Check++||++0
+665++||++Nora Reed++||++HR++||++04:45 PM++||++Client Onboarding++||++0
+666++||++Jayden Harris++||++IT Support++||++09:30 AM++||++Inventory Check++||++1
+667++||++Hudson Phillips++||++Sales++||++02:30 PM++||++Training Session++||++1
+668++||++Maya Edwards++||++IT Support++||++09:45 AM++||++UX Review++||++0
+669++||++Carter Richardson++||++Customer Success++||++01:30 PM++||++Client Follow-up++||++1
+670++||++Jayden Parker++||++IT Support++||++05:00 PM++||++Performance Check++||++1
+671++||++Owen Nelson++||++Marketing++||++08:45 AM++||++Budget Planning++||++1
+672++||++Brooks Olson++||++Operations++||++03:00 PM++||++UX Review++||++0
+673++||++Henry Garcia++||++Customer Success++||++02:00 PM++||++Training Session++||++0
+674++||++Ethan White++||++Finance++||++10:30 AM++||++Inventory Check++||++0
+675++||++Charlotte Sanders++||++Marketing++||++09:30 AM++||++Contract Signing++||++0
+676++||++Julian Rivera++||++Operations++||++08:45 AM++||++Vendor Call++||++0
+677++||++Henry Roberts++||++Marketing++||++02:45 PM++||++Inventory Check++||++1
+678++||++Jack Martinez++||++R&D++||++05:15 PM++||++Inventory Check++||++0
+679++||++Mason Rodriguez++||++Operations++||++02:15 PM++||++Support Ticket++||++1
+680++||++Carter Adams++||++R&D++||++02:00 PM++||++Budget Planning++||++0
+681++||++Aaron Campbell++||++IT Support++||++12:30 PM++||++Contract Signing++||++0
+682++||++Luna Rodriguez++||++IT Support++||++01:30 PM++||++UX Review++||++1
+683++||++Joseph Perry++||++Customer Success++||++05:00 PM++||++Vendor Call++||++1
+684++||++Mason Clark++||++Operations++||++04:15 PM++||++Budget Planning++||++1
+685++||++Elijah Carter++||++Customer Success++||++09:15 AM++||++Inventory Check++||++1
+686++||++Sophia Lewis++||++HR++||++01:15 PM++||++Team Meeting++||++1
+687++||++Violet Martinez++||++IT Support++||++02:45 PM++||++On-site Visit++||++0
+688++||++Aria Rogers++||++IT Support++||++08:15 AM++||++UX Review++||++0
+689++||++Amelia Roberts++||++Finance++||++08:30 AM++||++On-site Visit++||++0
+690++||++Logan Jackson++||++IT Support++||++10:00 AM++||++System Maintenance++||++0
+691++||++Connor Parker++||++R&D++||++04:00 PM++||++On-site Visit++||++1
+692++||++Daniel Pham++||++R&D++||++01:15 PM++||++Product Demo++||++0
+693++||++Wyatt Mitchell++||++Operations++||++09:30 AM++||++Support Ticket++||++1
+694++||++James Robinson++||++Operations++||++05:30 PM++||++Budget Review++||++1
+695++||++Lily White++||++HR++||++05:45 PM++||++On-site Visit++||++0
+696++||++Maya Clark++||++Customer Success++||++12:15 PM++||++System Maintenance++||++1
+697++||++Mia Hall++||++Finance++||++03:00 PM++||++Product Demo++||++1
+698++||++Ava Harris++||++Marketing++||++11:30 AM++||++Vendor Call++||++0
+699++||++Ethan Thompson++||++Finance++||++02:15 PM++||++Support Ticket++||++1
+700++||++Samuel Young++||++R&D++||++10:15 AM++||++Interview++||++1
+701++||++Jack Robinson++||++IT Support++||++02:30 PM++||++Vendor Call++||++1
+702++||++Sadie Jenkins++||++Operations++||++04:15 PM++||++Interview++||++1
+703++||++Violet Allen++||++Finance++||++09:00 AM++||++System Maintenance++||++0
+704++||++Riley Edwards++||++R&D++||++03:15 PM++||++Client Onboarding++||++1
+705++||++Mia Allen++||++Customer Success++||++12:00 PM++||++System Maintenance++||++1
+706++||++Julian Reed++||++Finance++||++11:30 AM++||++Support Ticket++||++1
+707++||++Chloe Flores++||++Operations++||++09:00 AM++||++Client Onboarding++||++0
+708++||++Harper Ward++||++Customer Success++||++04:15 PM++||++System Upgrade++||++1
+709++||++Aria Bishop++||++Marketing++||++04:15 PM++||++Contract Signing++||++1
+710++||++Wyatt Stewart++||++Marketing++||++09:15 AM++||++Team Briefing++||++1
+711++||++Emma Howard++||++R&D++||++12:15 PM++||++UX Review++||++0
+712++||++Wyatt Stewart++||++Customer Success++||++10:45 AM++||++Interview++||++0
+713++||++Matthew Green++||++Operations++||++02:15 PM++||++Vendor Call++||++1
+714++||++Eleanor Martin++||++Finance++||++10:30 AM++||++Client Follow-up++||++1
+715++||++Grace Taylor++||++Finance++||++08:45 AM++||++System Upgrade++||++1
+716++||++Olivia White++||++HR++||++01:00 PM++||++UX Review++||++0
+717++||++Ryan Torres++||++Sales++||++01:45 PM++||++Client Follow-up++||++1
+718++||++Liam Rogers++||++IT Support++||++10:45 AM++||++Budget Planning++||++1
+719++||++Victoria Harris++||++IT Support++||++10:45 AM++||++Budget Review++||++1
+720++||++Grace Rodriguez++||++Operations++||++01:45 PM++||++Client Onboarding++||++0
+721++||++Hazel Jackson++||++Finance++||++10:15 AM++||++Team Briefing++||++0
+722++||++Owen Edwards++||++IT Support++||++12:15 PM++||++Contract Signing++||++1
+723++||++Owen Campbell++||++R&D++||++05:30 PM++||++System Upgrade++||++1
+724++||++Hannah Jackson++||++R&D++||++05:45 PM++||++Contract Signing++||++1
+725++||++Aurora Adams++||++Sales++||++01:30 PM++||++Interview++||++0
+726++||++Hazel Nelson++||++Finance++||++03:45 PM++||++Project Discussion++||++0
+727++||++Charlotte Scott++||++IT Support++||++09:45 AM++||++Performance Check++||++1
+728++||++Stella Cooper++||++Marketing++||++02:30 PM++||++Support Ticket++||++0
+729++||++Ryan Thomas++||++HR++||++04:15 PM++||++Vendor Call++||++0
+730++||++Isabella Webb++||++R&D++||++03:15 PM++||++Vendor Call++||++1
+731++||++Mia Martin++||++Finance++||++10:15 AM++||++On-site Visit++||++0
+732++||++Joseph Morris++||++Marketing++||++08:00 AM++||++Team Briefing++||++0
+733++||++Nathan Campbell++||++Operations++||++05:30 PM++||++Team Briefing++||++1
+734++||++Nora King++||++HR++||++08:15 AM++||++Support Ticket++||++0
+735++||++Levi Reed++||++Finance++||++05:15 PM++||++System Upgrade++||++1
+736++||++Lucy Reed++||++HR++||++05:00 PM++||++Project Discussion++||++0
+737++||++Luna Martinez++||++R&D++||++05:45 PM++||++Client Onboarding++||++0
+738++||++Lily Grant++||++Finance++||++02:15 PM++||++Training Session++||++0
+739++||++Levi Flores++||++Finance++||++01:15 PM++||++System Upgrade++||++0
+740++||++Jack Campbell++||++Sales++||++09:00 AM++||++Client Onboarding++||++1
+741++||++Liam Phillips++||++R&D++||++03:15 PM++||++Performance Check++||++0
+742++||++Jack Stewart++||++Operations++||++09:15 AM++||++Contract Signing++||++1
+743++||++Liam Bell++||++Operations++||++11:30 AM++||++Inventory Check++||++0
+744++||++Layla Long++||++R&D++||++08:30 AM++||++Interview++||++1
+745++||++Luna Hughes++||++Marketing++||++11:15 AM++||++Budget Review++||++0
+746++||++Aiden Scott++||++Marketing++||++01:00 PM++||++System Maintenance++||++1
+747++||++Natalie Mitchell++||++IT Support++||++10:00 AM++||++Project Discussion++||++1
+748++||++Brooks Cox++||++Operations++||++10:15 AM++||++Budget Planning++||++1
+749++||++Daniel Bell++||++Customer Success++||++09:45 AM++||++Team Briefing++||++0
+750++||++Charlotte Rivera++||++HR++||++12:30 PM++||++Contract Signing++||++1
+751++||++Julian Reed++||++Marketing++||++10:30 AM++||++Team Meeting++||++1
+752++||++Maya Torres++||++Finance++||++09:45 AM++||++Performance Check++||++1
+753++||++Noah Powell++||++Finance++||++12:00 PM++||++Support Ticket++||++1
+754++||++Olivia Johnson++||++Sales++||++08:15 AM++||++UX Review++||++1
+755++||++Ryan Lee++||++Marketing++||++02:30 PM++||++System Maintenance++||++0
+756++||++Samuel Baker++||++Sales++||++08:00 AM++||++Team Briefing++||++0
+757++||++Isaac Parker++||++R&D++||++11:00 AM++||++Team Meeting++||++1
+758++||++Ethan Torres++||++Marketing++||++10:00 AM++||++System Maintenance++||++1
+759++||++Eleanor Ross++||++Sales++||++03:45 PM++||++Client Onboarding++||++1
+760++||++Riley Rivera++||++Finance++||++12:45 PM++||++UX Review++||++0
+761++||++Julian Ross++||++IT Support++||++04:45 PM++||++Inventory Check++||++1
+762++||++Sophia Murphy++||++Finance++||++12:00 PM++||++Contract Signing++||++1
+763++||++Aaron Allen++||++IT Support++||++02:15 PM++||++System Upgrade++||++0
+764++||++Lily Carter++||++R&D++||++04:30 PM++||++Budget Review++||++0
+765++||++Chloe Powell++||++Sales++||++02:00 PM++||++Training Session++||++1
+766++||++Sophia Flores++||++Operations++||++12:30 PM++||++Contract Signing++||++1
+767++||++Emma Nelson++||++IT Support++||++09:15 AM++||++Project Discussion++||++0
+768++||++Daniel Perry++||++Customer Success++||++12:00 PM++||++Client Follow-up++||++1
+769++||++Nora Mitchell++||++Customer Success++||++05:15 PM++||++On-site Visit++||++0
+770++||++Eleanor Johnson++||++IT Support++||++11:45 AM++||++Budget Review++||++1
+771++||++Amelia Lee++||++Customer Success++||++02:30 PM++||++Support Ticket++||++0
+772++||++Chloe Morris++||++Customer Success++||++12:30 PM++||++Client Follow-up++||++1
+773++||++Mason Morales++||++Sales++||++03:30 PM++||++System Upgrade++||++0
+774++||++Michael Parker++||++HR++||++05:45 PM++||++On-site Visit++||++0
+775++||++Victoria Bailey++||++R&D++||++02:30 PM++||++Project Discussion++||++1
+776++||++Matthew Scott++||++Operations++||++05:15 PM++||++Project Discussion++||++0
+777++||++Ava Parker++||++Finance++||++08:30 AM++||++System Maintenance++||++0
+778++||++Liam Long++||++IT Support++||++03:45 PM++||++Team Meeting++||++0
+779++||++Samuel Long++||++Customer Success++||++01:00 PM++||++Contract Signing++||++1
+780++||++Zoey Allen++||++Finance++||++09:30 AM++||++Performance Check++||++0
+781++||++Mia Stewart++||++Sales++||++10:30 AM++||++Budget Review++||++0
+782++||++Connor Rogers++||++Marketing++||++08:45 AM++||++Product Demo++||++0
+783++||++Luna Phillips++||++Sales++||++03:45 PM++||++Client Follow-up++||++1
+784++||++Logan Webb++||++Customer Success++||++04:45 PM++||++Client Onboarding++||++0
+785++||++Aria Smith++||++HR++||++01:30 PM++||++Team Meeting++||++0
+786++||++Logan Morris++||++Customer Success++||++01:45 PM++||++Support Ticket++||++0
+787++||++Nathan Lee++||++Sales++||++05:15 PM++||++Client Onboarding++||++0
+788++||++Zoe Hill++||++Customer Success++||++02:00 PM++||++Inventory Check++||++1
+789++||++Ella Cox++||++HR++||++12:30 PM++||++Product Demo++||++1
+790++||++Chloe Hughes++||++Customer Success++||++12:00 PM++||++Project Discussion++||++0
+791++||++Natalie Roberts++||++Marketing++||++04:00 PM++||++Inventory Check++||++1
+792++||++Aria Grant++||++HR++||++11:30 AM++||++Support Ticket++||++1
+793++||++Hazel White++||++Sales++||++04:30 PM++||++Team Briefing++||++0
+794++||++Riley Bishop++||++R&D++||++02:15 PM++||++Project Discussion++||++1
+795++||++Eleanor Olson++||++Sales++||++05:45 PM++||++System Maintenance++||++0
+796++||++Ella Brown++||++IT Support++||++05:15 PM++||++System Upgrade++||++1
+797++||++Ethan Lee++||++Customer Success++||++04:15 PM++||++Support Ticket++||++0
+798++||++Nathan Hill++||++Sales++||++04:00 PM++||++Quarterly Report++||++0
+799++||++Levi Flores++||++HR++||++05:15 PM++||++Contract Signing++||++0
+800++||++Evelyn Howard++||++HR++||++01:15 PM++||++Product Demo++||++1
+801++||++Wyatt Brown++||++Marketing++||++04:45 PM++||++Inventory Check++||++0
+802++||++Benjamin Hill++||++Marketing++||++08:30 AM++||++Contract Signing++||++0
+803++||++Ryan Green++||++Sales++||++09:30 AM++||++Client Onboarding++||++0
+804++||++Connor Rivera++||++Marketing++||++12:15 PM++||++UX Review++||++0
+805++||++Ava Scott++||++Finance++||++05:45 PM++||++Quarterly Report++||++0
+806++||++Evelyn Adams++||++Operations++||++01:15 PM++||++Client Follow-up++||++1
+807++||++Hazel Powell++||++Operations++||++11:00 AM++||++Vendor Call++||++1
+808++||++Jayden Pham++||++Sales++||++09:00 AM++||++System Maintenance++||++1
+809++||++Lucy Adams++||++Finance++||++04:45 PM++||++On-site Visit++||++1
+810++||++Eleanor Bell++||++HR++||++08:00 AM++||++Client Onboarding++||++0
+811++||++Logan Anderson++||++Customer Success++||++08:15 AM++||++Support Ticket++||++1
+812++||++Noah Long++||++Operations++||++09:15 AM++||++Quarterly Report++||++0
+813++||++Maya Thompson++||++Operations++||++04:30 PM++||++Client Onboarding++||++0
+814++||++Mia Morales++||++R&D++||++01:00 PM++||++Contract Signing++||++1
+815++||++Nathan Hall++||++R&D++||++10:00 AM++||++Vendor Call++||++1
+816++||++Lucas Edwards++||++Sales++||++04:15 PM++||++Performance Check++||++0
+817++||++Violet Harris++||++Customer Success++||++10:45 AM++||++Budget Review++||++1
+818++||++Evelyn Morris++||++R&D++||++01:00 PM++||++Performance Check++||++0
+819++||++Nora Walker++||++IT Support++||++05:30 PM++||++Budget Planning++||++1
+820++||++Carter Lewis++||++Customer Success++||++11:15 AM++||++Client Follow-up++||++1
+821++||++Lucas Stewart++||++HR++||++10:15 AM++||++Quarterly Report++||++0
+822++||++Samuel Sanders++||++Marketing++||++11:30 AM++||++Team Briefing++||++1
+823++||++Jayden Hill++||++Sales++||++11:45 AM++||++Project Discussion++||++0
+824++||++Penelope Johnson++||++Customer Success++||++09:30 AM++||++Performance Check++||++1
+825++||++Lucas Rogers++||++HR++||++01:00 PM++||++Product Demo++||++1
+826++||++Lucas Howard++||++Customer Success++||++10:30 AM++||++Client Follow-up++||++0
+827++||++Sophia Taylor++||++Marketing++||++09:15 AM++||++Contract Signing++||++0
+828++||++Mia Jackson++||++Sales++||++02:00 PM++||++Team Briefing++||++0
+829++||++Lucy King++||++Finance++||++08:30 AM++||++Quarterly Report++||++0
+830++||++Penelope Nelson++||++Customer Success++||++02:45 PM++||++Budget Review++||++1
+831++||++Abigail Rivera++||++Marketing++||++05:00 PM++||++Project Discussion++||++1
+832++||++Carter Powell++||++Marketing++||++08:45 AM++||++Team Briefing++||++0
+833++||++Aaron Johnson++||++IT Support++||++01:15 PM++||++UX Review++||++1
+834++||++Elijah Bell++||++Finance++||++01:45 PM++||++System Upgrade++||++1
+835++||++Nathan Powell++||++Sales++||++03:45 PM++||++Support Ticket++||++1
+836++||++Zoey Martinez++||++Sales++||++12:15 PM++||++Training Session++||++0
+837++||++Henry Pham++||++Marketing++||++08:30 AM++||++Contract Signing++||++1
+838++||++Nora Torres++||++HR++||++04:00 PM++||++System Upgrade++||++1
+839++||++Charlotte Collins++||++IT Support++||++01:30 PM++||++System Upgrade++||++1
+840++||++Jayden Morgan++||++R&D++||++10:30 AM++||++System Upgrade++||++0
+841++||++Charlotte Cooper++||++HR++||++02:15 PM++||++Vendor Call++||++0
+842++||++Liam Grant++||++Sales++||++11:15 AM++||++Performance Check++||++1
+843++||++Joseph Flores++||++Sales++||++01:15 PM++||++Client Follow-up++||++1
+844++||++Joseph Parker++||++IT Support++||++04:30 PM++||++Interview++||++1
+845++||++Aria Pham++||++Finance++||++10:45 AM++||++Training Session++||++1
+846++||++Paisley Smith++||++HR++||++05:15 PM++||++On-site Visit++||++1
+847++||++Layla Nelson++||++Marketing++||++11:00 AM++||++Team Meeting++||++1
+848++||++Victoria Morgan++||++Finance++||++04:00 PM++||++Client Onboarding++||++1
+849++||++Hudson Sanders++||++R&D++||++09:00 AM++||++Support Ticket++||++0
+850++||++Noah Olson++||++Operations++||++09:15 AM++||++UX Review++||++0
+851++||++Abigail Johnson++||++Operations++||++09:15 AM++||++Team Briefing++||++0
+852++||++Matthew Hill++||++Operations++||++05:00 PM++||++Team Briefing++||++0
+853++||++Julian Martin++||++Operations++||++08:45 AM++||++Team Meeting++||++1
+854++||++Zoe Bishop++||++Marketing++||++02:00 PM++||++System Upgrade++||++1
+855++||++Natalie Long++||++R&D++||++11:15 AM++||++Client Onboarding++||++0
+856++||++Nora Sanders++||++Operations++||++11:45 AM++||++Inventory Check++||++0
+857++||++David Cox++||++Sales++||++08:45 AM++||++System Maintenance++||++1
+858++||++Connor Johnson++||++Customer Success++||++09:30 AM++||++Support Ticket++||++1
+859++||++Aiden Sanders++||++HR++||++09:00 AM++||++System Upgrade++||++0
+860++||++Connor Jackson++||++Marketing++||++05:00 PM++||++Project Discussion++||++1
+861++||++Harper Cook++||++Sales++||++03:30 PM++||++Team Briefing++||++0
+862++||++Mia Turner++||++Marketing++||++09:00 AM++||++On-site Visit++||++1
+863++||++Isaac Flores++||++Operations++||++11:30 AM++||++Vendor Call++||++1
+864++||++Mason Thompson++||++Operations++||++11:00 AM++||++Quarterly Report++||++0
+865++||++Logan Johnson++||++Operations++||++11:00 AM++||++Product Demo++||++1
+866++||++Isabella Hall++||++Finance++||++12:30 PM++||++Performance Check++||++1
+867++||++Stella Scott++||++R&D++||++05:45 PM++||++System Maintenance++||++0
+868++||++Amelia Perry++||++Operations++||++01:00 PM++||++Interview++||++1
+869++||++Matthew Anderson++||++Finance++||++05:00 PM++||++UX Review++||++0
+870++||++Hudson Johnson++||++Sales++||++03:00 PM++||++Budget Planning++||++1
+871++||++Mason King++||++Finance++||++03:15 PM++||++Team Meeting++||++1
+872++||++Nora Lee++||++Finance++||++05:45 PM++||++Support Ticket++||++0
+873++||++Owen Howard++||++Finance++||++05:15 PM++||++Team Meeting++||++0
+874++||++Emma Lee++||++HR++||++12:15 PM++||++Contract Signing++||++0
+875++||++Connor Brown++||++Sales++||++10:30 AM++||++Budget Planning++||++1
+876++||++Gabriel Cook++||++Finance++||++11:15 AM++||++Product Demo++||++1
+877++||++Aria Evans++||++Sales++||++02:00 PM++||++Budget Planning++||++0
+878++||++Isabella Scott++||++R&D++||++04:45 PM++||++Interview++||++0
+879++||++Penelope Green++||++IT Support++||++10:15 AM++||++Vendor Call++||++0
+880++||++Levi Perry++||++Sales++||++09:15 AM++||++Project Discussion++||++0
+881++||++Jack Parker++||++IT Support++||++04:15 PM++||++Team Meeting++||++1
+882++||++Isabella Harris++||++Finance++||++03:45 PM++||++Inventory Check++||++1
+883++||++Mia Thomas++||++R&D++||++05:30 PM++||++Client Onboarding++||++1
+884++||++Aurora Lewis++||++Marketing++||++05:30 PM++||++System Maintenance++||++0
+885++||++Lucas Hill++||++Operations++||++02:00 PM++||++On-site Visit++||++0
+886++||++Benjamin Roberts++||++IT Support++||++02:30 PM++||++System Upgrade++||++0
+887++||++Nora Olson++||++IT Support++||++12:45 PM++||++Quarterly Report++||++1
+888++||++Levi Howard++||++IT Support++||++01:15 PM++||++Budget Review++||++0
+889++||++Gabriel Campbell++||++R&D++||++10:45 AM++||++Team Briefing++||++0
+890++||++Natalie Grant++||++Sales++||++05:45 PM++||++Budget Planning++||++0
+891++||++Levi Lewis++||++Marketing++||++02:00 PM++||++UX Review++||++0
+892++||++Zoey Walker++||++IT Support++||++12:30 PM++||++Support Ticket++||++1
+893++||++Aaron Turner++||++Marketing++||++10:30 AM++||++System Upgrade++||++1
+894++||++Zoey Adams++||++HR++||++12:00 PM++||++Performance Check++||++1
+895++||++Lucy Perry++||++R&D++||++09:15 AM++||++Team Meeting++||++1
+896++||++Evelyn Olson++||++IT Support++||++05:15 PM++||++Budget Review++||++0
+897++||++Owen Morales++||++Customer Success++||++04:00 PM++||++Team Meeting++||++0
+898++||++Sophia Olson++||++IT Support++||++01:45 PM++||++Team Meeting++||++1
+899++||++Brooks Adams++||++Customer Success++||++05:30 PM++||++Vendor Call++||++1
+900++||++Nora Edwards++||++Finance++||++03:45 PM++||++System Upgrade++||++0
+901++||++Samuel Phillips++||++Customer Success++||++11:00 AM++||++Performance Check++||++1
+902++||++Violet Olson++||++Finance++||++09:45 AM++||++Quarterly Report++||++1
+903++||++Jack White++||++IT Support++||++10:45 AM++||++Performance Check++||++1
+904++||++Aiden Sanders++||++R&D++||++12:15 PM++||++System Upgrade++||++1
+905++||++Victoria Lewis++||++HR++||++02:45 PM++||++Inventory Check++||++1
+906++||++Nathan Reed++||++Operations++||++02:30 PM++||++Inventory Check++||++0
+907++||++Luna Olson++||++Customer Success++||++04:45 PM++||++System Upgrade++||++0
+908++||++Sebastian Adams++||++Finance++||++11:15 AM++||++Team Meeting++||++1
+909++||++Mason Perry++||++HR++||++09:15 AM++||++Interview++||++1
+910++||++Ryan Bell++||++R&D++||++01:30 PM++||++Inventory Check++||++1
+911++||++Henry Reed++||++Sales++||++04:45 PM++||++System Maintenance++||++1
+912++||++Zoey Perry++||++Finance++||++04:45 PM++||++Performance Check++||++1
+913++||++Noah Howard++||++R&D++||++03:00 PM++||++Quarterly Report++||++1
+914++||++Zoe Bell++||++R&D++||++02:15 PM++||++Inventory Check++||++1
+915++||++Matthew Walker++||++Customer Success++||++10:15 AM++||++System Maintenance++||++0
+916++||++Sophia Webb++||++Operations++||++11:30 AM++||++Quarterly Report++||++0
+917++||++Zoey King++||++R&D++||++08:45 AM++||++System Maintenance++||++1
+918++||++Amelia Brown++||++Marketing++||++05:30 PM++||++Team Meeting++||++1
+919++||++Daniel Hall++||++Sales++||++10:30 AM++||++Budget Planning++||++0
+920++||++Natalie Scott++||++IT Support++||++05:30 PM++||++System Upgrade++||++0
+921++||++Riley Thomas++||++Marketing++||++12:45 PM++||++Budget Planning++||++1
+922++||++Olivia Cox++||++Customer Success++||++04:15 PM++||++Vendor Call++||++1
+923++||++Emma Olson++||++Marketing++||++03:45 PM++||++Support Ticket++||++1
+924++||++Emma Powell++||++Finance++||++02:15 PM++||++Quarterly Report++||++0
+925++||++Michael Jenkins++||++Finance++||++04:30 PM++||++Quarterly Report++||++0
+926++||++Ava Jackson++||++HR++||++09:15 AM++||++Contract Signing++||++0
+927++||++Isabella Reed++||++R&D++||++01:45 PM++||++Client Onboarding++||++0
+928++||++Zoe Powell++||++R&D++||++09:30 AM++||++Team Meeting++||++0
+929++||++Evelyn Phillips++||++Finance++||++04:15 PM++||++On-site Visit++||++0
+930++||++Jack Anderson++||++R&D++||++04:00 PM++||++Product Demo++||++1
+931++||++Daniel Phillips++||++R&D++||++03:30 PM++||++Team Meeting++||++0
+932++||++Aria Mitchell++||++IT Support++||++10:00 AM++||++Quarterly Report++||++0
+933++||++Henry King++||++Operations++||++04:45 PM++||++Team Briefing++||++1
+934++||++Wyatt Taylor++||++HR++||++12:00 PM++||++Performance Check++||++1
+935++||++Julian Foster++||++Customer Success++||++04:45 PM++||++Budget Review++||++0
+936++||++Henry Torres++||++IT Support++||++08:30 AM++||++Support Ticket++||++1
+937++||++Levi Rivera++||++IT Support++||++03:15 PM++||++Budget Review++||++0
+938++||++Owen Bishop++||++HR++||++10:30 AM++||++Interview++||++1
+939++||++Jayden Morgan++||++Finance++||++01:15 PM++||++Budget Review++||++1
+940++||++Daniel Roberts++||++Customer Success++||++03:30 PM++||++Team Briefing++||++1
+941++||++Maya Collins++||++Operations++||++02:00 PM++||++Contract Signing++||++0
+942++||++Isabella Cook++||++Finance++||++02:30 PM++||++Training Session++||++1
+943++||++Joseph Morales++||++R&D++||++03:45 PM++||++Budget Planning++||++0
+944++||++Eleanor Howard++||++Sales++||++10:00 AM++||++UX Review++||++1
+945++||++Elijah Foster++||++Customer Success++||++12:15 PM++||++Support Ticket++||++0
+946++||++Brooks Lee++||++R&D++||++01:30 PM++||++UX Review++||++1
+947++||++Logan Richardson++||++HR++||++12:00 PM++||++Budget Review++||++0
+948++||++Owen Adams++||++Sales++||++01:00 PM++||++Client Follow-up++||++1
+949++||++Charlotte Evans++||++Marketing++||++09:45 AM++||++Performance Check++||++1
+950++||++Ava Jenkins++||++Customer Success++||++08:15 AM++||++Team Meeting++||++0
+951++||++Mason Morales++||++Operations++||++11:15 AM++||++Inventory Check++||++1
+952++||++Amelia Jenkins++||++Finance++||++09:00 AM++||++System Upgrade++||++1
+953++||++Julian Roberts++||++R&D++||++01:00 PM++||++Interview++||++0
+954++||++Sophia Bailey++||++Sales++||++08:00 AM++||++Vendor Call++||++0
+955++||++Brooks White++||++Marketing++||++12:00 PM++||++Contract Signing++||++1
+956++||++Benjamin Rivera++||++Finance++||++03:00 PM++||++Team Briefing++||++0
+957++||++David Rodriguez++||++HR++||++02:15 PM++||++Product Demo++||++0
+958++||++Elijah Nelson++||++Marketing++||++02:00 PM++||++Client Follow-up++||++0
+959++||++Luna Torres++||++Marketing++||++11:15 AM++||++Project Discussion++||++1
+960++||++Isabella Taylor++||++IT Support++||++08:00 AM++||++System Upgrade++||++1
+961++||++Logan Clark++||++R&D++||++08:45 AM++||++Budget Planning++||++1
+962++||++Luna Martinez++||++Marketing++||++10:15 AM++||++Interview++||++0
+963++||++Natalie Taylor++||++Customer Success++||++11:30 AM++||++Client Follow-up++||++1
+964++||++Violet Hall++||++Sales++||++12:15 PM++||++Quarterly Report++||++0
+965++||++Isabella Hall++||++Customer Success++||++02:45 PM++||++Product Demo++||++1
+966++||++Logan Clark++||++Finance++||++02:30 PM++||++System Maintenance++||++1
+967++||++Liam Richardson++||++Customer Success++||++03:00 PM++||++Support Ticket++||++0
+968++||++Elijah Adams++||++Finance++||++01:30 PM++||++Project Discussion++||++1
+969++||++Aria Campbell++||++R&D++||++05:30 PM++||++System Maintenance++||++1
+970++||++Stella Powell++||++Operations++||++05:45 PM++||++Inventory Check++||++0
+971++||++Connor Bishop++||++Sales++||++09:45 AM++||++Interview++||++0
+972++||++Ryan Collins++||++R&D++||++01:00 PM++||++Training Session++||++0
+973++||++Gabriel Jackson++||++Operations++||++05:00 PM++||++UX Review++||++0
+974++||++Noah Evans++||++IT Support++||++12:00 PM++||++Project Discussion++||++0
+975++||++Maya Olson++||++HR++||++11:30 AM++||++Performance Check++||++1
+976++||++Hannah Anderson++||++HR++||++12:45 PM++||++Training Session++||++0
+977++||++Jayden Mitchell++||++Customer Success++||++09:30 AM++||++UX Review++||++0
+978++||++Aaron Grant++||++HR++||++01:30 PM++||++Budget Planning++||++0
+979++||++Gabriel Roberts++||++Customer Success++||++01:00 PM++||++Contract Signing++||++0
+980++||++Aiden Morris++||++Finance++||++12:15 PM++||++Vendor Call++||++0
+981++||++Brooks Clark++||++Marketing++||++02:45 PM++||++On-site Visit++||++1
+982++||++Lucy Young++||++Marketing++||++08:15 AM++||++Team Briefing++||++1
+983++||++Lily Flores++||++HR++||++02:00 PM++||++Team Briefing++||++0
+984++||++Samuel Baker++||++Finance++||++01:00 PM++||++Quarterly Report++||++0
+985++||++Mason Carter++||++HR++||++05:30 PM++||++Performance Check++||++1
+986++||++Amelia Taylor++||++HR++||++03:45 PM++||++Support Ticket++||++1
+987++||++Maya Carter++||++Sales++||++10:30 AM++||++Client Onboarding++||++0
+988++||++Grace Adams++||++Operations++||++01:00 PM++||++Client Onboarding++||++0
+989++||++Victoria Nelson++||++Finance++||++04:45 PM++||++Product Demo++||++1
+990++||++Olivia Perry++||++IT Support++||++12:15 PM++||++Performance Check++||++0
+991++||++Grace Webb++||++Customer Success++||++03:45 PM++||++Product Demo++||++1
+992++||++Julian Phillips++||++Operations++||++05:30 PM++||++Performance Check++||++0
+993++||++Henry Rogers++||++Sales++||++05:15 PM++||++Team Meeting++||++1
+994++||++Aiden Webb++||++HR++||++09:30 AM++||++Project Discussion++||++1
+995++||++Nathan Pham++||++R&D++||++03:00 PM++||++Client Follow-up++||++0
+996++||++Katherine Baker++||++HR++||++12:30 PM++||++Vendor Call++||++0
+997++||++Jayden Martin++||++Customer Success++||++05:15 PM++||++Performance Check++||++0
+998++||++Ella Morales++||++Operations++||++04:30 PM++||++Product Demo++||++0
+999++||++Owen Turner++||++Marketing++||++04:45 PM++||++Product Demo++||++0
+1000++||++Benjamin Jackson++||++IT Support++||++09:15 AM++||++Inventory Check++||++1

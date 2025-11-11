@@ -29,10 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlSectionDashboard));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.sCardTotalVisitorsTodat = new SiticoneNetFrameworkUI.SiticoneCard();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
@@ -47,8 +47,8 @@
             this.labelNumberCheckOutTodayVisitors = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -67,7 +67,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.label1.Location = new System.Drawing.Point(88, 44);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(184, 45);
@@ -134,7 +134,6 @@
             this.sCardTotalVisitorsTodat.TabIndex = 1;
             this.sCardTotalVisitorsTodat.TopLeftRadius = 20;
             this.sCardTotalVisitorsTodat.TopRightRadius = 20;
-            this.sCardTotalVisitorsTodat.Paint += new System.Windows.Forms.PaintEventHandler(this.siticoneCard1_Paint);
             // 
             // guna2PictureBox1
             // 
@@ -152,7 +151,7 @@
             this.labelNumberTotalVisitorsToday.AutoSize = true;
             this.labelNumberTotalVisitorsToday.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumberTotalVisitorsToday.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.labelNumberTotalVisitorsToday.Location = new System.Drawing.Point(52, 88);
+            this.labelNumberTotalVisitorsToday.Location = new System.Drawing.Point(52, 103);
             this.labelNumberTotalVisitorsToday.Name = "labelNumberTotalVisitorsToday";
             this.labelNumberTotalVisitorsToday.Size = new System.Drawing.Size(40, 47);
             this.labelNumberTotalVisitorsToday.TabIndex = 2;
@@ -246,7 +245,7 @@
             this.label4NumberCurrentInsideVisitors.AutoSize = true;
             this.label4NumberCurrentInsideVisitors.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4NumberCurrentInsideVisitors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.label4NumberCurrentInsideVisitors.Location = new System.Drawing.Point(52, 88);
+            this.label4NumberCurrentInsideVisitors.Location = new System.Drawing.Point(52, 103);
             this.label4NumberCurrentInsideVisitors.Name = "label4NumberCurrentInsideVisitors";
             this.label4NumberCurrentInsideVisitors.Size = new System.Drawing.Size(40, 47);
             this.label4NumberCurrentInsideVisitors.TabIndex = 2;
@@ -262,7 +261,6 @@
             this.label5.Size = new System.Drawing.Size(117, 20);
             this.label5.TabIndex = 2;
             this.label5.Text = "Currently Inside";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // sCardCheckedOutToday
             // 
@@ -341,7 +339,7 @@
             this.labelNumberCheckOutTodayVisitors.AutoSize = true;
             this.labelNumberCheckOutTodayVisitors.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelNumberCheckOutTodayVisitors.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.labelNumberCheckOutTodayVisitors.Location = new System.Drawing.Point(52, 88);
+            this.labelNumberCheckOutTodayVisitors.Location = new System.Drawing.Point(52, 103);
             this.labelNumberCheckOutTodayVisitors.Name = "labelNumberCheckOutTodayVisitors";
             this.labelNumberCheckOutTodayVisitors.Size = new System.Drawing.Size(40, 47);
             this.labelNumberCheckOutTodayVisitors.TabIndex = 2;
@@ -365,70 +363,60 @@
             this.GPnaelListDGVandLabelWord.BorderThickness = 1;
             this.GPnaelListDGVandLabelWord.Controls.Add(this.DataGridViewCurrentlyActiveVisitors);
             this.GPnaelListDGVandLabelWord.Controls.Add(this.label3);
-            this.GPnaelListDGVandLabelWord.Location = new System.Drawing.Point(96, 367);
+            this.GPnaelListDGVandLabelWord.Location = new System.Drawing.Point(96, 344);
             this.GPnaelListDGVandLabelWord.Name = "GPnaelListDGVandLabelWord";
             this.GPnaelListDGVandLabelWord.Size = new System.Drawing.Size(1167, 391);
             this.GPnaelListDGVandLabelWord.TabIndex = 4;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.label3.Location = new System.Drawing.Point(9, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Currently Active Visitors";
-            // 
             // DataGridViewCurrentlyActiveVisitors
             // 
             this.DataGridViewCurrentlyActiveVisitors.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
-            this.DataGridViewCurrentlyActiveVisitors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewCurrentlyActiveVisitors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DataGridViewCurrentlyActiveVisitors.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeight = 40;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeight = 39;
             this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridViewCurrentlyActiveVisitors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NameVisitor,
             this.Department,
             this.CheckInTime,
             this.Purpose});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DataGridViewCurrentlyActiveVisitors.DefaultCellStyle = dataGridViewCellStyle3;
-            this.DataGridViewCurrentlyActiveVisitors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.DataGridViewCurrentlyActiveVisitors.DefaultCellStyle = dataGridViewCellStyle7;
+            this.DataGridViewCurrentlyActiveVisitors.GridColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.Location = new System.Drawing.Point(15, 74);
+            this.DataGridViewCurrentlyActiveVisitors.MultiSelect = false;
             this.DataGridViewCurrentlyActiveVisitors.Name = "DataGridViewCurrentlyActiveVisitors";
             this.DataGridViewCurrentlyActiveVisitors.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DataGridViewCurrentlyActiveVisitors.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle8.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DataGridViewCurrentlyActiveVisitors.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
             this.DataGridViewCurrentlyActiveVisitors.RowHeadersVisible = false;
-            this.DataGridViewCurrentlyActiveVisitors.RowTemplate.Height = 40;
-            this.DataGridViewCurrentlyActiveVisitors.Size = new System.Drawing.Size(1137, 314);
+            this.DataGridViewCurrentlyActiveVisitors.RowTemplate.Height = 41;
+            this.DataGridViewCurrentlyActiveVisitors.Size = new System.Drawing.Size(1137, 307);
             this.DataGridViewCurrentlyActiveVisitors.TabIndex = 3;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.AlternatingRowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -436,39 +424,54 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.GridColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.Height = 40;
+            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.Height = 39;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.ReadOnly = false;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Height = 40;
+            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Height = 41;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label3.Location = new System.Drawing.Point(9, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(275, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Currently Active Visitors";
+            // 
             // NameVisitor
             // 
+            this.NameVisitor.FillWeight = 90.35847F;
             this.NameVisitor.HeaderText = "Name Visitor";
             this.NameVisitor.Name = "NameVisitor";
             // 
             // Department
             // 
+            this.Department.FillWeight = 80.21175F;
             this.Department.HeaderText = "Department";
             this.Department.Name = "Department";
             // 
             // CheckInTime
             // 
+            this.CheckInTime.FillWeight = 80.23858F;
             this.CheckInTime.HeaderText = "Check-in Time";
             this.CheckInTime.Name = "CheckInTime";
             // 
             // Purpose
             // 
+            this.Purpose.FillWeight = 80.19117F;
             this.Purpose.HeaderText = "Purpose";
             this.Purpose.Name = "Purpose";
             // 
