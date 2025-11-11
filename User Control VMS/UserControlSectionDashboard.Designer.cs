@@ -48,11 +48,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.sCardTotalVisitorsTodat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.sCardCurrentlyInside.SuspendLayout();
@@ -370,6 +370,8 @@
             // 
             // DataGridViewCurrentlyActiveVisitors
             // 
+            this.DataGridViewCurrentlyActiveVisitors.AllowUserToAddRows = false;
+            this.DataGridViewCurrentlyActiveVisitors.AllowUserToDeleteRows = false;
             this.DataGridViewCurrentlyActiveVisitors.AllowUserToResizeRows = false;
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -377,7 +379,6 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
             this.DataGridViewCurrentlyActiveVisitors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewCurrentlyActiveVisitors.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -405,6 +406,7 @@
             this.DataGridViewCurrentlyActiveVisitors.Location = new System.Drawing.Point(15, 74);
             this.DataGridViewCurrentlyActiveVisitors.MultiSelect = false;
             this.DataGridViewCurrentlyActiveVisitors.Name = "DataGridViewCurrentlyActiveVisitors";
+            this.DataGridViewCurrentlyActiveVisitors.ReadOnly = true;
             this.DataGridViewCurrentlyActiveVisitors.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
@@ -431,7 +433,7 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.HeaderStyle.Height = 39;
-            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.ReadOnly = false;
+            this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.ReadOnly = true;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -439,6 +441,34 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Height = 41;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // NameVisitor
+            // 
+            this.NameVisitor.FillWeight = 90.35847F;
+            this.NameVisitor.HeaderText = "Name Visitor";
+            this.NameVisitor.Name = "NameVisitor";
+            this.NameVisitor.ReadOnly = true;
+            // 
+            // Department
+            // 
+            this.Department.FillWeight = 80.21175F;
+            this.Department.HeaderText = "Department";
+            this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
+            // 
+            // CheckInTime
+            // 
+            this.CheckInTime.FillWeight = 80.23858F;
+            this.CheckInTime.HeaderText = "Check-in Time";
+            this.CheckInTime.Name = "CheckInTime";
+            this.CheckInTime.ReadOnly = true;
+            // 
+            // Purpose
+            // 
+            this.Purpose.FillWeight = 80.19117F;
+            this.Purpose.HeaderText = "Purpose";
+            this.Purpose.Name = "Purpose";
+            this.Purpose.ReadOnly = true;
             // 
             // label3
             // 
@@ -450,30 +480,6 @@
             this.label3.Size = new System.Drawing.Size(275, 32);
             this.label3.TabIndex = 1;
             this.label3.Text = "Currently Active Visitors";
-            // 
-            // NameVisitor
-            // 
-            this.NameVisitor.FillWeight = 90.35847F;
-            this.NameVisitor.HeaderText = "Name Visitor";
-            this.NameVisitor.Name = "NameVisitor";
-            // 
-            // Department
-            // 
-            this.Department.FillWeight = 80.21175F;
-            this.Department.HeaderText = "Department";
-            this.Department.Name = "Department";
-            // 
-            // CheckInTime
-            // 
-            this.CheckInTime.FillWeight = 80.23858F;
-            this.CheckInTime.HeaderText = "Check-in Time";
-            this.CheckInTime.Name = "CheckInTime";
-            // 
-            // Purpose
-            // 
-            this.Purpose.FillWeight = 80.19117F;
-            this.Purpose.HeaderText = "Purpose";
-            this.Purpose.Name = "Purpose";
             // 
             // UserControlSectionDashboard
             // 

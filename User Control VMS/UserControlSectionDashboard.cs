@@ -53,7 +53,6 @@ namespace Visitor_Management_System.User_Control_VMS
             for(System.Int16 counterDelayAndIcrementHeight = _kZERO; counterDelayAndIcrementHeight < _MAX_HEIGHT_TO_INCREMENT_IN_HEIHT_LALBELS ; counterDelayAndIcrementHeight++)
             {
                 await Task.Delay(counterDelayAndIcrementHeight  +  _kONE);
-
                 labelNumberTotalVisitorsToday.Location = new Point(52, 103 + -counterDelayAndIcrementHeight);
                 label4NumberCurrentInsideVisitors.Location = new Point(52, 103 + -counterDelayAndIcrementHeight);
                 labelNumberCheckOutTodayVisitors.Location = new Point(52, 103 + -counterDelayAndIcrementHeight);
@@ -207,6 +206,6 @@ namespace Visitor_Management_System.User_Control_VMS
             setAnimationLabelsInDashboard();
         }
 
-   
+     
     }
 }

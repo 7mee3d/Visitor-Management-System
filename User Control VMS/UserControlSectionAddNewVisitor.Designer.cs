@@ -200,7 +200,7 @@
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
-            this.guna2Panel2.Location = new System.Drawing.Point(22, 275);
+            this.guna2Panel2.Location = new System.Drawing.Point(22, 270);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(664, 299);
             this.guna2Panel2.TabIndex = 3;
