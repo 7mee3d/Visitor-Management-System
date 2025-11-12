@@ -88,7 +88,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
             if (lineInformationVisitor.Count >= _kNUMBER_MEMBER_INFORMATION_VISITOR)
             {
-                informationOneVisitorStructure.stcID = Convert.ToInt16(lineInformationVisitor[0]);
+                informationOneVisitorStructure.stcID = Convert.ToInt32(lineInformationVisitor[0]);
                 informationOneVisitorStructure.stcFullNameVisitor = lineInformationVisitor[1];
                 informationOneVisitorStructure.stcDepartment = lineInformationVisitor[2];
                 informationOneVisitorStructure.stcCheckInTimeVisitor = lineInformationVisitor[3];
@@ -206,6 +206,6 @@ namespace Visitor_Management_System.User_Control_VMS
             setAnimationLabelsInDashboard();
         }
 
-     
+       
     }
 }
