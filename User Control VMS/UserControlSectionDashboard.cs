@@ -151,7 +151,8 @@ namespace Visitor_Management_System.User_Control_VMS
                 {
                     if (isActiveVisitor(allInformationVisitors[counter].stcIsAvtiveVisitor))
                     {
-                        DataGridViewCurrentlyActiveVisitors.Rows.Insert(_kZERO , allInformationVisitors[counter].stcFullNameVisitor, allInformationVisitors[counter].stcDepartment, allInformationVisitors[counter].stcCheckInTimeVisitor, allInformationVisitors[counter].stcPurpose);
+                        List<System.String> informationCheckInVisitorDataAndTime = SplitLineInformation(allInformationVisitors[counter].stcCheckInTimeVisitor, " , ");
+                        DataGridViewCurrentlyActiveVisitors.Rows.Insert(_kZERO , allInformationVisitors[counter].stcFullNameVisitor, allInformationVisitors[counter].stcDepartment, informationCheckInVisitorDataAndTime[_kONE], allInformationVisitors[counter].stcPurpose);
                         ++countShowOnlySevenVisitorInDGV;
                     }
                 }
@@ -206,6 +207,9 @@ namespace Visitor_Management_System.User_Control_VMS
             setAnimationLabelsInDashboard();
         }
 
-       
+        private void DataGridViewCurrentlyActiveVisitors_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

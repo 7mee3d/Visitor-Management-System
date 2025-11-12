@@ -13,7 +13,13 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
 {
     public partial class DashboardVMS : Form
     {
-        public DashboardVMS()
+
+        bool mouseDown = false;
+        int mouseX = 0;
+        int mouseY = 0;
+
+
+        public DashboardVMS()        
         {
             InitializeComponent();
         }
@@ -66,6 +72,27 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             UserControlSectionSettings UCSS = new UserControlSectionSettings();
             setUserControlInMainPanelVMS(UserControlSections: UCSS);
 
+        }
+
+        private void GGPanelTop_MouseDown(object sender, MouseEventArgs e)
+        {
+            mouseDown = true;
+            mouseX = e.X;
+            mouseY = e.Y; 
+        }
+
+        private void GGPanelTop_MouseMove(object sender, MouseEventArgs e)
+        {
+            if (mouseDown)
+            {
+                this.Left += e.X -  mouseX; 
+                this.Top += e.Y - mouseY; 
+            }
+        }
+
+        private void GGPanelTop_MouseUp(object sender, MouseEventArgs e)
+        {
+            mouseDown = false;
         }
     }
 }

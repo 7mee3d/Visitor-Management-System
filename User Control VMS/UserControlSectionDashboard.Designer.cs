@@ -441,6 +441,7 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Height = 41;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            this.DataGridViewCurrentlyActiveVisitors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewCurrentlyActiveVisitors_CellContentClick);
             // 
             // NameVisitor
             // 

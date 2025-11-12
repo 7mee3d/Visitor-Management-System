@@ -259,6 +259,9 @@
             this.GGPanelTop.Name = "GGPanelTop";
             this.GGPanelTop.Size = new System.Drawing.Size(1359, 78);
             this.GGPanelTop.TabIndex = 3;
+            this.GGPanelTop.MouseDown += new System.Windows.Forms.MouseEventHandler(this.GGPanelTop_MouseDown);
+            this.GGPanelTop.MouseMove += new System.Windows.Forms.MouseEventHandler(this.GGPanelTop_MouseMove);
+            this.GGPanelTop.MouseUp += new System.Windows.Forms.MouseEventHandler(this.GGPanelTop_MouseUp);
             // 
             // label1
             // 
