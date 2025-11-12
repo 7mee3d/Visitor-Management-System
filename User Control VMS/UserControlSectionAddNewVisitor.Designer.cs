@@ -47,6 +47,7 @@
             this.sTextBoxFullNameVisitor = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.labelErrorOrCorrectMessageAddNewVisitor = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.GPanelVisitDetails.SuspendLayout();
             this.GPanelInformationPersonal.SuspendLayout();
@@ -72,6 +73,7 @@
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.guna2Panel1.BorderRadius = 15;
             this.guna2Panel1.BorderThickness = 2;
+            this.guna2Panel1.Controls.Add(this.labelErrorOrCorrectMessageAddNewVisitor);
             this.guna2Panel1.Controls.Add(this.GGButtonClear);
             this.guna2Panel1.Controls.Add(this.GGButtonAddNewVisitor);
             this.guna2Panel1.Controls.Add(this.label5);
@@ -156,7 +158,7 @@
             this.GPanelVisitDetails.Location = new System.Drawing.Point(22, 258);
             this.GPanelVisitDetails.Name = "GPanelVisitDetails";
             this.GPanelVisitDetails.Size = new System.Drawing.Size(664, 289);
-            this.GPanelVisitDetails.TabIndex = 3;
+            this.GPanelVisitDetails.TabIndex = 1;
             // 
             // sTextBoxPerpouse
             // 
@@ -185,7 +187,7 @@
             this.sTextBoxPerpouse.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.sTextBoxPerpouse.RequireLowercase = false;
             this.sTextBoxPerpouse.Size = new System.Drawing.Size(648, 106);
-            this.sTextBoxPerpouse.TabIndex = 10;
+            this.sTextBoxPerpouse.TabIndex = 4;
             this.sTextBoxPerpouse.TextColor = System.Drawing.SystemColors.WindowText;
             this.sTextBoxPerpouse.TextContent = "";
             this.sTextBoxPerpouse.TopLeftCornerRadius = 8;
@@ -227,13 +229,14 @@
             this.sTextBoxCheckinTime.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.sTextBoxCheckinTime.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.sTextBoxCheckinTime.Size = new System.Drawing.Size(313, 39);
-            this.sTextBoxCheckinTime.TabIndex = 8;
+            this.sTextBoxCheckinTime.TabIndex = 3;
             this.sTextBoxCheckinTime.TabStop = false;
             this.sTextBoxCheckinTime.TextColor = System.Drawing.SystemColors.WindowText;
             this.sTextBoxCheckinTime.TextContent = "";
             this.sTextBoxCheckinTime.TopLeftCornerRadius = 8;
             this.sTextBoxCheckinTime.TopRightCornerRadius = 8;
             this.sTextBoxCheckinTime.ValidationPattern = "";
+            this.sTextBoxCheckinTime.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sTextBoxCheckinTime_MouseDown);
             // 
             // label7
             // 
@@ -278,7 +281,7 @@
             this.sComboBoxDataDepartment.Location = new System.Drawing.Point(13, 62);
             this.sComboBoxDataDepartment.Name = "sComboBoxDataDepartment";
             this.sComboBoxDataDepartment.Size = new System.Drawing.Size(294, 36);
-            this.sComboBoxDataDepartment.TabIndex = 5;
+            this.sComboBoxDataDepartment.TabIndex = 2;
             // 
             // label6
             // 
@@ -300,7 +303,7 @@
             this.GPanelInformationPersonal.Location = new System.Drawing.Point(22, 98);
             this.GPanelInformationPersonal.Name = "GPanelInformationPersonal";
             this.GPanelInformationPersonal.Size = new System.Drawing.Size(677, 89);
-            this.GPanelInformationPersonal.TabIndex = 2;
+            this.GPanelInformationPersonal.TabIndex = 0;
             // 
             // sTextBoxIDVisitor
             // 
@@ -326,7 +329,7 @@
             this.sTextBoxIDVisitor.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.sTextBoxIDVisitor.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.sTextBoxIDVisitor.Size = new System.Drawing.Size(331, 41);
-            this.sTextBoxIDVisitor.TabIndex = 6;
+            this.sTextBoxIDVisitor.TabIndex = 1;
             this.sTextBoxIDVisitor.TextColor = System.Drawing.SystemColors.WindowText;
             this.sTextBoxIDVisitor.TextContent = "";
             this.sTextBoxIDVisitor.TopLeftCornerRadius = 8;
@@ -367,7 +370,7 @@
             this.sTextBoxFullNameVisitor.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.sTextBoxFullNameVisitor.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.sTextBoxFullNameVisitor.Size = new System.Drawing.Size(313, 41);
-            this.sTextBoxFullNameVisitor.TabIndex = 4;
+            this.sTextBoxFullNameVisitor.TabIndex = 0;
             this.sTextBoxFullNameVisitor.TextColor = System.Drawing.SystemColors.WindowText;
             this.sTextBoxFullNameVisitor.TextContent = "";
             this.sTextBoxFullNameVisitor.TopLeftCornerRadius = 8;
@@ -395,6 +398,17 @@
             this.label2.Size = new System.Drawing.Size(192, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Personal Information";
+            // 
+            // labelErrorOrCorrectMessageAddNewVisitor
+            // 
+            this.labelErrorOrCorrectMessageAddNewVisitor.AutoSize = true;
+            this.labelErrorOrCorrectMessageAddNewVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorOrCorrectMessageAddNewVisitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            this.labelErrorOrCorrectMessageAddNewVisitor.Location = new System.Drawing.Point(294, 588);
+            this.labelErrorOrCorrectMessageAddNewVisitor.Name = "labelErrorOrCorrectMessageAddNewVisitor";
+            this.labelErrorOrCorrectMessageAddNewVisitor.Size = new System.Drawing.Size(12, 15);
+            this.labelErrorOrCorrectMessageAddNewVisitor.TabIndex = 7;
+            this.labelErrorOrCorrectMessageAddNewVisitor.Text = "-";
             // 
             // UserControlSectionAddNewVisitor
             // 
@@ -438,5 +452,6 @@
         private System.Windows.Forms.Label label8;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewVisitor;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonClear;
+        private System.Windows.Forms.Label labelErrorOrCorrectMessageAddNewVisitor;
     }
 }

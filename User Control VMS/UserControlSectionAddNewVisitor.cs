@@ -83,7 +83,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
                                 if (innerInnerControl is SiticoneComboBox SCB)
                                 {
-                                    SCB.SelectedItem = "";
+                                    SCB.SelectedItem = "None";
                                 }
                             }
                         }
@@ -152,7 +152,7 @@ namespace Visitor_Management_System.User_Control_VMS
         
         private System.String ReturnStringWordComboBoxDepartment()
         {
-            switch(sComboBoxDataDepartment.SelectedItem.ToString())
+            switch(sComboBoxDataDepartment.SelectedItem)
             {
 
                 case "Reception":return "Reception";
@@ -184,7 +184,7 @@ namespace Visitor_Management_System.User_Control_VMS
             return NowTimeCheckIn;
         }
      
-        private void addNewVisitorInSystemVMS ()
+        private void addNewVisitor ()
         {
             System.String IDVisitor = sTextBoxIDVisitor.Text; 
             System.String FullNameVisitor = sTextBoxFullNameVisitor.Text; 
@@ -207,9 +207,45 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
 
+        private async void setPropertiesMessageErrorAddNewVisitor()
+        {
+            labelErrorOrCorrectMessageAddNewVisitor.Text = "Please fill in all fields.";
+            labelErrorOrCorrectMessageAddNewVisitor.ForeColor = Color.Red;
+            labelErrorOrCorrectMessageAddNewVisitor.Visible = true;
+
+            await Task.Delay(4000);
+            labelErrorOrCorrectMessageAddNewVisitor.Visible = false;
+
+        }
+      
+        private async void setPropertiesMessageCorrectAddNewVisitor()
+        {
+            labelErrorOrCorrectMessageAddNewVisitor.Text = "Visitor added successfully";
+            labelErrorOrCorrectMessageAddNewVisitor.ForeColor = Color.Green;
+            labelErrorOrCorrectMessageAddNewVisitor.Visible = true;
+
+            await Task.Delay(4000);
+            labelErrorOrCorrectMessageAddNewVisitor.Visible = false;
+
+        }
+        
+        private void AddNewVisitorInSystemVMS()
+        {
+            if (!CheckAllFieldsAreFill())
+            {
+                addNewVisitor();
+                setPropertiesMessageCorrectAddNewVisitor();
+                ClearAllTextBox_ResetAllOptions();
+            }
+            else
+                setPropertiesMessageErrorAddNewVisitor();
+
+
+        }
+     
         private void GGButtonAddNewVisitor_Click(object sender, EventArgs e)
         {
-            addNewVisitorInSystemVMS();
+            AddNewVisitorInSystemVMS();
         }
 
         private void UserControlSectionAddNewVisitor_Load(object sender, EventArgs e)
@@ -221,8 +257,21 @@ namespace Visitor_Management_System.User_Control_VMS
         {
             ClearAllTextBox_ResetAllOptions();
         }
-  
     
-    
+        private System.Boolean CheckAllFieldsAreFill()
+        {
+            return (
+                    sTextBoxFullNameVisitor.Text == "" ||
+                    sTextBoxIDVisitor.Text == "" ||
+                    sTextBoxPerpouse.Text == "" ||
+                    sComboBoxDataDepartment.SelectedItem == "None"
+                );
+        }
+
+        private void sTextBoxCheckinTime_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Right)
+                sTextBoxCheckinTime.ContextMenu = new ContextMenu();
+        }
     }
 }
