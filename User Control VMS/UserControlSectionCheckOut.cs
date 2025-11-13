@@ -16,13 +16,12 @@ namespace Visitor_Management_System.User_Control_VMS
         {
             InitializeComponent();
         }
+
         //Constants
         private const System.String _kPATH_FILE_INFORMATION_VISITORS = @"../../Data_Information_VMS/Information_Visitors.txt";
         private const System.String _kSEPARATOR_FILE_INFORMATION_VISITORS = "++||++";
         private const System.Int16 _kNUMBER_START_READ_DATA_INFOMATION_VISITORS = 18;
         private const System.UInt16 _kNUMBER_MEMBER_INFORMATION_VISITOR = 6;
-        private const System.UInt16 _kNUMBER_MEMBER_TO_SHOW_INFORMATION_VISITOR_IN_DGV = 7;
-        private const System.UInt16 _MAX_HEIGHT_TO_INCREMENT_IN_HEIHT_LALBELS = 23;
         private const System.Int16 _kONE = 1;
         private const System.Int16 _kZERO = 0;
 
@@ -49,7 +48,6 @@ namespace Visitor_Management_System.User_Control_VMS
 
 
         }
-
 
         private List<System.String> LoadAllInformationFromFile(System.String pathFile)
         {
@@ -84,6 +82,7 @@ namespace Visitor_Management_System.User_Control_VMS
                 informationOneVisitorStructure.stcDepartment = lineInformationVisitor[2];
                 informationOneVisitorStructure.stcCheckInTimeVisitor = lineInformationVisitor[3];
                 informationOneVisitorStructure.stcPurpose = lineInformationVisitor[4];
+
                 if (lineInformationVisitor[5] == "1")
                     informationOneVisitorStructure.stcIsAvtiveVisitor = true;
                 else informationOneVisitorStructure.stcIsAvtiveVisitor = false;
@@ -98,9 +97,7 @@ namespace Visitor_Management_System.User_Control_VMS
             List<System.String> allInformationLineAfterSplit = new List<System.String>();
 
             if (!System.String.IsNullOrEmpty(lineInformationVisitor))
-            {
                 allInformationLineAfterSplit.AddRange(lineInformationVisitor.Split(new System.String[] { Separator }, System.StringSplitOptions.RemoveEmptyEntries));
-            }
 
             return allInformationLineAfterSplit;
 
@@ -113,6 +110,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
             for (System.Int32 counter = _kNUMBER_START_READ_DATA_INFOMATION_VISITORS - _kONE; counter < allInformationLiesStringFromFile.Count; counter++)
             {
+
                 List<System.String> allInformationOneLine = SplitLineInformation(allInformationLiesStringFromFile[counter], _kSEPARATOR_FILE_INFORMATION_VISITORS);
 
                 if (allInformationOneLine.Count >= _kNUMBER_MEMBER_INFORMATION_VISITOR)
@@ -155,19 +153,12 @@ namespace Visitor_Management_System.User_Control_VMS
                 
             
         }
+     
         private void UserControlSectionCheckOut_Load(object sender, EventArgs e)
         {
             PushAllInformationVisitorToDataGridView(_kPATH_FILE_INFORMATION_VISITORS);
         }
 
-        private void guna2GradientButton1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void GGButtonAddNewVisitor_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

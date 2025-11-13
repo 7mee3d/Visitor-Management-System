@@ -36,8 +36,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.siticoneTextBoxAdvanced1 = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
-            this.GGButtonAddNewVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.sTextBoxSearch = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.GGButtonSearchVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -45,7 +45,7 @@
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label3 = new System.Windows.Forms.Label();
-            this.guna2GradientButton1 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
@@ -69,8 +69,8 @@
             this.guna2Panel1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.guna2Panel1.BorderRadius = 15;
             this.guna2Panel1.BorderThickness = 2;
-            this.guna2Panel1.Controls.Add(this.GGButtonAddNewVisitor);
-            this.guna2Panel1.Controls.Add(this.siticoneTextBoxAdvanced1);
+            this.guna2Panel1.Controls.Add(this.GGButtonSearchVisitor);
+            this.guna2Panel1.Controls.Add(this.sTextBoxSearch);
             this.guna2Panel1.Controls.Add(this.label2);
             this.guna2Panel1.Location = new System.Drawing.Point(107, 112);
             this.guna2Panel1.Name = "guna2Panel1";
@@ -88,57 +88,56 @@
             this.label2.TabIndex = 2;
             this.label2.Text = "Find Visitor";
             // 
-            // siticoneTextBoxAdvanced1
+            // sTextBoxSearch
             // 
-            this.siticoneTextBoxAdvanced1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBoxAdvanced1.BackgroundColor = System.Drawing.Color.White;
-            this.siticoneTextBoxAdvanced1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
-            this.siticoneTextBoxAdvanced1.BottomLeftCornerRadius = 8;
-            this.siticoneTextBoxAdvanced1.BottomRightCornerRadius = 8;
-            this.siticoneTextBoxAdvanced1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBoxAdvanced1.FocusBorderColor = System.Drawing.Color.DodgerBlue;
-            this.siticoneTextBoxAdvanced1.FocusImage = null;
-            this.siticoneTextBoxAdvanced1.HoverBorderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBoxAdvanced1.HoverImage = null;
-            this.siticoneTextBoxAdvanced1.IdleImage = ((System.Drawing.Image)(resources.GetObject("siticoneTextBoxAdvanced1.IdleImage")));
-            this.siticoneTextBoxAdvanced1.Location = new System.Drawing.Point(33, 59);
-            this.siticoneTextBoxAdvanced1.Name = "siticoneTextBoxAdvanced1";
-            this.siticoneTextBoxAdvanced1.PlaceholderColor = System.Drawing.Color.Gray;
-            this.siticoneTextBoxAdvanced1.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.siticoneTextBoxAdvanced1.PlaceholderText = "Search by name, company, or purpose...";
-            this.siticoneTextBoxAdvanced1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.siticoneTextBoxAdvanced1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneTextBoxAdvanced1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneTextBoxAdvanced1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneTextBoxAdvanced1.Size = new System.Drawing.Size(1000, 40);
-            this.siticoneTextBoxAdvanced1.TabIndex = 3;
-            this.siticoneTextBoxAdvanced1.TextColor = System.Drawing.SystemColors.WindowText;
-            this.siticoneTextBoxAdvanced1.TextContent = "";
-            this.siticoneTextBoxAdvanced1.TopLeftCornerRadius = 8;
-            this.siticoneTextBoxAdvanced1.TopRightCornerRadius = 8;
-            this.siticoneTextBoxAdvanced1.ValidationPattern = "";
+            this.sTextBoxSearch.BackColor = System.Drawing.Color.Transparent;
+            this.sTextBoxSearch.BackgroundColor = System.Drawing.Color.White;
+            this.sTextBoxSearch.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
+            this.sTextBoxSearch.BottomLeftCornerRadius = 8;
+            this.sTextBoxSearch.BottomRightCornerRadius = 8;
+            this.sTextBoxSearch.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sTextBoxSearch.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.sTextBoxSearch.FocusImage = null;
+            this.sTextBoxSearch.HoverBorderColor = System.Drawing.Color.Gray;
+            this.sTextBoxSearch.HoverImage = null;
+            this.sTextBoxSearch.IdleImage = ((System.Drawing.Image)(resources.GetObject("sTextBoxSearch.IdleImage")));
+            this.sTextBoxSearch.Location = new System.Drawing.Point(33, 59);
+            this.sTextBoxSearch.Name = "sTextBoxSearch";
+            this.sTextBoxSearch.PlaceholderColor = System.Drawing.Color.Gray;
+            this.sTextBoxSearch.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.sTextBoxSearch.PlaceholderText = "Search by name....";
+            this.sTextBoxSearch.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.sTextBoxSearch.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.sTextBoxSearch.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.sTextBoxSearch.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sTextBoxSearch.Size = new System.Drawing.Size(1000, 40);
+            this.sTextBoxSearch.TabIndex = 3;
+            this.sTextBoxSearch.TextColor = System.Drawing.SystemColors.WindowText;
+            this.sTextBoxSearch.TextContent = "";
+            this.sTextBoxSearch.TopLeftCornerRadius = 8;
+            this.sTextBoxSearch.TopRightCornerRadius = 8;
+            this.sTextBoxSearch.ValidationPattern = "";
             // 
-            // GGButtonAddNewVisitor
+            // GGButtonSearchVisitor
             // 
-            this.GGButtonAddNewVisitor.Animated = true;
-            this.GGButtonAddNewVisitor.AnimatedGIF = true;
-            this.GGButtonAddNewVisitor.BorderRadius = 10;
-            this.GGButtonAddNewVisitor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewVisitor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonAddNewVisitor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewVisitor.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonAddNewVisitor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonAddNewVisitor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.GGButtonAddNewVisitor.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(244)))));
-            this.GGButtonAddNewVisitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.GGButtonAddNewVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonAddNewVisitor.ForeColor = System.Drawing.Color.White;
-            this.GGButtonAddNewVisitor.Location = new System.Drawing.Point(1039, 59);
-            this.GGButtonAddNewVisitor.Name = "GGButtonAddNewVisitor";
-            this.GGButtonAddNewVisitor.Size = new System.Drawing.Size(115, 40);
-            this.GGButtonAddNewVisitor.TabIndex = 6;
-            this.GGButtonAddNewVisitor.Text = "Search";
-            this.GGButtonAddNewVisitor.Click += new System.EventHandler(this.GGButtonAddNewVisitor_Click);
+            this.GGButtonSearchVisitor.Animated = true;
+            this.GGButtonSearchVisitor.AnimatedGIF = true;
+            this.GGButtonSearchVisitor.BorderRadius = 10;
+            this.GGButtonSearchVisitor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonSearchVisitor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonSearchVisitor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonSearchVisitor.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonSearchVisitor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonSearchVisitor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GGButtonSearchVisitor.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(244)))));
+            this.GGButtonSearchVisitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GGButtonSearchVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonSearchVisitor.ForeColor = System.Drawing.Color.White;
+            this.GGButtonSearchVisitor.Location = new System.Drawing.Point(1039, 59);
+            this.GGButtonSearchVisitor.Name = "GGButtonSearchVisitor";
+            this.GGButtonSearchVisitor.Size = new System.Drawing.Size(115, 40);
+            this.GGButtonSearchVisitor.TabIndex = 6;
+            this.GGButtonSearchVisitor.Text = "Search";
             // 
             // GPnaelListDGVandLabelWord
             // 
@@ -147,7 +146,7 @@
             this.GPnaelListDGVandLabelWord.BorderThickness = 2;
             this.GPnaelListDGVandLabelWord.Controls.Add(this.DataGridViewCurrentlyActiveVisitors);
             this.GPnaelListDGVandLabelWord.Controls.Add(this.label3);
-            this.GPnaelListDGVandLabelWord.Location = new System.Drawing.Point(107, 259);
+            this.GPnaelListDGVandLabelWord.Location = new System.Drawing.Point(107, 251);
             this.GPnaelListDGVandLabelWord.Name = "GPnaelListDGVandLabelWord";
             this.GPnaelListDGVandLabelWord.Size = new System.Drawing.Size(1186, 413);
             this.GPnaelListDGVandLabelWord.TabIndex = 5;
@@ -266,34 +265,33 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Active Visitors";
             // 
-            // guna2GradientButton1
+            // GGButtonCheckOutSelectedVisitor
             // 
-            this.guna2GradientButton1.Animated = true;
-            this.guna2GradientButton1.AnimatedGIF = true;
-            this.guna2GradientButton1.BorderRadius = 9;
-            this.guna2GradientButton1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.guna2GradientButton1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.guna2GradientButton1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.guna2GradientButton1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2GradientButton1.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(244)))));
-            this.guna2GradientButton1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2GradientButton1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2GradientButton1.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton1.Location = new System.Drawing.Point(920, 16);
-            this.guna2GradientButton1.Name = "guna2GradientButton1";
-            this.guna2GradientButton1.Size = new System.Drawing.Size(234, 40);
-            this.guna2GradientButton1.TabIndex = 6;
-            this.guna2GradientButton1.Text = "Check Out Selected Visitors";
-            this.guna2GradientButton1.Click += new System.EventHandler(this.guna2GradientButton1_Click);
+            this.GGButtonCheckOutSelectedVisitor.Animated = true;
+            this.GGButtonCheckOutSelectedVisitor.AnimatedGIF = true;
+            this.GGButtonCheckOutSelectedVisitor.BorderRadius = 9;
+            this.GGButtonCheckOutSelectedVisitor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonCheckOutSelectedVisitor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonCheckOutSelectedVisitor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonCheckOutSelectedVisitor.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonCheckOutSelectedVisitor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonCheckOutSelectedVisitor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GGButtonCheckOutSelectedVisitor.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(244)))));
+            this.GGButtonCheckOutSelectedVisitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GGButtonCheckOutSelectedVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonCheckOutSelectedVisitor.ForeColor = System.Drawing.Color.White;
+            this.GGButtonCheckOutSelectedVisitor.Location = new System.Drawing.Point(920, 15);
+            this.GGButtonCheckOutSelectedVisitor.Name = "GGButtonCheckOutSelectedVisitor";
+            this.GGButtonCheckOutSelectedVisitor.Size = new System.Drawing.Size(234, 40);
+            this.GGButtonCheckOutSelectedVisitor.TabIndex = 6;
+            this.GGButtonCheckOutSelectedVisitor.Text = "Check Out Selected Visitors";
             // 
             // guna2Panel2
             // 
             this.guna2Panel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.guna2Panel2.BorderRadius = 15;
             this.guna2Panel2.BorderThickness = 2;
-            this.guna2Panel2.Controls.Add(this.guna2GradientButton1);
+            this.guna2Panel2.Controls.Add(this.GGButtonCheckOutSelectedVisitor);
             this.guna2Panel2.Location = new System.Drawing.Point(107, 680);
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1186, 68);
@@ -326,9 +324,9 @@
 
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
-        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxAdvanced1;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced sTextBoxSearch;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2GradientButton GGButtonAddNewVisitor;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonSearchVisitor;
         private Guna.UI2.WinForms.Guna2Panel GPnaelListDGVandLabelWord;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridView DataGridViewCurrentlyActiveVisitors;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameVisitor;
@@ -336,7 +334,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn CheckInTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn Purpose;
         private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton1;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonCheckOutSelectedVisitor;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }
