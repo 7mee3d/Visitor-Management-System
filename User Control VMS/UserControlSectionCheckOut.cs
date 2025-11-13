@@ -16,5 +16,15 @@ namespace Visitor_Management_System.User_Control_VMS
         {
             InitializeComponent();
         }
+
+        private void UserControlSectionCheckOut_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void guna2GradientButton1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

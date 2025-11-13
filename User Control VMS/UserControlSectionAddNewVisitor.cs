@@ -268,10 +268,6 @@ namespace Visitor_Management_System.User_Control_VMS
                 );
         }
 
-        private void sTextBoxCheckinTime_MouseDown(object sender, MouseEventArgs e)
-        {
-            if (e.Button == MouseButtons.Right)
-                sTextBoxCheckinTime.ContextMenu = new ContextMenu();
-        }
+       
     }
 }

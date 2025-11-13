@@ -48,11 +48,11 @@
             this.label7 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
             this.sCardTotalVisitorsTodat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.sCardCurrentlyInside.SuspendLayout();
@@ -443,12 +443,24 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.DataGridViewCurrentlyActiveVisitors.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGridViewCurrentlyActiveVisitors_CellContentClick);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label3.Location = new System.Drawing.Point(9, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(275, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Currently Active Visitors";
+            // 
             // NameVisitor
             // 
             this.NameVisitor.FillWeight = 90.35847F;
             this.NameVisitor.HeaderText = "Name Visitor";
             this.NameVisitor.Name = "NameVisitor";
             this.NameVisitor.ReadOnly = true;
+            this.NameVisitor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Department
             // 
@@ -470,17 +482,6 @@
             this.Purpose.HeaderText = "Purpose";
             this.Purpose.Name = "Purpose";
             this.Purpose.ReadOnly = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.label3.Location = new System.Drawing.Point(9, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Currently Active Visitors";
             // 
             // UserControlSectionDashboard
             // 

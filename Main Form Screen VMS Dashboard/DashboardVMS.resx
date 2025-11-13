@@ -124,6 +124,82 @@
     <value>51</value>
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        AAABAAEAICAAAAEAIACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAMMOAADDDgAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADxaiQA9WgkBPNpJBLzaSQb9GolHvRqJR70aiUe9GolHvRq
+        JR70aiUe9GolHvRqJR70aiUe9GolHvRqJR70aiUe9GolHvRqJR70aiUe9GolHfNpJBb0ZyQJ/1IkAPtl
+        JAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/XR0A63EnAPRoIxnzaSR482kkwPNpJOD0aiXs9Gol7PRq
+        Jez0aiXs9Gol7PRqJez0aiXs9Gol7PRqJez0aiXs9Gol7PRqJez0aiXs9Gol7PRqJez0aiXn82kkzfRp
+        JZnzaSM1/1cZAf9dHgAAAAAAAAAAAAAAAAAAAAAAAAAAAPNpIwDzaiIe9GoksvRqJfj0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJdbzaSRL8WkqAPRpIQAAAAAAAAAAAAAAAAD3aiMA92oiBvNpJIr0aiX+9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0ayX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJcP0aCQe82kkAAAAAAAAAAAAAAAAAPNpIwDzaSMv9Gol2vRq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol+vNpJGj1aycAAAAAAAAAAAAAAAAA9GkkAPRp
+        JFL0aiX09Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gkk//RqJv/0bSn/9Gsn//Rp
+        JP/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gkkm/RxLAAAAAAAAAAAAAAA
+        AAD0aiUA9GolY/RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RpJP/1cjD/+a6I//3f
+        0P/7xav/9n9E//RpJP/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiWz9GolAAAA
+        AAAAAAAAAAAAAPRqJQD0aiVl9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aST/9HAt//q5
+        mf/+8uz/+8+5//7q4f/818T/9X9F//RoIv/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jbb0aiUAAAAAAAAAAAAAAAAA9GolAPRqJWX0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gkk//Rx
+        MP/6uJj//vHr//mvi//0cTH/95Ff//3n3P/81sP/9YBE//RpJP/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9GoltvRqJQAAAAAAAAAAAAAAAAD0aiUA9GolZfRqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rp
+        JP/0cC3/+rmY//7z7v/5sIr/9G8r//RoI//0aST/95Jg//7o3f/818T/9YBF//RoIv/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiW29GolAAAAAAAAAAAAAAAAAPRqJQD0aiVl9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aST/9HEw//m5mP/+8ev/+bCL//RvLP/0aST/9Gol//RqJf/0aiX/95Jf//7o3f/818T/9YBF//Rp
+        I//0aiX/9Gol//RqJf/0aiX/9Gol//RqJbb0aiUAAAAAAAAAAAAAAAAA9GolAPRqJWX0aiX/9Gol//Rq
+        Jf/0aiX/9Gok//VwLv/5uJf//vPu//mwi//0byz/9Gok//RqJf/0aiX/9Gol//RqJP/0aiT/95Jg//7o
+        3P/818T/9oBF//RpI//0aiX/9Gol//RqJf/0aiX/9GoltvRqJQAAAAAAAAAAAAAAAAD0aiUA9GolZfRq
+        Jf/0aiX/9Gol//RpJP/1cC7/+raW//7x6//5sIv/9G8s//RpJP/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/95Jf//3n3f/81cH/9Xw///RpJP/0aiX/9Gol//RqJf/0aiW29GolAAAAAAAAAAAAAAAAAPRq
+        JQD0aiVl9Gol//RqJf/0aiX/9Ggi//aCSP/+7eX/+ryc//RvLP/0aiT/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiT/+Jpq//7u5f/5pnz/9Ggi//RqJf/0aiX/9Gol//RqJbb0aiUAAAAAAAAA
+        AAAAAAAA9GolAPRqJWX0aiX/9Gol//RqJf/0aCL/9oJI//7t5P/6uZn/9G4r//RqJP/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RpJf/3l2f//u3l//mmff/0aCH/9Gol//RqJf/0aiX/9GoltvRq
+        JQAAAAAAAAAAAAAAAAD0aiUA9GolZfRqJf/0aiX/9Gol//RpJP/0cC7/+rmY//7x6v/5rIX/9G4r//Rp
+        JP/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aST/9o9b//3m2v/818T/9Xw///RpJP/0aiX/9Gol//Rq
+        Jf/0aiW29GolAAAAAAAAAAAAAAAAAPRqJQD0aiVl9Gol//RqJf/0aiX/9Gol//RpJP/1cjD/+ryd//7z
+        7f/5rIX/9G4q//RqJP/0aiX/9Gsl//RqJf/0aiT/9Gok//ePXP/95dn//NrJ//aDSP/0aSP/9Gol//Rq
+        Jf/0aiX/9Gol//RqJbb0aiUAAAAAAAAAAAAAAAAA9GolAPRqJWX0aiX/9Gol//RqJf/0aiX/9Gol//Rp
+        JP/1czH/+r2e//7x6v/5rIX/9G4q//RpJP/0aiX/9Gol//RpJP/3j1r//eXZ//zayf/2gkn/9Gkk//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9GoltvRqJQAAAAAAAAAAAAAAAAD0aiUA9GolZfRqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RpJP/1cS//+ryd//7z7f/5rIX/9G4q//RpI//0aST/945Z//7l2P/82sr/9oJI//Ro
+        Iv/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiW29GolAAAAAAAAAAAAAAAAAPRqJQD0aiVl9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RpJP/0czL/+r2e//7x6v/5rIX/9HEv//eOWf/95Nf//NvK//WD
+        Sv/0aSP/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJbb0aiUAAAAAAAAAAAAAAAAA9GolAPRq
+        JWX0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RpJP/0cTD/+r2e//7y7P/7zbX//und//zb
+        yv/1g0r/9Ggi//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9GoltvRqJQAAAAAAAAAAAAAA
+        AAD0aiUA9GolZPRqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RpJP/1dTX/+raV//3j
+        1v/7zrf/9oVN//RpJP/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiWz9GolAAAA
+        AAAAAAAAAAAAAPNpJADzaSRY9Gol+PRqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        JP/0ayb/9G4r//RsKf/0aiT/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rp
+        JJ70cy4AAAAAAAAAAAAAAAAA82kkAPNpJDj0aiXg9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX782kkc/VrKAAAAAAAAAAAAAAAAAD2ayMA9msjC/NpJJn0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJNHzaSIn82kjAAAAAAAAAAAAAAAAAAAAAADzaSUA82kjMvRqJL30aiX59Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//RqJf/0aiX/9Gol//Rq
+        Jf/0aiX/9Gol//RqJf/0aiXa82ojYPNoHgTzaSEAAAAAAAAAAAAAAAAAAAAAAPthIADneCgA9GkjHfNp
+        JID0aSXH82kk5fRqJPH0aiXx9Gol8fRqJfH0aiXx9Gol8fRqJfH0aiXx9Gol8fRqJfH0aiXx9Gol8fRq
+        JfH0aiXx9Gol8fRqJez0aiXS9GoloPNpIzr+YwAB+mUMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AADwaCQA9WYkBvNoJBfzaSQh9GolJfRqJSX0aiUl9GolJfRqJSX0aiUl9GolJfRqJSX0aiUl9GolJfRq
+        JSX0aiUl9GolJfRqJSX0aiUl9GolI/NpJBv0aCQL/2IkAPhmJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAA//////gAAD/wAAAP4AAAD8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AA
+        AAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AAAAfAAAAHwAAAB8AA
+        AAfgAAAH8AAAD/gAAD////////////////8=
+</value>
+  </data>
   <data name="GButtonSettingsSSection.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO

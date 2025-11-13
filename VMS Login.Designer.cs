@@ -41,12 +41,12 @@
             this.siticoneTextBoxUsername = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.label4 = new System.Windows.Forms.Label();
             this.GPanelPassword = new Guna.UI2.WinForms.Guna2Panel();
+            this.siticoneTextBoxPassword = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.label5 = new System.Windows.Forms.Label();
             this.GButtonLogIn = new Guna.UI2.WinForms.Guna2Button();
             this.LblShowMessageWrongPasswordOrLockAccount = new System.Windows.Forms.Label();
             this.siticoneShadowPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowPanel();
             this.label1 = new System.Windows.Forms.Label();
-            this.siticoneTextBoxPassword = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.GPnaelUsername.SuspendLayout();
             this.GPanelPassword.SuspendLayout();
@@ -199,6 +199,37 @@
             this.GPanelPassword.Size = new System.Drawing.Size(334, 86);
             this.GPanelPassword.TabIndex = 1;
             // 
+            // siticoneTextBoxPassword
+            // 
+            this.siticoneTextBoxPassword.BackColor = System.Drawing.Color.Transparent;
+            this.siticoneTextBoxPassword.BackgroundColor = System.Drawing.Color.White;
+            this.siticoneTextBoxPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.siticoneTextBoxPassword.BottomLeftCornerRadius = 8;
+            this.siticoneTextBoxPassword.BottomRightCornerRadius = 8;
+            this.siticoneTextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.siticoneTextBoxPassword.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.siticoneTextBoxPassword.FocusImage = null;
+            this.siticoneTextBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.siticoneTextBoxPassword.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
+            this.siticoneTextBoxPassword.HoverImage = null;
+            this.siticoneTextBoxPassword.IdleImage = null;
+            this.siticoneTextBoxPassword.Location = new System.Drawing.Point(3, 37);
+            this.siticoneTextBoxPassword.Name = "siticoneTextBoxPassword";
+            this.siticoneTextBoxPassword.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
+            this.siticoneTextBoxPassword.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.siticoneTextBoxPassword.PlaceholderText = "Enter Your Password...";
+            this.siticoneTextBoxPassword.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.siticoneTextBoxPassword.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.siticoneTextBoxPassword.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.siticoneTextBoxPassword.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.siticoneTextBoxPassword.Size = new System.Drawing.Size(328, 42);
+            this.siticoneTextBoxPassword.TabIndex = 1;
+            this.siticoneTextBoxPassword.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
+            this.siticoneTextBoxPassword.TextContent = "";
+            this.siticoneTextBoxPassword.TopLeftCornerRadius = 8;
+            this.siticoneTextBoxPassword.TopRightCornerRadius = 8;
+            this.siticoneTextBoxPassword.ValidationPattern = "";
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -280,37 +311,6 @@
             this.label1.Size = new System.Drawing.Size(92, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "VMS";
-            // 
-            // siticoneTextBoxPassword
-            // 
-            this.siticoneTextBoxPassword.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneTextBoxPassword.BackgroundColor = System.Drawing.Color.White;
-            this.siticoneTextBoxPassword.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.siticoneTextBoxPassword.BottomLeftCornerRadius = 8;
-            this.siticoneTextBoxPassword.BottomRightCornerRadius = 8;
-            this.siticoneTextBoxPassword.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneTextBoxPassword.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.siticoneTextBoxPassword.FocusImage = null;
-            this.siticoneTextBoxPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.siticoneTextBoxPassword.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(150)))), ((int)(((byte)(243)))));
-            this.siticoneTextBoxPassword.HoverImage = null;
-            this.siticoneTextBoxPassword.IdleImage = null;
-            this.siticoneTextBoxPassword.Location = new System.Drawing.Point(3, 37);
-            this.siticoneTextBoxPassword.Name = "siticoneTextBoxPassword";
-            this.siticoneTextBoxPassword.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(117)))), ((int)(((byte)(117)))), ((int)(((byte)(117)))));
-            this.siticoneTextBoxPassword.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.siticoneTextBoxPassword.PlaceholderText = "Enter Your Password...";
-            this.siticoneTextBoxPassword.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.siticoneTextBoxPassword.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneTextBoxPassword.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneTextBoxPassword.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneTextBoxPassword.Size = new System.Drawing.Size(328, 42);
-            this.siticoneTextBoxPassword.TabIndex = 1;
-            this.siticoneTextBoxPassword.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(33)))), ((int)(((byte)(33)))), ((int)(((byte)(33)))));
-            this.siticoneTextBoxPassword.TextContent = "";
-            this.siticoneTextBoxPassword.TopLeftCornerRadius = 8;
-            this.siticoneTextBoxPassword.TopRightCornerRadius = 8;
-            this.siticoneTextBoxPassword.ValidationPattern = "";
             // 
             // VMS_Login
             // 

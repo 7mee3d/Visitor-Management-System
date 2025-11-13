@@ -327,6 +327,7 @@
             this.Controls.Add(this.GGPanelTop);
             this.Controls.Add(this.siticoneGradientPanelLeftSideNavBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "DashboardVMS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashboardVMS";

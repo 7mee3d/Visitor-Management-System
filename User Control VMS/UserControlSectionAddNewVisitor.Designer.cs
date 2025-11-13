@@ -31,6 +31,7 @@
             this.mySiticoneLicenseSettings1 = new SiticoneNetFrameworkUI.MySiticoneLicenseSettings();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
+            this.labelErrorOrCorrectMessageAddNewVisitor = new System.Windows.Forms.Label();
             this.GGButtonClear = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GGButtonAddNewVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label5 = new System.Windows.Forms.Label();
@@ -47,7 +48,6 @@
             this.sTextBoxFullNameVisitor = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.labelErrorOrCorrectMessageAddNewVisitor = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.GPanelVisitDetails.SuspendLayout();
             this.GPanelInformationPersonal.SuspendLayout();
@@ -84,6 +84,17 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(711, 636);
             this.guna2Panel1.TabIndex = 1;
+            // 
+            // labelErrorOrCorrectMessageAddNewVisitor
+            // 
+            this.labelErrorOrCorrectMessageAddNewVisitor.AutoSize = true;
+            this.labelErrorOrCorrectMessageAddNewVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelErrorOrCorrectMessageAddNewVisitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            this.labelErrorOrCorrectMessageAddNewVisitor.Location = new System.Drawing.Point(294, 588);
+            this.labelErrorOrCorrectMessageAddNewVisitor.Name = "labelErrorOrCorrectMessageAddNewVisitor";
+            this.labelErrorOrCorrectMessageAddNewVisitor.Size = new System.Drawing.Size(12, 15);
+            this.labelErrorOrCorrectMessageAddNewVisitor.TabIndex = 7;
+            this.labelErrorOrCorrectMessageAddNewVisitor.Text = "-";
             // 
             // GGButtonClear
             // 
@@ -157,7 +168,7 @@
             this.GPanelVisitDetails.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.GPanelVisitDetails.Location = new System.Drawing.Point(22, 258);
             this.GPanelVisitDetails.Name = "GPanelVisitDetails";
-            this.GPanelVisitDetails.Size = new System.Drawing.Size(664, 289);
+            this.GPanelVisitDetails.Size = new System.Drawing.Size(664, 296);
             this.GPanelVisitDetails.TabIndex = 1;
             // 
             // sTextBoxPerpouse
@@ -236,7 +247,6 @@
             this.sTextBoxCheckinTime.TopLeftCornerRadius = 8;
             this.sTextBoxCheckinTime.TopRightCornerRadius = 8;
             this.sTextBoxCheckinTime.ValidationPattern = "";
-            this.sTextBoxCheckinTime.MouseDown += new System.Windows.Forms.MouseEventHandler(this.sTextBoxCheckinTime_MouseDown);
             // 
             // label7
             // 
@@ -398,17 +408,6 @@
             this.label2.Size = new System.Drawing.Size(192, 25);
             this.label2.TabIndex = 0;
             this.label2.Text = "Personal Information";
-            // 
-            // labelErrorOrCorrectMessageAddNewVisitor
-            // 
-            this.labelErrorOrCorrectMessageAddNewVisitor.AutoSize = true;
-            this.labelErrorOrCorrectMessageAddNewVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelErrorOrCorrectMessageAddNewVisitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.labelErrorOrCorrectMessageAddNewVisitor.Location = new System.Drawing.Point(294, 588);
-            this.labelErrorOrCorrectMessageAddNewVisitor.Name = "labelErrorOrCorrectMessageAddNewVisitor";
-            this.labelErrorOrCorrectMessageAddNewVisitor.Size = new System.Drawing.Size(12, 15);
-            this.labelErrorOrCorrectMessageAddNewVisitor.TabIndex = 7;
-            this.labelErrorOrCorrectMessageAddNewVisitor.Text = "-";
             // 
             // UserControlSectionAddNewVisitor
             // 
