@@ -149,10 +149,18 @@ namespace Visitor_Management_System.User_Control_VMS
             {
                 if (countShowOnlySevenVisitorInDGV != _kNUMBER_MEMBER_TO_SHOW_INFORMATION_VISITOR_IN_DGV)
                 {
-                    if (isActiveVisitor(allInformationVisitors[counter].stcIsAvtiveVisitor))
+                    if (isActiveVisitor(allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcIsAvtiveVisitor))
                     {
-                        List<System.String> informationCheckInVisitorDataAndTime = SplitLineInformation(allInformationVisitors[counter].stcCheckInTimeVisitor, " , ");
-                        DataGridViewCurrentlyActiveVisitors.Rows.Insert(_kZERO , allInformationVisitors[counter].stcFullNameVisitor, allInformationVisitors[counter].stcDepartment, informationCheckInVisitorDataAndTime[_kONE], allInformationVisitors[counter].stcPurpose);
+                        List<System.String> informationCheckInVisitorDataAndTime = SplitLineInformation(allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcCheckInTimeVisitor, " , ");
+                    
+                        DataGridViewCurrentlyActiveVisitors.Rows.Add
+                            (
+                             allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcFullNameVisitor
+                            , allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcDepartment
+                            , informationCheckInVisitorDataAndTime[_kONE]
+                            , allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcPurpose
+                            );
+                      
                         ++countShowOnlySevenVisitorInDGV;
                     }
                 }
@@ -207,9 +215,6 @@ namespace Visitor_Management_System.User_Control_VMS
             setAnimationLabelsInDashboard();
         }
 
-        private void DataGridViewCurrentlyActiveVisitors_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
-}
+
