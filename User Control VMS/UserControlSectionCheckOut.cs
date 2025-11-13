@@ -159,6 +159,16 @@ namespace Visitor_Management_System.User_Control_VMS
             PushAllInformationVisitorToDataGridView(_kPATH_FILE_INFORMATION_VISITORS);
         }
 
-      
+     private void checkOutVisitor ()
+        {
+            List<stcInformationVisitors> allInformationVisitors = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
+
+            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0)
+            {
+                allInformationVisitors[0].stcIsAvtiveVisitor = false;
+
+            }
+
+        }
     }
 }

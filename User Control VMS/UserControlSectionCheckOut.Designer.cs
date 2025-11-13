@@ -35,9 +35,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.sTextBoxSearch = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.GGButtonSearchVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.sTextBoxSearch = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.label2 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,16 +77,26 @@
             this.guna2Panel1.Size = new System.Drawing.Size(1186, 123);
             this.guna2Panel1.TabIndex = 2;
             // 
-            // label2
+            // GGButtonSearchVisitor
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.label2.Location = new System.Drawing.Point(13, 12);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 30);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Find Visitor";
+            this.GGButtonSearchVisitor.Animated = true;
+            this.GGButtonSearchVisitor.AnimatedGIF = true;
+            this.GGButtonSearchVisitor.BorderRadius = 10;
+            this.GGButtonSearchVisitor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonSearchVisitor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GGButtonSearchVisitor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonSearchVisitor.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GGButtonSearchVisitor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GGButtonSearchVisitor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GGButtonSearchVisitor.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(244)))));
+            this.GGButtonSearchVisitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GGButtonSearchVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GGButtonSearchVisitor.ForeColor = System.Drawing.Color.White;
+            this.GGButtonSearchVisitor.Location = new System.Drawing.Point(1039, 59);
+            this.GGButtonSearchVisitor.Name = "GGButtonSearchVisitor";
+            this.GGButtonSearchVisitor.Size = new System.Drawing.Size(115, 40);
+            this.GGButtonSearchVisitor.TabIndex = 6;
+            this.GGButtonSearchVisitor.Text = "Search";
             // 
             // sTextBoxSearch
             // 
@@ -118,26 +128,16 @@
             this.sTextBoxSearch.TopRightCornerRadius = 8;
             this.sTextBoxSearch.ValidationPattern = "";
             // 
-            // GGButtonSearchVisitor
+            // label2
             // 
-            this.GGButtonSearchVisitor.Animated = true;
-            this.GGButtonSearchVisitor.AnimatedGIF = true;
-            this.GGButtonSearchVisitor.BorderRadius = 10;
-            this.GGButtonSearchVisitor.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonSearchVisitor.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.GGButtonSearchVisitor.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonSearchVisitor.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.GGButtonSearchVisitor.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.GGButtonSearchVisitor.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.GGButtonSearchVisitor.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(244)))));
-            this.GGButtonSearchVisitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.GGButtonSearchVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GGButtonSearchVisitor.ForeColor = System.Drawing.Color.White;
-            this.GGButtonSearchVisitor.Location = new System.Drawing.Point(1039, 59);
-            this.GGButtonSearchVisitor.Name = "GGButtonSearchVisitor";
-            this.GGButtonSearchVisitor.Size = new System.Drawing.Size(115, 40);
-            this.GGButtonSearchVisitor.TabIndex = 6;
-            this.GGButtonSearchVisitor.Text = "Search";
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI Semibold", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label2.Location = new System.Drawing.Point(13, 12);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(121, 30);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Find Visitor";
             // 
             // GPnaelListDGVandLabelWord
             // 
@@ -159,9 +159,10 @@
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.DataGridViewCurrentlyActiveVisitors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            this.DataGridViewCurrentlyActiveVisitors.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -181,8 +182,8 @@
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.DataGridViewCurrentlyActiveVisitors.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridViewCurrentlyActiveVisitors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));

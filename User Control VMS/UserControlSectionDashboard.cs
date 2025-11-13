@@ -215,6 +215,7 @@ namespace Visitor_Management_System.User_Control_VMS
             setAnimationLabelsInDashboard();
         }
 
-        }
+      
+    }
     }
 
