@@ -98,6 +98,7 @@
             this.GGButtonSearchVisitor.Size = new System.Drawing.Size(115, 40);
             this.GGButtonSearchVisitor.TabIndex = 6;
             this.GGButtonSearchVisitor.Text = "Search";
+            this.GGButtonSearchVisitor.Click += new System.EventHandler(this.GGButtonSearchVisitor_Click);
             // 
             // sTextBoxSearch
             // 
@@ -128,6 +129,7 @@
             this.sTextBoxSearch.TopLeftCornerRadius = 8;
             this.sTextBoxSearch.TopRightCornerRadius = 8;
             this.sTextBoxSearch.ValidationPattern = "";
+            this.sTextBoxSearch.Click += new System.EventHandler(this.sTextBoxSearch_Click);
             // 
             // label2
             // 

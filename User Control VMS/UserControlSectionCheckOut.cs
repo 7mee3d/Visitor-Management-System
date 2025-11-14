@@ -304,7 +304,84 @@ namespace Visitor_Management_System.User_Control_VMS
             CheckOutVisitor();
 
         }
-   
     
+        private void ClearAllData_DataGridView()
+        {
+            DataGridViewCurrentlyActiveVisitors.Rows.Clear();
+        } 
+
+        private void pushOneInformationVisitorToDataGridView (stcInformationVisitors informationOneVisitor )
+        {
+            List<System.String> informationVisitorCheckInDateAndTime = SplitLineInformation(informationOneVisitor.stcCheckInTimeVisitor, " , ");
+
+            DataGridViewCurrentlyActiveVisitors.Rows.Add(
+                informationOneVisitor.stcID,
+                informationOneVisitor.stcFullNameVisitor,
+                informationOneVisitor.stcDepartment,
+                informationVisitorCheckInDateAndTime[1],
+                informationOneVisitor.stcPurpose
+                );
+        }
+
+        private System.Boolean isContainTextID(string IDVisitor , System.String ID)
+        {
+            return (IDVisitor.Contains(ID));
+        }
+
+        private System.Boolean isContainTextNameVisitor(string NameVisitor, System.String NameV)
+        {
+            return (NameVisitor.ToLower().Contains(NameV.ToLower()));
+        }
+
+        private System.Boolean IsContainIDorNameInFile (string TextToBeSearchIDorNameVisitor , string IDVisitor , string FullNameVisitor )
+        {
+            return (isContainTextID(IDVisitor.ToString(), TextToBeSearchIDorNameVisitor) || isContainTextNameVisitor(FullNameVisitor, TextToBeSearchIDorNameVisitor));
+        }
+    
+        private void pushAllInformationAccordingSearch()
+        {
+            string TextToBeSearchIDorNameVisitor  = sTextBoxSearch.Text.ToLower();
+
+            List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
+
+            foreach (stcInformationVisitors informationOneVisitor in allInformationVisitor)
+                if(informationOneVisitor.stcIsAvtiveVisitor)
+                    if(IsContainIDorNameInFile (TextToBeSearchIDorNameVisitor , informationOneVisitor.stcID.ToString() , informationOneVisitor.stcFullNameVisitor)) 
+                             pushOneInformationVisitorToDataGridView(informationOneVisitor);
+
+            
+        }
+
+        private void SearchVisitorInVMS()
+        {
+            ClearAllData_DataGridView();
+            pushAllInformationAccordingSearch();
+        }
+
+        private void GGButtonSearchVisitor_Click(object sender, EventArgs e)
+        {
+            SearchVisitorInVMS();
+        }
+
+        private void setDefaultDataGridViewAndTextBoxSearch()
+        {
+            if (sTextBoxSearch.Text != "")
+            {
+                PushAllInformationVisitorToDataGridView(_kPATH_FILE_INFORMATION_VISITORS);
+                sTextBoxSearch.Clear();
+                sTextBoxSearch.Focus();
+            }
+            else
+            {
+                setDefaultDataGridViewAndTextBoxSearch();
+            }
+        }
+    
+        private void sTextBoxSearch_Click(object sender, EventArgs e)
+        {
+            setDefaultDataGridViewAndTextBoxSearch();
+
+        }
+ 
     }
 }
