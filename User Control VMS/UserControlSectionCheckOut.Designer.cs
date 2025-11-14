@@ -329,7 +329,7 @@
             this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStripCheckOutVisitors.Size = new System.Drawing.Size(152, 36);
+            this.guna2ContextMenuStripCheckOutVisitors.Size = new System.Drawing.Size(152, 32);
             // 
             // operationsToolStripMenuItemCheckOutSelectedVisitors
             // 
@@ -338,8 +338,8 @@
             this.operationsToolStripMenuItemCheckOutSelectedVisitors.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.operationsToolStripMenuItemCheckOutSelectedVisitors.Image = ((System.Drawing.Image)(resources.GetObject("operationsToolStripMenuItemCheckOutSelectedVisitors.Image")));
             this.operationsToolStripMenuItemCheckOutSelectedVisitors.Name = "operationsToolStripMenuItemCheckOutSelectedVisitors";
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Padding = new System.Windows.Forms.Padding(3, 5, 3, 5);
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Size = new System.Drawing.Size(157, 32);
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Padding = new System.Windows.Forms.Padding(3);
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Size = new System.Drawing.Size(157, 28);
             this.operationsToolStripMenuItemCheckOutSelectedVisitors.Text = "Operations";
             // 
             // checkOutSelectedVisitorsToolStripMenuItem
@@ -347,8 +347,8 @@
             this.checkOutSelectedVisitorsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.checkOutSelectedVisitorsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("checkOutSelectedVisitorsToolStripMenuItem.Image")));
             this.checkOutSelectedVisitorsToolStripMenuItem.Name = "checkOutSelectedVisitorsToolStripMenuItem";
-            this.checkOutSelectedVisitorsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 5, 0, 5);
-            this.checkOutSelectedVisitorsToolStripMenuItem.Size = new System.Drawing.Size(242, 30);
+            this.checkOutSelectedVisitorsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.checkOutSelectedVisitorsToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
             this.checkOutSelectedVisitorsToolStripMenuItem.Text = "Check Out Selected Visitors";
             this.checkOutSelectedVisitorsToolStripMenuItem.Click += new System.EventHandler(this.checkOutSelectedVisitorsToolStripMenuItem_Click);
             // 

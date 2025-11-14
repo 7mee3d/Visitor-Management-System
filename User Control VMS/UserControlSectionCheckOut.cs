@@ -283,6 +283,13 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
      
+        private void setAllPropertiesAndSetDefaultAntClearDataDGV()
+        {
+            ShowMessageSsuccessfullyCheckOutVisitor();
+            ClearAllData_DataGridView();
+            setDefaultDataGridViewAndTextBoxSearch();
+        }
+       
         private void checkOutOneVisitor(DataGridViewRow RowInformationVisitor)
         {
             if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0)
@@ -294,7 +301,7 @@ namespace Visitor_Management_System.User_Control_VMS
                 ChangeActiveVisitioToCheckOut(ref InformationVisitor);
 
                 UpdateInformationVisitorAfterFound(ref InformationVisitor, IDVisitor);
-                ShowMessageSsuccessfullyCheckOutVisitor();
+                setAllPropertiesAndSetDefaultAntClearDataDGV();
             }
         }
 
@@ -395,5 +402,6 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
    
+
     }
 }
