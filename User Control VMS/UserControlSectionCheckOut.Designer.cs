@@ -40,13 +40,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).BeginInit();
@@ -162,7 +163,6 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.DataGridViewCurrentlyActiveVisitors.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.DataGridViewCurrentlyActiveVisitors.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -174,6 +174,7 @@
             this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeight = 39;
             this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridViewCurrentlyActiveVisitors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDVisitor,
             this.NameVisitor,
             this.Department,
             this.CheckInTime,
@@ -226,35 +227,6 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // NameVisitor
-            // 
-            this.NameVisitor.FillWeight = 90.35847F;
-            this.NameVisitor.HeaderText = "Name Visitor";
-            this.NameVisitor.Name = "NameVisitor";
-            this.NameVisitor.ReadOnly = true;
-            this.NameVisitor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Department
-            // 
-            this.Department.FillWeight = 80.21175F;
-            this.Department.HeaderText = "Department";
-            this.Department.Name = "Department";
-            this.Department.ReadOnly = true;
-            // 
-            // CheckInTime
-            // 
-            this.CheckInTime.FillWeight = 80.23858F;
-            this.CheckInTime.HeaderText = "Check-in Time";
-            this.CheckInTime.Name = "CheckInTime";
-            this.CheckInTime.ReadOnly = true;
-            // 
-            // Purpose
-            // 
-            this.Purpose.FillWeight = 80.19117F;
-            this.Purpose.HeaderText = "Purpose";
-            this.Purpose.Name = "Purpose";
-            this.Purpose.ReadOnly = true;
-            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -286,6 +258,7 @@
             this.GGButtonCheckOutSelectedVisitor.Size = new System.Drawing.Size(234, 40);
             this.GGButtonCheckOutSelectedVisitor.TabIndex = 6;
             this.GGButtonCheckOutSelectedVisitor.Text = "Check Out Selected Visitors";
+            this.GGButtonCheckOutSelectedVisitor.Click += new System.EventHandler(this.GGButtonCheckOutSelectedVisitor_Click);
             // 
             // guna2Panel2
             // 
@@ -297,6 +270,42 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1186, 68);
             this.guna2Panel2.TabIndex = 7;
+            // 
+            // IDVisitor
+            // 
+            this.IDVisitor.HeaderText = "ID Visitor";
+            this.IDVisitor.Name = "IDVisitor";
+            this.IDVisitor.ReadOnly = true;
+            this.IDVisitor.Visible = false;
+            // 
+            // NameVisitor
+            // 
+            this.NameVisitor.FillWeight = 90.35847F;
+            this.NameVisitor.HeaderText = "Name Visitor";
+            this.NameVisitor.Name = "NameVisitor";
+            this.NameVisitor.ReadOnly = true;
+            this.NameVisitor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Department
+            // 
+            this.Department.FillWeight = 80.21175F;
+            this.Department.HeaderText = "Department";
+            this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
+            // 
+            // CheckInTime
+            // 
+            this.CheckInTime.FillWeight = 80.23858F;
+            this.CheckInTime.HeaderText = "Check-in Time";
+            this.CheckInTime.Name = "CheckInTime";
+            this.CheckInTime.ReadOnly = true;
+            // 
+            // Purpose
+            // 
+            this.Purpose.FillWeight = 80.19117F;
+            this.Purpose.HeaderText = "Purpose";
+            this.Purpose.Name = "Purpose";
+            this.Purpose.ReadOnly = true;
             // 
             // UserControlSectionCheckOut
             // 
@@ -330,12 +339,13 @@
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonSearchVisitor;
         private Guna.UI2.WinForms.Guna2Panel GPnaelListDGVandLabelWord;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridView DataGridViewCurrentlyActiveVisitors;
+        private System.Windows.Forms.Label label3;
+        private Guna.UI2.WinForms.Guna2GradientButton GGButtonCheckOutSelectedVisitor;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDVisitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameVisitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Department;
         private System.Windows.Forms.DataGridViewTextBoxColumn CheckInTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn Purpose;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2GradientButton GGButtonCheckOutSelectedVisitor;
-        private Guna.UI2.WinForms.Guna2Panel guna2Panel2;
     }
 }

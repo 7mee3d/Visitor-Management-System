@@ -16,7 +16,7 @@ namespace Visitor_Management_System.User_Control_VMS
         //Constants
         private const System.String _kPATH_FILE_INFORMATION_VISITORS = @"../../Data_Information_VMS/Information_Visitors.txt";
         private const System.String _kSEPARATOR_FILE_INFORMATION_VISITORS = "++||++";
-        private const System.Int16 _kNUMBER_START_READ_DATA_INFOMATION_VISITORS = 18;
+        private const System.Int16 _kNUMBER_START_READ_DATA_INFOMATION_VISITORS = 19;
         private const System.UInt16 _kNUMBER_MEMBER_INFORMATION_VISITOR = 6 ;
         private const System.UInt16 _kNUMBER_MEMBER_TO_SHOW_INFORMATION_VISITOR_IN_DGV = 7 ;
         private const System.UInt16 _MAX_HEIGHT_TO_INCREMENT_IN_HEIHT_LALBELS = 23 ;
@@ -27,7 +27,7 @@ namespace Visitor_Management_System.User_Control_VMS
         private class stcInformationVisitors
         {
 
-            public System.Int32 stcID; 
+            public System.UInt64 stcID; 
             public System.String stcFullNameVisitor;
             public System.String stcDepartment; 
             public System.String stcCheckInTimeVisitor; 
@@ -88,7 +88,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
             if (lineInformationVisitor.Count >= _kNUMBER_MEMBER_INFORMATION_VISITOR)
             {
-                informationOneVisitorStructure.stcID = Convert.ToInt32(lineInformationVisitor[0]);
+                informationOneVisitorStructure.stcID = Convert.ToUInt64(lineInformationVisitor[0]);
                 informationOneVisitorStructure.stcFullNameVisitor = lineInformationVisitor[1];
                 informationOneVisitorStructure.stcDepartment = lineInformationVisitor[2];
                 informationOneVisitorStructure.stcCheckInTimeVisitor = lineInformationVisitor[3];
@@ -120,7 +120,7 @@ namespace Visitor_Management_System.User_Control_VMS
             List<System.String> allInformationLiesStringFromFile = LoadAllInformationFromFile(_kPATH_FILE_INFORMATION_VISITORS);
             List<stcInformationVisitors> allInformationDataVisitors = new List<stcInformationVisitors>(); 
 
-            for (System.Int32 counter = _kNUMBER_START_READ_DATA_INFOMATION_VISITORS - _kONE ; counter < allInformationLiesStringFromFile.Count; counter++ )
+            for (System.Int32 counter = _kNUMBER_START_READ_DATA_INFOMATION_VISITORS - _kONE  ; counter < allInformationLiesStringFromFile.Count; counter++ )
             {
                 List<System.String> allInformationOneLine = SplitLineInformation(allInformationLiesStringFromFile[counter], _kSEPARATOR_FILE_INFORMATION_VISITORS);
 
@@ -155,6 +155,7 @@ namespace Visitor_Management_System.User_Control_VMS
                     
                         DataGridViewCurrentlyActiveVisitors.Rows.Add
                             (
+                            allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcID ,
                              allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcFullNameVisitor
                             , allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcDepartment
                             , informationCheckInVisitorDataAndTime[_kONE]
@@ -215,7 +216,7 @@ namespace Visitor_Management_System.User_Control_VMS
             setAnimationLabelsInDashboard();
         }
 
-      
+  
     }
     }
 

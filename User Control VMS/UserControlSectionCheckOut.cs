@@ -20,16 +20,36 @@ namespace Visitor_Management_System.User_Control_VMS
         //Constants
         private const System.String _kPATH_FILE_INFORMATION_VISITORS = @"../../Data_Information_VMS/Information_Visitors.txt";
         private const System.String _kSEPARATOR_FILE_INFORMATION_VISITORS = "++||++";
-        private const System.Int16 _kNUMBER_START_READ_DATA_INFOMATION_VISITORS = 18;
+        private const System.Int16 _kNUMBER_START_READ_DATA_INFOMATION_VISITORS = 19;
         private const System.UInt16 _kNUMBER_MEMBER_INFORMATION_VISITOR = 6;
         private const System.Int16 _kONE = 1;
         private const System.Int16 _kZERO = 0;
+
+        string BannerInformationVisitor =@".--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--. 
+/ .. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \
+\ \/\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ \/ /
+ \/ /`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'\/ / 
+ / /\                                                                                                                / /\ 
+/ /\ \        ___        __                            _   _              __     ___     _ _                        / /\ \
+\ \/ /       |_ _|_ __  / _| ___  _ __ _ __ ___   __ _| |_(_) ___  _ __   \ \   / (_)___(_) |_ ___  _ __ ___        \ \/ /
+ \/ /         | || '_ \| |_ / _ \| '__| '_ ` _ \ / _` | __| |/ _ \| '_ \   \ \ / /| / __| | __/ _ \| '__/ __|        \/ / 
+ / /\         | || | | |  _| (_) | |  | | | | | | (_| | |_| | (_) | | | |   \ V / | \__ \ | || (_) | |  \__ \        / /\ 
+/ /\ \       |___|_| |_|_|  \___/|_|  |_| |_| |_|\__,_|\__|_|\___/|_| |_|    \_/  |_|___/_|\__\___/|_|  |___/       / /\ \
+\ \/ /                                                                                                              \ \/ /
+ \/ /                                                                                                                \/ / 
+ / /\.--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--..--./ /\ 
+/ /\ \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \.. \/\ \
+\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `'\ `' /
+ `--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--'`--' 
+
+";
+
 
 
         private class stcInformationVisitors
         {
 
-            public System.Int32 stcID;
+            public System.UInt64 stcID;
             public System.String stcFullNameVisitor;
             public System.String stcDepartment;
             public System.String stcCheckInTimeVisitor;
@@ -49,6 +69,11 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
 
+        private stcInformationVisitors returnEmptyObjectInformationVisitor ()
+        {
+            return new stcInformationVisitors(); 
+        }
+       
         private List<System.String> LoadAllInformationFromFile(System.String pathFile)
         {
             List<System.String> allLineInformationFromFile = new List<System.String>();
@@ -77,7 +102,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
             if (lineInformationVisitor.Count >= _kNUMBER_MEMBER_INFORMATION_VISITOR)
             {
-                informationOneVisitorStructure.stcID = Convert.ToInt32(lineInformationVisitor[0]);
+                informationOneVisitorStructure.stcID = Convert.ToUInt64(lineInformationVisitor[0]);
                 informationOneVisitorStructure.stcFullNameVisitor = lineInformationVisitor[1];
                 informationOneVisitorStructure.stcDepartment = lineInformationVisitor[2];
                 informationOneVisitorStructure.stcCheckInTimeVisitor = lineInformationVisitor[3];
@@ -92,6 +117,23 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
 
+        private System.String ConvertDataInformationVisitorToLine (stcInformationVisitors informationOneVisitor , System.String Separator = "++||++")
+        {
+            System.String LineInformationVisitor = "";
+            LineInformationVisitor += informationOneVisitor.stcID + Separator;
+            LineInformationVisitor += informationOneVisitor.stcFullNameVisitor + Separator;
+            LineInformationVisitor += informationOneVisitor.stcDepartment + Separator;
+            LineInformationVisitor += informationOneVisitor.stcCheckInTimeVisitor + Separator;
+            LineInformationVisitor += informationOneVisitor.stcPurpose + Separator;
+
+            if(informationOneVisitor.stcIsAvtiveVisitor)
+            LineInformationVisitor += "1" ;
+            else
+                LineInformationVisitor += "0";
+
+            return LineInformationVisitor; 
+        }
+      
         private List<System.String> SplitLineInformation(System.String lineInformationVisitor, System.String Separator = "++||++")
         {
             List<System.String> allInformationLineAfterSplit = new List<System.String>();
@@ -108,7 +150,7 @@ namespace Visitor_Management_System.User_Control_VMS
             List<System.String> allInformationLiesStringFromFile = LoadAllInformationFromFile(_kPATH_FILE_INFORMATION_VISITORS);
             List<stcInformationVisitors> allInformationDataVisitors = new List<stcInformationVisitors>();
 
-            for (System.Int32 counter = _kNUMBER_START_READ_DATA_INFOMATION_VISITORS - _kONE; counter < allInformationLiesStringFromFile.Count; counter++)
+            for (System.Int32 counter = _kNUMBER_START_READ_DATA_INFOMATION_VISITORS -_kONE ; counter < allInformationLiesStringFromFile.Count; counter++)
             {
 
                 List<System.String> allInformationOneLine = SplitLineInformation(allInformationLiesStringFromFile[counter], _kSEPARATOR_FILE_INFORMATION_VISITORS);
@@ -132,15 +174,16 @@ namespace Visitor_Management_System.User_Control_VMS
 
             List<stcInformationVisitors> allInformationVisitors = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
 
-            for (System.Int32 counter = _kZERO; counter < allInformationVisitors.Count; counter++)
+            for (System.Int32 counter = 0; counter < allInformationVisitors.Count; counter++)
             {
-               
+            
                     if (isActiveVisitor(allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcIsAvtiveVisitor))
                     {
                         List<System.String> informationCheckInVisitorDataAndTime = SplitLineInformation(allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcCheckInTimeVisitor, " , ");
 
                         DataGridViewCurrentlyActiveVisitors.Rows.Add
                             (
+                            allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcID,
                              allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcFullNameVisitor
                             , allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcDepartment
                             , informationCheckInVisitorDataAndTime[_kONE]
@@ -154,20 +197,100 @@ namespace Visitor_Management_System.User_Control_VMS
             
         }
      
+        private void SaveAllInformationAfterChangeDataToFile (List<stcInformationVisitors> allInformationVisitorAfterChangeData , string pathFile)
+        {
+            if (!System.IO.File.Exists(pathFile))
+                System.IO.File.Create(pathFile).Close();
+
+            System.IO.StreamWriter WriteAllInformationVisitorAfterChangeData = new System.IO.StreamWriter(pathFile);
+            WriteAllInformationVisitorAfterChangeData.WriteLine(BannerInformationVisitor);
+
+            foreach (stcInformationVisitors informationOneVisitor in allInformationVisitorAfterChangeData)
+            {
+                WriteAllInformationVisitorAfterChangeData.WriteLine(ConvertDataInformationVisitorToLine(informationOneVisitor, "++||++"));
+            }
+            WriteAllInformationVisitorAfterChangeData.Close(); 
+
+        }
+  
         private void UserControlSectionCheckOut_Load(object sender, EventArgs e)
         {
             PushAllInformationVisitorToDataGridView(_kPATH_FILE_INFORMATION_VISITORS);
         }
 
-     private void checkOutVisitor ()
+        private System.Boolean areEqualString (System.String StringOne  , System.String StringTwo)
         {
-            List<stcInformationVisitors> allInformationVisitors = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
+            return (StringOne == StringTwo); 
+        }
 
-            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0)
+      /*  private System.Int32 returnIDVisitorAfterFoundInFiles (System.String nameVisitor)
+        {
+            List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS); 
+
+            foreach (stcInformationVisitors informationOneVisitor in allInformationVisitor)
             {
-                allInformationVisitors[0].stcIsAvtiveVisitor = false;
-
+                if (areEqualString(informationOneVisitor.stcFullNameVisitor, nameVisitor))
+                    return informationOneVisitor.stcID; 
             }
+
+            return 0; 
+        }
+        */
+        private stcInformationVisitors searchTheVisitorInFiles (System.String IDVisitor )
+        {
+            List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
+          
+            foreach (stcInformationVisitors informationOneVisitor in allInformationVisitor)
+            {
+                if (IDVisitor == informationOneVisitor.stcID.ToString())
+                    return informationOneVisitor;
+            }
+            return returnEmptyObjectInformationVisitor(); 
+        }
+      
+        private void ChangeActiveVisitioToCheckOut (ref stcInformationVisitors informationVisitor )
+        {
+            informationVisitor.stcIsAvtiveVisitor = false;
+        }
+
+        private void UpdateInformationVisitorAfterFound (ref stcInformationVisitors informationVisitor , System.String IDVisitor )
+        {
+            List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
+          
+          for (int counter = 0; counter< allInformationVisitor.Count; counter++) {
+
+                if (IDVisitor == allInformationVisitor[counter].stcID.ToString())
+                {
+                    allInformationVisitor[counter] = informationVisitor;
+                    SaveAllInformationAfterChangeDataToFile(allInformationVisitor, _kPATH_FILE_INFORMATION_VISITORS);
+                    return; 
+                }
+            }
+       
+
+        }
+  
+
+        private void CheckOutVisitor()
+        {
+            if(DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0 )
+            {
+                DataGridViewRow DGVR = DataGridViewCurrentlyActiveVisitors.SelectedRows[0];
+
+                string  IDVisitor = DGVR.Cells[0].Value.ToString() ;
+                stcInformationVisitors InformationVisitor = searchTheVisitorInFiles(IDVisitor);
+                ChangeActiveVisitioToCheckOut(ref InformationVisitor);
+                UpdateInformationVisitorAfterFound(ref InformationVisitor , IDVisitor );
+                MessageBox.Show("Done");
+            }
+        }
+       
+        
+  
+
+        private void GGButtonCheckOutSelectedVisitor_Click(object sender, EventArgs e)
+        {
+            CheckOutVisitor();
 
         }
     }

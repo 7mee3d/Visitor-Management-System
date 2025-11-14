@@ -48,11 +48,12 @@
             this.label7 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.label3 = new System.Windows.Forms.Label();
+            this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
             this.sCardTotalVisitorsTodat.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.sCardCurrentlyInside.SuspendLayout();
@@ -390,6 +391,7 @@
             this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeight = 39;
             this.DataGridViewCurrentlyActiveVisitors.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.DataGridViewCurrentlyActiveVisitors.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.IDVisitor,
             this.NameVisitor,
             this.Department,
             this.CheckInTime,
@@ -442,6 +444,24 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label3.Location = new System.Drawing.Point(9, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(275, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Currently Active Visitors";
+            // 
+            // IDVisitor
+            // 
+            this.IDVisitor.HeaderText = "ID Visitor";
+            this.IDVisitor.Name = "IDVisitor";
+            this.IDVisitor.ReadOnly = true;
+            this.IDVisitor.Visible = false;
+            // 
             // NameVisitor
             // 
             this.NameVisitor.FillWeight = 90.35847F;
@@ -470,17 +490,6 @@
             this.Purpose.HeaderText = "Purpose";
             this.Purpose.Name = "Purpose";
             this.Purpose.ReadOnly = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.label3.Location = new System.Drawing.Point(9, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(275, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Currently Active Visitors";
             // 
             // UserControlSectionDashboard
             // 
@@ -531,6 +540,7 @@
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridViewStyler siticoneDataGridViewStyler1;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridView DataGridViewCurrentlyActiveVisitors;
         private Guna.UI2.WinForms.Guna2DataGridViewStyler guna2DataGridViewStyler1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn IDVisitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn NameVisitor;
         private System.Windows.Forms.DataGridViewTextBoxColumn Department;
         private System.Windows.Forms.DataGridViewTextBoxColumn CheckInTime;
