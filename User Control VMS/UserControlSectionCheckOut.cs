@@ -288,10 +288,15 @@ namespace Visitor_Management_System.User_Control_VMS
             }
         }
 
+        private void checkOutAllVisitorAfterSeleted()
+        {
+            foreach (DataGridViewRow RowInformationVisitor in DataGridViewCurrentlyActiveVisitors.SelectedRows) checkOutOneVisitor(RowInformationVisitor);
+
+        }
+     
         private void CheckOutVisitor()
         {
-                foreach (DataGridViewRow RowInformationVisitor in DataGridViewCurrentlyActiveVisitors.SelectedRows) checkOutOneVisitor(RowInformationVisitor);
-            
+            checkOutAllVisitorAfterSeleted();
         }
        
         private void GGButtonCheckOutSelectedVisitor_Click(object sender, EventArgs e)
