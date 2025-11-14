@@ -40,14 +40,14 @@
             this.label2 = new System.Windows.Forms.Label();
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).BeginInit();
@@ -189,7 +189,6 @@
             this.DataGridViewCurrentlyActiveVisitors.DefaultCellStyle = dataGridViewCellStyle3;
             this.DataGridViewCurrentlyActiveVisitors.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(225)))), ((int)(((byte)(230)))));
             this.DataGridViewCurrentlyActiveVisitors.Location = new System.Drawing.Point(15, 74);
-            this.DataGridViewCurrentlyActiveVisitors.MultiSelect = false;
             this.DataGridViewCurrentlyActiveVisitors.Name = "DataGridViewCurrentlyActiveVisitors";
             this.DataGridViewCurrentlyActiveVisitors.ReadOnly = true;
             this.DataGridViewCurrentlyActiveVisitors.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
@@ -226,6 +225,42 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.Height = 41;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
+            // 
+            // IDVisitor
+            // 
+            this.IDVisitor.HeaderText = "ID Visitor";
+            this.IDVisitor.Name = "IDVisitor";
+            this.IDVisitor.ReadOnly = true;
+            this.IDVisitor.Visible = false;
+            // 
+            // NameVisitor
+            // 
+            this.NameVisitor.FillWeight = 90.35847F;
+            this.NameVisitor.HeaderText = "Name Visitor";
+            this.NameVisitor.Name = "NameVisitor";
+            this.NameVisitor.ReadOnly = true;
+            this.NameVisitor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Department
+            // 
+            this.Department.FillWeight = 80.21175F;
+            this.Department.HeaderText = "Department";
+            this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
+            // 
+            // CheckInTime
+            // 
+            this.CheckInTime.FillWeight = 80.23858F;
+            this.CheckInTime.HeaderText = "Check-in Time";
+            this.CheckInTime.Name = "CheckInTime";
+            this.CheckInTime.ReadOnly = true;
+            // 
+            // Purpose
+            // 
+            this.Purpose.FillWeight = 80.19117F;
+            this.Purpose.HeaderText = "Purpose";
+            this.Purpose.Name = "Purpose";
+            this.Purpose.ReadOnly = true;
             // 
             // label3
             // 
@@ -270,42 +305,6 @@
             this.guna2Panel2.Name = "guna2Panel2";
             this.guna2Panel2.Size = new System.Drawing.Size(1186, 68);
             this.guna2Panel2.TabIndex = 7;
-            // 
-            // IDVisitor
-            // 
-            this.IDVisitor.HeaderText = "ID Visitor";
-            this.IDVisitor.Name = "IDVisitor";
-            this.IDVisitor.ReadOnly = true;
-            this.IDVisitor.Visible = false;
-            // 
-            // NameVisitor
-            // 
-            this.NameVisitor.FillWeight = 90.35847F;
-            this.NameVisitor.HeaderText = "Name Visitor";
-            this.NameVisitor.Name = "NameVisitor";
-            this.NameVisitor.ReadOnly = true;
-            this.NameVisitor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // Department
-            // 
-            this.Department.FillWeight = 80.21175F;
-            this.Department.HeaderText = "Department";
-            this.Department.Name = "Department";
-            this.Department.ReadOnly = true;
-            // 
-            // CheckInTime
-            // 
-            this.CheckInTime.FillWeight = 80.23858F;
-            this.CheckInTime.HeaderText = "Check-in Time";
-            this.CheckInTime.Name = "CheckInTime";
-            this.CheckInTime.ReadOnly = true;
-            // 
-            // Purpose
-            // 
-            this.Purpose.FillWeight = 80.19117F;
-            this.Purpose.HeaderText = "Purpose";
-            this.Purpose.Name = "Purpose";
-            this.Purpose.ReadOnly = true;
             // 
             // UserControlSectionCheckOut
             // 

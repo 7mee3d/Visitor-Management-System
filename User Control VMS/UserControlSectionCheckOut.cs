@@ -14,7 +14,9 @@ namespace Visitor_Management_System.User_Control_VMS
     {
         public UserControlSectionCheckOut()
         {
+
             InitializeComponent();
+
         }
 
         //Constants
@@ -236,6 +238,7 @@ namespace Visitor_Management_System.User_Control_VMS
             return 0; 
         }
         */
+
         private stcInformationVisitors searchTheVisitorInFiles (System.String IDVisitor )
         {
             List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
@@ -255,6 +258,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
         private void UpdateInformationVisitorAfterFound (ref stcInformationVisitors informationVisitor , System.String IDVisitor )
         {
+
             List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
           
           for (int counter = 0; counter< allInformationVisitor.Count; counter++) {
@@ -270,28 +274,32 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
   
+        private void checkOutOneVisitor (DataGridViewRow RowInformationVisitor)
+        {
+            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0)
+            {
+                DataGridViewRow DGVR = RowInformationVisitor;
+
+                string IDVisitor = DGVR.Cells[0].Value.ToString();
+                stcInformationVisitors InformationVisitor = searchTheVisitorInFiles(IDVisitor);
+                ChangeActiveVisitioToCheckOut(ref InformationVisitor);
+
+                UpdateInformationVisitorAfterFound(ref InformationVisitor, IDVisitor);
+            }
+        }
 
         private void CheckOutVisitor()
         {
-            if(DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0 )
-            {
-                DataGridViewRow DGVR = DataGridViewCurrentlyActiveVisitors.SelectedRows[0];
-
-                string  IDVisitor = DGVR.Cells[0].Value.ToString() ;
-                stcInformationVisitors InformationVisitor = searchTheVisitorInFiles(IDVisitor);
-                ChangeActiveVisitioToCheckOut(ref InformationVisitor);
-                UpdateInformationVisitorAfterFound(ref InformationVisitor , IDVisitor );
-                MessageBox.Show("Done");
-            }
+                foreach (DataGridViewRow RowInformationVisitor in DataGridViewCurrentlyActiveVisitors.SelectedRows) checkOutOneVisitor(RowInformationVisitor);
+            
         }
        
-        
-  
-
         private void GGButtonCheckOutSelectedVisitor_Click(object sender, EventArgs e)
         {
             CheckOutVisitor();
 
         }
+   
+    
     }
 }
