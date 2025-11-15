@@ -120,17 +120,17 @@
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="GGButtonRefresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAADsIAAA7CARUoSoAAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAAB+klEQVRIS7WVvU4cMRDHL0REIlBShgdIeIyUFIDE0hGB5JkdHyji3mDxGKQIiZ46H0p4hKRLhPIA
-        4SQ+e0QRKQoN1UbjXS+Ld50D3VH8JGs8M397bI87eZ53HpOGYdRUAwI+1MA/6pOI2XMCs0rAXwj4XANf
-        E/ANIR9r5M+p4qUkyZ6FSWMCuSDjLMvGCLlHwFfeHgXtBYFdDBNHBRCzaQL+VktySMi6q/jlysrupLAO
-        ZlYru0lg+t5Pg9mVhQ0USIGPyvGlxu25MKBOkhw8JTQbrmwuxrwLfRoCxbb5l1LZi9A5RppuvfYiGnlh
-        sECN8OBjlDuRmFPE/fGGgAb+EyYv+R4ma0PK5cur0SYNgVFQHDznKfJ7b2s4DYPcLicA5sTbqsm2h/ZQ
-        ut1sqizrX2+rJsUok+IUBj4EWWT93KoJOX23vXTnVRg0DNWAFH90N0DZzdBpGKoBgVku6mf6cuVCxzZc
-        G2le65zA/m4IyOMgsGfOAc1GmKyNst4tAkXTvCPgApAXSocbef5hwhjdNTtT62FxAUEalheRnQwqV6rs
-        vG/rdZGogPsLbkVckBy8PCJp1XKNi3bN6wT883bV9mvZ6v8v4CnL5a7uAC4J7dtOJ38icfcWEOTgpXER
-        8Af3TQJfC9IKCPhTqsybXm9v4s7CYg/tsWgYRs0/4y/9NWpxPagAAAAASUVORK5CYII=
+        iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAH6SURBVEhLtZW9
+        ThwxEMcvREQiUFKGB0h4jJQUgMTSEYHkmR0fKOLeYPEYpAiJnjofSniEpEuE8gDhJD57RBEpCg3VRuNd
+        L4t3nQPdUfwkazwzf3tsjzt5nncek4Zh1FQDAj7UwD/qk4jZcwKzSsBfCPhcA18T8A0hH2vkz6nipSTJ
+        noVJYwK5IOMsy8YIuUfAV94eBe0FgV0ME0cFELNpAv5WS3JIyLqr+OXKyu6ksA5mViu7SWD63k+D2ZWF
+        DRRIgY/K8aXG7bkwoE6SHDwlNBuubC7GvAt9GgLFtvmXUtmL0DlGmm699iIaeWGwQI3w4GOUO5GYU8T9
+        8YaABv4TJi/5HiZrQ8rly6vRJg2BUVAcPOcp8ntvazgNg9wuJwDmxNuqybaH9lC63WyqLOtfb6smxSiT
+        4hQGPgRZZP3cqgk5fbe9dOdVGDQM1YAUf3Q3QNnN0GkYqgGBWS7qZ/py5ULHNlwbaV7rnMD+bgjI4yCw
+        Z84BzUaYrI2y3i0CRdO8I+ACkBdKhxt5/mHCGN01O1PrYXEBQRqWF5GdDCpXquy8b+t1kaiA+wtuRVyQ
+        HLw8ImnVco2Lds3rBPzzdtX2a9nq/y/gKcvlru4ALgnt204nfyJx9xYQ5OClcRHwB/dNAl8L0goI+FOq
+        zJteb2/izsJiD+2xaBhGzT/jL/01anE9qAAAAABJRU5ErkJggg==
 </value>
   </data>
   <data name="sTextBoxSearch.IdleImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
