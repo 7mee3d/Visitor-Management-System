@@ -244,7 +244,26 @@ namespace Visitor_Management_System.User_Control_VMS
         {
             ChangeAndRefershDataInDataGridViewErveryWriteTextBox();
         }
-    
+
+        private void setDefaultPropertiesControls()
+        {
+
+            sTextBoxSearch.Clear();
+            ClearAllData_DataGridView();
+            PushAllInformationVisitorToDataGridView(_kPATH_FILE_INFORMATION_VISITORS);
+
+        }
+     
+        private void Refresh()
+        {
+            setDefaultPropertiesControls();
+        }
+
+        private void GGButtonRefresh_Click(object sender, EventArgs e)
+        {
+            Refresh();
+        }
+ 
     
     }
 }

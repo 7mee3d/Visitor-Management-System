@@ -98,6 +98,7 @@
             this.GGButtonRefresh.Size = new System.Drawing.Size(116, 40);
             this.GGButtonRefresh.TabIndex = 6;
             this.GGButtonRefresh.Text = "Refresh";
+            this.GGButtonRefresh.Click += new System.EventHandler(this.GGButtonRefresh_Click);
             // 
             // sTextBoxSearch
             // 
