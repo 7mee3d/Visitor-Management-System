@@ -22,6 +22,7 @@ namespace Visitor_Management_System.User_Control_VMS
         //Constants
         private const System.String _kPATH_FILE_INFORMATION_VISITORS = @"../../Data_Information_VMS/Information_Visitors.txt";
         private const System.String _kSEPARATOR_FILE_INFORMATION_VISITORS = "++||++";
+        private const System.String _kSEPARATOR_FIELD_CHECK_OUT_VISITOR_DATE_AND_TIME = " , ";
         private const System.Int16 _kNUMBER_START_READ_DATA_INFOMATION_VISITORS = 19;
         private const System.UInt16 _kNUMBER_MEMBER_INFORMATION_VISITOR = 6;
         private const System.Int16 _kONE = 1;
@@ -200,19 +201,24 @@ namespace Visitor_Management_System.User_Control_VMS
     
         private void PushAllInformationVisitorToSameOrContainTextSearch(System.String TextSearchInCurrentVisitors)
         {
+
             List<stcInformationVisitors> allInformationVisitorSameDetailsTextSearch = LoadAllInformationVisitorAccordingTextSearch(TextSearchInCurrentVisitors);
       
-        foreach (stcInformationVisitors informationOneVisitor in allInformationVisitorSameDetailsTextSearch)
+             foreach (stcInformationVisitors informationOneVisitor in allInformationVisitorSameDetailsTextSearch)
             {
+
+                List<System.String> informationCheckOutVisitorDateAndTime = SplitLineInformation(informationOneVisitor.stcCheckInTimeVisitor, _kSEPARATOR_FIELD_CHECK_OUT_VISITOR_DATE_AND_TIME);
+           
                 DataGridViewCurrentlyActiveVisitors.Rows.Add(
 
                     informationOneVisitor.stcID,
                     informationOneVisitor.stcFullNameVisitor,
                     informationOneVisitor.stcDepartment,
-                    informationOneVisitor.stcCheckInTimeVisitor,
+                    informationCheckOutVisitorDateAndTime[1],
                     informationOneVisitor.stcPurpose
 
                     );
+          
             }
 
         }
