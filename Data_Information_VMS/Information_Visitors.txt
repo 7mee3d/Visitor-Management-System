@@ -26,7 +26,7 @@
 3184769052++||++Lucas Rodriguez++||++IT Support++||++12/11/2025 , 12:08:08 PM++||++Team Briefing++||++1
 5920741639++||++Evelyn White++||++Marketing++||++12/11/2025 , 03:38:24 PM++||++Client Follow-up++||++1
 8641295703++||++Noah Lewis++||++IT Support++||++12/11/2025 , 08:25:10 AM++||++Interview++||++0
-4701938562++||++Isabella Johnson++||++Marketing++||++12/11/2025 , 12:00:50 PM++||++Interview++||++1
+4701938562++||++Isabella Johnson++||++Marketing++||++12/11/2025 , 12:00:50 PM++||++Interview++||++0
 2039576148++||++Amelia Hall++||++IT Support++||++12/11/2025 , 04:22:49 PM++||++Budget Review++||++1
 9154726038++||++Isabella Lewis++||++HR++||++12/11/2025 , 11:14:56 AM++||++System Maintenance++||++0
 7608154392++||++James Hall++||++Operations++||++12/11/2025 , 09:12:33 AM++||++Performance Check++||++1
@@ -56,4 +56,25 @@
 8361507294++||++Abigail King++||++HR++||++12/11/2025 , 12:48:42 PM++||++Team Briefing++||++0
 1759206843++||++William Scott++||++Operations++||++12/11/2025 , 03:41:30 PM++||++On-site Visit++||++0
 5904382176++||++Mia Baker++||++Sales++||++12/11/2025 , 09:25:51 AM++||++Product Demo++||++0
-63125321++||++Jehad++||++IT Department++||++15/11/2025 , 11:05:45 AM++||++Test++||++0
+7183094625++||++Logan Perez++||++Finance++||++15/11/2025 , 11:25:36 PM++||++Budget Review++||++1
+6824917305++||++Caleb Bennett++||++Finance++||++12/11/2025 , 08:15:42 AM++||++Expense Audit++||++1
+9145823076++||++Madison Brooks++||++Sales++||++12/11/2025 , 09:27:11 AM++||++Client Proposal++||++0
+3507198462++||++Nathan Reed++||++Operations++||++12/11/2025 , 10:33:54 AM++||++Facility Inspection++||++1
+7286409531++||++Aubrey Scott++||++HR++||++12/11/2025 , 11:46:29 AM++||++New Hire Onboarding++||++1
+5938172046++||++Leo Campbell++||++Marketing++||++12/11/2025 , 12:57:08 PM++||++Brand Strategy Review++||++0
+4613925780++||++Layla Mitchell++||++IT Support++||++12/11/2025 , 01:44:37 PM++||++Network Check++||++1
+8204763591++||++Isaac Rogers++||++Finance++||++12/11/2025 , 02:51:20 PM++||++Tax Coordination++||++1
+2846915703++||++Sofia Coleman++||++Operations++||++12/11/2025 , 03:59:33 PM++||++Logistics Meeting++||++0
+9762084531++||++Eli Richardson++||++Marketing++||++12/11/2025 , 08:22:12 AM++||++Campaign Calibration++||++1
+5039471826++||++Aaliyah Powell++||++HR++||++12/11/2025 , 09:38:19 AM++||++Policy Review++||++0
+6478290135++||++Christian Murphy++||++Sales++||++12/11/2025 , 10:24:58 AM++||++Product Pitch++||++1
+1957348026++||++Zara Hughes++||++IT Support++||++12/11/2025 , 11:13:26 AM++||++Software Patch++||++1
+8695210473++||++Hudson Rivera++||++Finance++||++12/11/2025 , 12:29:41 PM++||++Quarter Budget Draft++||++0
+7305689142++||++Lydia Patterson++||++Operations++||++12/11/2025 , 01:54:03 PM++||++Supply Allocation++||++1
+4182579360++||++Xavier Simmons++||++Marketing++||++12/11/2025 , 02:18:46 PM++||++Market Study++||++0
+5928301746++||++Stella Barnes++||++HR++||++12/11/2025 , 03:36:27 PM++||++Training Evaluation++||++1
+8473195206++||++Adam Bryant++||++IT Support++||++12/11/2025 , 08:48:15 AM++||++System Diagnostics++||++0
+2694087513++||++Riley Ward++||++Sales++||++12/11/2025 , 09:52:06 AM++||++Client Negotiation++||++1
+7359162840++||++Eleanor Cox++||++Finance++||++12/11/2025 , 10:44:28 AM++||++Investment Analysis++||++0
+1048637295++||++Connor Hayes++||++Operations++||++12/11/2025 , 11:59:53 AM++||++Shift Coordination++||++1
+

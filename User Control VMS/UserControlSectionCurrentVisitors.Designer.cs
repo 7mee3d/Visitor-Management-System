@@ -41,12 +41,12 @@
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.label3 = new System.Windows.Forms.Label();
             this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).BeginInit();
@@ -138,9 +138,9 @@
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.label2.Location = new System.Drawing.Point(13, 12);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(121, 30);
+            this.label2.Size = new System.Drawing.Size(199, 30);
             this.label2.TabIndex = 2;
-            this.label2.Text = "Find Visitor";
+            this.label2.Text = "Find Current Visitor";
             // 
             // GPnaelListDGVandLabelWord
             // 
@@ -239,9 +239,20 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label3.Location = new System.Drawing.Point(9, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(167, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Active Visitors";
+            // 
             // IDVisitor
             // 
-            this.IDVisitor.FillWeight = 35.87817F;
+            this.IDVisitor.FillWeight = 38.87817F;
             this.IDVisitor.HeaderText = "ID Visitor";
             this.IDVisitor.Name = "IDVisitor";
             this.IDVisitor.ReadOnly = true;
@@ -274,17 +285,6 @@
             this.Purpose.HeaderText = "Purpose";
             this.Purpose.Name = "Purpose";
             this.Purpose.ReadOnly = true;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.label3.Location = new System.Drawing.Point(9, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Active Visitors";
             // 
             // UserControlSectionCurrentVisitors
             // 
