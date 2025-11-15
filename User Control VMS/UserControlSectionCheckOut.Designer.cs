@@ -45,18 +45,18 @@
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label3 = new System.Windows.Forms.Label();
-            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
-            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2ContextMenuStripCheckOutVisitors = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
             this.operationsToolStripMenuItemCheckOutSelectedVisitors = new System.Windows.Forms.ToolStripMenuItem();
             this.checkOutSelectedVisitorsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GGButtonCheckOutSelectedVisitor = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
             this.labelShowMessageAfterCheckOutVisitor = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).BeginInit();
-            this.guna2Panel2.SuspendLayout();
             this.guna2ContextMenuStripCheckOutVisitors.SuspendLayout();
+            this.guna2Panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -270,6 +270,43 @@
             this.Purpose.Name = "Purpose";
             this.Purpose.ReadOnly = true;
             // 
+            // guna2ContextMenuStripCheckOutVisitors
+            // 
+            this.guna2ContextMenuStripCheckOutVisitors.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors});
+            this.guna2ContextMenuStripCheckOutVisitors.Name = "guna2ContextMenuStripCheckOutVisitors";
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.ColorTable = null;
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.RoundedEdges = true;
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.guna2ContextMenuStripCheckOutVisitors.Size = new System.Drawing.Size(152, 32);
+            // 
+            // operationsToolStripMenuItemCheckOutSelectedVisitors
+            // 
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.checkOutSelectedVisitorsToolStripMenuItem});
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Image = ((System.Drawing.Image)(resources.GetObject("operationsToolStripMenuItemCheckOutSelectedVisitors.Image")));
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Name = "operationsToolStripMenuItemCheckOutSelectedVisitors";
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Padding = new System.Windows.Forms.Padding(3);
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Size = new System.Drawing.Size(157, 28);
+            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Text = "Operations";
+            // 
+            // checkOutSelectedVisitorsToolStripMenuItem
+            // 
+            this.checkOutSelectedVisitorsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkOutSelectedVisitorsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("checkOutSelectedVisitorsToolStripMenuItem.Image")));
+            this.checkOutSelectedVisitorsToolStripMenuItem.Name = "checkOutSelectedVisitorsToolStripMenuItem";
+            this.checkOutSelectedVisitorsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
+            this.checkOutSelectedVisitorsToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
+            this.checkOutSelectedVisitorsToolStripMenuItem.Text = "Check Out Selected Visitors";
+            this.checkOutSelectedVisitorsToolStripMenuItem.Click += new System.EventHandler(this.checkOutSelectedVisitorsToolStripMenuItem_Click);
+            // 
             // label3
             // 
             this.label3.AutoSize = true;
@@ -315,43 +352,6 @@
             this.guna2Panel2.Size = new System.Drawing.Size(1186, 68);
             this.guna2Panel2.TabIndex = 7;
             // 
-            // guna2ContextMenuStripCheckOutVisitors
-            // 
-            this.guna2ContextMenuStripCheckOutVisitors.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors});
-            this.guna2ContextMenuStripCheckOutVisitors.Name = "guna2ContextMenuStripCheckOutVisitors";
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.ColorTable = null;
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.RoundedEdges = true;
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.guna2ContextMenuStripCheckOutVisitors.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
-            this.guna2ContextMenuStripCheckOutVisitors.Size = new System.Drawing.Size(152, 32);
-            // 
-            // operationsToolStripMenuItemCheckOutSelectedVisitors
-            // 
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.checkOutSelectedVisitorsToolStripMenuItem});
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Image = ((System.Drawing.Image)(resources.GetObject("operationsToolStripMenuItemCheckOutSelectedVisitors.Image")));
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Name = "operationsToolStripMenuItemCheckOutSelectedVisitors";
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Padding = new System.Windows.Forms.Padding(3);
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Size = new System.Drawing.Size(157, 28);
-            this.operationsToolStripMenuItemCheckOutSelectedVisitors.Text = "Operations";
-            // 
-            // checkOutSelectedVisitorsToolStripMenuItem
-            // 
-            this.checkOutSelectedVisitorsToolStripMenuItem.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkOutSelectedVisitorsToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("checkOutSelectedVisitorsToolStripMenuItem.Image")));
-            this.checkOutSelectedVisitorsToolStripMenuItem.Name = "checkOutSelectedVisitorsToolStripMenuItem";
-            this.checkOutSelectedVisitorsToolStripMenuItem.Padding = new System.Windows.Forms.Padding(0, 3, 0, 3);
-            this.checkOutSelectedVisitorsToolStripMenuItem.Size = new System.Drawing.Size(242, 26);
-            this.checkOutSelectedVisitorsToolStripMenuItem.Text = "Check Out Selected Visitors";
-            this.checkOutSelectedVisitorsToolStripMenuItem.Click += new System.EventHandler(this.checkOutSelectedVisitorsToolStripMenuItem_Click);
-            // 
             // labelShowMessageAfterCheckOutVisitor
             // 
             this.labelShowMessageAfterCheckOutVisitor.AutoSize = true;
@@ -379,9 +379,9 @@
             this.GPnaelListDGVandLabelWord.ResumeLayout(false);
             this.GPnaelListDGVandLabelWord.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).EndInit();
+            this.guna2ContextMenuStripCheckOutVisitors.ResumeLayout(false);
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
-            this.guna2ContextMenuStripCheckOutVisitors.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -176,7 +176,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
             List<stcInformationVisitors> allInformationVisitors = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
 
-            for (System.Int32 counter = 0; counter < allInformationVisitors.Count; counter++)
+            for (System.Int32 counter = _kZERO; counter < allInformationVisitors.Count; counter++)
             {
 
                 if (isActiveVisitor(allInformationVisitors[allInformationVisitors.Count - counter - _kONE].stcIsAvtiveVisitor))
@@ -261,7 +261,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
             List<stcInformationVisitors> allInformationVisitor = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
 
-            for (int counter = 0; counter < allInformationVisitor.Count; counter++)
+            for (System.Int32 counter = _kZERO ; counter < allInformationVisitor.Count; counter++)
             {
 
                 if (IDVisitor == allInformationVisitor[counter].stcID.ToString())
@@ -292,11 +292,11 @@ namespace Visitor_Management_System.User_Control_VMS
        
         private void checkOutOneVisitor(DataGridViewRow RowInformationVisitor)
         {
-            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0)
+            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > _kZERO)
             {
                 DataGridViewRow DGVR = RowInformationVisitor;
 
-                string IDVisitor = DGVR.Cells[0].Value.ToString();
+                string IDVisitor = DGVR.Cells[_kZERO].Value.ToString();
                 stcInformationVisitors InformationVisitor = searchTheVisitorInFiles(IDVisitor);
                 ChangeActiveVisitioToCheckOut(ref InformationVisitor);
 
@@ -397,7 +397,7 @@ namespace Visitor_Management_System.User_Control_VMS
 
         private void checkOutSelectedVisitorsToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > 0)
+            if (DataGridViewCurrentlyActiveVisitors.SelectedRows.Count > _kZERO)
                 CheckOutVisitor();
 
         }
