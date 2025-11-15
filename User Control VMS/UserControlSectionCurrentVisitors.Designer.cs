@@ -41,12 +41,12 @@
             this.GPnaelListDGVandLabelWord = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
-            this.label3 = new System.Windows.Forms.Label();
             this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).BeginInit();
@@ -93,12 +93,11 @@
             this.GGButtonRefresh.ForeColor = System.Drawing.Color.White;
             this.GGButtonRefresh.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonRefresh.Image")));
             this.GGButtonRefresh.ImageOffset = new System.Drawing.Point(-5, 0);
-            this.GGButtonRefresh.Location = new System.Drawing.Point(1039, 59);
+            this.GGButtonRefresh.Location = new System.Drawing.Point(1057, 59);
             this.GGButtonRefresh.Name = "GGButtonRefresh";
-            this.GGButtonRefresh.Size = new System.Drawing.Size(115, 40);
+            this.GGButtonRefresh.Size = new System.Drawing.Size(116, 40);
             this.GGButtonRefresh.TabIndex = 6;
             this.GGButtonRefresh.Text = "Refresh";
-            this.GGButtonRefresh.Click += new System.EventHandler(this.GGButtonRefresh_Click);
             // 
             // sTextBoxSearch
             // 
@@ -122,13 +121,14 @@
             this.sTextBoxSearch.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
             this.sTextBoxSearch.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.sTextBoxSearch.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.sTextBoxSearch.Size = new System.Drawing.Size(1000, 40);
+            this.sTextBoxSearch.Size = new System.Drawing.Size(1018, 40);
             this.sTextBoxSearch.TabIndex = 3;
             this.sTextBoxSearch.TextColor = System.Drawing.SystemColors.WindowText;
             this.sTextBoxSearch.TextContent = "";
             this.sTextBoxSearch.TopLeftCornerRadius = 8;
             this.sTextBoxSearch.TopRightCornerRadius = 8;
             this.sTextBoxSearch.ValidationPattern = "";
+            this.sTextBoxSearch.TextContentChanged += new System.EventHandler(this.sTextBoxSearch_TextContentChanged);
             // 
             // label2
             // 
@@ -238,17 +238,6 @@
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.White;
             this.DataGridViewCurrentlyActiveVisitors.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.Black;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.label3.Location = new System.Drawing.Point(9, 18);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(167, 32);
-            this.label3.TabIndex = 1;
-            this.label3.Text = "Active Visitors";
-            // 
             // IDVisitor
             // 
             this.IDVisitor.FillWeight = 35.87817F;
@@ -284,6 +273,17 @@
             this.Purpose.HeaderText = "Purpose";
             this.Purpose.Name = "Purpose";
             this.Purpose.ReadOnly = true;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.label3.Location = new System.Drawing.Point(9, 18);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(167, 32);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Active Visitors";
             // 
             // UserControlSectionCurrentVisitors
             // 

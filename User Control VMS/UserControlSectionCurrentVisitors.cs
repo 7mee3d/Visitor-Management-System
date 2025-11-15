@@ -68,6 +68,10 @@ namespace Visitor_Management_System.User_Control_VMS
 
 
         }
+        private void ClearAllData_DataGridView()
+        {
+            DataGridViewCurrentlyActiveVisitors.Rows.Clear();
+        }
 
         private List<System.String> LoadAllInformationFromFile(System.String pathFile)
         {
@@ -175,10 +179,66 @@ namespace Visitor_Management_System.User_Control_VMS
 
         }
        
-        
-        private void GGButtonRefresh_Click(object sender, EventArgs e)
+        private System.Boolean isContainTextInAnotherTextOrNot (System.String TextOne , System.String TextTwo )
         {
+            return (TextOne.ToLower().Contains(TextTwo.ToLower()));
+        }
+
+        private List<stcInformationVisitors> LoadAllInformationVisitorAccordingTextSearch(System.String TextSearchInCurrentVisitors )
+        {
+            List<stcInformationVisitors> allInformationVisitors = psuhAllInformationLiesAfterConvertToDataInListStructure(_kPATH_FILE_INFORMATION_VISITORS);
+            List<stcInformationVisitors> allInformationVisitorSameDetailsTextSearch  = new List<stcInformationVisitors>() ;
+
+            foreach(stcInformationVisitors informationOneVisitor in allInformationVisitors)
+            {
+                if (isContainTextInAnotherTextOrNot(informationOneVisitor.stcID.ToString(), TextSearchInCurrentVisitors) || isContainTextInAnotherTextOrNot(informationOneVisitor.stcFullNameVisitor, TextSearchInCurrentVisitors))
+                    allInformationVisitorSameDetailsTextSearch.Add(informationOneVisitor);
+            }
+            return allInformationVisitorSameDetailsTextSearch; 
 
         }
+    
+        private void PushAllInformationVisitorToSameOrContainTextSearch(System.String TextSearchInCurrentVisitors)
+        {
+            List<stcInformationVisitors> allInformationVisitorSameDetailsTextSearch = LoadAllInformationVisitorAccordingTextSearch(TextSearchInCurrentVisitors);
+      
+        foreach (stcInformationVisitors informationOneVisitor in allInformationVisitorSameDetailsTextSearch)
+            {
+                DataGridViewCurrentlyActiveVisitors.Rows.Add(
+
+                    informationOneVisitor.stcID,
+                    informationOneVisitor.stcFullNameVisitor,
+                    informationOneVisitor.stcDepartment,
+                    informationOneVisitor.stcCheckInTimeVisitor,
+                    informationOneVisitor.stcPurpose
+
+                    );
+            }
+
+        }
+      
+        private void SearchVisitorAccordingTextBoxSearch()
+        {
+            System.String OnformationVisitorToBeSearch = sTextBoxSearch.Text.Trim();
+            PushAllInformationVisitorToSameOrContainTextSearch(OnformationVisitorToBeSearch);
+        }
+
+        private void SearchVisitor()
+        {
+            SearchVisitorAccordingTextBoxSearch();
+        }
+      
+        private void ChangeAndRefershDataInDataGridViewErveryWriteTextBox()
+        {
+            ClearAllData_DataGridView();
+            SearchVisitor();
+        }
+   
+        private void sTextBoxSearch_TextContentChanged(object sender, EventArgs e)
+        {
+            ChangeAndRefershDataInDataGridViewErveryWriteTextBox();
+        }
+    
+    
     }
 }
