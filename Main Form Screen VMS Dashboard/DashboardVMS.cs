@@ -35,11 +35,7 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
 
         private void siticoneControlBox1_Click(object sender, EventArgs e)
         {
-            Visitor_Management_System.VMS_Login frmLoginVMSScreen = new Visitor_Management_System.VMS_Login();
-
-            //Form DashBoard Screen
-            this.Close();
-            frmLoginVMSScreen.Show();
+           
         }
 
         private void GButtonDashboardSection_Click(object sender, EventArgs e)
@@ -93,6 +89,16 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
         private void GGPanelTop_MouseUp(object sender, MouseEventArgs e)
         {
             mouseDown = false;
+        }
+
+        private void GButtonLogOutAccount_Click(object sender, EventArgs e)
+        {
+            Visitor_Management_System.VMS_Login frmLoginVMSScreen = new Visitor_Management_System.VMS_Login();
+
+            //Form DashBoard Screen
+            this.Close();
+            frmLoginVMSScreen.Show();
+
         }
     }
 }

@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DashboardVMS));
             this.siticoneBorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
-            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.siticoneGradientPanelLeftSideNavBar = new Siticone.Desktop.UI.WinForms.SiticoneGradientPanel();
             this.GButtonSettingsSSection = new Guna.UI2.WinForms.Guna2Button();
             this.GButtonCurrentVisitorSection = new Guna.UI2.WinForms.Guna2Button();
@@ -44,6 +43,7 @@
             this.GMainPanelVMS = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.label2 = new System.Windows.Forms.Label();
+            this.GButtonLogOutAccount = new Guna.UI2.WinForms.Guna2Button();
             this.siticoneGradientPanelLeftSideNavBar.SuspendLayout();
             this.GGPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -59,20 +59,10 @@
             this.siticoneBorderlessForm.DockIndicatorTransparencyValue = 0.6D;
             this.siticoneBorderlessForm.TransparentWhileDrag = true;
             // 
-            // siticoneControlBox1
-            // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(139)))), ((int)(((byte)(152)))), ((int)(((byte)(166)))));
-            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1288, 19);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(45, 40);
-            this.siticoneControlBox1.TabIndex = 1;
-            this.siticoneControlBox1.Click += new System.EventHandler(this.siticoneControlBox1_Click);
-            // 
             // siticoneGradientPanelLeftSideNavBar
             // 
             this.siticoneGradientPanelLeftSideNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonLogOutAccount);
             this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonSettingsSSection);
             this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonCurrentVisitorSection);
             this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonCheckOutSection);
@@ -251,7 +241,6 @@
             this.GGPanelTop.BorderColor = System.Drawing.Color.White;
             this.GGPanelTop.Controls.Add(this.label1);
             this.GGPanelTop.Controls.Add(this.guna2PictureBox1);
-            this.GGPanelTop.Controls.Add(this.siticoneControlBox1);
             this.GGPanelTop.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.GGPanelTop.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
             this.GGPanelTop.Dock = System.Windows.Forms.DockStyle.Top;
@@ -316,6 +305,38 @@
             this.label2.TabIndex = 0;
             this.label2.Text = "© 2025 VMS . All rights reserved.";
             // 
+            // GButtonLogOutAccount
+            // 
+            this.GButtonLogOutAccount.Animated = true;
+            this.GButtonLogOutAccount.AnimatedGIF = true;
+            this.GButtonLogOutAccount.BorderRadius = 10;
+            this.GButtonLogOutAccount.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.GButtonLogOutAccount.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GButtonLogOutAccount.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GButtonLogOutAccount.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GButtonLogOutAccount.CheckedState.Font = new System.Drawing.Font("Segoe UI Semibold", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GButtonLogOutAccount.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.GButtonLogOutAccount.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.GButtonLogOutAccount.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.GButtonLogOutAccount.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.GButtonLogOutAccount.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GButtonLogOutAccount.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.GButtonLogOutAccount.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GButtonLogOutAccount.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            this.GButtonLogOutAccount.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GButtonLogOutAccount.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GButtonLogOutAccount.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.GButtonLogOutAccount.HoverState.ForeColor = System.Drawing.Color.White;
+            this.GButtonLogOutAccount.Image = ((System.Drawing.Image)(resources.GetObject("GButtonLogOutAccount.Image")));
+            this.GButtonLogOutAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.GButtonLogOutAccount.ImageOffset = new System.Drawing.Point(5, 0);
+            this.GButtonLogOutAccount.Location = new System.Drawing.Point(10, 811);
+            this.GButtonLogOutAccount.Name = "GButtonLogOutAccount";
+            this.GButtonLogOutAccount.Size = new System.Drawing.Size(220, 46);
+            this.GButtonLogOutAccount.TabIndex = 5;
+            this.GButtonLogOutAccount.Text = "Log Out";
+            this.GButtonLogOutAccount.Click += new System.EventHandler(this.GButtonLogOutAccount_Click);
+            // 
             // DashboardVMS
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -344,7 +365,6 @@
         #endregion
 
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
         private Siticone.Desktop.UI.WinForms.SiticoneGradientPanel siticoneGradientPanelLeftSideNavBar;
         private Guna.UI2.WinForms.Guna2GradientPanel GGPanelTop;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
@@ -357,5 +377,6 @@
         private Guna.UI2.WinForms.Guna2Panel GMainPanelVMS;
         private Guna.UI2.WinForms.Guna2GradientPanel guna2GradientPanel1;
         private System.Windows.Forms.Label label2;
+        private Guna.UI2.WinForms.Guna2Button GButtonLogOutAccount;
     }
 }
