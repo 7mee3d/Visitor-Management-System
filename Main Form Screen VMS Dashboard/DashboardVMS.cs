@@ -19,9 +19,15 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
         int mouseY = 0;
 
 
+        private string getYearFromSystem ()
+        {
+            return DateTime.Now.ToString("yyyy");
+        }
+
         public DashboardVMS()        
         {
             InitializeComponent();
+            YearAllRightReserved.Text = "@ " + getYearFromSystem(); 
         }
 
         private void setUserControlInMainPanelVMS (UserControl UserControlSections)
@@ -31,11 +37,6 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
 
             GMainPanelVMS.Controls.Add(UserControlSections);
             UserControlSections.BringToFront();
-        }
-
-        private void siticoneControlBox1_Click(object sender, EventArgs e)
-        {
-           
         }
 
         private void GButtonDashboardSection_Click(object sender, EventArgs e)

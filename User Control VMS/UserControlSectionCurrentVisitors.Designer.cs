@@ -42,11 +42,11 @@
             this.guna2Panel3 = new Guna.UI2.WinForms.Guna2Panel();
             this.DataGridViewCurrentlyActiveVisitors = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
             this.label3 = new System.Windows.Forms.Label();
-            this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Purpose = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CheckInTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Department = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NameVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.IDVisitor = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.guna2Panel1.SuspendLayout();
             this.GPnaelListDGVandLabelWord.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataGridViewCurrentlyActiveVisitors)).BeginInit();
@@ -250,12 +250,26 @@
             this.label3.TabIndex = 1;
             this.label3.Text = "Active Visitors";
             // 
-            // IDVisitor
+            // Purpose
             // 
-            this.IDVisitor.FillWeight = 38.87817F;
-            this.IDVisitor.HeaderText = "ID Visitor";
-            this.IDVisitor.Name = "IDVisitor";
-            this.IDVisitor.ReadOnly = true;
+            this.Purpose.FillWeight = 120.1177F;
+            this.Purpose.HeaderText = "Purpose";
+            this.Purpose.Name = "Purpose";
+            this.Purpose.ReadOnly = true;
+            // 
+            // CheckInTime
+            // 
+            this.CheckInTime.FillWeight = 99.17629F;
+            this.CheckInTime.HeaderText = "Check-in Time";
+            this.CheckInTime.Name = "CheckInTime";
+            this.CheckInTime.ReadOnly = true;
+            // 
+            // Department
+            // 
+            this.Department.FillWeight = 99.14313F;
+            this.Department.HeaderText = "Department";
+            this.Department.Name = "Department";
+            this.Department.ReadOnly = true;
             // 
             // NameVisitor
             // 
@@ -265,26 +279,12 @@
             this.NameVisitor.ReadOnly = true;
             this.NameVisitor.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
-            // Department
+            // IDVisitor
             // 
-            this.Department.FillWeight = 99.14313F;
-            this.Department.HeaderText = "Department";
-            this.Department.Name = "Department";
-            this.Department.ReadOnly = true;
-            // 
-            // CheckInTime
-            // 
-            this.CheckInTime.FillWeight = 99.17629F;
-            this.CheckInTime.HeaderText = "Check-in Time";
-            this.CheckInTime.Name = "CheckInTime";
-            this.CheckInTime.ReadOnly = true;
-            // 
-            // Purpose
-            // 
-            this.Purpose.FillWeight = 120.1177F;
-            this.Purpose.HeaderText = "Purpose";
-            this.Purpose.Name = "Purpose";
-            this.Purpose.ReadOnly = true;
+            this.IDVisitor.FillWeight = 38.87817F;
+            this.IDVisitor.HeaderText = "ID Visitor";
+            this.IDVisitor.Name = "IDVisitor";
+            this.IDVisitor.ReadOnly = true;
             // 
             // UserControlSectionCurrentVisitors
             // 
