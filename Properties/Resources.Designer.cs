@@ -63,6 +63,16 @@ namespace Visitor_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Add_Visitor_Icon_VMS {
+            get {
+                object obj = ResourceManager.GetObject("Add_Visitor_Icon_VMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Background_VMS_Login_Screen {
             get {
                 object obj = ResourceManager.GetObject("Background_VMS_Login_Screen", resourceCulture);
@@ -73,9 +83,79 @@ namespace Visitor_Management_System.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap CheckCheck_Icon_VMS {
+            get {
+                object obj = ResourceManager.GetObject("CheckCheck_Icon_VMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CheckOut_Icon_VMS {
+            get {
+                object obj = ResourceManager.GetObject("CheckOut_Icon_VMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap CurrentUser_Icon_VMSpng {
+            get {
+                object obj = ResourceManager.GetObject("CurrentUser_Icon_VMSpng", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Home_Icon_VMS {
+            get {
+                object obj = ResourceManager.GetObject("Home_Icon_VMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Logo_VMS {
             get {
                 object obj = ResourceManager.GetObject("Logo_VMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap LogOut_Icon_VMS {
+            get {
+                object obj = ResourceManager.GetObject("LogOut-Icon_VMS", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Refresh {
+            get {
+                object obj = ResourceManager.GetObject("Refresh", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Settings_Icon_VMS {
+            get {
+                object obj = ResourceManager.GetObject("Settings_Icon_VMS", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

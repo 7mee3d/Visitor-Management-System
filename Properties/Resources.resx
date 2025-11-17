@@ -118,10 +118,34 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Logo_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Logo_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Background_VMS_Login_Screen" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Background_VMS_Login_Screen.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Logo_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Logo_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="LogOut-Icon_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\LogOut-Icon_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Refresh" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Refresh.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckCheck_Icon_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CheckCheck_Icon_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CheckOut_Icon_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CheckOut_Icon_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="CurrentUser_Icon_VMSpng" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\CurrentUser_Icon_VMSpng.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Settings_Icon_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Settings_Icon_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Add_Visitor_Icon_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Add_Visitor_Icon_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Home_Icon_VMS" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Home_Icon_VMS.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

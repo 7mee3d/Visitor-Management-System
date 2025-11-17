@@ -207,6 +207,14 @@
   <ItemGroup>
     <None Include="Resources\Background_VMS_Login_Screen.png" />
     <None Include="Resources\Logo_VMS.png" />
+    <None Include="Resources\LogOut-Icon_VMS.png" />
+    <None Include="Resources\Refresh.png" />
+    <None Include="Resources\CheckCheck_Icon_VMS.png" />
+    <None Include="Resources\CheckOut_Icon_VMS.png" />
+    <None Include="Resources\CurrentUser_Icon_VMSpng.png" />
+    <None Include="Resources\Settings_Icon_VMS.png" />
+    <None Include="Resources\Add_Visitor_Icon_VMS.png" />
+    <None Include="Resources\Home_Icon_VMS.png" />
     <Content Include="Visitor-Management-System.ico" />
   </ItemGroup>
   <ItemGroup />

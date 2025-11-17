@@ -43,8 +43,8 @@
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.GMainPanelVMS = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
-            this.label2 = new System.Windows.Forms.Label();
             this.YearAllRightReserved = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.siticoneGradientPanelLeftSideNavBar.SuspendLayout();
             this.GGPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -260,7 +260,7 @@
             this.GButtonDashboardSection.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonDashboardSection.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonDashboardSection.HoverState.ForeColor = System.Drawing.Color.White;
-            this.GButtonDashboardSection.Image = ((System.Drawing.Image)(resources.GetObject("GButtonDashboardSection.Image")));
+            this.GButtonDashboardSection.Image = global::Visitor_Management_System.Properties.Resources.Home_Icon_VMS;
             this.GButtonDashboardSection.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonDashboardSection.ImageOffset = new System.Drawing.Point(5, 0);
             this.GButtonDashboardSection.Location = new System.Drawing.Point(10, 263);
@@ -329,6 +329,16 @@
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1359, 33);
             this.guna2GradientPanel1.TabIndex = 4;
             // 
+            // YearAllRightReserved
+            // 
+            this.YearAllRightReserved.AutoSize = true;
+            this.YearAllRightReserved.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.YearAllRightReserved.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
+            this.YearAllRightReserved.Location = new System.Drawing.Point(541, 9);
+            this.YearAllRightReserved.Name = "YearAllRightReserved";
+            this.YearAllRightReserved.Size = new System.Drawing.Size(0, 13);
+            this.YearAllRightReserved.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -339,17 +349,6 @@
             this.label2.Size = new System.Drawing.Size(137, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = " VMS . All rights reserved.";
-            // 
-            // YearAllRightReserved
-            // 
-            this.YearAllRightReserved.AutoSize = true;
-            this.YearAllRightReserved.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.YearAllRightReserved.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.YearAllRightReserved.Location = new System.Drawing.Point(541, 9);
-            this.YearAllRightReserved.Name = "YearAllRightReserved";
-            this.YearAllRightReserved.Size = new System.Drawing.Size(11, 13);
-            this.YearAllRightReserved.TabIndex = 1;
-            this.YearAllRightReserved.Text = "-";
             // 
             // DashboardVMS
             // 
