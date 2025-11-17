@@ -243,6 +243,7 @@
             this.GButtonDashboardSection.AnimatedGIF = true;
             this.GButtonDashboardSection.BorderRadius = 10;
             this.GButtonDashboardSection.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
+            this.GButtonDashboardSection.Checked = true;
             this.GButtonDashboardSection.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonDashboardSection.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonDashboardSection.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -365,6 +366,7 @@
             this.Name = "DashboardVMS";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "DashboardVMS";
+            this.Load += new System.EventHandler(this.DashboardVMS_Load);
             this.siticoneGradientPanelLeftSideNavBar.ResumeLayout(false);
             this.GGPanelTop.ResumeLayout(false);
             this.GGPanelTop.PerformLayout();

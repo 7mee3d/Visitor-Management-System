@@ -15,8 +15,8 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
     {
 
         bool mouseDown = false;
-        int mouseX = 0;
-        int mouseY = 0;
+        private int _MouseX = 0;
+        private int _MouseY = 0;
 
 
         private string getYearFromSystem ()
@@ -39,51 +39,57 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             UserControlSections.BringToFront();
         }
 
+        private void showSectionDashboard(UserControl nameUserControl )
+        {
+            setUserControlInMainPanelVMS(nameUserControl);
+        }
+   
         private void GButtonDashboardSection_Click(object sender, EventArgs e)
         {
             UserControlSectionDashboard UCSD = new UserControlSectionDashboard();
-            setUserControlInMainPanelVMS(UserControlSections:  UCSD);
+            showSectionDashboard(nameUserControl : UCSD);
+
+
         }
 
         private void GButtonAddNewVisitorSection_Click(object sender, EventArgs e)
         {
             UserControlSectionAddNewVisitor UCSANV = new UserControlSectionAddNewVisitor();
-            setUserControlInMainPanelVMS(UserControlSections:  UCSANV);
-
+            showSectionDashboard(nameUserControl:  UCSANV);
         }
 
         private void GButtonCheckOutSection_Click(object sender, EventArgs e)
         {
             UserControlSectionCheckOut UCSCO = new UserControlSectionCheckOut();
-            setUserControlInMainPanelVMS(UserControlSections:  UCSCO);
+            showSectionDashboard(nameUserControl:  UCSCO);
         }
 
         private void GButtonCurrentVisitorSection_Click(object sender, EventArgs e)
         {
             UserControlSectionCurrentVisitors UCSCV = new UserControlSectionCurrentVisitors();
-            setUserControlInMainPanelVMS( UserControlSections :  UCSCV);
+            showSectionDashboard(nameUserControl:  UCSCV);
         }
 
         private void GButtonSettingsSSection_Click(object sender, EventArgs e)
         {
             UserControlSectionSettings UCSS = new UserControlSectionSettings();
-            setUserControlInMainPanelVMS(UserControlSections: UCSS);
+            showSectionDashboard(nameUserControl:  UCSS);
 
         }
 
         private void GGPanelTop_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
-            mouseX = e.X;
-            mouseY = e.Y; 
+            _MouseX = e.X;
+            _MouseY = e.Y; 
         }
 
         private void GGPanelTop_MouseMove(object sender, MouseEventArgs e)
         {
             if (mouseDown)
             {
-                this.Left += e.X -  mouseX; 
-                this.Top += e.Y - mouseY; 
+                this.Left += e.X - _MouseX; 
+                this.Top += e.Y - _MouseY; 
             }
         }
 
@@ -92,14 +98,28 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             mouseDown = false;
         }
 
-        private void GButtonLogOutAccount_Click(object sender, EventArgs e)
+        private void LogOutAccountInVMS()
         {
             Visitor_Management_System.VMS_Login frmLoginVMSScreen = new Visitor_Management_System.VMS_Login();
 
             //Form DashBoard Screen
             this.Close();
             frmLoginVMSScreen.Show();
+        }
+
+        private void GButtonLogOutAccount_Click(object sender, EventArgs e)
+        {
+            LogOutAccountInVMS();
 
         }
+
+        private void DashboardVMS_Load(object sender, EventArgs e)
+        {
+            UserControlSectionDashboard UCSD = new UserControlSectionDashboard();
+
+            if (GButtonDashboardSection.Checked) showSectionDashboard(nameUserControl: UCSD);
+        }
+  
+    
     }
 }
