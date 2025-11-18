@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Visitor_Management_System.Main_Form_Screen_VMS_Settings;
 using Visitor_Management_System.User_Control_VMS;
 
 namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
@@ -29,7 +30,14 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             InitializeComponent();
             YearAllRightReserved.Text = "@ " + getYearFromSystem(); 
         }
+      
+        MainFormSettingsSection MFSS = new MainFormSettingsSection();
+        private void OpenSectionSetting()
+        {
+            this.Hide();
+            MFSS.ShowDialog();
 
+        }
         private void setUserControlInMainPanelVMS (UserControl UserControlSections)
         {
             GMainPanelVMS.Controls.Clear();
@@ -112,7 +120,10 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
 
             if (GButtonDashboardSection.Checked) showSectionDashboard(nameUserControl: UCSD);
         }
-  
-    
+
+        private void GButtonSettingsSSection_Click(object sender, EventArgs e)
+        {
+            OpenSectionSetting();
+        }
     }
 }

@@ -43,6 +43,7 @@
             this.guna2GradientPanel1 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.YearAllRightReserved = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.siticoneGradientPanelLeftSideNavBar.SuspendLayout();
             this.GGPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
@@ -62,6 +63,7 @@
             // siticoneGradientPanelLeftSideNavBar
             // 
             this.siticoneGradientPanelLeftSideNavBar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
+            this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.guna2Panel1);
             this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonReturnMainFormVMS);
             this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonUsersSection);
             this.siticoneGradientPanelLeftSideNavBar.Controls.Add(this.GButtonDepartmentSection);
@@ -99,11 +101,12 @@
             this.GButtonReturnMainFormVMS.Image = global::Visitor_Management_System.Properties.Resources.Settings_Icon_VMS;
             this.GButtonReturnMainFormVMS.ImageAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.GButtonReturnMainFormVMS.ImageOffset = new System.Drawing.Point(5, 0);
-            this.GButtonReturnMainFormVMS.Location = new System.Drawing.Point(10, 832);
+            this.GButtonReturnMainFormVMS.Location = new System.Drawing.Point(10, 811);
             this.GButtonReturnMainFormVMS.Name = "GButtonReturnMainFormVMS";
             this.GButtonReturnMainFormVMS.Size = new System.Drawing.Size(220, 46);
             this.GButtonReturnMainFormVMS.TabIndex = 5;
             this.GButtonReturnMainFormVMS.Text = "Settings";
+            this.GButtonReturnMainFormVMS.Click += new System.EventHandler(this.GButtonReturnMainFormVMS_Click);
             // 
             // GButtonUsersSection
             // 
@@ -277,6 +280,16 @@
             this.label2.TabIndex = 0;
             this.label2.Text = " VMS . All rights reserved.";
             // 
+            // guna2Panel1
+            // 
+            this.guna2Panel1.CustomBorderColor = System.Drawing.Color.White;
+            this.guna2Panel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 0, 0, 2);
+            this.guna2Panel1.Location = new System.Drawing.Point(10, 795);
+            this.guna2Panel1.Name = "guna2Panel1";
+            this.guna2Panel1.Size = new System.Drawing.Size(220, 10);
+            this.guna2Panel1.TabIndex = 6;
+            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
+            // 
             // MainFormSettingsSection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -287,8 +300,10 @@
             this.Controls.Add(this.GGPanelTop);
             this.Controls.Add(this.siticoneGradientPanelLeftSideNavBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainFormSettingsSection";
-            this.Text = "MainFormSettingsSection";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "VMS Settings";
             this.siticoneGradientPanelLeftSideNavBar.ResumeLayout(false);
             this.GGPanelTop.ResumeLayout(false);
             this.GGPanelTop.PerformLayout();
@@ -315,5 +330,6 @@
         private System.Windows.Forms.Label YearAllRightReserved;
         private System.Windows.Forms.Label label2;
         private Guna.UI2.WinForms.Guna2Button GButtonUserInformationSection;
+        private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
     }
 }
