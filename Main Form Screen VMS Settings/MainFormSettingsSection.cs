@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Visitor_Management_System.User_Control_VMS
+namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
 {
-    public partial class UserControlSectionSettings : UserControl
+    public partial class MainFormSettingsSection : Form
     {
-        public UserControlSectionSettings()
+        public MainFormSettingsSection()
         {
             InitializeComponent();
         }

@@ -87,7 +87,7 @@
             this.siticoneControlBox1.Location = new System.Drawing.Point(1345, 13);
             this.siticoneControlBox1.Name = "siticoneControlBox1";
             this.siticoneControlBox1.Size = new System.Drawing.Size(34, 29);
-            this.siticoneControlBox1.TabIndex = 1;
+            this.siticoneControlBox1.TabIndex = 5;
             // 
             // siticoneControlBox2
             // 
@@ -103,7 +103,7 @@
             this.siticoneControlBox2.Location = new System.Drawing.Point(1383, 13);
             this.siticoneControlBox2.Name = "siticoneControlBox2";
             this.siticoneControlBox2.Size = new System.Drawing.Size(34, 29);
-            this.siticoneControlBox2.TabIndex = 1;
+            this.siticoneControlBox2.TabIndex = 6;
             this.siticoneControlBox2.Click += new System.EventHandler(this.siticoneControlBox2_Click);
             // 
             // guna2PictureBox1
