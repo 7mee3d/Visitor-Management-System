@@ -219,7 +219,6 @@
             this.GButtonSettingsSSection.Size = new System.Drawing.Size(220, 46);
             this.GButtonSettingsSSection.TabIndex = 4;
             this.GButtonSettingsSSection.Text = "Settings";
-            this.GButtonSettingsSSection.Click += new System.EventHandler(this.GButtonSettingsSSection_Click);
             // 
             // GButtonCurrentVisitorSection
             // 

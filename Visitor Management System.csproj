@@ -120,6 +120,12 @@
     <Compile Include="Main Form Screen VMS Dashboard\DashboardVMS.Designer.cs">
       <DependentUpon>DashboardVMS.cs</DependentUpon>
     </Compile>
+    <Compile Include="Main Form Screen VMS Settings\MainFormSettingsSection.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main Form Screen VMS Settings\MainFormSettingsSection.Designer.cs">
+      <DependentUpon>MainFormSettingsSection.cs</DependentUpon>
+    </Compile>
     <Compile Include="User Control VMS\UserControlSectionAddNewVisitor.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -144,12 +150,6 @@
     <Compile Include="User Control VMS\UserControlSectionDashboard.Designer.cs">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionSettings.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="User Control VMS\UserControlSectionSettings.Designer.cs">
-      <DependentUpon>UserControlSectionSettings.cs</DependentUpon>
-    </Compile>
     <Compile Include="VMS Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -160,6 +160,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Main Form Screen VMS Dashboard\DashboardVMS.resx">
       <DependentUpon>DashboardVMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main Form Screen VMS Settings\MainFormSettingsSection.resx">
+      <DependentUpon>MainFormSettingsSection.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="User Control VMS\UserControlSectionAddNewVisitor.resx">
       <DependentUpon>UserControlSectionAddNewVisitor.cs</DependentUpon>
@@ -172,9 +175,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control VMS\UserControlSectionDashboard.resx">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="User Control VMS\UserControlSectionSettings.resx">
-      <DependentUpon>UserControlSectionSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VMS Login.resx">
       <DependentUpon>VMS Login.cs</DependentUpon>

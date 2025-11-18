@@ -70,13 +70,6 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             showSectionDashboard(nameUserControl:  UCSCV);
         }
 
-        private void GButtonSettingsSSection_Click(object sender, EventArgs e)
-        {
-            UserControlSectionSettings UCSS = new UserControlSectionSettings();
-            showSectionDashboard(nameUserControl:  UCSS);
-
-        }
-
         private void GGPanelTop_MouseDown(object sender, MouseEventArgs e)
         {
             mouseDown = true;
