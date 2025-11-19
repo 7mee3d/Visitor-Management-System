@@ -48,10 +48,15 @@
             this.siticoneShadowPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowPanel();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIconMinimzeLoginVMS = new System.Windows.Forms.NotifyIcon(this.components);
+            this.GCMSLoginVMS = new Guna.UI2.WinForms.Guna2ContextMenuStrip();
+            this.showToolStripMenuItemShowLoginVMS = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
+            this.exitToolStripMenuItemExitVMS = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.GPnaelUsername.SuspendLayout();
             this.GPanelPassword.SuspendLayout();
             this.siticoneShadowPanel1.SuspendLayout();
+            this.GCMSLoginVMS.SuspendLayout();
             this.SuspendLayout();
             // 
             // siticoneBorderlessForm
@@ -318,9 +323,53 @@
             // 
             this.notifyIconMinimzeLoginVMS.BalloonTipText = "Log In To Your VMS";
             this.notifyIconMinimzeLoginVMS.BalloonTipTitle = "VMS";
+            this.notifyIconMinimzeLoginVMS.ContextMenuStrip = this.GCMSLoginVMS;
             this.notifyIconMinimzeLoginVMS.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMinimzeLoginVMS.Icon")));
             this.notifyIconMinimzeLoginVMS.BalloonTipClicked += new System.EventHandler(this.notifyIconMinimzeLoginVMS_BalloonTipClicked);
-            this.notifyIconMinimzeLoginVMS.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconMinimzeLoginVMS_MouseClick);
+            this.notifyIconMinimzeLoginVMS.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconMinimzeLoginVMS_MouseDoubleClick);
+            // 
+            // GCMSLoginVMS
+            // 
+            this.GCMSLoginVMS.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.showToolStripMenuItemShowLoginVMS,
+            this.toolStripSeparator1,
+            this.exitToolStripMenuItemExitVMS});
+            this.GCMSLoginVMS.Name = "GCMSLoginVMS";
+            this.GCMSLoginVMS.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.GCMSLoginVMS.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.GCMSLoginVMS.RenderStyle.ColorTable = null;
+            this.GCMSLoginVMS.RenderStyle.RoundedEdges = true;
+            this.GCMSLoginVMS.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
+            this.GCMSLoginVMS.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.GCMSLoginVMS.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.GCMSLoginVMS.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.GCMSLoginVMS.RenderStyle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault;
+            this.GCMSLoginVMS.Size = new System.Drawing.Size(177, 54);
+            // 
+            // showToolStripMenuItemShowLoginVMS
+            // 
+            this.showToolStripMenuItemShowLoginVMS.BackColor = System.Drawing.Color.White;
+            this.showToolStripMenuItemShowLoginVMS.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showToolStripMenuItemShowLoginVMS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.showToolStripMenuItemShowLoginVMS.Name = "showToolStripMenuItemShowLoginVMS";
+            this.showToolStripMenuItemShowLoginVMS.Size = new System.Drawing.Size(176, 22);
+            this.showToolStripMenuItemShowLoginVMS.Text = "Show VMS Login";
+            this.showToolStripMenuItemShowLoginVMS.Click += new System.EventHandler(this.showToolStripMenuItemShowLoginVMS_Click);
+            // 
+            // toolStripSeparator1
+            // 
+            this.toolStripSeparator1.Name = "toolStripSeparator1";
+            this.toolStripSeparator1.Size = new System.Drawing.Size(173, 6);
+            // 
+            // exitToolStripMenuItemExitVMS
+            // 
+            this.exitToolStripMenuItemExitVMS.BackColor = System.Drawing.Color.White;
+            this.exitToolStripMenuItemExitVMS.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitToolStripMenuItemExitVMS.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.exitToolStripMenuItemExitVMS.Name = "exitToolStripMenuItemExitVMS";
+            this.exitToolStripMenuItemExitVMS.Size = new System.Drawing.Size(176, 22);
+            this.exitToolStripMenuItemExitVMS.Text = "Exit VMS";
+            this.exitToolStripMenuItemExitVMS.Click += new System.EventHandler(this.exitToolStripMenuItemExitVMS_Click);
             // 
             // VMS_Login
             // 
@@ -346,6 +395,7 @@
             this.GPanelPassword.PerformLayout();
             this.siticoneShadowPanel1.ResumeLayout(false);
             this.siticoneShadowPanel1.PerformLayout();
+            this.GCMSLoginVMS.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -369,6 +419,10 @@
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxPassword;
         private System.Windows.Forms.NotifyIcon notifyIconMinimzeLoginVMS;
+        private Guna.UI2.WinForms.Guna2ContextMenuStrip GCMSLoginVMS;
+        private System.Windows.Forms.ToolStripMenuItem showToolStripMenuItemShowLoginVMS;
+        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
+        private System.Windows.Forms.ToolStripMenuItem exitToolStripMenuItemExitVMS;
     }
 }
 

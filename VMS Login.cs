@@ -121,23 +121,22 @@ namespace Visitor_Management_System
             this.Hide();
         }
 
-        private void setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon()
+        private void setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIconORMenu()
         {
 
             this.Show();
             notifyIconMinimzeLoginVMS.Visible = false;
-
             WindowState = FormWindowState.Normal;
 
-            /*
+            
             //Makes the form appear above all other windows 
             this.TopMost = true;
             //Set the Default Top Most 
             this.TopMost = false;
             //give the Focus full marks.
-            this.Activate();*/
-        }
+            this.Activate();
 
+        }
 
         private VMS_Login.stcInformatonUser RetrurnEmptyStructureInformationUser()
         {
@@ -357,11 +356,6 @@ namespace Visitor_Management_System
             ExitVMS();      
         }
 
-        private void notifyIconMinimzeLoginVMS_MouseClick(object sender, MouseEventArgs e)
-        {
-                setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon();
-        }
-
         private void siticoneControlBoxMinimize_Click(object sender, EventArgs e)
         {
             setPropertiesNotifyIconVMSLoginAfterMinimaizeLogin();
@@ -369,10 +363,26 @@ namespace Visitor_Management_System
 
         private void notifyIconMinimzeLoginVMS_BalloonTipClicked(object sender, EventArgs e)
         {
-            setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon();
+            setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIconORMenu();
 
         }
-    
+
+        private void showToolStripMenuItemShowLoginVMS_Click(object sender, EventArgs e)
+        {
+            setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIconORMenu();
+        }
+
+        private void exitToolStripMenuItemExitVMS_Click(object sender, EventArgs e)
+        {
+            ExitVMS();
+        }
+
+        private void notifyIconMinimzeLoginVMS_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIconORMenu();
+
+        }
+ 
     
     }
 }
