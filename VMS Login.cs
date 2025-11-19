@@ -126,8 +126,16 @@ namespace Visitor_Management_System
 
             this.Show();
             notifyIconMinimzeLoginVMS.Visible = false;
+
             WindowState = FormWindowState.Normal;
 
+            /*
+            //Makes the form appear above all other windows 
+            this.TopMost = true;
+            //Set the Default Top Most 
+            this.TopMost = false;
+            //give the Focus full marks.
+            this.Activate();*/
         }
 
 
@@ -364,5 +372,7 @@ namespace Visitor_Management_System
             setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon();
 
         }
+    
+    
     }
 }

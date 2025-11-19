@@ -32,12 +32,15 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
         }
       
         MainFormSettingsSection MFSS = new MainFormSettingsSection();
+      
+        
         private void OpenSectionSetting()
         {
             this.Hide();
             MFSS.ShowDialog();
 
         }
+       
         private void setUserControlInMainPanelVMS (UserControl UserControlSections)
         {
             GMainPanelVMS.Controls.Clear();
