@@ -32,8 +32,8 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(VMS_Login));
             this.siticoneBorderlessForm = new Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm(this.components);
             this.siticoneOverlayButtonLogIn = new SiticoneNetFrameworkUI.SiticoneOverlay(this.components);
-            this.siticoneControlBox1 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
-            this.siticoneControlBox2 = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.siticoneControlBoxMinimize = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
+            this.siticoneControlBoxExit = new Siticone.Desktop.UI.WinForms.SiticoneControlBox();
             this.guna2PictureBox1 = new Guna.UI2.WinForms.Guna2PictureBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,6 +47,7 @@
             this.LblShowMessageWrongPasswordOrLockAccount = new System.Windows.Forms.Label();
             this.siticoneShadowPanel1 = new Siticone.Desktop.UI.WinForms.SiticoneShadowPanel();
             this.label1 = new System.Windows.Forms.Label();
+            this.notifyIconMinimzeLoginVMS = new System.Windows.Forms.NotifyIcon(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
             this.GPnaelUsername.SuspendLayout();
             this.GPanelPassword.SuspendLayout();
@@ -65,46 +66,47 @@
             // siticoneOverlayButtonLogIn
             // 
             this.siticoneOverlayButtonLogIn.IndicatorColor = System.Drawing.Color.White;
-            this.siticoneOverlayButtonLogIn.IndicatorSize = 50;
+            this.siticoneOverlayButtonLogIn.IndicatorSize = 60;
             this.siticoneOverlayButtonLogIn.MessageColor = System.Drawing.Color.White;
             this.siticoneOverlayButtonLogIn.MessageFont = new System.Drawing.Font("Segoe UI", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.siticoneOverlayButtonLogIn.MessageText = "Log In....";
             this.siticoneOverlayButtonLogIn.OverlayColor = System.Drawing.Color.Black;
             this.siticoneOverlayButtonLogIn.OverlayTarget = this;
             // 
-            // siticoneControlBox1
+            // siticoneControlBoxMinimize
             // 
-            this.siticoneControlBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox1.Animated = true;
-            this.siticoneControlBox1.BorderRadius = 4;
-            this.siticoneControlBox1.ControlBoxStyle = Siticone.Desktop.UI.WinForms.Enums.ControlBoxStyle.Custom;
-            this.siticoneControlBox1.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
-            this.siticoneControlBox1.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.siticoneControlBox1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneControlBox1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneControlBox1.ForeColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox1.Location = new System.Drawing.Point(1345, 13);
-            this.siticoneControlBox1.Name = "siticoneControlBox1";
-            this.siticoneControlBox1.Size = new System.Drawing.Size(34, 29);
-            this.siticoneControlBox1.TabIndex = 5;
+            this.siticoneControlBoxMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneControlBoxMinimize.Animated = true;
+            this.siticoneControlBoxMinimize.BorderRadius = 4;
+            this.siticoneControlBoxMinimize.ControlBoxStyle = Siticone.Desktop.UI.WinForms.Enums.ControlBoxStyle.Custom;
+            this.siticoneControlBoxMinimize.ControlBoxType = Siticone.Desktop.UI.WinForms.Enums.ControlBoxType.MinimizeBox;
+            this.siticoneControlBoxMinimize.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.siticoneControlBoxMinimize.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.siticoneControlBoxMinimize.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneControlBoxMinimize.ForeColor = System.Drawing.Color.White;
+            this.siticoneControlBoxMinimize.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBoxMinimize.Location = new System.Drawing.Point(1345, 13);
+            this.siticoneControlBoxMinimize.Name = "siticoneControlBoxMinimize";
+            this.siticoneControlBoxMinimize.Size = new System.Drawing.Size(34, 29);
+            this.siticoneControlBoxMinimize.TabIndex = 5;
+            this.siticoneControlBoxMinimize.Click += new System.EventHandler(this.siticoneControlBoxMinimize_Click);
             // 
-            // siticoneControlBox2
+            // siticoneControlBoxExit
             // 
-            this.siticoneControlBox2.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.siticoneControlBox2.Animated = true;
-            this.siticoneControlBox2.BorderRadius = 4;
-            this.siticoneControlBox2.ControlBoxStyle = Siticone.Desktop.UI.WinForms.Enums.ControlBoxStyle.Custom;
-            this.siticoneControlBox2.Cursor = System.Windows.Forms.Cursors.AppStarting;
-            this.siticoneControlBox2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneControlBox2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.siticoneControlBox2.ForeColor = System.Drawing.Color.White;
-            this.siticoneControlBox2.IconColor = System.Drawing.Color.White;
-            this.siticoneControlBox2.Location = new System.Drawing.Point(1383, 13);
-            this.siticoneControlBox2.Name = "siticoneControlBox2";
-            this.siticoneControlBox2.Size = new System.Drawing.Size(34, 29);
-            this.siticoneControlBox2.TabIndex = 6;
-            this.siticoneControlBox2.Click += new System.EventHandler(this.siticoneControlBox2_Click);
+            this.siticoneControlBoxExit.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.siticoneControlBoxExit.Animated = true;
+            this.siticoneControlBoxExit.BorderRadius = 4;
+            this.siticoneControlBoxExit.ControlBoxStyle = Siticone.Desktop.UI.WinForms.Enums.ControlBoxStyle.Custom;
+            this.siticoneControlBoxExit.Cursor = System.Windows.Forms.Cursors.AppStarting;
+            this.siticoneControlBoxExit.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
+            this.siticoneControlBoxExit.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.siticoneControlBoxExit.ForeColor = System.Drawing.Color.White;
+            this.siticoneControlBoxExit.IconColor = System.Drawing.Color.White;
+            this.siticoneControlBoxExit.Location = new System.Drawing.Point(1383, 13);
+            this.siticoneControlBoxExit.Name = "siticoneControlBoxExit";
+            this.siticoneControlBoxExit.Size = new System.Drawing.Size(34, 29);
+            this.siticoneControlBoxExit.TabIndex = 6;
+            this.siticoneControlBoxExit.Click += new System.EventHandler(this.siticoneControlBox2_Click);
             // 
             // guna2PictureBox1
             // 
@@ -312,6 +314,14 @@
             this.label1.TabIndex = 1;
             this.label1.Text = "VMS";
             // 
+            // notifyIconMinimzeLoginVMS
+            // 
+            this.notifyIconMinimzeLoginVMS.BalloonTipText = "Log In To Your VMS";
+            this.notifyIconMinimzeLoginVMS.BalloonTipTitle = "VMS";
+            this.notifyIconMinimzeLoginVMS.Icon = ((System.Drawing.Icon)(resources.GetObject("notifyIconMinimzeLoginVMS.Icon")));
+            this.notifyIconMinimzeLoginVMS.BalloonTipClicked += new System.EventHandler(this.notifyIconMinimzeLoginVMS_BalloonTipClicked);
+            this.notifyIconMinimzeLoginVMS.MouseClick += new System.Windows.Forms.MouseEventHandler(this.notifyIconMinimzeLoginVMS_MouseClick);
+            // 
             // VMS_Login
             // 
             this.AcceptButton = this.GButtonLogIn;
@@ -320,8 +330,8 @@
             this.BackgroundImage = global::Visitor_Management_System.Properties.Resources.Background_VMS_Login_Screen;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1428, 861);
-            this.Controls.Add(this.siticoneControlBox2);
-            this.Controls.Add(this.siticoneControlBox1);
+            this.Controls.Add(this.siticoneControlBoxExit);
+            this.Controls.Add(this.siticoneControlBoxMinimize);
             this.Controls.Add(this.siticoneShadowPanel1);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -343,8 +353,8 @@
         #endregion
         private Siticone.Desktop.UI.WinForms.SiticoneBorderlessForm siticoneBorderlessForm;
         private SiticoneNetFrameworkUI.SiticoneOverlay siticoneOverlayButtonLogIn;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox1;
-        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBox2;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBoxMinimize;
+        private Siticone.Desktop.UI.WinForms.SiticoneControlBox siticoneControlBoxExit;
         private Guna.UI2.WinForms.Guna2Button GButtonLogIn;
         private Siticone.Desktop.UI.WinForms.SiticoneShadowPanel siticoneShadowPanel1;
         private System.Windows.Forms.Label LblShowMessageWrongPasswordOrLockAccount;
@@ -358,6 +368,7 @@
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2PictureBox guna2PictureBox1;
         private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced siticoneTextBoxPassword;
+        private System.Windows.Forms.NotifyIcon notifyIconMinimzeLoginVMS;
     }
 }
 

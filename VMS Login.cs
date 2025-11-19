@@ -67,6 +67,7 @@ namespace Visitor_Management_System
         public VMS_Login()
         {
             InitializeComponent();
+
             
         }
        
@@ -102,6 +103,33 @@ namespace Visitor_Management_System
                 }
             }
         }*/
+
+        private void ExitVMS()
+        {
+            Application.Exit();
+        }
+
+        private void setPropertiesNotifyIconVMSLoginAfterMinimaizeLogin()
+        {
+
+
+            WindowState = FormWindowState.Minimized;
+            notifyIconMinimzeLoginVMS.Visible = true;
+
+            notifyIconMinimzeLoginVMS.ShowBalloonTip(1500, "VMS Login", "Log In To Your VMS", ToolTipIcon.Info);
+
+            this.Hide();
+        }
+
+        private void setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon()
+        {
+
+            this.Show();
+            notifyIconMinimzeLoginVMS.Visible = false;
+            WindowState = FormWindowState.Normal;
+
+        }
+
 
         private VMS_Login.stcInformatonUser RetrurnEmptyStructureInformationUser()
         {
@@ -318,9 +346,23 @@ namespace Visitor_Management_System
 
         private void siticoneControlBox2_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            ExitVMS();      
         }
 
-       
+        private void notifyIconMinimzeLoginVMS_MouseClick(object sender, MouseEventArgs e)
+        {
+                setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon();
+        }
+
+        private void siticoneControlBoxMinimize_Click(object sender, EventArgs e)
+        {
+            setPropertiesNotifyIconVMSLoginAfterMinimaizeLogin();
+        }
+
+        private void notifyIconMinimzeLoginVMS_BalloonTipClicked(object sender, EventArgs e)
+        {
+            setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIcon();
+
+        }
     }
 }
