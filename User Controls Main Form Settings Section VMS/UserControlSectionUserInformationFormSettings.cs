@@ -16,5 +16,7 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         {
             InitializeComponent();
         }
+
+      
     }
 }

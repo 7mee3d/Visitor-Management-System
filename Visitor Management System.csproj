@@ -150,6 +150,24 @@
     <Compile Include="User Control Main Form VMS\UserControlSectionDashboard.Designer.cs">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
     </Compile>
+    <Compile Include="User Controls Main Form Settings Section VMS\UserControlSectionDepartmentormSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls Main Form Settings Section VMS\UserControlSectionDepartmentormSettings.Designer.cs">
+      <DependentUpon>UserControlSectionDepartmentormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls Main Form Settings Section VMS\UserControlSectionUserInformationFormSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls Main Form Settings Section VMS\UserControlSectionUserInformationFormSettings.Designer.cs">
+      <DependentUpon>UserControlSectionUserInformationFormSettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User Controls Main Form Settings Section VMS\UserControlSectionUsersFormSettings.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="User Controls Main Form Settings Section VMS\UserControlSectionUsersFormSettings.Designer.cs">
+      <DependentUpon>UserControlSectionUsersFormSettings.cs</DependentUpon>
+    </Compile>
     <Compile Include="VMS Login.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -175,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="User Control Main Form VMS\UserControlSectionDashboard.resx">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls Main Form Settings Section VMS\UserControlSectionUserInformationFormSettings.resx">
+      <DependentUpon>UserControlSectionUserInformationFormSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VMS Login.resx">
       <DependentUpon>VMS Login.cs</DependentUpon>

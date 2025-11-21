@@ -8,11 +8,30 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Visitor_Management_System.Main_Form_Screen_VMS_Dashboard;
+using Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS;
 
 namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
 {
     public partial class MainFormSettingsSection : Form
     {
+
+        private void setTheUserControlInThePanel (UserControl UserDefine_UserControl)
+        {
+
+            GMainPanelSettingsVMS.Controls.Clear();
+            GMainPanelSettingsVMS.Dock = DockStyle.Fill;
+            GMainPanelSettingsVMS.Controls.Add(UserDefine_UserControl);
+
+            UserDefine_UserControl.BringToFront();
+
+        }
+      
+        private void setTheUserControlAfterLoadTheFormSettins()
+        {
+            UserControlSectionUserInformationFormSettings UCSUIFS = new UserControlSectionUserInformationFormSettings();
+
+            setTheUserControlInThePanel(UserDefine_UserControl: UCSUIFS);
+        }
         private void OpenMainVMSAndCloseSectionSettings()
         {
             DashboardVMS DVMS = new DashboardVMS();
@@ -24,6 +43,8 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
         public MainFormSettingsSection()
         {
             InitializeComponent();
+            setTheUserControlAfterLoadTheFormSettins();
+
         }
 
         private void GButtonReturnMainFormVMS_Click(object sender, EventArgs e)
@@ -34,6 +55,13 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
         private void guna2Panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void GButtonUserInformationSection_Click(object sender, EventArgs e)
+        {
+            UserControlSectionUserInformationFormSettings UCSUIFS = new UserControlSectionUserInformationFormSettings();
+
+            setTheUserControlInThePanel(UserDefine_UserControl : UCSUIFS);
         }
     }
 }
