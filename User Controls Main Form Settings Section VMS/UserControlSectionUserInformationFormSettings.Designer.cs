@@ -44,6 +44,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.GGButtonChangePassword = new Guna.UI2.WinForms.Guna2GradientButton();
             this.guna2GradientButton2 = new Guna.UI2.WinForms.Guna2GradientButton();
+            this.label5 = new System.Windows.Forms.Label();
+            this.labActiveStatus = new System.Windows.Forms.Label();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
             this.GPanelPersonalDetails.SuspendLayout();
@@ -90,13 +92,15 @@
             // 
             // guna2Panel2
             // 
+            this.guna2Panel2.Controls.Add(this.labActiveStatus);
+            this.guna2Panel2.Controls.Add(this.label5);
             this.guna2Panel2.Controls.Add(this.sTextBoxRoleAccount);
             this.guna2Panel2.Controls.Add(this.label6);
             this.guna2Panel2.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(233)))), ((int)(((byte)(237)))));
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.guna2Panel2.Location = new System.Drawing.Point(27, 358);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(670, 155);
+            this.guna2Panel2.Size = new System.Drawing.Size(670, 169);
             this.guna2Panel2.TabIndex = 5;
             // 
             // sTextBoxRoleAccount
@@ -136,7 +140,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(25, 20);
+            this.label6.Location = new System.Drawing.Point(24, 25);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 17);
             this.label6.TabIndex = 0;
@@ -203,7 +207,7 @@
             this.siticoneTextBoxAdvanced1.HoverImage = null;
             this.siticoneTextBoxAdvanced1.IdleImage = null;
             this.siticoneTextBoxAdvanced1.IsReadOnly = true;
-            this.siticoneTextBoxAdvanced1.Location = new System.Drawing.Point(18, 144);
+            this.siticoneTextBoxAdvanced1.Location = new System.Drawing.Point(27, 144);
             this.siticoneTextBoxAdvanced1.Name = "siticoneTextBoxAdvanced1";
             this.siticoneTextBoxAdvanced1.PlaceholderColor = System.Drawing.Color.Gray;
             this.siticoneTextBoxAdvanced1.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -226,7 +230,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(24, 117);
+            this.label4.Location = new System.Drawing.Point(24, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 2;
@@ -246,7 +250,7 @@
             this.sTextoxFullName.HoverImage = null;
             this.sTextoxFullName.IdleImage = null;
             this.sTextoxFullName.IsReadOnly = true;
-            this.sTextoxFullName.Location = new System.Drawing.Point(18, 59);
+            this.sTextoxFullName.Location = new System.Drawing.Point(27, 59);
             this.sTextoxFullName.Name = "sTextoxFullName";
             this.sTextoxFullName.PlaceholderColor = System.Drawing.Color.Gray;
             this.sTextoxFullName.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -269,7 +273,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(24, 28);
+            this.label3.Location = new System.Drawing.Point(24, 34);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(69, 17);
             this.label3.TabIndex = 0;
@@ -354,6 +358,28 @@
             this.guna2GradientButton2.TabIndex = 8;
             this.guna2GradientButton2.Text = "Edit Profile";
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(24, 99);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.TabIndex = 2;
+            this.label5.Text = "Status";
+            // 
+            // labActiveStatus
+            // 
+            this.labActiveStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(34)))), ((int)(((byte)(197)))), ((int)(((byte)(94)))));
+            this.labActiveStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labActiveStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
+            this.labActiveStatus.Location = new System.Drawing.Point(29, 123);
+            this.labActiveStatus.Name = "labActiveStatus";
+            this.labActiveStatus.Size = new System.Drawing.Size(85, 30);
+            this.labActiveStatus.TabIndex = 3;
+            this.labActiveStatus.Text = "Active";
+            this.labActiveStatus.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // UserControlSectionUserInformationFormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -391,5 +417,7 @@
         private System.Windows.Forms.Label label6;
         private Guna.UI2.WinForms.Guna2GradientButton guna2GradientButton2;
         private Guna.UI2.WinForms.Guna2GradientButton GGButtonChangePassword;
+        private System.Windows.Forms.Label labActiveStatus;
+        private System.Windows.Forms.Label label5;
     }
 }
