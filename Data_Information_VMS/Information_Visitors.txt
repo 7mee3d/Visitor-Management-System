@@ -72,11 +72,11 @@
 8695210473++||++Hudson Rivera++||++Finance++||++12/11/2025 , 12:29:41 PM++||++Quarter Budget Draft++||++0
 7305689142++||++Lydia Patterson++||++Operations++||++12/11/2025 , 01:54:03 PM++||++Supply Allocation++||++1
 4182579360++||++Xavier Simmons++||++Marketing++||++12/11/2025 , 02:18:46 PM++||++Market Study++||++0
-5928301746++||++Stella Barnes++||++HR++||++12/11/2025 , 03:36:27 PM++||++Training Evaluation++||++1
+5928301746++||++Stella Barnes++||++HR++||++12/11/2025 , 03:36:27 PM++||++Training Evaluation++||++0
 8473195206++||++Adam Bryant++||++IT Support++||++12/11/2025 , 08:48:15 AM++||++System Diagnostics++||++0
 2694087513++||++Riley Ward++||++Sales++||++12/11/2025 , 09:52:06 AM++||++Client Negotiation++||++1
 7359162840++||++Eleanor Cox++||++Finance++||++12/11/2025 , 10:44:28 AM++||++Investment Analysis++||++0
-1048637295++||++Connor Hayes++||++Operations++||++12/11/2025 , 11:59:53 AM++||++Shift Coordination++||++1
+1048637295++||++Connor Hayes++||++Operations++||++12/11/2025 , 11:59:53 AM++||++Shift Coordination++||++0
 9871321++||++Test FullName++||++Reception++||++17/11/2025 , 02:29:02 PM++||++Test Purpose++||++0
 1231231++||++Test FullName++||++Operations++||++18/11/2025 , 06:46:00 PM++||++Test Purpose++||++0
 5874985++||++Test2 FullName++||++Research and Development++||++18/11/2025 , 06:48:52 PM++||++Test2 Purpose++||++0

@@ -126,28 +126,28 @@
     <Compile Include="Main Form Screen VMS Settings\MainFormSettingsSection.Designer.cs">
       <DependentUpon>MainFormSettingsSection.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionAddNewVisitor.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionAddNewVisitor.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionAddNewVisitor.Designer.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionAddNewVisitor.Designer.cs">
       <DependentUpon>UserControlSectionAddNewVisitor.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionCheckOut.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionCheckOut.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionCheckOut.Designer.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionCheckOut.Designer.cs">
       <DependentUpon>UserControlSectionCheckOut.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionCurrentVisitors.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionCurrentVisitors.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionCurrentVisitors.Designer.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionCurrentVisitors.Designer.cs">
       <DependentUpon>UserControlSectionCurrentVisitors.cs</DependentUpon>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionDashboard.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionDashboard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="User Control VMS\UserControlSectionDashboard.Designer.cs">
+    <Compile Include="User Control Main Form VMS\UserControlSectionDashboard.Designer.cs">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
     </Compile>
     <Compile Include="VMS Login.cs">
@@ -164,16 +164,16 @@
     <EmbeddedResource Include="Main Form Screen VMS Settings\MainFormSettingsSection.resx">
       <DependentUpon>MainFormSettingsSection.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Control VMS\UserControlSectionAddNewVisitor.resx">
+    <EmbeddedResource Include="User Control Main Form VMS\UserControlSectionAddNewVisitor.resx">
       <DependentUpon>UserControlSectionAddNewVisitor.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Control VMS\UserControlSectionCheckOut.resx">
+    <EmbeddedResource Include="User Control Main Form VMS\UserControlSectionCheckOut.resx">
       <DependentUpon>UserControlSectionCheckOut.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Control VMS\UserControlSectionCurrentVisitors.resx">
+    <EmbeddedResource Include="User Control Main Form VMS\UserControlSectionCurrentVisitors.resx">
       <DependentUpon>UserControlSectionCurrentVisitors.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="User Control VMS\UserControlSectionDashboard.resx">
+    <EmbeddedResource Include="User Control Main Form VMS\UserControlSectionDashboard.resx">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VMS Login.resx">
