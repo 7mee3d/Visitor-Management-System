@@ -194,8 +194,14 @@
     <EmbeddedResource Include="User Control Main Form VMS\UserControlSectionDashboard.resx">
       <DependentUpon>UserControlSectionDashboard.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="User Controls Main Form Settings Section VMS\UserControlSectionDepartmentormSettings.resx">
+      <DependentUpon>UserControlSectionDepartmentormSettings.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="User Controls Main Form Settings Section VMS\UserControlSectionUserInformationFormSettings.resx">
       <DependentUpon>UserControlSectionUserInformationFormSettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User Controls Main Form Settings Section VMS\UserControlSectionUsersFormSettings.resx">
+      <DependentUpon>UserControlSectionUsersFormSettings.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="VMS Login.resx">
       <DependentUpon>VMS Login.cs</DependentUpon>

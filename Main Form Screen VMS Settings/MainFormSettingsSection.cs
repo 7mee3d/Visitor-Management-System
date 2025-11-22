@@ -63,5 +63,18 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
 
             setTheUserControlInThePanel(UserDefine_UserControl : UCSUIFS);
         }
+
+        private void GButtonUsersSection_Click(object sender, EventArgs e)
+        {
+            UserControlSectionUsersFormSettings UCSUFS  = new UserControlSectionUsersFormSettings();
+            setTheUserControlInThePanel(UserDefine_UserControl: UCSUFS);
+
+        }
+
+        private void GButtonDepartmentSection_Click(object sender, EventArgs e)
+        {
+            UserControlSectionDepartmentormSettings UCSDS = new UserControlSectionDepartmentormSettings();
+            setTheUserControlInThePanel(UserDefine_UserControl: UCSDS);
+        }
     }
 }

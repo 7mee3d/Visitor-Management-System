@@ -117,7 +117,7 @@
             this.sTextBoxRoleAccount.HoverImage = null;
             this.sTextBoxRoleAccount.IdleImage = null;
             this.sTextBoxRoleAccount.IsReadOnly = true;
-            this.sTextBoxRoleAccount.Location = new System.Drawing.Point(18, 47);
+            this.sTextBoxRoleAccount.Location = new System.Drawing.Point(27, 47);
             this.sTextBoxRoleAccount.Name = "sTextBoxRoleAccount";
             this.sTextBoxRoleAccount.PlaceholderColor = System.Drawing.Color.Gray;
             this.sTextBoxRoleAccount.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -140,7 +140,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(24, 25);
+            this.label6.Location = new System.Drawing.Point(24, 23);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 17);
             this.label6.TabIndex = 0;
