@@ -18,6 +18,12 @@ namespace Visitor_Management_System
    
     public partial class VMS_Login : Form
     {
+        enum enRolesVMS : int 
+        {
+            _enkADMIN_ROLE = -1 ,
+            
+            _enkNOTHING = 0
+        };
 
         class stcInformatonUser
         {
@@ -26,8 +32,8 @@ namespace Visitor_Management_System
             public string stEmailUser;
             public string stUsername;
             public string stPasswordUser;
+            public enRolesVMS stEN_Role;
             public short stAttempt;
-            // public short stPermission;
 
             public stcInformatonUser()
             {
@@ -36,8 +42,9 @@ namespace Visitor_Management_System
                 stEmailUser = "";
                 stUsername = "";
                 stPasswordUser = "";
+                enRolesVMS stEN_Role = enRolesVMS._enkNOTHING; 
                 stAttempt = 0;
-                // stPermission = 0;
+               
 
             }
 
@@ -204,8 +211,8 @@ namespace Visitor_Management_System
                 informationUserData.stEmailUser = informationUser[1];
                 informationUserData.stUsername = informationUser[2];
                 informationUserData.stPasswordUser = informationUser[3];
-                informationUserData.stAttempt = Convert.ToInt16(informationUser[4]);
-                //informationUserData.stP = informationUser[3];
+                informationUserData.stEN_Role = (enRolesVMS)Convert.ToInt32 ( informationUser[4]);
+                informationUserData.stAttempt = Convert.ToInt16(informationUser[5]);
             }
             return informationUserData; 
 
@@ -219,6 +226,7 @@ namespace Visitor_Management_System
             lineInformationUser += informationUser.stEmailUser + Separator;
             lineInformationUser += informationUser.stUsername + Separator;
             lineInformationUser += informationUser.stPasswordUser + Separator;
+            lineInformationUser += Convert.ToString(  informationUser.stEN_Role ) + Separator;
             lineInformationUser += informationUser.stAttempt ;
 
             return lineInformationUser;

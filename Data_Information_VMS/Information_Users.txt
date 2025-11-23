@@ -14,24 +14,4 @@
  |___|~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~|___| 
 (_____)                                                                                                   (_____) 
 
-MrUser$$||$$mruser@outlook.com$$||$$Admin$$||$$pass123$$||$$3
-MrUser01$$||$$mruser01@mail.com$$||$$user01$$||$$pass123$$||$$0
-MrUser02$$||$$mruser02@mail.com$$||$$user02$$||$$pass234$$||$$3
-MrUser03$$||$$mruser03@mail.com$$||$$user03$$||$$pass345$$||$$3
-MrUser04$$||$$mruser04@mail.com$$||$$user04$$||$$pass456$$||$$3
-MrUser05$$||$$mruser05@mail.com$$||$$user05$$||$$pass567$$||$$3
-MrUser06$$||$$mruser06@mail.com$$||$$user06$$||$$pass678$$||$$3
-MrUser07$$||$$mruser07@mail.com$$||$$user07$$||$$pass789$$||$$3
-MrUser08$$||$$mruser08@mail.com$$||$$user08$$||$$pass890$$||$$3
-MrUser09$$||$$mruser09@mail.com$$||$$user09$$||$$pass901$$||$$3
-MrUser10$$||$$mruser10@mail.com$$||$$user10$$||$$pass012$$||$$3
-MrUser11$$||$$mruser11@mail.com$$||$$user11$$||$$pass123$$||$$3
-MrUser12$$||$$mruser12@mail.com$$||$$user12$$||$$pass234$$||$$3
-MrUser13$$||$$mruser13@mail.com$$||$$user13$$||$$pass345$$||$$3
-MrUser14$$||$$mruser14@mail.com$$||$$user14$$||$$pass456$$||$$3
-MrUser15$$||$$mruser15@mail.com$$||$$user15$$||$$pass567$$||$$3
-MrUser16$$||$$mruser16@mail.com$$||$$user16$$||$$pass678$$||$$3
-MrUser17$$||$$mruser17@mail.com$$||$$user17$$||$$pass789$$||$$3
-MrUser18$$||$$mruser18@mail.com$$||$$user18$$||$$pass890$$||$$3
-MrUser19$$||$$mruser19@mail.com$$||$$user19$$||$$pass901$$||$$3
-MrUser20$$||$$mruser20@mail.com$$||$$user20$$||$$pass012$$||$$3
+MrUser$$||$$mruser@outlook.com$$||$$Admin$$||$$pass123$$||$$_enkADMIN_ROLE$$||$$3
