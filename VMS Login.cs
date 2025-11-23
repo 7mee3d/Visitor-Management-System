@@ -226,7 +226,7 @@ namespace Visitor_Management_System
             lineInformationUser += informationUser.stEmailUser + Separator;
             lineInformationUser += informationUser.stUsername + Separator;
             lineInformationUser += informationUser.stPasswordUser + Separator;
-            lineInformationUser += Convert.ToString(  informationUser.stEN_Role ) + Separator;
+            lineInformationUser += Convert.ToInt32( informationUser.stEN_Role ) + Separator;
             lineInformationUser += informationUser.stAttempt ;
 
             return lineInformationUser;
