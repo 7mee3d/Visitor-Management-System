@@ -28,14 +28,14 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
         public DashboardVMS()        
         {
             InitializeComponent();
-            YearAllRightReserved.Text = "@ " + getYearFromSystem(); 
+            YearAllRightReserved.Text = "@ " + getYearFromSystem();
         }
       
-        MainFormSettingsSection MFSS = new MainFormSettingsSection();
       
         
         private void OpenSectionSetting()
         {
+            MainFormSettingsSection MFSS = new MainFormSettingsSection();
             this.Hide();
             MFSS.ShowDialog();
 
@@ -122,6 +122,7 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             UserControlSectionDashboard UCSD = new UserControlSectionDashboard();
 
             if (GButtonDashboardSection.Checked) showSectionDashboard(nameUserControl: UCSD);
+
         }
 
         private void GButtonSettingsSSection_Click(object sender, EventArgs e)

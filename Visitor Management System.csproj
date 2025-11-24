@@ -114,6 +114,7 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ClassInformationUser.cs" />
     <Compile Include="Main Form Screen VMS Dashboard\DashboardVMS.cs">
       <SubType>Form</SubType>
     </Compile>

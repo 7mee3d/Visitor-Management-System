@@ -84,7 +84,6 @@
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Size = new System.Drawing.Size(220, 10);
             this.guna2Panel1.TabIndex = 6;
-            this.guna2Panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.guna2Panel1_Paint);
             // 
             // GButtonReturnMainFormVMS
             // 
@@ -307,6 +306,7 @@
             this.Name = "MainFormSettingsSection";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "VMS Settings";
+            this.Load += new System.EventHandler(this.MainFormSettingsSection_Load);
             this.siticoneGradientPanelLeftSideNavBar.ResumeLayout(false);
             this.GGPanelTop.ResumeLayout(false);
             this.GGPanelTop.PerformLayout();

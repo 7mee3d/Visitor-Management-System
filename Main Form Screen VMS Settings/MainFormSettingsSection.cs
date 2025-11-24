@@ -40,21 +40,16 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
             this.Close();
             DVMS.ShowDialog();
         }
+
         public MainFormSettingsSection()
         {
             InitializeComponent();
             setTheUserControlAfterLoadTheFormSettins();
-
         }
 
         private void GButtonReturnMainFormVMS_Click(object sender, EventArgs e)
         {
             OpenMainVMSAndCloseSectionSettings();
-        }
-
-        private void guna2Panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
 
         private void GButtonUserInformationSection_Click(object sender, EventArgs e)
@@ -75,6 +70,11 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Settings
         {
             UserControlSectionDepartmentormSettings UCSDS = new UserControlSectionDepartmentormSettings();
             setTheUserControlInThePanel(UserDefine_UserControl: UCSDS);
+        }
+
+        private void MainFormSettingsSection_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

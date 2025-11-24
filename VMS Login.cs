@@ -10,22 +10,24 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using Visitor_Management_System.Main_Form_Screen_VMS_Dashboard;
+using Visitor_Management_System.Main_Form_Screen_VMS_Settings;
+using Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.StartPanel;
 
 namespace Visitor_Management_System
 {
- 
-   
+  
+
     public partial class VMS_Login : Form
     {
-        enum enRolesVMS : int 
+
+        public enum enRolesVMS : int
         {
-            _enkADMIN_ROLE = -1 ,
-            
+            _enkADMIN_ROLE = -1,
             _enkNOTHING = 0
         };
 
-        class stcInformatonUser
+        public class stcInformatonUser
         {
 
             public string stNameUser;
@@ -42,18 +44,19 @@ namespace Visitor_Management_System
                 stEmailUser = "";
                 stUsername = "";
                 stPasswordUser = "";
-                enRolesVMS stEN_Role = enRolesVMS._enkNOTHING; 
+                 stEN_Role = enRolesVMS._enkNOTHING;
                 stAttempt = 0;
-               
+
 
             }
 
         };
 
+
         private const string _kFILE_PATH_USERS_INFORMATION = @"../../Data_Information_VMS/Information_Users.txt";
         private const string _kSEPARATOR_FILE_USERS_INFORMATION = "$$||$$";
         private const ushort _kSTART_SAVE_AND_READ_FROM_FILE_USER_INFORMATION = 15; 
-        private const ushort _kCOUNT_PARTS_INFORMATION_USERS = 5; 
+        private const ushort _kCOUNT_PARTS_INFORMATION_USERS = 6; 
         private const string _kBANNER_FILE_USERS_INFORMATION = @"
  _____                                                                                                     _____ 
 ( ___ )                                                                                                   ( ___ )
@@ -74,8 +77,7 @@ namespace Visitor_Management_System
         public VMS_Login()
         {
             InitializeComponent();
-
-            
+ 
         }
        
         //General Methods 
@@ -145,9 +147,9 @@ namespace Visitor_Management_System
 
         }
 
-        private VMS_Login.stcInformatonUser RetrurnEmptyStructureInformationUser()
+        private stcInformatonUser RetrurnEmptyStructureInformationUser()
         {
-            return new VMS_Login.stcInformatonUser();
+            return new stcInformatonUser();
         }
 
         private List<string> LoadAllLinesInformationFromFile (string pathFile)
@@ -171,7 +173,7 @@ namespace Visitor_Management_System
 
         }     
 
-        private void SaveAllInformationAfterChangeData(string pathFile  , List<VMS_Login.stcInformatonUser> newInformationChanged )
+        private void SaveAllInformationAfterChangeData(string pathFile  , List<stcInformatonUser> newInformationChanged )
         {
             if (!System.IO.File.Exists(pathFile))
                 System.IO.File.Create(pathFile).Close();
@@ -180,7 +182,7 @@ namespace Visitor_Management_System
 
             WriteAllInformationInFile.WriteLine(_kBANNER_FILE_USERS_INFORMATION);
 
-            foreach (VMS_Login.stcInformatonUser infoOneUser in newInformationChanged )
+            foreach (stcInformatonUser infoOneUser in newInformationChanged )
             {
                 if(infoOneUser != null )
                 WriteAllInformationInFile.WriteLine(ConvertDataInformationUserToLine(infoOneUser, _kSEPARATOR_FILE_USERS_INFORMATION));
@@ -201,9 +203,9 @@ namespace Visitor_Management_System
 
         }
  
-        private VMS_Login.stcInformatonUser ConvertLineInformationUserToData (List<string> informationUser)
+        private stcInformatonUser ConvertLineInformationUserToData (List<string> informationUser)
         {
-            VMS_Login.stcInformatonUser informationUserData = new VMS_Login.stcInformatonUser();
+            stcInformatonUser informationUserData = new stcInformatonUser();
 
             if (informationUser.Count >= _kCOUNT_PARTS_INFORMATION_USERS) 
             {
@@ -218,7 +220,7 @@ namespace Visitor_Management_System
 
         }
      
-        private string ConvertDataInformationUserToLine (VMS_Login.stcInformatonUser informationUser , string Separator )
+        private string ConvertDataInformationUserToLine (stcInformatonUser informationUser , string Separator )
         {
             string lineInformationUser = "";
 
@@ -232,9 +234,9 @@ namespace Visitor_Management_System
             return lineInformationUser;
         }
        
-        private List<VMS_Login.stcInformatonUser> LoadAllInformationDataUsersToListStructure(  )
+        private List<stcInformatonUser> LoadAllInformationDataUsersToListStructure(  )
         {
-            List<VMS_Login.stcInformatonUser> allInformationUsersData = new List<VMS_Login.stcInformatonUser>();
+            List<stcInformatonUser> allInformationUsersData = new List<stcInformatonUser>();
 
             List<string> allLinesInformation = LoadAllLinesInformationFromFile(pathFile: _kFILE_PATH_USERS_INFORMATION);
 
@@ -250,11 +252,11 @@ namespace Visitor_Management_System
             return allInformationUsersData; 
         }
     
-        private VMS_Login.stcInformatonUser SearchUserInFile (string Username )
+        private stcInformatonUser SearchUserInFile (string Username )
         {
-            List<VMS_Login.stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
+            List<stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
 
-            foreach (VMS_Login.stcInformatonUser infoOneUser in AllInformationUsersSt )
+            foreach (stcInformatonUser infoOneUser in AllInformationUsersSt )
                 if (infoOneUser.stUsername == Username) return infoOneUser;
 
 
@@ -263,18 +265,18 @@ namespace Visitor_Management_System
 
         private bool isUserExitsInSystem(string Username)
         {
-            List<VMS_Login.stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
+            List<stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
 
-            foreach (VMS_Login.stcInformatonUser infoOneUser in AllInformationUsersSt)
+            foreach (stcInformatonUser infoOneUser in AllInformationUsersSt)
                 if (infoOneUser.stUsername == Username) return true ;
 
 
             return false;
         }
    
-        private void UpdateInformationListStructure (VMS_Login.stcInformatonUser informationUser , string username )
+        private void UpdateInformationListStructure (stcInformatonUser informationUser , string username )
         {
-            List<VMS_Login.stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
+            List<stcInformatonUser> AllInformationUsersSt = LoadAllInformationDataUsersToListStructure();
 
           for(int counter = 0; counter < AllInformationUsersSt.Count; counter++)
             {
@@ -295,7 +297,7 @@ namespace Visitor_Management_System
             return (PasswordOne == PasswordTwo);
         }
         
-        private void ChangeAttemptAndLabelShowMessageAfterClickLogIn(short numberAttempt , ref VMS_Login.stcInformatonUser CarruntUserInfo , string Message )
+        private void ChangeAttemptAndLabelShowMessageAfterClickLogIn(short numberAttempt , ref stcInformatonUser CarruntUserInfo , string Message )
         {
             CarruntUserInfo.stAttempt = numberAttempt;
             LblShowMessageWrongPasswordOrLockAccount.Text = Message; 
@@ -309,7 +311,7 @@ namespace Visitor_Management_System
 
             if(isUserExitsInSystem(username))
             {
-                VMS_Login.stcInformatonUser allInformationThisUserAfterSearch = SearchUserInFile(username);
+                stcInformatonUser allInformationThisUserAfterSearch = SearchUserInFile(username);
 
                 if (
                     areEqualPassword(password , allInformationThisUserAfterSearch.stPasswordUser)
