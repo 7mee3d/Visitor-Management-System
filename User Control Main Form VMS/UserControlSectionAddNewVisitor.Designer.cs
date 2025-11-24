@@ -90,7 +90,7 @@
             this.labelErrorOrCorrectMessageAddNewVisitor.AutoSize = true;
             this.labelErrorOrCorrectMessageAddNewVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labelErrorOrCorrectMessageAddNewVisitor.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(27)))), ((int)(((byte)(34)))));
-            this.labelErrorOrCorrectMessageAddNewVisitor.Location = new System.Drawing.Point(294, 588);
+            this.labelErrorOrCorrectMessageAddNewVisitor.Location = new System.Drawing.Point(241, 588);
             this.labelErrorOrCorrectMessageAddNewVisitor.Name = "labelErrorOrCorrectMessageAddNewVisitor";
             this.labelErrorOrCorrectMessageAddNewVisitor.Size = new System.Drawing.Size(12, 15);
             this.labelErrorOrCorrectMessageAddNewVisitor.TabIndex = 7;
@@ -117,9 +117,9 @@
             this.GGButtonClear.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GGButtonClear.HoverState.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonClear.HoverState.ForeColor = System.Drawing.Color.White;
-            this.GGButtonClear.Location = new System.Drawing.Point(604, 574);
+            this.GGButtonClear.Location = new System.Drawing.Point(591, 574);
             this.GGButtonClear.Name = "GGButtonClear";
-            this.GGButtonClear.Size = new System.Drawing.Size(82, 41);
+            this.GGButtonClear.Size = new System.Drawing.Size(95, 41);
             this.GGButtonClear.TabIndex = 6;
             this.GGButtonClear.Text = "Clear";
             this.GGButtonClear.Click += new System.EventHandler(this.GGButtonClear_Click);
@@ -139,9 +139,9 @@
             this.GGButtonAddNewVisitor.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GGButtonAddNewVisitor.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GGButtonAddNewVisitor.ForeColor = System.Drawing.Color.White;
-            this.GGButtonAddNewVisitor.Location = new System.Drawing.Point(453, 574);
+            this.GGButtonAddNewVisitor.Location = new System.Drawing.Point(415, 574);
             this.GGButtonAddNewVisitor.Name = "GGButtonAddNewVisitor";
-            this.GGButtonAddNewVisitor.Size = new System.Drawing.Size(132, 41);
+            this.GGButtonAddNewVisitor.Size = new System.Drawing.Size(170, 41);
             this.GGButtonAddNewVisitor.TabIndex = 5;
             this.GGButtonAddNewVisitor.Text = "Save Visitor";
             this.GGButtonAddNewVisitor.Click += new System.EventHandler(this.GGButtonAddNewVisitor_Click);
