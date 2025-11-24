@@ -76,18 +76,18 @@
             this.guna2Panel1.Controls.Add(this.GGButtonEditProfile);
             this.guna2Panel1.Controls.Add(this.GPanelPersonalDetails);
             this.guna2Panel1.Controls.Add(this.label2);
-            this.guna2Panel1.Location = new System.Drawing.Point(324, 116);
+            this.guna2Panel1.Location = new System.Drawing.Point(324, 92);
             this.guna2Panel1.Name = "guna2Panel1";
-            this.guna2Panel1.Size = new System.Drawing.Size(711, 627);
+            this.guna2Panel1.Size = new System.Drawing.Size(711, 651);
             this.guna2Panel1.TabIndex = 3;
             // 
             // guna2GradientButton2
             // 
             this.guna2GradientButton2.Animated = true;
             this.guna2GradientButton2.AnimatedGIF = true;
-            this.guna2GradientButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(233)))), ((int)(((byte)(237)))));
+            this.guna2GradientButton2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.guna2GradientButton2.BorderRadius = 5;
-            this.guna2GradientButton2.BorderThickness = 1;
+            this.guna2GradientButton2.BorderThickness = 2;
             this.guna2GradientButton2.CheckedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.guna2GradientButton2.CheckedState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.guna2GradientButton2.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
@@ -102,15 +102,16 @@
             this.guna2GradientButton2.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.guna2GradientButton2.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2GradientButton2.ForeColor = System.Drawing.Color.White;
-            this.guna2GradientButton2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2GradientButton2.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.guna2GradientButton2.HoverState.ForeColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.guna2GradientButton2.HoverState.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
+            this.guna2GradientButton2.HoverState.FillColor = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.FillColor2 = System.Drawing.Color.White;
+            this.guna2GradientButton2.HoverState.ForeColor = System.Drawing.Color.Black;
             this.guna2GradientButton2.Image = ((System.Drawing.Image)(resources.GetObject("guna2GradientButton2.Image")));
             this.guna2GradientButton2.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.guna2GradientButton2.Location = new System.Drawing.Point(550, 570);
+            this.guna2GradientButton2.Location = new System.Drawing.Point(550, 587);
             this.guna2GradientButton2.Name = "guna2GradientButton2";
+            this.guna2GradientButton2.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(82)))), ((int)(((byte)(82)))));
             this.guna2GradientButton2.Size = new System.Drawing.Size(145, 39);
             this.guna2GradientButton2.TabIndex = 8;
             this.guna2GradientButton2.Text = "Edit Profile";
@@ -144,7 +145,7 @@
             this.GGButtonChangePassword.HoverState.ForeColor = System.Drawing.Color.White;
             this.GGButtonChangePassword.Image = ((System.Drawing.Image)(resources.GetObject("GGButtonChangePassword.Image")));
             this.GGButtonChangePassword.ImageOffset = new System.Drawing.Point(-2, 0);
-            this.GGButtonChangePassword.Location = new System.Drawing.Point(371, 570);
+            this.GGButtonChangePassword.Location = new System.Drawing.Point(371, 587);
             this.GGButtonChangePassword.Name = "GGButtonChangePassword";
             this.GGButtonChangePassword.Size = new System.Drawing.Size(171, 39);
             this.GGButtonChangePassword.TabIndex = 7;
@@ -173,7 +174,7 @@
             this.guna2Panel2.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 2);
             this.guna2Panel2.Location = new System.Drawing.Point(27, 331);
             this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.Size = new System.Drawing.Size(670, 219);
+            this.guna2Panel2.Size = new System.Drawing.Size(670, 236);
             this.guna2Panel2.TabIndex = 5;
             // 
             // sTextBoxUsername
@@ -224,7 +225,7 @@
             this.labActiveStatus.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(34)))), ((int)(((byte)(197)))), ((int)(((byte)(94)))));
             this.labActiveStatus.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.labActiveStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(163)))), ((int)(((byte)(74)))));
-            this.labActiveStatus.Location = new System.Drawing.Point(19, 179);
+            this.labActiveStatus.Location = new System.Drawing.Point(19, 189);
             this.labActiveStatus.Name = "labActiveStatus";
             this.labActiveStatus.Size = new System.Drawing.Size(85, 30);
             this.labActiveStatus.TabIndex = 3;
@@ -235,7 +236,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(14, 156);
+            this.label5.Location = new System.Drawing.Point(14, 166);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(46, 17);
             this.label5.TabIndex = 2;
@@ -255,7 +256,7 @@
             this.sTextBoxRoleAccount.HoverImage = null;
             this.sTextBoxRoleAccount.IdleImage = null;
             this.sTextBoxRoleAccount.IsReadOnly = true;
-            this.sTextBoxRoleAccount.Location = new System.Drawing.Point(17, 108);
+            this.sTextBoxRoleAccount.Location = new System.Drawing.Point(17, 111);
             this.sTextBoxRoleAccount.Name = "sTextBoxRoleAccount";
             this.sTextBoxRoleAccount.PlaceholderColor = System.Drawing.Color.Gray;
             this.sTextBoxRoleAccount.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -278,7 +279,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(14, 86);
+            this.label6.Location = new System.Drawing.Point(14, 89);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(34, 17);
             this.label6.TabIndex = 0;
@@ -345,7 +346,7 @@
             this.siticoneTextBoxAdvanced1.HoverImage = null;
             this.siticoneTextBoxAdvanced1.IdleImage = null;
             this.siticoneTextBoxAdvanced1.IsReadOnly = true;
-            this.siticoneTextBoxAdvanced1.Location = new System.Drawing.Point(17, 137);
+            this.siticoneTextBoxAdvanced1.Location = new System.Drawing.Point(17, 138);
             this.siticoneTextBoxAdvanced1.Name = "siticoneTextBoxAdvanced1";
             this.siticoneTextBoxAdvanced1.PlaceholderColor = System.Drawing.Color.Gray;
             this.siticoneTextBoxAdvanced1.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -368,7 +369,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(14, 113);
+            this.label4.Location = new System.Drawing.Point(14, 114);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(93, 17);
             this.label4.TabIndex = 2;
