@@ -47,7 +47,6 @@
             this.siticoneGradientPanelLeftSideNavBar.SuspendLayout();
             this.GGPanelTop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).BeginInit();
-            this.GMainPanelSettingsVMS.SuspendLayout();
             this.guna2GradientPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -251,11 +250,10 @@
             // 
             // GMainPanelSettingsVMS
             // 
-            this.GMainPanelSettingsVMS.Controls.Add(this.guna2GradientPanel1);
             this.GMainPanelSettingsVMS.Dock = System.Windows.Forms.DockStyle.Fill;
             this.GMainPanelSettingsVMS.Location = new System.Drawing.Point(241, 78);
             this.GMainPanelSettingsVMS.Name = "GMainPanelSettingsVMS";
-            this.GMainPanelSettingsVMS.Size = new System.Drawing.Size(1359, 812);
+            this.GMainPanelSettingsVMS.Size = new System.Drawing.Size(1359, 779);
             this.GMainPanelSettingsVMS.TabIndex = 5;
             // 
             // guna2GradientPanel1
@@ -266,7 +264,7 @@
             this.guna2GradientPanel1.CustomBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(248)))), ((int)(((byte)(249)))), ((int)(((byte)(250)))));
             this.guna2GradientPanel1.CustomBorderThickness = new System.Windows.Forms.Padding(0, 2, 0, 0);
             this.guna2GradientPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.guna2GradientPanel1.Location = new System.Drawing.Point(0, 779);
+            this.guna2GradientPanel1.Location = new System.Drawing.Point(241, 857);
             this.guna2GradientPanel1.Name = "guna2GradientPanel1";
             this.guna2GradientPanel1.Size = new System.Drawing.Size(1359, 33);
             this.guna2GradientPanel1.TabIndex = 5;
@@ -300,6 +298,7 @@
             this.ClientSize = new System.Drawing.Size(1600, 890);
             this.Controls.Add(this.GMainPanelSettingsVMS);
             this.Controls.Add(this.GGPanelTop);
+            this.Controls.Add(this.guna2GradientPanel1);
             this.Controls.Add(this.siticoneGradientPanelLeftSideNavBar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -311,7 +310,6 @@
             this.GGPanelTop.ResumeLayout(false);
             this.GGPanelTop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2PictureBox1)).EndInit();
-            this.GMainPanelSettingsVMS.ResumeLayout(false);
             this.guna2GradientPanel1.ResumeLayout(false);
             this.guna2GradientPanel1.PerformLayout();
             this.ResumeLayout(false);
