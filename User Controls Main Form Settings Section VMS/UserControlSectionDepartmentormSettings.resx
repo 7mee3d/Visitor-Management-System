@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="guna2GradientButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GButtonDeleteDepartment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADpSURBVEhL7ZbL
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAADpSURBVEhL7ZbL
         EcIwDEQzQ29AAynBTkILgQMjqqEMGAqBFGJG4ICzQljhc4LDO1je1caTj1KEEIpvIgopZbmd1J5WtaOu
         dhSArnGbJWvQZw6IzbHxAA5B35iAEzdZeJqKPbeexZAj7qWIwrDJ9Sqxbt1nUvEBj/8qjaO9COAiCt9g
         JwKSk1xEWM+h+czCHJrPLMyh+UxCfgDSG4drzTcmYFDDtVb7BzzV/FhA/IzcXn9caz5zgAXNZxbm0HxS
@@ -129,10 +129,10 @@
         rkJggg==
 </value>
   </data>
-  <data name="guna2GradientButton2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GButtonClearFormAddNewDepartment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJpSURBVEhLtVVN
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAJpSURBVEhLtVVN
         axRBEM1NRREjGvy6x/wJoz8kuNl09VYPLpiLBL20XWNyEDz4P4y5KYkeTGBBjBcFE3fBg3o3Yb2vVH9l
         UzPrrqKHB01P1Xvdr6prpgaDwdT/RGVjGEtL9jyCayK4DdS0b4B+MnjdAnpuFC0aszYt88YKLC8/OYWa
         HiDQIQINxuDAqPI+50ieWgGl7DUEen9EUG4a7ZRp0uzCwuPTDK1XryMQINBWjlP0DrG8KvnqyL9zQgvc
@@ -146,10 +146,10 @@
         t4xCZeNf4xfF4a1EPOaAGwAAAABJRU5ErkJggg==
 </value>
   </data>
-  <data name="guna2GradientButton1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+  <data name="GButtonAddNewDepartment.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
-        wQAADsEBuJFr7QAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB0SURBVEhL7dIx
+        wAAADsABataJCQAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAB0SURBVEhL7dIx
         CsAgEERRLyuYc3izhJxrgxCb/WFE2BSCxWs+idNsMrP0J4RoCNEQoiEoJdf7yPXyXUFQSq7W+K4gKHtg
         aI2Bdor9oVlfJ4yB9pH/ccLp38OA0h/yXUFQ9sDQ+gPvCeMUFYRoCNEQoiFEewAVpo75vNHGwwAAAABJ
         RU5ErkJggg==
