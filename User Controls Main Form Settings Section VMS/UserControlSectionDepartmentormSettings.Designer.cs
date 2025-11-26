@@ -39,8 +39,6 @@
             this.GButtonAddNewDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.siticoneEmailTextBoxAdvanced2 = new SiticoneNetFrameworkUI.SiticoneEmailTextBoxAdvanced();
-            this.siticoneEmailTextBoxAdvanced1 = new SiticoneNetFrameworkUI.SiticoneEmailTextBoxAdvanced();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
@@ -50,6 +48,8 @@
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.sTextBoxDepartmentName = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.sTextBoxDescriptionDepartment = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sDataGridViewInformationDepartments)).BeginInit();
@@ -61,13 +61,13 @@
             this.guna2GradientPanel2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.guna2GradientPanel2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.guna2GradientPanel2.BorderThickness = 5;
+            this.guna2GradientPanel2.Controls.Add(this.sTextBoxDescriptionDepartment);
+            this.guna2GradientPanel2.Controls.Add(this.sTextBoxDepartmentName);
             this.guna2GradientPanel2.Controls.Add(this.GButtonDeleteDepartment);
             this.guna2GradientPanel2.Controls.Add(this.GButtonClearFormAddNewDepartment);
             this.guna2GradientPanel2.Controls.Add(this.GButtonAddNewDepartment);
             this.guna2GradientPanel2.Controls.Add(this.label6);
             this.guna2GradientPanel2.Controls.Add(this.label5);
-            this.guna2GradientPanel2.Controls.Add(this.siticoneEmailTextBoxAdvanced2);
-            this.guna2GradientPanel2.Controls.Add(this.siticoneEmailTextBoxAdvanced1);
             this.guna2GradientPanel2.Controls.Add(this.label4);
             this.guna2GradientPanel2.Controls.Add(this.label3);
             this.guna2GradientPanel2.Location = new System.Drawing.Point(814, 37);
@@ -197,68 +197,6 @@
             this.label5.Size = new System.Drawing.Size(121, 17);
             this.label5.TabIndex = 4;
             this.label5.Text = "Department Name";
-            // 
-            // siticoneEmailTextBoxAdvanced2
-            // 
-            this.siticoneEmailTextBoxAdvanced2.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneEmailTextBoxAdvanced2.BackgroundColor = System.Drawing.Color.White;
-            this.siticoneEmailTextBoxAdvanced2.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
-            this.siticoneEmailTextBoxAdvanced2.BottomLeftCornerRadius = 8;
-            this.siticoneEmailTextBoxAdvanced2.BottomRightCornerRadius = 8;
-            this.siticoneEmailTextBoxAdvanced2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneEmailTextBoxAdvanced2.ErrorColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced2.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced2.FocusImage = null;
-            this.siticoneEmailTextBoxAdvanced2.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
-            this.siticoneEmailTextBoxAdvanced2.HoverImage = null;
-            this.siticoneEmailTextBoxAdvanced2.IdleImage = null;
-            this.siticoneEmailTextBoxAdvanced2.Location = new System.Drawing.Point(30, 310);
-            this.siticoneEmailTextBoxAdvanced2.Name = "siticoneEmailTextBoxAdvanced2";
-            this.siticoneEmailTextBoxAdvanced2.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
-            this.siticoneEmailTextBoxAdvanced2.PlaceholderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(59)))), ((int)(((byte)(130)))), ((int)(((byte)(246)))));
-            this.siticoneEmailTextBoxAdvanced2.PlaceholderFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneEmailTextBoxAdvanced2.PlaceholderText = "Brief description of the department\'s function.";
-            this.siticoneEmailTextBoxAdvanced2.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced2.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneEmailTextBoxAdvanced2.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneEmailTextBoxAdvanced2.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneEmailTextBoxAdvanced2.Size = new System.Drawing.Size(463, 127);
-            this.siticoneEmailTextBoxAdvanced2.TabIndex = 1;
-            this.siticoneEmailTextBoxAdvanced2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.siticoneEmailTextBoxAdvanced2.TextContent = "";
-            this.siticoneEmailTextBoxAdvanced2.TopLeftCornerRadius = 8;
-            this.siticoneEmailTextBoxAdvanced2.TopRightCornerRadius = 8;
-            // 
-            // siticoneEmailTextBoxAdvanced1
-            // 
-            this.siticoneEmailTextBoxAdvanced1.BackColor = System.Drawing.Color.Transparent;
-            this.siticoneEmailTextBoxAdvanced1.BackgroundColor = System.Drawing.Color.White;
-            this.siticoneEmailTextBoxAdvanced1.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(209)))), ((int)(((byte)(213)))), ((int)(((byte)(219)))));
-            this.siticoneEmailTextBoxAdvanced1.BottomLeftCornerRadius = 8;
-            this.siticoneEmailTextBoxAdvanced1.BottomRightCornerRadius = 8;
-            this.siticoneEmailTextBoxAdvanced1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.siticoneEmailTextBoxAdvanced1.ErrorColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced1.FocusBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced1.FocusImage = null;
-            this.siticoneEmailTextBoxAdvanced1.HoverBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
-            this.siticoneEmailTextBoxAdvanced1.HoverImage = null;
-            this.siticoneEmailTextBoxAdvanced1.IdleImage = null;
-            this.siticoneEmailTextBoxAdvanced1.Location = new System.Drawing.Point(30, 213);
-            this.siticoneEmailTextBoxAdvanced1.Name = "siticoneEmailTextBoxAdvanced1";
-            this.siticoneEmailTextBoxAdvanced1.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(156)))), ((int)(((byte)(163)))), ((int)(((byte)(175)))));
-            this.siticoneEmailTextBoxAdvanced1.PlaceholderFocusColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced1.PlaceholderFont = new System.Drawing.Font("Segoe UI", 9F);
-            this.siticoneEmailTextBoxAdvanced1.PlaceholderText = "e.g., Human Resources";
-            this.siticoneEmailTextBoxAdvanced1.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.siticoneEmailTextBoxAdvanced1.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.siticoneEmailTextBoxAdvanced1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.siticoneEmailTextBoxAdvanced1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.siticoneEmailTextBoxAdvanced1.Size = new System.Drawing.Size(463, 40);
-            this.siticoneEmailTextBoxAdvanced1.TabIndex = 0;
-            this.siticoneEmailTextBoxAdvanced1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
-            this.siticoneEmailTextBoxAdvanced1.TextContent = "";
-            this.siticoneEmailTextBoxAdvanced1.TopLeftCornerRadius = 8;
-            this.siticoneEmailTextBoxAdvanced1.TopRightCornerRadius = 8;
             // 
             // label4
             // 
@@ -410,6 +348,66 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Existing Departments";
             // 
+            // sTextBoxDepartmentName
+            // 
+            this.sTextBoxDepartmentName.BackColor = System.Drawing.Color.Transparent;
+            this.sTextBoxDepartmentName.BackgroundColor = System.Drawing.Color.White;
+            this.sTextBoxDepartmentName.BorderColor = System.Drawing.Color.DarkGray;
+            this.sTextBoxDepartmentName.BottomLeftCornerRadius = 8;
+            this.sTextBoxDepartmentName.BottomRightCornerRadius = 8;
+            this.sTextBoxDepartmentName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sTextBoxDepartmentName.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.sTextBoxDepartmentName.FocusImage = null;
+            this.sTextBoxDepartmentName.HoverBorderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDepartmentName.HoverImage = null;
+            this.sTextBoxDepartmentName.IdleImage = null;
+            this.sTextBoxDepartmentName.Location = new System.Drawing.Point(30, 216);
+            this.sTextBoxDepartmentName.Name = "sTextBoxDepartmentName";
+            this.sTextBoxDepartmentName.PlaceholderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDepartmentName.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.sTextBoxDepartmentName.PlaceholderText = "e.g., Human Resources";
+            this.sTextBoxDepartmentName.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.sTextBoxDepartmentName.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.sTextBoxDepartmentName.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.sTextBoxDepartmentName.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sTextBoxDepartmentName.Size = new System.Drawing.Size(463, 40);
+            this.sTextBoxDepartmentName.TabIndex = 5;
+            this.sTextBoxDepartmentName.TextColor = System.Drawing.SystemColors.WindowText;
+            this.sTextBoxDepartmentName.TextContent = "";
+            this.sTextBoxDepartmentName.TopLeftCornerRadius = 8;
+            this.sTextBoxDepartmentName.TopRightCornerRadius = 8;
+            this.sTextBoxDepartmentName.ValidationPattern = "";
+            // 
+            // sTextBoxDescriptionDepartment
+            // 
+            this.sTextBoxDescriptionDepartment.BackColor = System.Drawing.Color.Transparent;
+            this.sTextBoxDescriptionDepartment.BackgroundColor = System.Drawing.Color.White;
+            this.sTextBoxDescriptionDepartment.BorderColor = System.Drawing.Color.DarkGray;
+            this.sTextBoxDescriptionDepartment.BottomLeftCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.BottomRightCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sTextBoxDescriptionDepartment.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.sTextBoxDescriptionDepartment.FocusImage = null;
+            this.sTextBoxDescriptionDepartment.HoverBorderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDescriptionDepartment.HoverImage = null;
+            this.sTextBoxDescriptionDepartment.IdleImage = null;
+            this.sTextBoxDescriptionDepartment.Location = new System.Drawing.Point(30, 313);
+            this.sTextBoxDescriptionDepartment.Name = "sTextBoxDescriptionDepartment";
+            this.sTextBoxDescriptionDepartment.PlaceholderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDescriptionDepartment.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.sTextBoxDescriptionDepartment.PlaceholderText = "Brief description of the department\'s function.";
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sTextBoxDescriptionDepartment.Size = new System.Drawing.Size(463, 127);
+            this.sTextBoxDescriptionDepartment.TabIndex = 6;
+            this.sTextBoxDescriptionDepartment.TextColor = System.Drawing.SystemColors.WindowText;
+            this.sTextBoxDescriptionDepartment.TextContent = "";
+            this.sTextBoxDescriptionDepartment.TopLeftCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.TopRightCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.ValidationPattern = "";
+            // 
             // UserControlSectionDepartmentormSettings
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -435,8 +433,6 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
-        private SiticoneNetFrameworkUI.SiticoneEmailTextBoxAdvanced siticoneEmailTextBoxAdvanced2;
-        private SiticoneNetFrameworkUI.SiticoneEmailTextBoxAdvanced siticoneEmailTextBoxAdvanced1;
         private Guna.UI2.WinForms.Guna2GradientButton GButtonAddNewDepartment;
         private Guna.UI2.WinForms.Guna2GradientButton GButtonDeleteDepartment;
         private Guna.UI2.WinForms.Guna2GradientButton GButtonClearFormAddNewDepartment;
@@ -448,5 +444,7 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridViewStyler siticoneDataGridViewStyler2;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced sTextBoxDescriptionDepartment;
+        private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced sTextBoxDepartmentName;
     }
 }

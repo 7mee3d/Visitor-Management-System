@@ -37,12 +37,17 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         private void ClearAllTextBoxInSectionDepartments ()
         {
 
-            foreach(Control outterControl in this.Controls)
-                if(outterControl is Guna2Panel G2P )
-                    foreach(Control innerControls in G2P.Controls)
-                        if(innerControls is SiticoneTextBoxAdvanced STBV)
-                            STBV.Clear();
-
+            foreach (Control outterControl in this.Controls)
+            {
+                if (outterControl is Guna2GradientPanel G2GP) {
+                    
+                    foreach (Control innerControls in G2GP.Controls)
+                    {
+                        if (innerControls is SiticoneTextBoxAdvanced STBA)
+                            STBA.Clear();
+                    }
+                }
+            }
         }
 
         private void IntialSettingAfterLoadSectionDepartments()
