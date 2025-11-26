@@ -102,6 +102,18 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             return informationDepartmentStructure;
         }
 
+        private string ConvertInformationNewDepartmnetToLine (List<string> informationNewDepartment , string Separator = "&&&|||&&&")
+        {
+
+            string LineInformationDepartment = "";
+
+            LineInformationDepartment += informationNewDepartment[0] + Separator;
+            LineInformationDepartment += informationNewDepartment[1] + Separator;
+            LineInformationDepartment += Convert.ToString(1) ;
+
+            return LineInformationDepartment; 
+        }
+
         private string ReturnWordActiveOrNotDepartment (bool statusDepartment )
         {
             return (statusDepartment) ? "Active" : "Inactive";
@@ -152,7 +164,44 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
 
         }
 
+        private List<string>allInformationNewDepartmentGetTheForm()
+        {
+            List<string> informationNewDepartmentList = new List<string>();
+            string NameDepartment = sTextBoxDepartmentName.Text;
+            string DiscriptionDepartment = sTextBoxDescriptionDepartment.Text;
 
+            informationNewDepartmentList.Add(NameDepartment);
+            informationNewDepartmentList.Add(DiscriptionDepartment);
+
+            return informationNewDepartmentList;
+
+        }
+      
+        private void SaveNewDepartmnetToFile(string LineInformationDepartment ) 
+        {
+            if (!System.IO.File.Exists(_kPATH_FILE_INFOAMTION_DEPARTMENTS))
+                System.IO.File.Create(_kPATH_FILE_INFOAMTION_DEPARTMENTS).Close();
+
+            System.IO.StreamWriter WriteNewDepartmentToFile = new System.IO.StreamWriter(_kPATH_FILE_INFOAMTION_DEPARTMENTS, true);
+
+            WriteNewDepartmentToFile.WriteLine(LineInformationDepartment);
+
+            WriteNewDepartmentToFile.Close(); 
+
+        }
+   
+        private void SaveTheDepartmentInFileAfterEnterdTheInformation ()
+        {
+            string LineInformationDepartment = ConvertInformationNewDepartmnetToLine(allInformationNewDepartmentGetTheForm(), "&&&|||&&&");
+            SaveNewDepartmnetToFile(LineInformationDepartment);
+            IntialSettingAfterLoadSectionDepartments(); 
+
+        }
+  
+        private void AddNewDepartmnet()
+        {
+            SaveTheDepartmentInFileAfterEnterdTheInformation();
+        }
    
         public UserControlSectionDepartmentormSettings()
         {
@@ -165,5 +214,13 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         {
             ClearAllTextBoxInSectionDepartments(); 
         }
+
+        private void GButtonAddNewDepartment_Click(object sender, EventArgs e)
+        {
+            AddNewDepartmnet();
+        }
+  
+    
+    
     }
 }
