@@ -12,3 +12,19 @@ __   _________________________________________________________________________  
 __| |_________________________________________________________________________| |__
 __   _________________________________________________________________________   __
   | |                                                                         | |  
+
+IT&&&|||&&&IT Dis&&&|||&&&1
+Finance&&&|||&&&Finance Dis&&&|||&&&0
+Marketing&&&|||&&&Marketing Dis&&&|||&&&1
+Sales&&&|||&&&Sales Dis&&&|||&&&1
+Support&&&|||&&&Support Dis&&&|||&&&1
+Security&&&|||&&&Security Dis&&&|||&&&1
+Logistics&&&|||&&&Logistics Dis&&&|||&&&1
+Procurement&&&|||&&&Procurement Dis&&&|||&&&1
+R&D&&&|||&&&R&D Dis&&&|||&&&1
+Legal&&&|||&&&Legal Dis&&&|||&&&0
+Public Relations&&&|||&&&Public Relations Dis&&&|||&&&0
+Operations&&&|||&&&Operations Dis&&&|||&&&1
+Quality&&&|||&&&Quality Dis&&&|||&&&1
+Project Management&&&|||&&&Project Management Dis&&&|||&&&1
+Accounting&&&|||&&&Accounting Dis&&&|||&&&1

@@ -77,10 +77,61 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
 
             return informationDepartmentStructure;
         }
-     
+
+        private string ReturnWordActiveOrNotDepartment (bool statusDepartment )
+        {
+            return (statusDepartment) ? "Active" : "Inactive";
+        }
+
+        private List<stcInformationOneDepartment> LoadAllInformationDepartmentsInSturcture ()
+        {
+            List<stcInformationOneDepartment> allInformationDepartments = new List<stcInformationOneDepartment>();
+            List<string> allLinesInformationDepartmentsString = LoadAllLinesFromFileDepartments();
+
+            for(int counter = _kNUMBER_TO_START_READ_FROM_FILE; counter < allLinesInformationDepartmentsString.Count; counter++)
+                allInformationDepartments.Add(
+                    ConvertInformationLineToDataInformationDepartment(
+                        SplitLineInformationDepartment(
+                            allLinesInformationDepartmentsString[counter])));
+            
+
+            return allInformationDepartments; 
+        }
+
+        private void LoadAllInformationDepartmentToDataGridViewDepartments()
+        {
+
+            List<stcInformationOneDepartment> allInformationDepartments = LoadAllInformationDepartmentsInSturcture();
+
+            foreach (stcInformationOneDepartment informationOneDepartmnet in allInformationDepartments)
+            {
+
+
+                int rowIndex = sDataGridViewInformationDepartments.Rows.Add(
+                         informationOneDepartmnet.NameDepartment,
+                         informationOneDepartmnet.DescriptionDepartment,
+                         ReturnWordActiveOrNotDepartment(informationOneDepartmnet.StatusDepartment)
+                     );
+
+                DataGridViewRow DGVR = sDataGridViewInformationDepartments.Rows[rowIndex];
+
+                DataGridViewCell DGVC = DGVR.Cells[2];
+                DGVC.Style.Font = new Font("Segoe UI", 9, FontStyle.Bold);
+
+                if (informationOneDepartmnet.StatusDepartment)
+                
+                    DGVC.Style.ForeColor = Color.FromArgb(21, 128, 61);
+                else   
+                    DGVC.Style.ForeColor = Color.FromArgb(185, 28, 28);
+                
+            }
+
+        }
+   
         public UserControlSectionDepartmentormSettings()
         {
             InitializeComponent();
+            LoadAllInformationDepartmentToDataGridViewDepartments(); 
         }
    
     
