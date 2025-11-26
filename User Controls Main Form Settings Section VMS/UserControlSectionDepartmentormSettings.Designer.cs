@@ -28,12 +28,11 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(UserControlSectionDepartmentormSettings));
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
             this.GButtonDeleteDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GButtonClearFormAddNewDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -51,7 +50,6 @@
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.siticoneDataGridViewStyler2 = new Siticone.Desktop.UI.WinForms.SiticoneDataGridViewStyler(this.components);
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sDataGridViewInformationDepartments)).BeginInit();
@@ -108,7 +106,7 @@
             this.GButtonDeleteDepartment.Name = "GButtonDeleteDepartment";
             this.GButtonDeleteDepartment.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.GButtonDeleteDepartment.Size = new System.Drawing.Size(463, 45);
-            this.GButtonDeleteDepartment.TabIndex = 6;
+            this.GButtonDeleteDepartment.TabIndex = 3;
             this.GButtonDeleteDepartment.Text = "Delete Department";
             // 
             // GButtonClearFormAddNewDepartment
@@ -142,8 +140,9 @@
             this.GButtonClearFormAddNewDepartment.Name = "GButtonClearFormAddNewDepartment";
             this.GButtonClearFormAddNewDepartment.PressedColor = System.Drawing.Color.White;
             this.GButtonClearFormAddNewDepartment.Size = new System.Drawing.Size(212, 45);
-            this.GButtonClearFormAddNewDepartment.TabIndex = 5;
+            this.GButtonClearFormAddNewDepartment.TabIndex = 4;
             this.GButtonClearFormAddNewDepartment.Text = "Clear Form";
+            this.GButtonClearFormAddNewDepartment.Click += new System.EventHandler(this.GButtonClearFormAddNewDepartment_Click);
             // 
             // GButtonAddNewDepartment
             // 
@@ -176,7 +175,7 @@
             this.GButtonAddNewDepartment.Name = "GButtonAddNewDepartment";
             this.GButtonAddNewDepartment.PressedColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(107)))), ((int)(((byte)(245)))));
             this.GButtonAddNewDepartment.Size = new System.Drawing.Size(245, 45);
-            this.GButtonAddNewDepartment.TabIndex = 5;
+            this.GButtonAddNewDepartment.TabIndex = 2;
             this.GButtonAddNewDepartment.Text = "Add New Department";
             // 
             // label6
@@ -224,7 +223,7 @@
             this.siticoneEmailTextBoxAdvanced2.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.siticoneEmailTextBoxAdvanced2.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.siticoneEmailTextBoxAdvanced2.Size = new System.Drawing.Size(463, 127);
-            this.siticoneEmailTextBoxAdvanced2.TabIndex = 3;
+            this.siticoneEmailTextBoxAdvanced2.TabIndex = 1;
             this.siticoneEmailTextBoxAdvanced2.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.siticoneEmailTextBoxAdvanced2.TextContent = "";
             this.siticoneEmailTextBoxAdvanced2.TopLeftCornerRadius = 8;
@@ -255,7 +254,7 @@
             this.siticoneEmailTextBoxAdvanced1.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
             this.siticoneEmailTextBoxAdvanced1.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
             this.siticoneEmailTextBoxAdvanced1.Size = new System.Drawing.Size(463, 40);
-            this.siticoneEmailTextBoxAdvanced1.TabIndex = 3;
+            this.siticoneEmailTextBoxAdvanced1.TabIndex = 0;
             this.siticoneEmailTextBoxAdvanced1.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(24)))), ((int)(((byte)(39)))));
             this.siticoneEmailTextBoxAdvanced1.TextContent = "";
             this.siticoneEmailTextBoxAdvanced1.TopLeftCornerRadius = 8;
@@ -301,48 +300,48 @@
             this.sDataGridViewInformationDepartments.AllowUserToAddRows = false;
             this.sDataGridViewInformationDepartments.AllowUserToDeleteRows = false;
             this.sDataGridViewInformationDepartments.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.sDataGridViewInformationDepartments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.sDataGridViewInformationDepartments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.sDataGridViewInformationDepartments.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle10.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sDataGridViewInformationDepartments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(86)))), ((int)(((byte)(93)))), ((int)(((byte)(109)))));
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sDataGridViewInformationDepartments.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.sDataGridViewInformationDepartments.ColumnHeadersHeight = 55;
             this.sDataGridViewInformationDepartments.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.sDataGridViewInformationDepartments.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.DepartmentName,
             this.Description,
             this.Status});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle11.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.sDataGridViewInformationDepartments.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.sDataGridViewInformationDepartments.DefaultCellStyle = dataGridViewCellStyle3;
             this.sDataGridViewInformationDepartments.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(250)))), ((int)(((byte)(251)))), ((int)(((byte)(251)))));
             this.sDataGridViewInformationDepartments.Location = new System.Drawing.Point(46, 156);
             this.sDataGridViewInformationDepartments.Name = "sDataGridViewInformationDepartments";
             this.sDataGridViewInformationDepartments.ReadOnly = true;
             this.sDataGridViewInformationDepartments.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle12.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.sDataGridViewInformationDepartments.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.sDataGridViewInformationDepartments.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.sDataGridViewInformationDepartments.RowHeadersVisible = false;
             this.sDataGridViewInformationDepartments.RowTemplate.Height = 54;
             this.sDataGridViewInformationDepartments.Size = new System.Drawing.Size(709, 543);

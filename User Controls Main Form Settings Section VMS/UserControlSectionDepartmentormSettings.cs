@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Guna.UI2.WinForms;
+using SiticoneNetFrameworkUI;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -30,6 +32,23 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         private const string _kPATH_FILE_INFOAMTION_DEPARTMENTS = @"../../Data_Information_VMS/Information_Departments.txt";
         private const ushort _kNUMBER_TO_START_READ_FROM_FILE = 15;
         private const string _kSEPARATOR_FILE_INFOMATION_DEPARTMENTS = "&&&|||&&&";
+
+
+        private void ClearAllTextBoxInSectionDepartments ()
+        {
+
+            foreach(Control outterControl in this.Controls)
+                if(outterControl is Guna2Panel G2P )
+                    foreach(Control innerControls in G2P.Controls)
+                        if(innerControls is SiticoneTextBoxAdvanced STBV)
+                            STBV.Clear();
+
+        }
+
+        private void IntialSettingAfterLoadSectionDepartments()
+        {
+            ClearAllTextBoxInSectionDepartments(); 
+        }
 
        private List<string> LoadAllLinesFromFileDepartments()
         {
@@ -127,13 +146,19 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             }
 
         }
+
+
    
         public UserControlSectionDepartmentormSettings()
         {
             InitializeComponent();
-            LoadAllInformationDepartmentToDataGridViewDepartments(); 
+            LoadAllInformationDepartmentToDataGridViewDepartments();
+            IntialSettingAfterLoadSectionDepartments();
         }
-   
-    
+
+        private void GButtonClearFormAddNewDepartment_Click(object sender, EventArgs e)
+        {
+            ClearAllTextBoxInSectionDepartments(); 
+        }
     }
 }
