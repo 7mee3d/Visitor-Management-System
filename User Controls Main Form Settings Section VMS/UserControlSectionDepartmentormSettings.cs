@@ -34,6 +34,25 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         private const string _kSEPARATOR_FILE_INFOMATION_DEPARTMENTS = "&&&|||&&&";
 
 
+        private async Task timerShowMessageAddNewDepartmnetSccuessfulyAsync()
+        {
+            labelShowMessageAddDepartmnetSuccessfully.Visible = true; 
+            labelShowMessageAddDepartmnetSuccessfully.Text = "Department added successfully.";
+
+            await Task.Delay(2000);
+            labelShowMessageAddDepartmnetSuccessfully.Visible = false ; 
+        }
+
+        private async Task AnimationMessageAddNewDepartmnetSccussfully()
+        {
+            for(int counter = 0; counter < 20; counter++ )
+            {
+                await Task.Delay(counter + 1);
+                labelShowMessageAddDepartmnetSuccessfully.Location = new Point(27, 616 - counter);
+                timerShowMessageAddNewDepartmnetSccuessfulyAsync();
+            }
+        }
+       
         private void ClearAllTextBoxInSectionDepartments ()
         {
 
@@ -194,7 +213,9 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         {
             string LineInformationDepartment = ConvertInformationNewDepartmnetToLine(allInformationNewDepartmentGetTheForm(), "&&&|||&&&");
             SaveNewDepartmnetToFile(LineInformationDepartment);
-            IntialSettingAfterLoadSectionDepartments(); 
+            IntialSettingAfterLoadSectionDepartments();
+            AnimationMessageAddNewDepartmnetSccussfully();
+
 
         }
   
@@ -218,6 +239,7 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         private void GButtonAddNewDepartment_Click(object sender, EventArgs e)
         {
             AddNewDepartmnet();
+           
         }
   
     
