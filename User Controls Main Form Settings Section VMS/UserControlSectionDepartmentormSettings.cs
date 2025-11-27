@@ -47,7 +47,17 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             await Task.Delay(3000);
             labelShowMessageAddDepartmnetSuccessfully.Visible = false ; 
         }
-      
+        private async Task timerShowMessageAlreadyTheTextBoxiesIsEmptyAsync()
+        {
+            labelShowMessageAddDepartmnetSuccessfully.ForeColor = Color.Red;
+            labelShowMessageAddDepartmnetSuccessfully.Visible = true;
+
+            labelShowMessageAddDepartmnetSuccessfully.Text = "The textboxes are already empty";
+            await Task.Delay(3000);
+
+            labelShowMessageAddDepartmnetSuccessfully.Visible = false;
+        }
+
         private async Task timerShowMessageAddNewDepartmnetWarningFiledsEmptyAsync()
         {
             labelShowMessageAddDepartmnetSuccessfully.ForeColor = Color.Red; 
@@ -68,6 +78,16 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             }
         }
     
+        private async Task AnimationMessageClearFormAlreadyTheTextBoxiesIsEmpty()
+        {
+            for (int counter = 0; counter < 20; counter++)
+            {
+                await Task.Delay(counter + 1);
+                labelShowMessageAddDepartmnetSuccessfully.Location = new Point(27, 616 - counter);
+                timerShowMessageAlreadyTheTextBoxiesIsEmptyAsync();
+            }
+        }
+
         private async void AnimationMessageAddNewDepartmnetWarning()
         {
             for (int counter = 0; counter < 20; counter++)
@@ -262,9 +282,17 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             IntialSettingAfterLoadSectionDepartments();
         }
 
+        private void ClearForm()
+        {
+            if (!checkAllTextBoxFillOrNot(allInformationNewDepartmentGetTheForm()))
+                ClearAllTextBoxInSectionDepartments();
+            else
+                AnimationMessageClearFormAlreadyTheTextBoxiesIsEmpty();
+        }
+
         private void GButtonClearFormAddNewDepartment_Click(object sender, EventArgs e)
         {
-            ClearAllTextBoxInSectionDepartments(); 
+            ClearForm();
         }
 
         private void GButtonAddNewDepartment_Click(object sender, EventArgs e)
