@@ -33,14 +33,29 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         private const ushort _kNUMBER_TO_START_READ_FROM_FILE = 15;
         private const string _kSEPARATOR_FILE_INFOMATION_DEPARTMENTS = "&&&|||&&&";
 
+        private bool checkAllTextBoxFillOrNot (List<string> allInformationNewDepartmnet )
+        {
+            return (allInformationNewDepartmnet[0] == "" || allInformationNewDepartmnet[1] == ""); 
+        }
 
         private async Task timerShowMessageAddNewDepartmnetSccuessfulyAsync()
         {
+            labelShowMessageAddDepartmnetSuccessfully.ForeColor = Color.Green; 
             labelShowMessageAddDepartmnetSuccessfully.Visible = true; 
             labelShowMessageAddDepartmnetSuccessfully.Text = "Department added successfully.";
 
-            await Task.Delay(2000);
+            await Task.Delay(3000);
             labelShowMessageAddDepartmnetSuccessfully.Visible = false ; 
+        }
+      
+        private async Task timerShowMessageAddNewDepartmnetWarningFiledsEmptyAsync()
+        {
+            labelShowMessageAddDepartmnetSuccessfully.ForeColor = Color.Red; 
+            labelShowMessageAddDepartmnetSuccessfully.Visible = true;
+            labelShowMessageAddDepartmnetSuccessfully.Text = "Text fields cannot be empty";
+
+            await Task.Delay(3000);
+            labelShowMessageAddDepartmnetSuccessfully.Visible = false;
         }
 
         private async Task AnimationMessageAddNewDepartmnetSccussfully()
@@ -49,10 +64,20 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             {
                 await Task.Delay(counter + 1);
                 labelShowMessageAddDepartmnetSuccessfully.Location = new Point(27, 616 - counter);
-                timerShowMessageAddNewDepartmnetSccuessfulyAsync();
+                 timerShowMessageAddNewDepartmnetSccuessfulyAsync();
             }
         }
-       
+    
+        private async void AnimationMessageAddNewDepartmnetWarning()
+        {
+            for (int counter = 0; counter < 20; counter++)
+            {
+                await Task.Delay(counter + 1);
+                labelShowMessageAddDepartmnetSuccessfully.Location = new Point(27, 616 - counter);
+                 timerShowMessageAddNewDepartmnetWarningFiledsEmptyAsync();
+            }
+        }
+     
         private void ClearAllTextBoxInSectionDepartments ()
         {
 
@@ -71,10 +96,12 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
 
         private void IntialSettingAfterLoadSectionDepartments()
         {
-            ClearAllTextBoxInSectionDepartments(); 
+            ClearAllTextBoxInSectionDepartments();
+            sDataGridViewInformationDepartments.ClearSelection();
+
         }
 
-       private List<string> LoadAllLinesFromFileDepartments()
+        private List<string> LoadAllLinesFromFileDepartments()
         {
             List<string> allInformationLinesFromFile = new List<string>();
 
@@ -209,19 +236,23 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
 
         }
    
-        private void SaveTheDepartmentInFileAfterEnterdTheInformation ()
+        private async void SaveTheDepartmentInFileAfterEnterdTheInformationAsync ()
         {
-            string LineInformationDepartment = ConvertInformationNewDepartmnetToLine(allInformationNewDepartmentGetTheForm(), "&&&|||&&&");
-            SaveNewDepartmnetToFile(LineInformationDepartment);
-            IntialSettingAfterLoadSectionDepartments();
-            AnimationMessageAddNewDepartmnetSccussfully();
-
+            if (!checkAllTextBoxFillOrNot(allInformationNewDepartmentGetTheForm()))
+            {
+                string LineInformationDepartment = ConvertInformationNewDepartmnetToLine(allInformationNewDepartmentGetTheForm(), "&&&|||&&&");
+                SaveNewDepartmnetToFile(LineInformationDepartment);
+                IntialSettingAfterLoadSectionDepartments();
+                 AnimationMessageAddNewDepartmnetSccussfully();
+            }
+            else
+                 AnimationMessageAddNewDepartmnetWarning(); 
 
         }
   
         private void AddNewDepartmnet()
         {
-            SaveTheDepartmentInFileAfterEnterdTheInformation();
+            SaveTheDepartmentInFileAfterEnterdTheInformationAsync();
         }
    
         public UserControlSectionDepartmentormSettings()
