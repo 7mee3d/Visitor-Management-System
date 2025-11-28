@@ -124,6 +124,7 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         {
             ClearAllTextBoxInSectionDepartments();
             sDataGridViewInformationDepartments.ClearSelection();
+            NumberDepartmentsAfterAddNewDepartment();
 
         }
 
@@ -266,7 +267,7 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         {
             ClearAllInformationDepartmentsFromDataGridView();
             LoadAllInformationDepartmentToDataGridViewDepartments();
-
+            NumberDepartmentsAfterAddNewDepartment();
         }
       
         private async void SaveTheDepartmentInFileAfterEnterdTheInformationAsync ()
@@ -328,6 +329,15 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             EnableButtonDeleteDepartmnetAfterSelect();
         }
   
-    
+        private int returnNumberDepartments()
+        {
+            return (sDataGridViewInformationDepartments.Rows.Count);
+        }
+        
+        private void NumberDepartmentsAfterAddNewDepartment()
+        {
+            labelNumberDepartments.Text = returnNumberDepartments().ToString();
+        }
+   
     }
 }

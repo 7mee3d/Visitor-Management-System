@@ -164,4 +164,16 @@
   <metadata name="Status.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <data name="pictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABQAAAAXCAYAAAALHW+jAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wQAADsEBuJFr7QAAAVlJREFUSEvtVDFKBFEMHSy0VdRG0GXmRwt7VxvBwsJWZGVO4E7yEY/gMRS8gRZe
+        wUZ368VC8AbTqfkzbLMjGZxxNzujC6Io+CAQ8n5e8kmI5/1ZrLeyaT9Kto1Nd4ZNYsLp9x8CIrdliJ9W
+        rcuqLOfIbeq8WgC5CyC+1fEChrhjiM90vBYG+QqIL8UH5HNDfCMmvuYnwrcKVsEgdw1yDMTXProNzY9h
+        pEPL98UwxJdYUAha7gLx85IdzGuNHDI5qWrQxQFyR2J+2zXLlWm7psTKgqfZlBQKrNvXWh4cDxYB+SWf
+        ILoYkO/yZEqh3ENKYURQmpDOMWlpPQ+sOxBSJwBxr/wycU/ztYKGksMqwSp8SfCztflJQd4Tcu0oW5j0
+        ywaTZcnxMd3Vb2TKM4D8+L5z40eh5GjY54fa67OC2ZysR2D7YSNKQn26CmvYfhi88Y2TbFbr/OOX4RU4
+        DF7rN/e/yAAAAABJRU5ErkJggg==
+</value>
+  </data>
 </root>
