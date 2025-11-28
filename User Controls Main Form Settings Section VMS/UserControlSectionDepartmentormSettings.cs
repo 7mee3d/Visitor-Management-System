@@ -33,6 +33,11 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
         private const ushort _kNUMBER_TO_START_READ_FROM_FILE = 15;
         private const string _kSEPARATOR_FILE_INFOMATION_DEPARTMENTS = "&&&|||&&&";
 
+        private void ClearAllInformationDepartmentsFromDataGridView()
+        {
+            sDataGridViewInformationDepartments.Rows.Clear();
+        }
+
         private bool checkAllTextBoxFillOrNot (List<string> allInformationNewDepartmnet )
         {
             return (allInformationNewDepartmnet[0] == "" || allInformationNewDepartmnet[1] == ""); 
@@ -47,6 +52,7 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             await Task.Delay(3000);
             labelShowMessageAddDepartmnetSuccessfully.Visible = false ; 
         }
+      
         private async Task timerShowMessageAlreadyTheTextBoxiesIsEmptyAsync()
         {
             labelShowMessageAddDepartmnetSuccessfully.ForeColor = Color.Red;
@@ -256,6 +262,13 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
 
         }
    
+        private void RefreshInformationDepartmentsAfterAddNewDepartments()
+        {
+            ClearAllInformationDepartmentsFromDataGridView();
+            LoadAllInformationDepartmentToDataGridViewDepartments();
+
+        }
+      
         private async void SaveTheDepartmentInFileAfterEnterdTheInformationAsync ()
         {
             if (!checkAllTextBoxFillOrNot(allInformationNewDepartmentGetTheForm()))
@@ -263,11 +276,12 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
                 string LineInformationDepartment = ConvertInformationNewDepartmnetToLine(allInformationNewDepartmentGetTheForm(), "&&&|||&&&");
                 SaveNewDepartmnetToFile(LineInformationDepartment);
                 IntialSettingAfterLoadSectionDepartments();
-                 AnimationMessageAddNewDepartmnetSccussfully();
+                AnimationMessageAddNewDepartmnetSccussfully();
+                RefreshInformationDepartmentsAfterAddNewDepartments();
             }
             else
                  AnimationMessageAddNewDepartmnetWarning(); 
-
+            
         }
   
         private void AddNewDepartmnet()
@@ -300,8 +314,20 @@ namespace Visitor_Management_System.User_Controls_Main_Form_Settings_Section_VMS
             AddNewDepartmnet();
            
         }
+
+        private void EnableButtonDeleteDepartmnetAfterSelect ()
+        {
+            if (sDataGridViewInformationDepartments.SelectedRows.Count > 0)
+                GButtonDeleteDepartment.Enabled = true;
+            else
+                GButtonDeleteDepartment.Enabled = false; 
+        }
+
+        private void sDataGridViewInformationDepartments_SelectionChanged(object sender, EventArgs e)
+        {
+            EnableButtonDeleteDepartmnetAfterSelect();
+        }
   
-    
     
     }
 }

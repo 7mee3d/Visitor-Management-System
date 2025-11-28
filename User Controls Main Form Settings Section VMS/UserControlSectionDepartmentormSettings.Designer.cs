@@ -34,6 +34,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.guna2GradientPanel2 = new Guna.UI2.WinForms.Guna2GradientPanel();
+            this.labelShowMessageAddDepartmnetSuccessfully = new System.Windows.Forms.Label();
+            this.sTextBoxDescriptionDepartment = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
+            this.sTextBoxDepartmentName = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
             this.GButtonDeleteDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GButtonClearFormAddNewDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
             this.GButtonAddNewDepartment = new Guna.UI2.WinForms.Guna2GradientButton();
@@ -43,14 +46,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.sDataGridViewInformationDepartments = new Siticone.Desktop.UI.WinForms.SiticoneDataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.DepartmentName = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Description = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Status = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sTextBoxDepartmentName = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
-            this.sTextBoxDescriptionDepartment = new SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced();
-            this.labelShowMessageAddDepartmnetSuccessfully = new System.Windows.Forms.Label();
             this.guna2GradientPanel2.SuspendLayout();
             this.guna2Panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.sDataGridViewInformationDepartments)).BeginInit();
@@ -77,6 +77,78 @@
             this.guna2GradientPanel2.Size = new System.Drawing.Size(510, 722);
             this.guna2GradientPanel2.TabIndex = 1;
             // 
+            // labelShowMessageAddDepartmnetSuccessfully
+            // 
+            this.labelShowMessageAddDepartmnetSuccessfully.AutoSize = true;
+            this.labelShowMessageAddDepartmnetSuccessfully.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.labelShowMessageAddDepartmnetSuccessfully.ForeColor = System.Drawing.Color.Green;
+            this.labelShowMessageAddDepartmnetSuccessfully.Location = new System.Drawing.Point(27, 629);
+            this.labelShowMessageAddDepartmnetSuccessfully.Name = "labelShowMessageAddDepartmnetSuccessfully";
+            this.labelShowMessageAddDepartmnetSuccessfully.Size = new System.Drawing.Size(175, 15);
+            this.labelShowMessageAddDepartmnetSuccessfully.TabIndex = 7;
+            this.labelShowMessageAddDepartmnetSuccessfully.Text = "Department added successfully.";
+            this.labelShowMessageAddDepartmnetSuccessfully.Visible = false;
+            // 
+            // sTextBoxDescriptionDepartment
+            // 
+            this.sTextBoxDescriptionDepartment.BackColor = System.Drawing.Color.Transparent;
+            this.sTextBoxDescriptionDepartment.BackgroundColor = System.Drawing.Color.White;
+            this.sTextBoxDescriptionDepartment.BorderColor = System.Drawing.Color.DarkGray;
+            this.sTextBoxDescriptionDepartment.BottomLeftCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.BottomRightCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sTextBoxDescriptionDepartment.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.sTextBoxDescriptionDepartment.FocusImage = null;
+            this.sTextBoxDescriptionDepartment.HoverBorderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDescriptionDepartment.HoverImage = null;
+            this.sTextBoxDescriptionDepartment.IdleImage = null;
+            this.sTextBoxDescriptionDepartment.Location = new System.Drawing.Point(30, 313);
+            this.sTextBoxDescriptionDepartment.Name = "sTextBoxDescriptionDepartment";
+            this.sTextBoxDescriptionDepartment.PlaceholderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDescriptionDepartment.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.sTextBoxDescriptionDepartment.PlaceholderText = "Brief description of the department\'s function.";
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.sTextBoxDescriptionDepartment.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sTextBoxDescriptionDepartment.Size = new System.Drawing.Size(463, 127);
+            this.sTextBoxDescriptionDepartment.TabIndex = 6;
+            this.sTextBoxDescriptionDepartment.TextColor = System.Drawing.SystemColors.WindowText;
+            this.sTextBoxDescriptionDepartment.TextContent = "";
+            this.sTextBoxDescriptionDepartment.TopLeftCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.TopRightCornerRadius = 8;
+            this.sTextBoxDescriptionDepartment.ValidationPattern = "";
+            // 
+            // sTextBoxDepartmentName
+            // 
+            this.sTextBoxDepartmentName.BackColor = System.Drawing.Color.Transparent;
+            this.sTextBoxDepartmentName.BackgroundColor = System.Drawing.Color.White;
+            this.sTextBoxDepartmentName.BorderColor = System.Drawing.Color.DarkGray;
+            this.sTextBoxDepartmentName.BottomLeftCornerRadius = 8;
+            this.sTextBoxDepartmentName.BottomRightCornerRadius = 8;
+            this.sTextBoxDepartmentName.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.sTextBoxDepartmentName.FocusBorderColor = System.Drawing.Color.DodgerBlue;
+            this.sTextBoxDepartmentName.FocusImage = null;
+            this.sTextBoxDepartmentName.HoverBorderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDepartmentName.HoverImage = null;
+            this.sTextBoxDepartmentName.IdleImage = null;
+            this.sTextBoxDepartmentName.Location = new System.Drawing.Point(30, 216);
+            this.sTextBoxDepartmentName.Name = "sTextBoxDepartmentName";
+            this.sTextBoxDepartmentName.PlaceholderColor = System.Drawing.Color.Gray;
+            this.sTextBoxDepartmentName.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
+            this.sTextBoxDepartmentName.PlaceholderText = "e.g., Human Resources";
+            this.sTextBoxDepartmentName.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
+            this.sTextBoxDepartmentName.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
+            this.sTextBoxDepartmentName.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
+            this.sTextBoxDepartmentName.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
+            this.sTextBoxDepartmentName.Size = new System.Drawing.Size(463, 40);
+            this.sTextBoxDepartmentName.TabIndex = 5;
+            this.sTextBoxDepartmentName.TextColor = System.Drawing.SystemColors.WindowText;
+            this.sTextBoxDepartmentName.TextContent = "";
+            this.sTextBoxDepartmentName.TopLeftCornerRadius = 8;
+            this.sTextBoxDepartmentName.TopRightCornerRadius = 8;
+            this.sTextBoxDepartmentName.ValidationPattern = "";
+            // 
             // GButtonDeleteDepartment
             // 
             this.GButtonDeleteDepartment.Animated = true;
@@ -94,6 +166,7 @@
             this.GButtonDeleteDepartment.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.GButtonDeleteDepartment.DisabledState.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.GButtonDeleteDepartment.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.GButtonDeleteDepartment.Enabled = false;
             this.GButtonDeleteDepartment.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.GButtonDeleteDepartment.FillColor2 = System.Drawing.Color.FromArgb(((int)(((byte)(220)))), ((int)(((byte)(53)))), ((int)(((byte)(69)))));
             this.GButtonDeleteDepartment.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
@@ -247,7 +320,6 @@
             dataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             dataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.sDataGridViewInformationDepartments.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            this.sDataGridViewInformationDepartments.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -309,27 +381,7 @@
             this.sDataGridViewInformationDepartments.ThemeStyle.RowsStyle.Height = 54;
             this.sDataGridViewInformationDepartments.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(242)))), ((int)(((byte)(242)))));
             this.sDataGridViewInformationDepartments.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // DepartmentName
-            // 
-            this.DepartmentName.FillWeight = 4.771576F;
-            this.DepartmentName.HeaderText = "Department Name";
-            this.DepartmentName.Name = "DepartmentName";
-            this.DepartmentName.ReadOnly = true;
-            // 
-            // Description
-            // 
-            this.Description.FillWeight = 11.61421F;
-            this.Description.HeaderText = "Description";
-            this.Description.Name = "Description";
-            this.Description.ReadOnly = true;
-            // 
-            // Status
-            // 
-            this.Status.FillWeight = 7.614212F;
-            this.Status.HeaderText = "Status";
-            this.Status.Name = "Status";
-            this.Status.ReadOnly = true;
+            this.sDataGridViewInformationDepartments.SelectionChanged += new System.EventHandler(this.sDataGridViewInformationDepartments_SelectionChanged);
             // 
             // label2
             // 
@@ -352,77 +404,26 @@
             this.label1.TabIndex = 3;
             this.label1.Text = "Existing Departments";
             // 
-            // sTextBoxDepartmentName
+            // DepartmentName
             // 
-            this.sTextBoxDepartmentName.BackColor = System.Drawing.Color.Transparent;
-            this.sTextBoxDepartmentName.BackgroundColor = System.Drawing.Color.White;
-            this.sTextBoxDepartmentName.BorderColor = System.Drawing.Color.DarkGray;
-            this.sTextBoxDepartmentName.BottomLeftCornerRadius = 8;
-            this.sTextBoxDepartmentName.BottomRightCornerRadius = 8;
-            this.sTextBoxDepartmentName.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sTextBoxDepartmentName.FocusBorderColor = System.Drawing.Color.DodgerBlue;
-            this.sTextBoxDepartmentName.FocusImage = null;
-            this.sTextBoxDepartmentName.HoverBorderColor = System.Drawing.Color.Gray;
-            this.sTextBoxDepartmentName.HoverImage = null;
-            this.sTextBoxDepartmentName.IdleImage = null;
-            this.sTextBoxDepartmentName.Location = new System.Drawing.Point(30, 216);
-            this.sTextBoxDepartmentName.Name = "sTextBoxDepartmentName";
-            this.sTextBoxDepartmentName.PlaceholderColor = System.Drawing.Color.Gray;
-            this.sTextBoxDepartmentName.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.sTextBoxDepartmentName.PlaceholderText = "e.g., Human Resources";
-            this.sTextBoxDepartmentName.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.sTextBoxDepartmentName.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.sTextBoxDepartmentName.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.sTextBoxDepartmentName.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.sTextBoxDepartmentName.Size = new System.Drawing.Size(463, 40);
-            this.sTextBoxDepartmentName.TabIndex = 5;
-            this.sTextBoxDepartmentName.TextColor = System.Drawing.SystemColors.WindowText;
-            this.sTextBoxDepartmentName.TextContent = "";
-            this.sTextBoxDepartmentName.TopLeftCornerRadius = 8;
-            this.sTextBoxDepartmentName.TopRightCornerRadius = 8;
-            this.sTextBoxDepartmentName.ValidationPattern = "";
+            this.DepartmentName.FillWeight = 4.771576F;
+            this.DepartmentName.HeaderText = "Department Name";
+            this.DepartmentName.Name = "DepartmentName";
+            this.DepartmentName.ReadOnly = true;
             // 
-            // sTextBoxDescriptionDepartment
+            // Description
             // 
-            this.sTextBoxDescriptionDepartment.BackColor = System.Drawing.Color.Transparent;
-            this.sTextBoxDescriptionDepartment.BackgroundColor = System.Drawing.Color.White;
-            this.sTextBoxDescriptionDepartment.BorderColor = System.Drawing.Color.DarkGray;
-            this.sTextBoxDescriptionDepartment.BottomLeftCornerRadius = 8;
-            this.sTextBoxDescriptionDepartment.BottomRightCornerRadius = 8;
-            this.sTextBoxDescriptionDepartment.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.sTextBoxDescriptionDepartment.FocusBorderColor = System.Drawing.Color.DodgerBlue;
-            this.sTextBoxDescriptionDepartment.FocusImage = null;
-            this.sTextBoxDescriptionDepartment.HoverBorderColor = System.Drawing.Color.Gray;
-            this.sTextBoxDescriptionDepartment.HoverImage = null;
-            this.sTextBoxDescriptionDepartment.IdleImage = null;
-            this.sTextBoxDescriptionDepartment.Location = new System.Drawing.Point(30, 313);
-            this.sTextBoxDescriptionDepartment.Name = "sTextBoxDescriptionDepartment";
-            this.sTextBoxDescriptionDepartment.PlaceholderColor = System.Drawing.Color.Gray;
-            this.sTextBoxDescriptionDepartment.PlaceholderFont = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold);
-            this.sTextBoxDescriptionDepartment.PlaceholderText = "Brief description of the department\'s function.";
-            this.sTextBoxDescriptionDepartment.ReadOnlyColors.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(245)))), ((int)(((byte)(245)))));
-            this.sTextBoxDescriptionDepartment.ReadOnlyColors.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(200)))), ((int)(((byte)(200)))), ((int)(((byte)(200)))));
-            this.sTextBoxDescriptionDepartment.ReadOnlyColors.PlaceholderColor = System.Drawing.Color.FromArgb(((int)(((byte)(150)))), ((int)(((byte)(150)))), ((int)(((byte)(150)))));
-            this.sTextBoxDescriptionDepartment.ReadOnlyColors.TextColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(100)))), ((int)(((byte)(100)))));
-            this.sTextBoxDescriptionDepartment.Size = new System.Drawing.Size(463, 127);
-            this.sTextBoxDescriptionDepartment.TabIndex = 6;
-            this.sTextBoxDescriptionDepartment.TextColor = System.Drawing.SystemColors.WindowText;
-            this.sTextBoxDescriptionDepartment.TextContent = "";
-            this.sTextBoxDescriptionDepartment.TopLeftCornerRadius = 8;
-            this.sTextBoxDescriptionDepartment.TopRightCornerRadius = 8;
-            this.sTextBoxDescriptionDepartment.ValidationPattern = "";
+            this.Description.FillWeight = 11.61421F;
+            this.Description.HeaderText = "Description";
+            this.Description.Name = "Description";
+            this.Description.ReadOnly = true;
             // 
-            // labelShowMessageAddDepartmnetSuccessfully
+            // Status
             // 
-            this.labelShowMessageAddDepartmnetSuccessfully.AutoSize = true;
-            this.labelShowMessageAddDepartmnetSuccessfully.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.labelShowMessageAddDepartmnetSuccessfully.ForeColor = System.Drawing.Color.Green;
-            this.labelShowMessageAddDepartmnetSuccessfully.Location = new System.Drawing.Point(27, 629);
-            this.labelShowMessageAddDepartmnetSuccessfully.Name = "labelShowMessageAddDepartmnetSuccessfully";
-            this.labelShowMessageAddDepartmnetSuccessfully.Size = new System.Drawing.Size(175, 15);
-            this.labelShowMessageAddDepartmnetSuccessfully.TabIndex = 7;
-            this.labelShowMessageAddDepartmnetSuccessfully.Text = "Department added successfully.";
-            this.labelShowMessageAddDepartmnetSuccessfully.Visible = false;
+            this.Status.FillWeight = 7.614212F;
+            this.Status.HeaderText = "Status";
+            this.Status.Name = "Status";
+            this.Status.ReadOnly = true;
             // 
             // UserControlSectionDepartmentormSettings
             // 
@@ -454,14 +455,14 @@
         private Guna.UI2.WinForms.Guna2GradientButton GButtonClearFormAddNewDepartment;
         private Guna.UI2.WinForms.Guna2Panel guna2Panel1;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridView sDataGridViewInformationDepartments;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DepartmentName;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Siticone.Desktop.UI.WinForms.SiticoneDataGridViewStyler siticoneDataGridViewStyler2;
         private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced sTextBoxDescriptionDepartment;
         private SiticoneNetFrameworkUI.SiticoneTextBoxAdvanced sTextBoxDepartmentName;
         private System.Windows.Forms.Label labelShowMessageAddDepartmnetSuccessfully;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DepartmentName;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Description;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Status;
     }
 }
