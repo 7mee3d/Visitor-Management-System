@@ -25,14 +25,23 @@ namespace Visitor_Management_System.Main_Form_Screen_VMS_Dashboard
             return DateTime.Now.ToString("yyyy");
         }
 
+        private void setFormTopMost()
+        {
+            this.TopMost = true; 
+            this.Activate();
+        }
+
         public DashboardVMS()        
         {
             InitializeComponent();
             YearAllRightReserved.Text = "@ " + getYearFromSystem();
+            setFormTopMost();
+            this.TopMost = false;
+
         }
-      
-      
-        
+
+
+
         private void OpenSectionSetting()
         {
             MainFormSettingsSection MFSS = new MainFormSettingsSection();

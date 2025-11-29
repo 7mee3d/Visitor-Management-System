@@ -77,7 +77,12 @@ namespace Visitor_Management_System
         public VMS_Login()
         {
             InitializeComponent();
- 
+
+            //Activate the Login VMS OF The Top 
+            this.TopMost = true;
+            this.TopMost = false;
+            this.Activate();
+            
         }
        
         //General Methods 
@@ -393,7 +398,7 @@ namespace Visitor_Management_System
             setPropertiesNotifiyIconVMSLoginAfterClickBallonOrIconORMenu();
 
         }
- 
+
     
     }
 }
