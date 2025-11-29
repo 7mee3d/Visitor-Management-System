@@ -330,7 +330,7 @@ namespace Visitor_Management_System
                 else
                 {
                     LblShowMessageWrongPasswordOrLockAccount.Text = "Password is Wronge , Please Enter Correct Password";
-
+                    siticoneTextBoxPassword.Focus();
                     if (
                         allInformationThisUserAfterSearch.stAttempt > 0
                         )
@@ -349,6 +349,7 @@ namespace Visitor_Management_System
                 //ClearAllTextBox();
                 siticoneTextBoxUsername.Clear();
                 siticoneTextBoxPassword.Clear();
+                siticoneTextBoxUsername.Focus();
                 LblShowMessageWrongPasswordOrLockAccount.Text = "This account does not exist. Please Contact Adminto Create\nNew Account in VMS";
               
             }
